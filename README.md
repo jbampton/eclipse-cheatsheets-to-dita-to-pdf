@@ -4,7 +4,7 @@ I worked on https://github.com/debrief/debrief and I was given permission to ext
 
 Basically this code takes a set of Eclipse cheat sheets and transforms them to PDF.
 
-It's a two step process first the DITA XML is created from the ecliplse cheat sheets and then you use DITA-OT to create the PDF from the created DITA files.
+It's a two step process first the DITA XML is created from the eclipse cheat sheets and then you use DITA-OT to create the PDF from the created DITA files.
 
 The first step uses cheatsheet-to-dita.xsl which requires an XSLT 2.0 compliant processor like Saxon 9+ HE
 
