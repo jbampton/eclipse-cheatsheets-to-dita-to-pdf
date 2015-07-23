@@ -8,7 +8,7 @@ It's a two step process first the DITA XML is created from the Eclipse cheat she
 
 The two parts of the transformation comprise of:
 
-1.	- Use cheatsheet-to-dita.xsl which requires an XSLT 2.0 compliant processor like Saxon 9+ HE.
+1.	- Use cheatsheet-to-dita.xsl which requires an XSLT 2.0 compliant processor like Saxon 9+ HE http://saxon.sourceforge.net/ from http://www.saxonica.com/welcome/welcome.xml.
 	- This file takes as input a collection on XML files (Eclipse cheat sheets) and creates multiple output files - a 	parent DITA Map and some associated tasks.
 	
 2.	- DITA-OT is required and that "info.debrief" plugin be placed in the DITA-OT plugins directory.
