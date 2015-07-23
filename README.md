@@ -4,17 +4,24 @@ I worked on https://github.com/debrief/debrief and I was given permission to ext
 
 Basically this code takes a set of Eclipse cheat sheets and transforms them to PDF.
 
-It's a two step process first the DITA XML is created from the eclipse cheat sheets and then you use DITA-OT to create the PDF from the created DITA files.
+It's a two step process first the DITA XML is created from the Eclipse cheat sheets and then you use the DITA-Open Toolkit http://www.dita-ot.org/  to create the PDF from the created DITA files.
 
-The first step uses cheatsheet-to-dita.xsl which requires an XSLT 2.0 compliant processor like Saxon 9+ HE
+The two parts of the transformation comprise of:
 
-The second step requires DITA-OT and that "info.debrief" be placed in the DITA-OT plugins directory.
+1. 
+	- Use cheatsheet-to-dita.xsl which requires an XSLT 2.0 compliant processor like Saxon 9+ HE.
+	- This file takes as input a collection on XML files (Eclipse cheat sheets) and creates multiple output files - a parent DITA Map and some associated tasks.
+2.
+	- DITA-OT is required and that "info.debrief" plugin be placed in the DITA-OT plugins directory.
+	- Set the transtype to 'debrief'
+	- This plugin code takes as input the DITA XML and mainly uses custom XSLT, XPath and XSL-FO with some other config files to create the PDF.
+	- We used Apache FOP for the FO Processor
+	- Currently tested with DITA-OT 1.8.5.
+	
 
-Currently tested with DITA-OT 1.8.5.
-
-Set the transtype to 'debrief'.
-
-All of this code can be put into Eclipse with ANT to build automatically.
+These two steps can be rolled into one with ANT to build automatically and run from inside Eclipse to go from Eclipse cheat sheets to PDF in one go.
 
 Development was originally done in oXygen XML editor then ported to Eclipse.
+
+The roadmap for this project is to include the latest version of DITA-OT 2.1, Apache FOP and Saxon, with the Apache ANT build code etc and full instructions on how to get up and running inside Eclipse. 
 
