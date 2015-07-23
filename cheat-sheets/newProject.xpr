@@ -451,6 +451,7 @@
     </meta>
     <projectTree name="newProject.xpr">
         <folder path="analysis/"/>
+        <folder path="dita-transform/"/>
         <folder path="dita/"/>
         <folder path="GettingStarted/"/>
         <folder path="narratives/"/>

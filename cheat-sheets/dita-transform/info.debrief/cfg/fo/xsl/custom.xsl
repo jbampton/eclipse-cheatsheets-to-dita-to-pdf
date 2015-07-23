@@ -2,7 +2,7 @@
 <xsl:stylesheet exclude-result-prefixes="ditaarch opentopic e" version="2.0" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:e="print-pdf" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:opentopic="http://www.idiominc.com/opentopic" xmlns:opentopic-func="http://www.idiominc.com/opentopic/exsl/function" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  xmlns:xs="http://www.w3.org/2001/XMLSchema">
     
 	<xsl:attribute-set name="topic.title" use-attribute-sets="common.title">
-		<xsl:attribute name="border-bottom">3pt solid #1d3768</xsl:attribute>
+	    <xsl:attribute name="border-bottom">3pt solid #1d3768</xsl:attribute>
         <xsl:attribute name="space-before">0pt</xsl:attribute>
         <xsl:attribute name="space-after">16.8pt</xsl:attribute>
         <xsl:attribute name="font-size">18pt</xsl:attribute>
@@ -91,7 +91,6 @@
 		<xsl:attribute name="extent">
 		  <xsl:value-of select="'200pt'"/>
 		</xsl:attribute>
-		<!--<xsl:attribute name="display-align">before</xsl:attribute>-->
 	</xsl:attribute-set>	
 	  
 	<xsl:attribute-set name="body" use-attribute-sets="base-font">
@@ -122,22 +121,19 @@
 		<xsl:attribute name="start-indent">15pt</xsl:attribute>
     </xsl:attribute-set>
 	
-	<!--Ordered list-->
     <xsl:attribute-set name="ol" use-attribute-sets="common.block">
         <xsl:attribute name="provisional-distance-between-starts">1mm</xsl:attribute>
         <xsl:attribute name="provisional-label-separation">1mm</xsl:attribute>
-<!--		<xsl:attribute name="margin-left">-8pt</xsl:attribute>-->
     </xsl:attribute-set>
 	
-	<xsl:template match="/" mode="toc"></xsl:template>
+	<xsl:template match="/" mode="toc"/>
 	
 	<xsl:template name="createFrontMatter_1.0">
         <fo:page-sequence master-reference="front-matter" xsl:use-attribute-sets="__force__page__count">
             <xsl:call-template name="insertFrontMatterStaticContents"/>
             <fo:flow flow-name="xsl-region-body">
                 <fo:block xsl:use-attribute-sets="__frontmatter">
-                    <!-- set the title -->
-                    
+                    <!-- set the title -->                    
                     <fo:block xsl:use-attribute-sets="__frontmatter__owner">
                         <fo:table xsl:use-attribute-sets="TableNB">
 							<fo:table-column column-width="proportional-column-width(1)" column-number="1"/>
@@ -160,8 +156,6 @@
 								</fo:table-row>
 							</fo:table-body>
 						</fo:table>
-					   
-					   
                     </fo:block>
                 </fo:block>
             </fo:flow>
@@ -205,7 +199,7 @@
         </fo:table>
     </xsl:template>
     
-    <xsl:template match="*[contains(@class, ' task/info ')]"></xsl:template>
+    <xsl:template match="*[contains(@class, ' task/info ')]"/>
 		
     <xsl:template match="*[contains(@class, ' task/info ')]" mode="oursinline">
 		<fo:block xsl:use-attribute-sets="info">
@@ -254,7 +248,7 @@
 		</fo:block>
     </xsl:template>
 	
-	<xsl:template match="*[contains(@class, ' task/stepxmp ')]"></xsl:template>	
+	<xsl:template match="*[contains(@class, ' task/stepxmp ')]"/>	
 	
     <xsl:template name="insertBodyFirstFooter">
 		<fo:static-content flow-name="first-body-footer">
@@ -589,7 +583,6 @@
                 <fo:region-after region-name="odd-glossary-footer" xsl:use-attribute-sets="region-after"/>
             </fo:simple-page-master>
 
-
             <!--Sequences-->
           <xsl:call-template name="generate-page-sequence-master">
             <xsl:with-param name="master-name" select="'toc-sequence'"/>
@@ -598,7 +591,6 @@
           <xsl:call-template name="generate-page-sequence-master">
             <xsl:with-param name="master-name" select="'body-sequence'"/>
             <xsl:with-param name="master-reference" select="'body'"/>
-			
           </xsl:call-template>
           <xsl:call-template name="generate-page-sequence-master">
             <xsl:with-param name="master-name" select="'ditamap-body-sequence'"/>
@@ -627,7 +619,6 @@
         <xsl:variable name="topicType">
             <xsl:call-template name="determineTopicType"/>
         </xsl:variable>
-
         <xsl:choose>
             <xsl:when test="$topicType = 'topicChapter'">
                 <xsl:call-template name="processTopicChapter"/>
@@ -687,7 +678,7 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
-      <xsl:otherwise>
+            <xsl:otherwise>
                 <xsl:apply-templates select="." mode="processUnknowTopic">
                     <xsl:with-param name="topicType" select="$topicType"/>
                 </xsl:apply-templates>
@@ -731,4 +722,5 @@
 		  </fo:repeatable-page-master-alternatives>
 		</fo:page-sequence-master>
 	  </xsl:template>
+    
 </xsl:stylesheet>
