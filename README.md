@@ -20,7 +20,7 @@ The two parts of the transformation comprise of:
 	- We used DITA-OT 1.8.5.
 
 
-These two steps can be rolled into one with ANT to build automatically and run from inside Eclipse to go from Eclipse cheat sheets to PDF in one go.
+These two steps can be rolled into one with Apache ANT to build automatically and run from inside Eclipse to go from Eclipse cheat sheets to PDF in one go.
 
 Development was originally done in oXygen XML editor then ported to Eclipse.
 
@@ -31,7 +31,9 @@ Eclipse - https://eclipse.org/
 
 Eclipse cheat sheets - http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-cheatsheets.htm
 
-Apache Fop - https://xmlgraphics.apache.org/fop/
+Apache FOP - https://xmlgraphics.apache.org/fop/
+
+Apache ANT - http://ant.apache.org
 
 Saxon - http://saxon.sourceforge.net/
 
@@ -44,3 +46,5 @@ DITA-Open Toolkit - http://www.dita-ot.org/
 W3C - The Extensible Stylesheet Language Family (XSL) - http://www.w3.org/Style/XSL/
 
 XML - https://en.wikipedia.org/wiki/XML
+
+oXygen XML Editor - http://www.oxygenxml.com
