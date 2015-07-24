@@ -3,8 +3,8 @@
   PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
    <title>Debrief Topic Map</title>
-   <topicref href="dita/intro_composite.xml.dita" type="task"/>
-   <topicref href="dita/analysis_composite.xml.dita" type="task"/>
-   <topicref href="dita/s2r_composite.xml.dita" type="task"/>
-   <topicref href="dita/satc_composite.xml.dita" type="task"/>
+   <topicref href="dita/intro_composite.dita" type="task"/>
+   <topicref href="dita/analysis_composite.dita" type="task"/>
+   <topicref href="dita/s2r_composite.dita" type="task"/>
+   <topicref href="dita/satc_composite.dita" type="task"/>
 </map>
