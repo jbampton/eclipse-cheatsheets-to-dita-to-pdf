@@ -10,7 +10,7 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>dita/map.ditamap</String>
+                                    <String>dita-output/map.ditamap</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
@@ -35,6 +35,21 @@
                                 <field name="scenarioTypes">
                                     <list>
                                         <String>XML</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>dita/map.ditamap</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>DITA Map PDF - Copy</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>DITAMAP</String>
                                     </list>
                                 </field>
                             </scenarioAssociation>
@@ -401,10 +416,10 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="outputFile">
-                                    <File>${pd}/dita/map.ditamap</File>
+                                    <File>${pd}/dita-output/map.ditamap</File>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pd}/dita/map.ditamap</String>
+                                    <String>${pd}/dita-output/map.ditamap</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>
@@ -413,7 +428,7 @@
                                     <null/>
                                 </field>
                                 <field name="openInEditor">
-                                    <Boolean>false</Boolean>
+                                    <Boolean>true</Boolean>
                                 </field>
                                 <field name="showInHTMLPane">
                                     <Boolean>false</Boolean>
@@ -450,15 +465,9 @@
         </options>
     </meta>
     <projectTree name="newProject.xpr">
-        <folder path="analysis/"/>
-        <folder path="dita-transform/"/>
-        <folder path="dita/"/>
-        <folder path="GettingStarted/"/>
-        <folder path="narratives/"/>
-        <folder path="S2R/"/>
-        <folder path="satc/"/>
-        <folder path="sensor/"/>
-        <folder path="ViewingPlots/"/>
+        <folder path="cheatsheets-xml-test-data/"/>
+        <folder path="dita-ot-plugin/"/>
+        <folder path="dita-output/"/>
         <file name="cheatsheet-to-dita.xsl"/>
     </projectTree>
 </project>
