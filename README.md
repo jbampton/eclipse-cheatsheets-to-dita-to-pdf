@@ -35,7 +35,7 @@ Project Set Up, Build and Run.
 	- run Eclipse and go -> File -> New -> Project
 	- Select 'Java Project' click next.
 	- Enter 'eclipse-cheatsheets-to-dita-to-pdf' in the Project Name field
-	- Un-check location checkbox and enter in the parent folder of the project, this is the root Git folder.
+	- Un-check location checkbox and enter in the parent folder of the project.
 	- In project layout select the 'Use project folder as root for sources and class files' radio button and then click next
 	-
 	
