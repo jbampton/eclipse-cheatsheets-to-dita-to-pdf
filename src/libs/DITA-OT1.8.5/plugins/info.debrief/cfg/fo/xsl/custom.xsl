@@ -10,7 +10,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema">
     
 	<xsl:attribute-set name="topic.title" use-attribute-sets="common.title">
-	    <xsl:attribute name="border-bottom">3pt solid #1d3768</xsl:attribute>
+		<xsl:attribute name="border-bottom">3pt solid #1d3768</xsl:attribute>
         <xsl:attribute name="space-before">0pt</xsl:attribute>
         <xsl:attribute name="space-after">16.8pt</xsl:attribute>
         <xsl:attribute name="font-size">18pt</xsl:attribute>
@@ -47,7 +47,7 @@
 		<xsl:attribute name="space-before">10pt</xsl:attribute>
 		<xsl:attribute name="space-before.conditionality">retain</xsl:attribute>
 	</xsl:attribute-set>
-	
+		
 	<xsl:attribute-set name="__fo__root" use-attribute-sets="base-font">
         <xsl:attribute name="font-family">sans-serif</xsl:attribute>
         <xsl:attribute name="xml:lang" select="translate($locale, '_', '-')"/>
@@ -149,12 +149,12 @@
 							<fo:table-body>  
 								<fo:table-row>
 									<fo:table-cell>
-										<fo:block xsl:use-attribute-sets=	"__frontmatter__title">
-											<fo:external-graphic src="url({concat($artworkPrefix, '/Customization/OpenTopic/common/artwork/logo.png')})" />
+										<fo:block xsl:use-attribute-sets="__frontmatter__title">
+											<fo:external-graphic src="url({concat($artworkPrefix, '/Customization/OpenTopic/common/artwork/logo.png')})"/>
 										</fo:block>
 									</fo:table-cell>
 									<fo:table-cell>
-										<fo:block text-align="left" xsl:use-attribute-sets=	"__frontmatter__title">
+										<fo:block text-align="left" xsl:use-attribute-sets="__frontmatter__title">
 											<fo:block padding-top="1cm">
 											Debrief Cheat Sheets
 											</fo:block>
@@ -456,7 +456,7 @@
 					</xsl:call-template>
 				</fo:block>
 				<fo:block  xsl:use-attribute-sets="schoolstyle" text-align="left" start-indent="20mm">
-					Name: <fo:leader leader-length="3cm" leader-pattern-width="1mm" leader-pattern="rule"></fo:leader> Date: <fo:leader leader-length="3cm" leader-pattern-width="1mm" leader-pattern="rule"></fo:leader>
+					Name: <fo:leader leader-length="3cm" leader-pattern-width="1mm" leader-pattern="rule"/> Date: <fo:leader leader-length="3cm" leader-pattern-width="1mm" leader-pattern="rule"/>
 				</fo:block>
 				<fo:block>
 					<fo:external-graphic content-width="175.9mm" src="url({concat($artworkPrefix, '/Customization/OpenTopic/common/artwork/debrief_banner.jpg')})" />

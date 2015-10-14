@@ -44,7 +44,6 @@ Project Set Up, Build and Run.
 	- more work to come on adding to the build file to do the second step
 
 
-
 Eclipse - https://eclipse.org/ 
 
 Eclipse cheat sheets - http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-cheatsheets.htm
@@ -65,6 +64,8 @@ DITA-OT installing plugins - http://dita-ot.sourceforge.net/1.7/dev_ref/plugins-
 
 W3C - The Extensible Stylesheet Language Family (XSL) - http://www.w3.org/Style/XSL/
 
+W3C XSLT 2.0 - http://www.w3.org/TR/xslt20/ 
+
 XSL Formatting Objects - https://en.wikipedia.org/wiki/XSL_Formatting_Objects
 
 XSL-FO Processors - http://www.w3.org/community/ppl/wiki/XSL-FO_Processors
@@ -78,7 +79,3 @@ Generate sample DITA-OT plugin - https://dita-generator-hrd.appspot.com/pdf-plug
 Creating DITA-OT plugins - http://dita-ot.sourceforge.net/1.5.4/dev_ref/plugins-overview.html
 
 Customizing PDF output - http://www.dita-ot.org/1.8/readme/dita2pdf-customization.html
-
-
-
-
