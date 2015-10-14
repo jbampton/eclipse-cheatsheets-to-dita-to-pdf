@@ -20,6 +20,23 @@ The two parts of the transformation comprise of:
 	- We used Apache FOP 1.0 for the FO Processor
 	- We used DITA-OT 1.8.5.
 
+Project Set Up.
+	- Download Eclipse Mars and install and then open.
+	- Switch your Eclipse workspace to the root Git folder.
+	- clone Git repo
+	- run Eclipse and go -> File -> New -> Project
+	- Select 'Java Project' click next.
+	- Enter 'eclipse-cheatsheets-to-dita-to-pdf' in the Project Name field
+	- Un-check location checkbox and enter in the parent folder of the project, this is the root Git folder.
+	- In project layout select the 'Use project folder as root for sources and class files' radio button and then click next
+	
+Build and Run Project
+	- 
+	
+	
+ 
+
+
 
 These two steps can be rolled into one with Apache ANT to build automatically and run from inside Eclipse to go from Eclipse cheat sheets to PDF in one go.
 

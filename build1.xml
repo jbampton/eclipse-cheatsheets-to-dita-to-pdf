@@ -2,7 +2,7 @@
 <?eclipse.ant.import?>
 <project name="eclipse-cheatsheets-to-dita-to-pdf" default="TransformAll">
      <target name="xslt2">
-           <!-- create the root Ditamap file -->
+           <!-- create the root Ditamap file and child task files -->
            <xslt in="test.xml" out="dita-output/map.ditamap"
                style="src/cheatsheet-to-dita.xsl" force="true">
                <classpath location="src/libs/SaxonHE9-6-0-7J/saxon9he.jar" />

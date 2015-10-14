@@ -1,3 +1,4 @@
 *.xpr
 cheat-sheets/*.xpr
 /bin/
+/nbproject/private/
