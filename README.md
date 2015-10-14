@@ -1,6 +1,6 @@
 # eclipse-cheatsheets-to-dita-to-pdf
 
-I worked on https://github.com/debrief/debrief and this project is based on part of the document publishing in that project.  This is mainly a Java based project in that all the code libraries use Java (Apache FOP, Saxon, DITA-OT)
+I worked on https://github.com/debrief/debrief and this project is based on part of the document publishing in that project.  This is mainly a Java based project in that all the code libraries use Java (Apache FOP, Saxon, DITA-OT, Apache ANT, Eclipse)
 
 Basically this code takes a set of Eclipse cheat sheets and transforms them to PDF. 
 See the glossary of links below which describe the technologies being used.
@@ -19,7 +19,8 @@ The two parts of the transformation comprise of:
 	- You must then integrate "info.debrief" with the DITA-OT plug-in integration process using Apache Ant
 	- Set the transtype to 'debrief'
 	- the 'dita-output/out' folder contains the resulting PDF output from step 2
-	- This plugin code takes as input the DITA XML and mainly uses custom XSLT, XPath and XSL-FO with some other config files to create the PDF.
+	- The 'info.debrief' plugin is comprised of some XML config files, some artwork images and some custom XSL (XSLT/XSL-FO/XPath) code 
+	- the 'info.debrief' plugin produces the PDF via a XSL - Formatting Objects Processor (FO Processor)
 	- We used Apache FOP 1.0 for the FO Processor
 	- We used DITA-OT 1.8.5.
 
@@ -40,9 +41,9 @@ Build and Run Project
 	- this should run and re-create the DITA XML output in the 'dita-output' directory.  There should be five DITA files, one parent Ditamap and 4 task files with the Ditamap at the root of the output folder with task files nested together in the sub folder 'dita'.
 	- more work to come on adding to the build file to do the second step
 
-Development was originally done in oXygen XML editor then ported to Eclipse.
+Development was originally done in oXygen XML Editor then ported to Eclipse.
 
-The roadmap for this project is to include the latest version of all the libraries like DITA-OT 2.1, Apache FOP 2.0, with the Apache ANT build code etc and full instructions on how to get up and running inside Eclipse. 
+The roadmap for this project is make the "info.debrief" custom DITA-OT plugin compatible with the latest versions of the libraries (DITA-OT 2.1, Apache FOP 2.0) and with the full Apache ANT build code and in depth instructions on how to get up and running inside Eclipse and more.... 
 
 Eclipse - https://eclipse.org/ 
 
@@ -63,6 +64,10 @@ DITA-Open Toolkit - http://www.dita-ot.org/
 DITA-OT installing plugins - http://dita-ot.sourceforge.net/1.7/dev_ref/plugins-installing.html
 
 W3C - The Extensible Stylesheet Language Family (XSL) - http://www.w3.org/Style/XSL/
+
+XSL Formatting Objects - https://en.wikipedia.org/wiki/XSL_Formatting_Objects
+
+XSL-FO Processors - http://www.w3.org/community/ppl/wiki/XSL-FO_Processors
 
 XML - https://en.wikipedia.org/wiki/XML
 
