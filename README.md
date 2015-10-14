@@ -35,9 +35,12 @@ Project Set Up, Build and Run.
 	- run Eclipse and go -> File -> New -> Project
 	- Select 'Java Project' click next.
 	- Enter 'eclipse-cheatsheets-to-dita-to-pdf' in the Project Name field
-	- Un-check location checkbox and enter in the parent folder of the project.
-	- In project layout select the 'Use project folder as root for sources and class files' radio button and then click next
-	-
+	- Un-check location checkbox and enter in the parent folder of the project. In project layout select the 'Use project folder as root for sources and class files' radio button and then click next.
+	
+	
+	
+	
+	
 	
 2.  - right click on build1.xml and select -> Run As -> Ant Build
 	- this should run and re-create the DITA XML output in the 'dita-output' directory.  There should be five DITA files, one parent Ditamap and 4 task files with the Ditamap at the root of the output folder with task files nested together in the sub folder 'dita'.
