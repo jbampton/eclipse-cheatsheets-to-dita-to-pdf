@@ -5,7 +5,9 @@
 -->
 <project name="org.dita.pdf2.fop">
 
-  <property name="fop.home" value="${dita.plugin.org.dita.pdf2.dir}/fop"/>
+	
+	
+  <property name="fop.home" value="src/libs/fop-1.1"/>
 
   <condition property="hasFopLib">
     <available classname="org.apache.fop.tools.anttasks.Fop">
@@ -13,7 +15,7 @@
         <fileset dir="${fop.home}">
           <include name="build/fop.jar"/>
           <include name="lib/*.jar"/>
-          <include name="build/fop-hyph.jar"/>
+         
         </fileset>
       </classpath>
     </available>
@@ -160,7 +162,7 @@
         </fileset>
         <fileset dir="${fop.home}/build">
           <include name="fop.jar"/>
-          <include name="fop-hyph.jar"/>
+        
         </fileset>
       </classpath>
     </taskdef>
