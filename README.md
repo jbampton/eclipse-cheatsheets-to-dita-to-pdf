@@ -10,12 +10,15 @@ It's a two step process first the DITA XML is created from the Eclipse cheat she
 The two parts of the transformation comprise of:
 
 1.	- Use cheatsheet-to-dita.xsl which requires an XSLT 2.0 compliant processor.
-	- We used SaxonHE9-6-0-1J from Saxonica.
+	- We used SaxonHE9-6-0-7J from Saxonica.
 	- This file takes as input a collection on XML files (Eclipse cheat sheets) and creates multiple output files - a 	parent DITA Map and some associated tasks.
+	- the 'dita-output' folder contains the dynamically created DITA files from this step
+	
 	
 2.	- "info.debrief" plugin should be placed in the DITA-OT plugins directory.
 	- You must then integrate "info.debrief" with the DITA-OT plug-in integration process using Apache Ant
 	- Set the transtype to 'debrief'
+	- the 'dita-output/out' folder contains the resulting PDF output from step 2
 	- This plugin code takes as input the DITA XML and mainly uses custom XSLT, XPath and XSL-FO with some other config files to create the PDF.
 	- We used Apache FOP 1.0 for the FO Processor
 	- We used DITA-OT 1.8.5.
