@@ -3,14 +3,56 @@
 <project name="eclipse-cheatsheets-to-dita-to-pdf" default="TransformAll" basedir=".">
      
 	<property name="step1.code" value="src/cheatsheet-to-dita.xsl"/>
-		<property name="dita.dir" value="src/libs/DITA-OT1.8.5"/>
+	
 		<property name="dita.output.dir" value="dita-output"/>
-		<property name="path.to.saxon" value="src/libs/SaxonHE9-6-0-7J/saxon9he.jar"/>
-		<property name="dita.plugin.org.dita.pdf2.dir" value="src/libs/DITA-OT1.8.5/plugins/org.dita.pdf2"/>
-		<property name="path.to.fop" value="src/libs/fop-1.1"/>
+		<property name="path.to.saxon" value="src${file.separator}libs${file.separator}SaxonHE9-6-0-7J${file.separator}saxon9he.jar"/>
+		<property name="dita.plugin.org.dita.pdf2.dir" value="src${file.separator}libs${file.separator}DITA-OT1.8.5${file.separator}plugins${file.separator}org.dita.pdf2"/>
+		<property name="path.to.fop" value="src${file.separator}libs${file.separator}fop-1.1"/>
      
 	
-	
+	<property file="${basedir}/local.properties"/>
+	  
+	  <!-- Initialize DITA-OT base directory -->
+	  <dirname property="ant.file.DOST.dir" file="${ant.file.DOST}"/>
+	  <condition property="dita.dir" value="${ant.file.DOST.dir}">
+	    <not>
+	      <isset property="dita.dir"/>
+	    </not>
+	  </condition>
+	  <condition property="dita.dir" value="src${file.separator}libs${file.separator}DITA-OT1.8.5">
+	    <not>
+	      <isset property="dita.dir"/>
+	    </not>
+	  </condition>
+	    
+	  <path id="dost.class.path">
+	    <pathelement location="${path.to.fop}${file.separator}build${file.separator}fop.jar"/>
+	    <pathelement location="${dita.dir}${file.separator}lib${file.separator}dost.jar"/>
+	  </path>
+	  
+	  <target name="init">
+	    <dita-ot-fail id="DOTA001F">
+	      <condition>
+	        <and>
+	          <not><equals arg1="${transtype}" arg2="troff" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="eclipsecontent" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="xhtml" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="html5" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="eclipsehelp" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="odt" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="pdf2" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="tocjs" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="wordrtf" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="docbook" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="htmlhelp" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="com.couchbase.docs.html" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="pdf" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="javahelp" casesensitive="false"/></not>
+	        </and>
+	      </condition>
+	      <param name="1" value="${transtype}"/>
+	    </dita-ot-fail>
+	    <condition property="transtarget" value="pdf2" else="${transtype}">
+	      <equals arg1="${transtype}" arg2="pdf" casesensitive="false"/>
+	    </condition>
+	    <condition property="clean.temp" value="true">
+	      <not><isset property="clean.temp"/></not>
+	    </condition>
+	    <condition property="clean-temp.skip">
+	      <isfalse value="${clean.temp}"/>
+	    </condition>
+	    <antcall>
+	      <target name="dita2${transtarget}"/>
+	      <target name="clean-temp"/>
+	    </antcall>
+	  </target>
 	  
 	  
 	
@@ -50,7 +92,7 @@
 	    </condition>
 	  </target>
 
-	  <target name="dita2pdf2" depends="dita2pdf2.init"></target>
+		<target name="dita2pdf2" depends="dita2pdf2.init, init, preprocess, map2pdf2, topic2pdf2"></target>
 
 	  <target name="transform.topic2pdf.init">
 	    <condition property="pdf2.temp.dir" value="${dita.temp.dir}" else="${dita.map.output.dir}">
@@ -77,7 +119,7 @@
 	    </loadfile>
 	    
 	    <property name="lib.dir" value="${dita.dir}/lib"></property>
-	    <property name="fo.lib.dir" value="${dita.plugin.org.dita.pdf2.dir}/lib"></property>
+	    <property name="fo.lib.dir" value="${path.to.fop}"></property>
 	    <property name="merged.file" value="${dita.map.filename.root}_MERGED.xml"></property>
 	    
 	    <!-- configure FO engines -->
@@ -105,7 +147,7 @@
 	        
 	    <path id="project.class.path">
 	      <pathelement path="${java.class.path}"></pathelement>
-	      <fileset dir="${lib.dir}/saxon">
+	      <fileset dir="${lib.dir}/SaxonHE9-6-0-7J">
 	        <include name="**/*.jar"></include>
 	      </fileset>
 	      <!--

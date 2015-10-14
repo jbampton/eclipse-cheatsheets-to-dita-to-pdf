@@ -29,14 +29,14 @@ The two parts of the transformation comprise of:
 
 Project Set Up, Build and Run.
 
-1. 	- Download Eclipse Mars and install and then open.
-	- Switch your Eclipse workspace to the root Git folder.
+1. 	- Download Eclipse Mars and install and then open.	
 	- clone Git repo
+	- Switch your Eclipse workspace to the parent of the folder above.
 	- run Eclipse and go -> File -> New -> Project
 	- Select 'Java Project' click next.
 	- Enter 'eclipse-cheatsheets-to-dita-to-pdf' in the Project Name field
 	- Un-check location checkbox and enter in the parent folder of the project, this is the root Git folder.
-	- In project layout select the 'Use project folder as root for sources and class files' radio button and then click next	
+	- In project layout select the 'Use project folder as root for sources and class files' radio button and then click next
 	-
 	
 2.  - right click on build1.xml and select -> Run As -> Ant Build
