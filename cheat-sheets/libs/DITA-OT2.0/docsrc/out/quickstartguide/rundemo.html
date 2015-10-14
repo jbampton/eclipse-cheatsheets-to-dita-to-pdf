@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2013" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2013" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="task" />
+<meta name="DC.Title" content="Running the demo build" />
+<meta name="abstract" content="After you install the full-easy-install package, run the demo build to see the type of output that is produced by the DITA Open Toolkit." />
+<meta name="Description" content="After you install the full-easy-install package, run the demo build to see the type of output that is produced by the DITA Open Toolkit." />
+<meta name="DC.Relation" scheme="URI" content="../quickstartguide/exploring-the-dita-ot.html" />
+<meta name="DC.Relation" scheme="URI" content="../readme/installing-full-easy.html" />
+<meta name="DC.Relation" scheme="URI" content="../quickstartguide/runmore.html" />
+<meta name="DC.Date" scheme="iso8601" content="2013-06-06" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="rundemo" />
+<meta name="DC.Language" content="en-us" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="../ibmdita.css" />
+<link rel="Start" href="../quickstartguide/exploring-the-dita-ot.html" />
+<link rel="Prev" href="../readme/installing-full-easy.html" />
+<link rel="Next" href="../quickstartguide/runmore.html" />
+<title>Running the demo build</title>
+</head>
+<body role="main" id="rundemo">
+<h1 class="title topictitle1">Running the demo build</h1>
+<div class="body taskbody"><p class="shortdesc">After you install the full-easy-install package, run the demo build to see the type of
+output that is produced by the DITA Open Toolkit.</p>
+<div class="tasklabel"><h2 class="sectiontitle tasklabel">Procedure</h2></div><ol class="ol steps"><li class="li step stepexpand"><span class="ph cmd">Run the <span class="ph filepath">startcmd</span> file that is applicable for your
+                    operating system.</span> The <span class="ph filepath">startcmd.bat</span> and <span class="ph filepath">startcmd.sh</span>
+                    files are in the directory where you installed the DITA-OT.</li>
+<li class="li step stepexpand"><span class="ph cmd" id="rundemo__d11e35">From the DITA-OT shell, enter the following
+                    command:</span>                     <pre class="pre codeblock"><code>ant -f build_demo.xml</code></pre>
+
+                 You receive the following
+                    prompt:<pre class="pre codeblock"><code>[echo] Please enter the filename for the DITA map that you 
+[echo] want to build including the directory path (if any). 
+[echo] The filename must have the .ditamap extension. 
+[echo] Note that relative paths that climb (..) are not supported yet. 
+[echo] To build the sample, press return without entering anything. 
+[input] The DITA map filename: [C:\DITA-OT1.6.M5\samples\hierarchy.ditamap]</code></pre>
+</li>
+<li class="li step stepexpand"><span class="ph cmd">Press <span class="ph uicontrol">Enter</span>.</span> You receive the following
+prompt:<pre class="pre codeblock"><code>[echo] 
+[echo] Please enter the name of the output directory or press return 
+[echo] to accept the default. 
+[input] The output directory (out): [out]</code></pre>
+</li>
+<li class="li step stepexpand"><span class="ph cmd">Press <span class="ph uicontrol">Enter</span>.</span> You receive the following
+prompt:<pre class="pre codeblock"><code>[echo] Please enter the type of output to generate. 
+[echo] Options include: eclipse, tocjs, htmlhelp, javahelp, pdf, or web 
+[echo] Use lowercase letters. 
+[echo] 
+[input] The output type: (eclipse, tocjs, htmlhelp, javahelp, pdf, [web], docbook)</code></pre>
+</li>
+<li class="li step stepexpand"><span class="ph cmd">Press <span class="ph uicontrol">Enter</span> to accept the default transformation type:
+<span class="keyword option">web</span>.</span> This will build XHTML files from the DITA source. You receive the following
+prompt:<pre class="pre codeblock"><code>[echo] Ready to build C:\DITA-OT1.6.M5\samples\hierarchy.ditamap 
+[echo] for web in out 
+[echo] 
+[input] Continue? (Y, [y], N, n)</code></pre>
+</li>
+<li class="li step stepexpand"><span class="ph cmd">Press <span class="ph uicontrol">Y</span> or <span class="ph uicontrol">y</span> to start the DITA-OT
+transformation.</span> The DITA-OT logs information to the command-prompt or terminal window. At the end, you
+see the following
+information:<pre class="pre codeblock"><code>prompt.output: 
+[echo] 
+[echo] output in the out directory 
+[echo] 
+[echo] Before rebuilding, please delete the output or the directory. 
+BUILD SUCCESSFUL Total time: <var class="keyword varname">X</var> minutes <var class="keyword varname">X</var> seconds</code></pre>
+</li>
+<li class="li step stepexpand"><span class="ph cmd">Go to the <span class="ph filepath">out/</span> directory and open the <span class="ph filepath">toc.html</span> file
+in a Web browser.</span> <div class="fig fignone"><span class="figcap">Figure 1. XHTML output for the sample files</span><div class="imageleft"><img class="image" src="images/xhtml-output.png" alt="The garage sample files transformed to XHTML and viewed in a Web browser" /></div></div>
+</li>
+</ol>
+<div class="section result"><div class="tasklabel"><h2 class="sectiontitle tasklabel">Results</h2></div>The DITA-OT transformed the<span class="ph filepath"> hierarchy.ditamap</span> file (located in the
+samples directory) to XHTML; it wrote the output to the <span class="ph filepath">out/</span>
+directory.</div>
+</div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../quickstartguide/exploring-the-dita-ot.html" title="The Getting Started Guide is designed to provide a guided exploration of the DITA Open Toolkit. It is geared for an audience that has little or no knowledge of build scripts or DITA-OT parameters. It walks the novice user through installing the full-easy-install version of the toolkit and running a prompted build.">Getting Started with the DITA Open Toolkit</a></div>
+<div class="previouslink"><strong>Previous topic:</strong> <a class="link" href="../readme/installing-full-easy.html" title="For the simplest installation experience, install the full-easy-install package. This package can be installed on Linux, Mac OSX, and Windows. It contains everything that you need to run the DITA-OT except for Java.">Installing the full-easy-install package</a></div>
+<div class="nextlink"><strong>Next topic:</strong> <a class="link" href="../quickstartguide/runmore.html" title="You can use the demo build to generate output for your own DITA content.">Building your own content using the demo build</a></div>
+</div>
+</div></body>
+</html>

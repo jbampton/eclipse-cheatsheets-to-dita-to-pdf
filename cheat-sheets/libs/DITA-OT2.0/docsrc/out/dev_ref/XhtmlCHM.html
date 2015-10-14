@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2013" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2013" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="concept" />
+<meta name="DC.Title" content="HTML Help processing" />
+<meta name="abstract" content="The htmlhelp transformation created HTML Help control files. If the build runs on a system that has the HTML Help compiler installed, the control files are compiled into a CHM file." />
+<meta name="Description" content="The htmlhelp transformation created HTML Help control files. If the build runs on a system that has the HTML Help compiler installed, the control files are compiled into a CHM file." />
+<meta name="DC.Relation" scheme="URI" content="../dev_ref/XhtmlWithNavigation.html" />
+<meta name="DC.Date" scheme="iso8601" content="2013-06-06" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="xhtmlchm" />
+<meta name="DC.Language" content="en-us" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="../ibmdita.css" />
+<link rel="Start" href="../dev_ref/XhtmlWithNavigation.html" />
+<title>HTML Help processing</title>
+</head>
+<body role="main" id="xhtmlchm">
+<h1 class="title topictitle1">HTML Help processing</h1>
+<div class="body conbody"><p class="shortdesc">The <span class="keyword option">htmlhelp</span> transformation created HTML Help control files. If the
+build runs on a system that has the HTML Help compiler installed, the control files are compiled
+into a CHM file.</p>
+<div class="section"><p class="p">Once the pre-processing and XHTML processes are completed, most of the HTML Help processing is
+handled by the following targets:</p>
+
+<dl class="dl"><dt class="dt dlterm"><samp class="ph codeph">dita.map.htmlhelp</samp></dt>
+<dd class="dd">Create the HHP, HHC, and HHK files. The HHK file is sorted based on the language of the
+map.</dd>
+<dt class="dt dlterm"><samp class="ph codeph">dita.htmlhelp.convertlang</samp></dt>
+<dd class="dd">Ensures that the content can be processed correctly by the compiler, and that the appropriate
+code pages and languages are used.</dd>
+<dt class="dt dlterm"><samp class="ph codeph">compile.HTML.Help</samp></dt>
+<dd class="dd">Attempts to detect the HTML Help compiler. If the compiler is found, the full project is
+compiled into a single CHM file.</dd>
+</dl>
+</div>
+</div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../dev_ref/XhtmlWithNavigation.html" title="The DITA-OT ships with several varieties of XHTML output, each of which follows roughly the same path through the processing pipeline. All XHTML-based transformation begin with the same call to the pre-processing module, after which they generate XHTML files and then branch to create the transformation-specific navigation files.">XHTML processing modules</a></div>
+</div>
+</div></body>
+</html>

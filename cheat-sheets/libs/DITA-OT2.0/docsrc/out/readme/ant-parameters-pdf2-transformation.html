@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2013" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2013" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="reference" />
+<meta name="DC.Title" content="Ant parameters: PDF transformation" />
+<meta name="abstract" content="Certain parameters are specific to the PDF2 transformation." />
+<meta name="Description" content="Certain parameters are specific to the PDF2 transformation." />
+<meta name="DC.subject" content="Ant, parameters, args.bookmap-order, args.fo.userconfig, args.gen.task.lbl, args.rellinks, args.xsl.pdf, custom.xep.config, customization.dir, pdf.formatter, publish.required.cleanup, retain.topic.fo, XSLT parameters, org.dita.pdf2.use-out-temp, publishRequiredCleanup" />
+<meta name="keywords" content="Ant, parameters, args.bookmap-order, args.fo.userconfig, args.gen.task.lbl, args.rellinks, args.xsl.pdf, custom.xep.config, customization.dir, pdf.formatter, publish.required.cleanup, retain.topic.fo, XSLT parameters, org.dita.pdf2.use-out-temp, publishRequiredCleanup" />
+<meta name="DC.Relation" scheme="URI" content="../readme/dita-ot_ant_properties.html" />
+<meta name="DC.Relation" scheme="URI" content="../readme/dita2pdf.html" />
+<meta name="DC.Relation" scheme="URI" content="../readme/ant-parameters-all-transformation-types.html" />
+<meta name="DC.Date" scheme="iso8601" content="2013-06-06" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="ant-parameters-pdf2-transformation" />
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="../ibmdita.css" />
+<link rel="Start" href="../readme/dita-ot_ant_properties.html" />
+<title>Ant parameters: PDF transformation</title>
+</head>
+<body role="main" id="ant-parameters-pdf2-transformation">
+<h1 class="title topictitle1">Ant parameters: PDF transformation</h1>
+<div class="body refbody"><p class="shortdesc">Certain parameters are specific to the PDF2 transformation.</p>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Table 1. Ant parameters: PDF transformation</span></caption><thead class="thead" align="left"><tr class="row"><th class="entry" valign="top" width="27.27272727272727%" id="d27749e53">Parameters</th>
+<th class="entry" valign="top" width="72.72727272727273%" id="d27749e55">Description</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr id="ant-parameters-pdf2-transformation__args.bookmap-order" class="row"><td class="entry" valign="top" width="27.27272727272727%" headers="d27749e53 "><span class="keyword parmname parmname">args.bookmap-order</span></td>
+<td class="entry" valign="top" width="72.72727272727273%" headers="d27749e55 ">Specifies if the frontmatter and backmatter content
+              order is retained in bookmap. The allowed values are <span class="keyword option">retain</span> and
+                <span class="keyword option">discard</span>; the default value is <span class="keyword option">discard</span>.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="27.27272727272727%" headers="d27749e53 "><span class="keyword parmname parmname">args.fo.userconfig</span></td>
+<td class="entry" valign="top" width="72.72727272727273%" headers="d27749e55 ">Specifies the user configuration file for
+              FOP.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="27.27272727272727%" headers="d27749e53 "><span class="keyword parmname parmname">args.gen.task.lbl</span></td>
+<td class="entry" valign="top" width="72.72727272727273%" headers="d27749e55 ">Specifies whether to generate
+              headings for sections within task topics. The allowed values are <span class="keyword option">YES</span>
+              and <span class="keyword option">NO</span>; the default value is <span class="keyword option">NO</span>. <span class="ph">Corresponds to the XSLT parameter
+                  <span class="keyword parmname parmname">GENERATE-TASK-LABELS</span>.</span></td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="27.27272727272727%" headers="d27749e53 "><span class="keyword parmname parmname">args.rellinks</span></td>
+<td class="entry" valign="top" width="72.72727272727273%" headers="d27749e55 ">              <div class="p" id="ant-parameters-pdf2-transformation__d1134e50">Specifies which links to include in the output. The
+                following values are supported:<ul class="ul"><li class="li"><span class="keyword option">none</span> (default) – No links are included.</li>
+<li class="li"><span class="keyword option">all</span> – All links are included.</li>
+<li class="li"><span class="keyword option">nofamily</span> – Parent, child, next, and previous links are not
+                    included.</li>
+</ul>
+</div>
+
+            </td>
+</tr>
+<tr id="ant-parameters-pdf2-transformation__args.xsl.pdf" class="row"><td class="entry" valign="top" width="27.27272727272727%" headers="d27749e53 "><span class="keyword parmname parmname">args.xsl.pdf</span></td>
+<td class="entry" valign="top" width="72.72727272727273%" headers="d27749e55 ">Specifies an XSL file that is used to override the default
+              XSL transformation
+                (<span class="ph filepath">plugins\org.dita.pdf2\xsl\fo\topic2fo_shell.xsl</span>). You must
+              specify the fully qualified file name.</td>
+</tr>
+<tr id="ant-parameters-pdf2-transformation__custom.xep.config" class="row"><td class="entry" valign="top" width="27.27272727272727%" headers="d27749e53 "><span class="keyword parmname parmname">custom.xep.config</span></td>
+<td class="entry" valign="top" width="72.72727272727273%" headers="d27749e55 ">Specifies the user configuration file for
+              RenderX.</td>
+</tr>
+<tr id="ant-parameters-pdf2-transformation__customization.dir" class="row"><td class="entry" valign="top" width="27.27272727272727%" headers="d27749e53 "><span class="keyword parmname parmname">customization.dir</span></td>
+<td class="entry" valign="top" width="72.72727272727273%" headers="d27749e55 ">Specifies the customization directory.</td>
+</tr>
+<tr id="ant-parameters-pdf2-transformation__pdf.formatter" class="row"><td class="entry" valign="top" width="27.27272727272727%" headers="d27749e53 "><span class="keyword parmname parmname">pdf.formatter</span></td>
+<td class="entry" valign="top" width="72.72727272727273%" headers="d27749e55 ">Specifies the XSL processor. The following values are supported:<ul class="ul"><li class="li"><span class="keyword option">ah</span> – Antenna House Formatter</li>
+<li class="li"><span class="keyword option">fop</span> (default) – Apache FOP</li>
+<li class="li"><span class="keyword option">xep</span> – RenderX XEP Engine</li>
+</ul>
+The full-easy-install package comes with Apache FOP; other XSL processors must be
+              separately installed. </td>
+</tr>
+<tr id="ant-parameters-pdf2-transformation__publish.required.cleanup" class="row"><td class="entry" valign="top" width="27.27272727272727%" headers="d27749e53 "><span class="keyword parmname parmname">publish.required.cleanup</span></td>
+<td class="entry" valign="top" width="72.72727272727273%" headers="d27749e55 ">Specifies whether draft-comment and
+              required-cleanup elements are included in the output. The allowed values are
+                <span class="keyword option">yes</span> and <span class="keyword option">no</span>; the default value is the value of the
+                <span class="keyword parmname parmname">args.draft</span> parameter. <span class="ph">Corresponds to XSLT parameter
+                <span class="keyword parmname parmname">publishRequiredCleanup</span>.</span><div class="note note"><span class="notetitle">Note:</span> This parameter
+                is deprecated in favor of the <span class="keyword parmname parmname">args.draft</span>
+              parameter.</div>
+</td>
+</tr>
+<tr id="ant-parameters-pdf2-transformation__retain.topic.fo" class="row"><td class="entry" valign="top" width="27.27272727272727%" headers="d27749e53 "><span class="keyword parmname parmname">retain.topic.fo</span></td>
+<td class="entry" valign="top" width="72.72727272727273%" headers="d27749e55 ">Specifies whether to retain the generated FO file. The
+              allowed values are <span class="keyword option">yes</span> and <span class="keyword option">no</span>; the default value is
+                <span class="keyword option">no</span>. If the configuration property
+                <span class="keyword parmname parmname">org.dita.pdf2.use-out-temp</span> is set to <span class="keyword option">false</span>,
+              this parameter is ignored.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../readme/dita-ot_ant_properties.html" title="Certain parameters apply to all DITA-OT transformations. Other parameters are common to the HTML-based transformations. Finally, some parameters apply only to the specific transformation types.">Ant parameters</a></div>
+</div>
+<div class="relinfo relconcepts"><strong>Related concepts</strong>:<br />
+<div><a class="link" href="../readme/dita2pdf.html" title="The pdf (or pdf2) transformation generates PDF output.">PDF transformation</a></div>
+</div>
+<div class="relinfo relref"><strong>Related reference</strong>:<br />
+<div><a class="link" href="../readme/ant-parameters-all-transformation-types.html" title="Certain parameters apply to all transformations that are supported by the DITA Open Toolkit.">Ant parameters: All transformations</a></div>
+</div>
+</div></body>
+</html>

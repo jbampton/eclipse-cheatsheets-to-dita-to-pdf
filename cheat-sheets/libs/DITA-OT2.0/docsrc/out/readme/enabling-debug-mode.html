@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2013" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2013" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="task" />
+<meta name="DC.Title" content="Enabling debug mode" />
+<meta name="abstract" content="When the debug mode is enabled, additional diagnostic information is written to the log file. This information, which includes environment variables and stack trace data, can help you determine the root cause of a problem." />
+<meta name="Description" content="When the debug mode is enabled, additional diagnostic information is written to the log file. This information, which includes environment variables and stack trace data, can help you determine the root cause of a problem." />
+<meta name="DC.Relation" scheme="URI" content="../readme/troubleshooting-overview.html" />
+<meta name="DC.Date" scheme="iso8601" content="2013-06-06" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="t-enabling-debug-mode" />
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="../ibmdita.css" />
+<link rel="Start" href="../readme/troubleshooting-overview.html" />
+<title>Enabling debug mode</title>
+</head>
+<body role="main" id="t-enabling-debug-mode">
+<h1 class="title topictitle1">Enabling debug mode</h1>
+<div class="body taskbody"><p class="shortdesc">When the debug mode is enabled, additional diagnostic information is written to the log file.
+        This information, which includes environment variables and stack trace data, can help you
+        determine the root cause of a problem.</p>
+<div class="tasklabel"><h2 class="sectiontitle tasklabel">Procedure</h2></div><div class="li step"><span class="ph cmd">From the command prompt, add the following parameters:</span> 
+<table border="1" frame="hsides" rules="rows" cellpadding="4" cellspacing="0" summary="Each row in this table describes one option for a choice." class="simpletable choicetable choicetableborder">
+<thead><tr><th valign="bottom" align="left" id="d32897e13-option">Application</th>
+<th valign="bottom" align="left" id="d32897e13-desc">Parameters</th></tr></thead>
+<tbody><tr class="strow chrow"><td valign="top" headers="d32897e13-option" id="d32897e20" class="stentry choption"><strong>Ant</strong></td>
+<td valign="top" headers="d32897e13-desc d32897e20" class="stentry chdesc"><samp class="ph codeph">-v -Dargs.debug=yes</samp></td>
+</tr>
+<tr class="strow chrow"><td valign="top" headers="d32897e13-option" id="d32897e26" class="stentry choption"><strong>Command-line tool</strong></td>
+<td valign="top" headers="d32897e13-desc d32897e26" class="stentry chdesc"><samp class="ph codeph">/d</samp> or <samp class="ph codeph">-debug</samp></td>
+</tr>
+</tbody></table>
+<div class="p">You also can add a &lt;property&gt; element to an Ant target in your build file,
+                    for
+                    example:<pre class="pre codeblock"><code>&lt;property name="args.debug" value="yes"/&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../readme/troubleshooting-overview.html" title="This section contains information about problems that you might encounter and how to resolve them.">Error messages and troubleshooting</a></div>
+</div>
+</div></body>
+</html>

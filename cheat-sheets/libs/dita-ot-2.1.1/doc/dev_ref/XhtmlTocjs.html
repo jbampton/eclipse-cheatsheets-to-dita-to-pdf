@@ -1,0 +1,60 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2015">
+<meta name="DC.rights.owner" content="(C) Copyright 2015">
+<meta name="DC.Type" content="concept">
+<meta name="description" content="The tocjs transformation was originally created as a plug-in that distributed outside of the toolkit, but it now ships bundled in the default packages. This HTML5-based output type creates a JavaScript based frameset with TOC entries that expand and collapse."><meta name="DC.Relation" scheme="URI" content="../dev_ref/XhtmlWithNavigation.html">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="xhtmltocjs">
+<meta name="DC.Language" content="en-us">
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="../css/dita-ot-doc.css">
+<title>TocJS processing</title>
+</head>
+<body id="xhtmltocjs">
+<main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">TocJS processing</h1>
+
+  
+  <div class="body conbody"><p class="shortdesc">The <span class="keyword option">tocjs</span> transformation was originally created as a plug-in that distributed outside of
+    the toolkit, but it now ships bundled in the default packages. This HTML5-based output type creates a JavaScript
+    based frameset with TOC entries that expand and collapse.</p>
+
+    <section class="section"><div class="p">The following Ant targets control most of the TocJS processing:<dl class="dl">
+          
+            <dt class="dt dlterm"><samp class="ph codeph">tocjsInit</samp></dt>
+
+            <dd class="dd">Sets up default properties. This target detects whether builds have already specified a name for
+              JavaScript control file; if not, the default name <span class="ph filepath">toctree.js</span> is used.</dd>
+
+          
+          
+            <dt class="dt dlterm"><samp class="ph codeph">map2tocjs</samp></dt>
+
+            <dd class="dd">Calls the <samp class="ph codeph">dita.map.tocjs</samp> target, which generates the contents frame for TocJS
+              output.</dd>
+
+          
+          
+            <dt class="dt dlterm"><samp class="ph codeph">tocjsDefaultOutput</samp></dt>
+
+            <dd class="dd">Ensures that the HTML5 processing module is run. If scripts are missing required information, such as a
+              name for the default frameset, this target copies default style and control files. This target was add to
+              the DITA-OT in version 1.5.4; earlier versions of the TocJS transformation created only the JavaScript
+              control file by default.</dd>
+
+          
+        </dl>
+</div>
+</section>
+
+  </div>
+
+<nav role="navigation" class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../dev_ref/XhtmlWithNavigation.html" title="The DITA-OT ships with several varieties of HTML output, each of which follows roughly the same path through the processing pipeline. All HTML-based transformation begin with the same call to the pre-processing module, after which they generate HTML files and then branch to create the transformation-specific navigation files.">HTML-based processing modules</a></div>
+</div>
+</nav></article></main></body>
+</html>

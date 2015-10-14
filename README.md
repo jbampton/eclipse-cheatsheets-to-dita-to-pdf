@@ -1,6 +1,6 @@
 # eclipse-cheatsheets-to-dita-to-pdf
 
-I worked on https://github.com/debrief/debrief and I was given permission to extract the part of the project I worked on.
+I worked on https://github.com/debrief/debrief and this project is based on part of the document publishing in that project.
 
 Basically this code takes a set of Eclipse cheat sheets and transforms them to PDF. 
 See the glossary of links below which describe the technologies being used.
@@ -13,7 +13,8 @@ The two parts of the transformation comprise of:
 	- We used SaxonHE9-6-0-1J from Saxonica.
 	- This file takes as input a collection on XML files (Eclipse cheat sheets) and creates multiple output files - a 	parent DITA Map and some associated tasks.
 	
-2.	- DITA-OT is required and that "info.debrief" plugin be placed in the DITA-OT plugins directory.
+2.	- "info.debrief" plugin should be placed in the DITA-OT plugins directory.
+	- You must then integrate "info.debrief" with the DITA-OT plug-in integration process using Apache Ant
 	- Set the transtype to 'debrief'
 	- This plugin code takes as input the DITA XML and mainly uses custom XSLT, XPath and XSL-FO with some other config files to create the PDF.
 	- We used Apache FOP 1.0 for the FO Processor
@@ -42,6 +43,8 @@ Saxonica - http://www.saxonica.com/welcome/welcome.xml
 DITA - https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture
 
 DITA-Open Toolkit - http://www.dita-ot.org/
+
+DITA-OT insalling plugins - http://dita-ot.sourceforge.net/1.7/dev_ref/plugins-installing.html
 
 W3C - The Extensible Stylesheet Language Family (XSL) - http://www.w3.org/Style/XSL/
 

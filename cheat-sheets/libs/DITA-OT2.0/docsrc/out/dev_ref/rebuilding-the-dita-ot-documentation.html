@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2013" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2013" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="task" />
+<meta name="DC.Title" content="Rebuilding the DITA-OT documentation" />
+<meta name="abstract" content="The DITA-OT ships with Ant scripts that enable you to rebuild the toolkit documentation. This is especially helpful if your environment contains plug-ins that integrate additional messages into the toolkit." />
+<meta name="Description" content="The DITA-OT ships with Ant scripts that enable you to rebuild the toolkit documentation. This is especially helpful if your environment contains plug-ins that integrate additional messages into the toolkit." />
+<meta name="DC.Relation" scheme="URI" content="../dev_ref/extending-the-ot.html" />
+<meta name="DC.Date" scheme="iso8601" content="2013-06-06" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="rebuilding-the-dita-ot-documentation" />
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="../ibmdita.css" />
+<link rel="Start" href="../dev_ref/extending-the-ot.html" />
+<title>Rebuilding the DITA-OT documentation</title>
+</head>
+<body role="main" id="rebuilding-the-dita-ot-documentation">
+<h1 class="title topictitle1">Rebuilding the DITA-OT documentation</h1>
+<div class="body taskbody"><p class="shortdesc">The DITA-OT ships with Ant scripts that enable you to rebuild the toolkit
+        documentation. This is especially helpful if your environment contains plug-ins that
+        integrate additional messages into the toolkit. </p>
+<div class="tasklabel"><h2 class="sectiontitle tasklabel">Procedure</h2></div><ol class="ol steps"><li class="li step stepexpand"><span class="ph cmd">Change to the <span class="ph filepath">doc</span> directory.</span></li>
+<li class="li step stepexpand"><span class="ph cmd">Run the following command:</span>                     <pre class="pre codeblock"><code>ant -f build.xml <var class="keyword varname">target</var></code></pre>
+
+                 <div class="p">The <var class="keyword varname">target</var> parameter is optional and specifies a specific
+                    transformation type. It takes the following values:<ul class="ul"><li class="li">build-html</li>
+<li class="li">build-htmlhelp</li>
+<li class="li">build-pdf</li>
+</ul>
+</div>
+<p class="p">If you do not specify an Ant target, all three output formats (XHTML, HTML help, and PDF) are
+                        generated.</p>
+</li>
+</ol>
+</div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../dev_ref/extending-the-ot.html" title="There are several methods that can be used to extend the toolkit; not all of them are recommended or supported. The best way to create most extensions is with a plug-in; extended documentation for creating plug-ins is provided in the next section.">Extending the DITA Open Toolkit</a></div>
+</div>
+</div></body>
+</html>

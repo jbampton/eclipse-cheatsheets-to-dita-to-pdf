@@ -1,0 +1,136 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2014">
+<meta name="DC.rights.owner" content="(C) Copyright 2014">
+<meta name="DC.Type" content="reference">
+<meta name="description" content="The lib/configuration.properties file controls certain common properties, as well as some properties that control PDF processing."><meta name="DC.subject" content="configuration properties, default.language, generate-debug-attributes, processing-mode, org.dita.pdf2.i18n.enabled, org.dita.pdf2.use-out-temp, files, lib/configuration.properties file, topic.fo file, topic.fo, location of, PDF processing, configuration properties">
+<meta name="keywords" content="configuration properties, default.language, generate-debug-attributes, processing-mode, org.dita.pdf2.i18n.enabled, org.dita.pdf2.use-out-temp, files, lib/configuration.properties file, topic.fo file, topic.fo, location of, PDF processing, configuration properties">
+<meta name="DC.Relation" scheme="URI" content="../readme/reference.html">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="configuration">
+<meta name="DC.Language" content="en">
+<link rel="stylesheet" type="text/css" href="../commonltr.css">
+<link rel="stylesheet" type="text/css" href="../dita-ot-doc.css">
+<title>lib/configuration.properties file</title>
+</head>
+<body id="configuration">
+
+
+  <h1 class="title topictitle1"><span class="ph filepath">lib/configuration.properties</span> file</h1>
+
+    
+  
+  <div class="body refbody"><p class="shortdesc">The <span class="ph filepath">lib/configuration.properties</span> file controls certain common
+      properties, as well as some properties that control PDF processing.</p>
+
+    <div class="section">
+      <div class="fig fignone"><span class="figcap">Figure 1. Properties set in the <span class="ph filepath">lib/configuration.properties</span> file</span>
+        
+        <dl class="dl parml">
+          
+            <dt class="dt pt dlterm" id="configuration__default.language"><span class="keyword parmname">default.language</span></dt>
+
+            <dd class="dd pd" id="configuration__default.language.desc">Specifies the language that is used if the input file does not have the @xml:lang
+              attribute set on the root element. By default, this is set to<span class="keyword option"> en</span>. The
+              allowed values are those that are defined in IETF BCP 47, <a class="xref" href="https://tools.ietf.org/html/bcp47" target="_blank">Tags for 
+                Identifying Languages</a>.</dd>
+
+          
+          
+            <dt class="dt pt dlterm" id="configuration__generate-debug-attributes"><span class="keyword parmname">generate-debug-attributes</span></dt>
+
+            <dd class="dd pd" id="configuration__generate-debug-attributes.desc">Specifies whether the @xtrf and @xtrc debugging attributes are generated in the
+              temporary files. The following values are allowed: <ul class="ul">
+                <li class="li"><span class="keyword option">true</span> (default) — Enables generation of debugging
+                  attributes</li>
+
+                <li class="li"><span class="keyword option">false</span> —Disables generation of debugging attributes</li>
+
+              </ul>
+<div class="note note"><span class="notetitle">Note:</span> Disabling debugging attributes reduces the size of temporary files and thus
+                reduces memory consumption. However, the log messages no longer have the source
+                information available and thus the ability to debug problems might
+                deteriorate.</div>
+</dd>
+
+          
+          
+            <dt class="dt pt dlterm" id="configuration__processing-mode"><span class="keyword parmname">processing-mode</span></dt>
+
+            <dd class="dd pd" id="configuration__processing-mode.desc">Specifies how the DITA-OT handles errors and error recovery. The following values
+              are allowed: <ul class="ul">
+                <li class="li"><span class="keyword option">strict</span> — When an error is encountered, the DITA-OT stops
+                  processing.</li>
+
+                <li class="li"><span class="keyword option">lax</span> (default) — When an error is encountered, the DITA-OT
+                  attempts to recover from it.</li>
+
+                <li class="li"><span class="keyword option">skip</span> — When an error is encountered, the DITA continues
+                  processing but does not attempt error recovery.</li>
+
+              </ul>
+</dd>
+
+          
+          
+            <dt class="dt pt dlterm" id="configuration__org.dita.pdf2.i18n.enabled"><span class="keyword parmname">org.dita.pdf2.i18n.enabled</span></dt>
+
+            <dd class="dd pd" id="configuration__org.dita.pdf2.i18n.enabled.desc">(PDF transformation only) Enables I18N font processing. The following values are
+              allowed: <ul class="ul">
+                <li class="li"><span class="keyword option">true</span> (default) — Enables I18N processing</li>
+
+                <li class="li"><span class="keyword option">false</span> — Disables I18N processing</li>
+
+              </ul>
+</dd>
+
+          
+          
+            <dt class="dt pt dlterm" id="configuration__org.dita.pdf2.use-out-temp"><span class="keyword parmname">org.dita.pdf2.use-out-temp</span></dt>
+
+            <dd class="dd pd" id="configuration__org.dita.pdf2.use-out-temp.desc">(PDF transformation only) Specifies whether the XSL-FO processing writes the
+              intermediate files (for example, the <span class="ph filepath">topic.fo</span> file) to the output
+              directory. The following values are allowed: <ul class="ul">
+                <li class="li"><span class="keyword option">true</span> — Write intermediate files to the output directory</li>
+
+                <li class="li"><span class="keyword option">false</span> (default) — Write intermediate files to the temporary
+                  directory</li>
+
+              </ul>
+</dd>
+
+          
+          
+            <dt class="dt pt dlterm" id="configuration__plugindirs"><span class="keyword parmname">plugindirs</span></dt>
+
+            <dd class="dd pd" id="configuration__plugindirs.desc">A semicolon-separated list of directory paths that the DITA-OT searches for
+              plug-ins to integrate; any relative paths are resolved against the DITA-OT base
+              directory. Any immediate subdirectory that contains a <span class="ph filepath">plugin.xml</span>
+              file is integrated</dd>
+
+          
+          
+            <dt class="dt pt dlterm" id="configuration__plugin.ignores"><span class="keyword parmname">plugin.ignores</span></dt>
+
+            <dd class="dd pd" id="configuration__plugin.ignores.desc">A semicolon-separated list of directory names to be ignored during plug-in
+              integration; any relative paths are resolved against the DITA-OT base
+              directory.</dd>
+
+          
+       </dl>
+
+     </div>
+
+    </div>
+
+  </div>
+
+<nav class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../readme/reference.html" title="This section is designed to help users to locate information easily and quickly. It includes documentation for the DITA Open Toolkit (DITA-OT) parameters and configuration properties.">Reference</a></div>
+</div>
+</nav>
+</body>
+</html>

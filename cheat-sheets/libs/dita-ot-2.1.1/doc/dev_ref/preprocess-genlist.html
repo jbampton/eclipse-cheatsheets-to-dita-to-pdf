@@ -1,0 +1,365 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2015">
+<meta name="DC.rights.owner" content="(C) Copyright 2015">
+<meta name="DC.Type" content="reference">
+<meta name="description" content="The gen-list step examines the input files and creates lists of topics, images, document properties, or other content. These lists are used by later steps in the pipeline. For example, one list includes all topics that make use of the conref attribute; only those files are processed during the conref stage of the build. This step is implemented in Java."><meta name="DC.Relation" scheme="URI" content="../dev_ref/DITA-OTPreprocess.html">
+<meta name="DC.Relation" scheme="URI" content="../dev_ref/preprocess-debugfilter.html">
+<meta name="DC.Format" content="XHTML">
+<meta name="DC.Identifier" content="preprocess-genlist">
+<meta name="DC.Language" content="en-us">
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="../css/dita-ot-doc.css">
+<title>Generate lists (gen-list)</title>
+</head>
+<body id="preprocess-genlist">
+<main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Generate lists (gen-list)</h1>
+
+  
+  <div class="body refbody"><p class="shortdesc">The <samp class="ph codeph">gen-list</samp> step examines the input files and creates lists of topics, images, document
+    properties, or other content. These lists are used by later steps in the pipeline. For example, one list includes
+    all topics that make use of the conref attribute; only those files are processed during the conref stage of the
+    build. This step is implemented in Java.</p>
+
+    <section class="section">
+      <p class="p">The result of this list is a set of several list files in the temporary directory, including
+          <span class="ph filepath">dita.list</span> and <span class="ph filepath">dita.xml.properties</span>.</p>
+
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all">
+          <col style="width:25%">
+          <col style="width:25%">
+          <col style="width:25%">
+          <col style="width:25%">
+          <thead class="thead" style="text-align:left;">
+            <tr class="row">
+              <th class="entry cellrowborder" style="text-align:left;vertical-align:top;" id="d7979e45">List file property</th>
+
+              <th class="entry cellrowborder" style="text-align:left;vertical-align:top;" id="d7979e48">List file</th>
+
+              <th class="entry cellrowborder" style="text-align:left;vertical-align:top;" id="d7979e51">List property</th>
+
+              <th class="entry cellrowborder" style="text-align:left;vertical-align:top;" id="d7979e54">Usage</th>
+
+            </tr>
+
+          </thead>
+
+          <tbody class="tbody">
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">canditopicsfile</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 "><samp class="ph codeph">canditopics.list</samp></td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">canditopicslist</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">&nbsp;</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">codereffile</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 "><samp class="ph codeph">coderef.list</samp></td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">codereflist</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">topics with coderef</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">conreffile</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 "><samp class="ph codeph">conref.list</samp></td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">conreflist</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">Documents that contains conref attribute that need to be resolved in
+                preprocess.</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">conrefpushfile</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 "><samp class="ph codeph">conrefpush.list</samp></td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">conrefpushlist</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">&nbsp;</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">conreftargetsfile</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 "><samp class="ph codeph">conreftargets.list</samp></td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">conreftargetslist</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">&nbsp;</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">copytosourcefile</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 "><samp class="ph codeph">copytosource.list</samp></td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">copytosourcelist</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">&nbsp;</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">copytotarget2sourcemapfile</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 "><samp class="ph codeph">copytotarget2sourcemap.list</samp></td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">copytotarget2sourcemaplist</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">&nbsp;</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">flagimagefile</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 "><samp class="ph codeph">flagimage.list</samp></td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">flagimagelist</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">&nbsp;</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">fullditamapandtopicfile</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 "><samp class="ph codeph">fullditamapandtopic.list</samp></td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">fullditamapandtopiclist</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">All of the ditamap and topic files that are referenced during the transformation.
+                These may be referenced by href or conref attributes.</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">fullditamapfile</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 "><samp class="ph codeph">fullditamap.list</samp></td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">fullditamaplist</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">All of the ditamap files in dita.list</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">fullditatopicfile</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 "><samp class="ph codeph">fullditatopic.list</samp></td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">fullditatopiclist</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">All of the topic files in dita.list</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">hrefditatopicfile</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 "><samp class="ph codeph">hrefditatopic.list</samp></td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">hrefditatopiclist</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">All of the topic files that are referenced with an href attribute</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">hreftargetsfile</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 "><samp class="ph codeph">hreftargets.list</samp></td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">hreftargetslist</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">link targets</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">htmlfile</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 "><samp class="ph codeph">html.list</samp></td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">htmllist</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">resource files</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">imagefile</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 "><samp class="ph codeph">image.list</samp></td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">imagelist</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">Images files that are referenced in the content</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">keyreffile</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 "><samp class="ph codeph">keyref.list</samp></td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">keyreflist</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">Topics and maps which have key references.</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">outditafilesfile</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 "><samp class="ph codeph">outditafiles.list</samp></td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">outditafileslist</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">&nbsp;</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">relflagimagefile</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 "><samp class="ph codeph">relflagimage.list</samp></td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">relflagimagelist</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">&nbsp;</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">resourceonlyfile</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 "><samp class="ph codeph">resourceonly.list</samp></td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">resourceonlylist</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">&nbsp;</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">skipchunkfile</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 "><samp class="ph codeph">skipchunk.list</samp></td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">skipchunklist</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">&nbsp;</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">subjectschemefile</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 "><samp class="ph codeph">subjectscheme.list</samp></td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">subjectschemelist</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">&nbsp;</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">subtargetsfile</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 "><samp class="ph codeph">subtargets.list</samp></td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">subtargetslist</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">&nbsp;</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">tempdirToinputmapdir.relative.value</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 ">&nbsp;</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">&nbsp;</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">&nbsp;</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">uplevels</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 ">&nbsp;</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">&nbsp;</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">&nbsp;</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">user.input.dir</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 ">&nbsp;</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">&nbsp;</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">Absolute input directory path</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">user.input.file.listfile</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 ">&nbsp;</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">&nbsp;</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">Input file list file</td>
+
+            </tr>
+
+            <tr class="row">
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e45 ">user.input.file</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e48 ">&nbsp;</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e51 ">&nbsp;</td>
+
+              <td class="entry cellrowborder" style="text-align:left;vertical-align:top;" headers="d7979e54 ">Input file path, relative to input directory</td>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+</div>
+
+    </section>
+
+  </div>
+
+<nav role="navigation" class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../dev_ref/DITA-OTPreprocess.html" title="The pre-processing operation is a set of steps that typically runs at the beginning of every DITA-OT transformation. Each step or stage corresponds to an Ant target in the build pipeline; the preprocess target calls the entire set of steps.">Pre-processing modules</a></div>
+<div class="nextlink"><strong>Next topic:</strong> <a class="link" href="../dev_ref/preprocess-debugfilter.html" title="The debug-filter step processes all referenced DITA content and creates copies in a temporary directory. As the DITA content is copied, filtering is performed, debugging information is inserted, and table column names are adjusted. This step is implemented in Java.">Debug and filter (debug-filter)</a></div>
+</div>
+</nav></article></main></body>
+</html>
