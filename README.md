@@ -37,7 +37,8 @@ Project Set Up.
 Build and Run Project
 
 	- right click on build1.xml and select -> run as -> Ant build
-	- this should run and create the DITA output in the 'dita-output' directory
+	- this should run and create the DITA XML output in the 'dita-output' directory
+	- more work to come on adding to the build file to do the second step
 
 Development was originally done in oXygen XML editor then ported to Eclipse.
 
