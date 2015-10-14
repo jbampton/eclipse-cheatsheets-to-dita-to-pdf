@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?eclipse.ant.import?>
 <project name="eclipse-cheatsheets-to-dita-to-pdf" default="TransformAll">
-     <target name="xslt2">
-           <!-- create the root Ditamap file an child task files  -->
-           <xslt in="test.xml" out="dita-output/map.ditamap"
-               style="src/cheatsheet-to-dita.xsl" force="true">
-               <classpath location="src/libs/SaxonHE9-6-0-7J/saxon9he.jar" />
-               </xslt>
-          </target>
+     
+	<property name="step1.code" value="src/cheatsheet-to-dita.xsl"/>
+	<property name="dita.dir" value="src/libs/DITA-OT1.8.5"/>
+	<property name="dita.output.dir" value="dita-output"/>
+	<property name="path.to.saxon" value="src/libs/SaxonHE9-6-0-7J/saxon9he.jar"/>
+		
+	<target name="xslt2">
+       <!-- create the root Ditamap file an the four child task files  -->
+       <xslt in="test.xml" out="${dita.output.dir}/map.ditamap"
+           style="${step1.code}" force="true">
+           <classpath location="${path.to.saxon}" />
+           </xslt>
+      </target>
     
-     <target name="TransformAll" depends="xslt2" />
+     
+	
+	<!--
+	<import file="${dita.dir}/integrator.xml"/>
+	
+	
+	
+	
+	<target name="dita2pdf" depends="integrate">
+	   
+	
+	  </target>
+	-->
+	<target name="TransformAll" depends="xslt2" />
+	
 </project>
