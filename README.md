@@ -1,6 +1,6 @@
 # eclipse-cheatsheets-to-dita-to-pdf
 
-I worked on https://github.com/debrief/debrief and this project is based on parts of the document publishing that I did in that project.  See the glossary of links at the bottom of this README which describe the technologies being used.
+I worked on https://github.com/debrief/debrief and this project is based on some parts of the document publishing that I did in that project.  See the glossary of links at the bottom of this README which describe the technologies being used.
 
 Note: Now supporting multiple output formats - PDF, HTMLHelp, TocJS, XHTML.
 
@@ -8,7 +8,7 @@ This is mainly a Java based project in that all the code libraries use Java (Apa
 
 The roadmap for this project is make the "info.debrief" custom DITA-OT plugin compatible with the latest versions of the libraries (DITA-OT 2.1, Apache FOP 2.0) and with the full Apache ANT build code and in depth instructions on how to get up and running inside Eclipse and more.... 
 
-Basically this code takes a set of Eclipse cheat sheets and transforms them to PDF. 
+Basically this code takes a set of Eclipse cheat sheets and transforms them to PDF.  Using PDF allows us to print nicely formated cheat sheets on paper which allows the user to work through the cheat sheets with a pen and check off each item as then go.  Using cheat sheets physically on paper was seen as a new way to learn and was the original concept of the Debrief cheat sheets publishing project I originally worked on.
 
 It's a two step process first the DITA XML is created from the Eclipse cheat sheets and then you use the DITA-Open Toolkit to create the PDF from the auto created DITA files.
 
