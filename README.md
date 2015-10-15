@@ -18,7 +18,7 @@ The two parts of the transformation and rendering comprise of:
 	- The 'dita-output' and sub 'dita' folder contains the dynamically created DITA files from this step
 	
 	
-2.	- The 'info.debrief' DITA-OT custom plugin produces the PDF via the DITA-OT and a XSL - Formatting Objects Processor (FO Processor)
+2.	- The 'info.debrief' custom DITA-OT plugin produces the PDF via the DITA-OT base libraries and a XSL - Formatting Objects Processor (FO Processor)
 	- The 'dita-output/out' folder contains the resulting PDF output from step 2
 	- I used Apache FOP 1.1 for the FO Processor and DITA-OT 1.8.5
 	
@@ -39,7 +39,7 @@ Project Set Up, Build and Run.
 	- Then go -> File -> New -> Project
 	- Select 'Java Project' click next
 	- Enter 'eclipse-cheatsheets-to-dita-to-pdf' in the Project Name field
-	- Un-check location checkbox and enter in the parent folder of the project. In project layout select the 'Use project folder as root for sources and class files' radio button and then click next.
+	- Un-check location checkbox and enter in the parent folder of the project. In project layout select -> 'Use project folder as root for sources and class files' radio button and then click next.
 	- You must add the JAR files from SaxonHE and DITA-OT to Ant inside Eclipse. Go Preferences -> Ant -> Runtime -> Classpath tab -> click Global Entries -> click Add JARs -> navigate to "src/libs/DITA-OT1.8.5/lib" and add all the JAR files from that directory.  Click add JARS again and add saxon9he.jar from  "src/libs/SaxonHE9-6-0-7J".  Make sure to click Apply and then click Ok.
 	
 		
