@@ -3,10 +3,8 @@
   This file is part of the DITA Open Toolkit project.
   See the accompanying license.txt file for applicable licenses.
 -->
-<project name="org.dita.pdf2.fop">
+<project name="org.dita.pdf2.fop" basedir=".">
 
-	
-	
   <property name="fop.home" value="src/libs/fop-1.1"/>
 
   <condition property="hasFopLib">
@@ -15,7 +13,7 @@
         <fileset dir="${fop.home}">
           <include name="build/fop.jar"/>
           <include name="lib/*.jar"/>
-         
+          <include name="build/fop-hyph.jar"/>
         </fileset>
       </classpath>
     </available>
@@ -162,7 +160,7 @@
         </fileset>
         <fileset dir="${fop.home}/build">
           <include name="fop.jar"/>
-        
+          <include name="fop-hyph.jar"/>
         </fileset>
       </classpath>
     </taskdef>

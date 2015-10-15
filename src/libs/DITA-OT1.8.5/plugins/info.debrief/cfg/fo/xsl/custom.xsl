@@ -1,14 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<xsl:stylesheet 
-    exclude-result-prefixes="ditaarch opentopic e" 
-    version="2.0" 
-    xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" 
-    xmlns:e="print-pdf"
-    xmlns:fo="http://www.w3.org/1999/XSL/Format" 
-    xmlns:opentopic="http://www.idiominc.com/opentopic" 
-    xmlns:opentopic-func="http://www.idiominc.com/opentopic/exsl/function" 
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
-    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xsl:stylesheet exclude-result-prefixes="ditaarch opentopic e" version="2.0" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:e="print-pdf" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:opentopic="http://www.idiominc.com/opentopic" xmlns:opentopic-func="http://www.idiominc.com/opentopic/exsl/function" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  xmlns:xs="http://www.w3.org/2001/XMLSchema">
     
 	<xsl:attribute-set name="topic.title" use-attribute-sets="common.title">
 		<xsl:attribute name="border-bottom">3pt solid #1d3768</xsl:attribute>
@@ -38,7 +29,7 @@
 		<xsl:attribute name="border-bottom-color">#1d3768</xsl:attribute>
 	</xsl:attribute-set>
  
-	<xsl:attribute-set name="namespace-user-school-style">
+	<xsl:attribute-set name="schoolstyle">
 		<xsl:attribute name="font-size">12pt</xsl:attribute>
 	</xsl:attribute-set>
 	
@@ -48,14 +39,14 @@
 		<xsl:attribute name="space-before">10pt</xsl:attribute>
 		<xsl:attribute name="space-before.conditionality">retain</xsl:attribute>
 	</xsl:attribute-set>
-		
+	
 	<xsl:attribute-set name="__fo__root" use-attribute-sets="base-font">
         <xsl:attribute name="font-family">sans-serif</xsl:attribute>
         <xsl:attribute name="xml:lang" select="translate($locale, '_', '-')"/>
         <xsl:attribute name="writing-mode" select="$writing-mode"/>
     </xsl:attribute-set>
 	
-	<xsl:attribute-set name="namespace-user-table-nb">
+	<xsl:attribute-set name="TableNB">
 		<xsl:attribute name="border-collapse">collapse</xsl:attribute>
 		<xsl:attribute name="width">100%</xsl:attribute>
 		<xsl:attribute name="table-layout">fixed</xsl:attribute>
@@ -64,12 +55,12 @@
 		<xsl:attribute name="padding">0pt</xsl:attribute>
 	</xsl:attribute-set>
 	
-	<xsl:attribute-set name="namespace-user-table-no">
+	<xsl:attribute-set name="TDNB">
 		<xsl:attribute name="padding">0pt</xsl:attribute>
 		<xsl:attribute name="margin">0pt</xsl:attribute>
 	</xsl:attribute-set>
 	
-	<xsl:attribute-set name="namespace-user-list-item-style">
+	<xsl:attribute-set name="listItemstyle">
 		<xsl:attribute name="font-size">10pt</xsl:attribute>
 		<xsl:attribute name="font-weight">bold</xsl:attribute>
 	</xsl:attribute-set>
@@ -100,6 +91,7 @@
 		<xsl:attribute name="extent">
 		  <xsl:value-of select="'200pt'"/>
 		</xsl:attribute>
+		<!--<xsl:attribute name="display-align">before</xsl:attribute>-->
 	</xsl:attribute-set>	
 	  
 	<xsl:attribute-set name="body" use-attribute-sets="base-font">
@@ -130,32 +122,35 @@
 		<xsl:attribute name="start-indent">15pt</xsl:attribute>
     </xsl:attribute-set>
 	
+	<!--Ordered list-->
     <xsl:attribute-set name="ol" use-attribute-sets="common.block">
         <xsl:attribute name="provisional-distance-between-starts">1mm</xsl:attribute>
         <xsl:attribute name="provisional-label-separation">1mm</xsl:attribute>
+<!--		<xsl:attribute name="margin-left">-8pt</xsl:attribute>-->
     </xsl:attribute-set>
 	
-	<!--<xsl:template match="/" mode="toc"/>-->
+	<xsl:template match="/" mode="toc"></xsl:template>
 	
 	<xsl:template name="createFrontMatter_1.0">
         <fo:page-sequence master-reference="front-matter" xsl:use-attribute-sets="__force__page__count">
             <xsl:call-template name="insertFrontMatterStaticContents"/>
             <fo:flow flow-name="xsl-region-body">
                 <fo:block xsl:use-attribute-sets="__frontmatter">
-                    <!-- set the title -->                    
+                    <!-- set the title -->
+                    
                     <fo:block xsl:use-attribute-sets="__frontmatter__owner">
-                        <fo:table xsl:use-attribute-sets="namespace-user-table-nb">
+                        <fo:table xsl:use-attribute-sets="TableNB">
 							<fo:table-column column-width="proportional-column-width(1)" column-number="1"/>
 							<fo:table-column column-width="proportional-column-width(4)" column-number="2"/>
 							<fo:table-body>  
 								<fo:table-row>
 									<fo:table-cell>
-										<fo:block xsl:use-attribute-sets="__frontmatter__title">
-											<fo:external-graphic src="url({concat($artworkPrefix, '/Customization/OpenTopic/common/artwork/logo.png')})"/>
+										<fo:block xsl:use-attribute-sets=	"__frontmatter__title">
+											<fo:external-graphic src="url({concat($artworkPrefix, '/Customization/OpenTopic/common/artwork/logo.png')})" />
 										</fo:block>
 									</fo:table-cell>
 									<fo:table-cell>
-										<fo:block text-align="left" xsl:use-attribute-sets="__frontmatter__title">
+										<fo:block text-align="left" xsl:use-attribute-sets=	"__frontmatter__title">
 											<fo:block padding-top="1cm">
 											Debrief Cheat Sheets
 											</fo:block>
@@ -165,6 +160,8 @@
 								</fo:table-row>
 							</fo:table-body>
 						</fo:table>
+					   
+					   
                     </fo:block>
                 </fo:block>
             </fo:flow>
@@ -172,13 +169,13 @@
     </xsl:template>
 	
 	<xsl:template match="*[contains(@class, ' task/cmd ')]" priority="1">
-       <fo:table xsl:use-attribute-sets="namespace-user-table-nb">
+       <fo:table xsl:use-attribute-sets="TableNB">
             <fo:table-column column-width="proportional-column-width(8)" column-number="1"/>
             <fo:table-column column-width="proportional-column-width(2)" column-number="2"/>
             <fo:table-body>  
                 <fo:table-row> 
                     <fo:table-cell>
-                        <fo:block xsl:use-attribute-sets="cmd namespace-user-list-item-style">
+                        <fo:block xsl:use-attribute-sets="cmd listItemstyle">
                             <xsl:call-template name="commonattributes"/>
                             <xsl:if test="../@importance='optional'">
                                 <xsl:call-template name="insertVariable">
@@ -197,7 +194,7 @@
                     </fo:table-cell>
                 </fo:table-row>
                 <fo:table-row>
-                    <fo:table-cell xsl:use-attribute-sets="namespace-user-table-no" start-indent="30pt">
+                    <fo:table-cell xsl:use-attribute-sets="TDNB" start-indent="30pt">
                         <fo:block xsl:use-attribute-sets="info">
                             <xsl:call-template name="commonattributes"/>
                             <xsl:apply-templates select="following-sibling::*[1]" mode="oursinline"/>
@@ -208,7 +205,7 @@
         </fo:table>
     </xsl:template>
     
-    <xsl:template match="*[contains(@class, ' task/info ')]"/>
+    <xsl:template match="*[contains(@class, ' task/info ')]"></xsl:template>
 		
     <xsl:template match="*[contains(@class, ' task/info ')]" mode="oursinline">
 		<fo:block xsl:use-attribute-sets="info">
@@ -221,7 +218,7 @@
         <!-- Switch to variable for the count rather than xsl:number, so that step specializations are also counted -->
         <xsl:variable name="actual-step-count" select="number(count(preceding-sibling::*[contains(@class, ' task/step ')])+1)"/>
         <fo:list-item xsl:use-attribute-sets="steps.step" keep-together.within-page="always">
-            <fo:list-item-label xsl:use-attribute-sets="steps.step__label namespace-user-list-item-style">
+            <fo:list-item-label xsl:use-attribute-sets="steps.step__label listItemstyle">
                 <fo:block xsl:use-attribute-sets="steps.step__label__content">
                     <fo:inline>
                         <xsl:call-template name="commonattributes"/>
@@ -257,24 +254,24 @@
 		</fo:block>
     </xsl:template>
 	
-	<xsl:template match="*[contains(@class, ' task/stepxmp ')]"/>	
+	<xsl:template match="*[contains(@class, ' task/stepxmp ')]"></xsl:template>	
 	
     <xsl:template name="insertBodyFirstFooter">
 		<fo:static-content flow-name="first-body-footer">
-            <fo:table xsl:use-attribute-sets="namespace-user-table-nb">
+            <fo:table xsl:use-attribute-sets="TableNB">
 				<fo:table-column column-width="proportional-column-width(1)" column-number="1"/>
 				<fo:table-column column-width="proportional-column-width(1)" column-number="2"/>
 				<fo:table-column column-width="proportional-column-width(1)" column-number="3"/>
 				<fo:table-body>  
 					<fo:table-row>
-						<fo:table-cell xsl:use-attribute-sets="namespace-user-table-no">
+						<fo:table-cell xsl:use-attribute-sets="TDNB">
 							<fo:block></fo:block>
 						</fo:table-cell>
-						<fo:table-cell xsl:use-attribute-sets="namespace-user-table-no" text-align="center">
+						<fo:table-cell xsl:use-attribute-sets="TDNB" text-align="center">
 							<fo:block>DebriefNG Cheat Sheets</fo:block>
 							<fo:block>www.debrief.info</fo:block>
 						</fo:table-cell>
-						<fo:table-cell xsl:use-attribute-sets="namespace-user-table-no">
+						<fo:table-cell xsl:use-attribute-sets="TDNB">
 							<fo:block xsl:use-attribute-sets="__body__first__footer">
 								<xsl:call-template name="insertVariable">
 									<xsl:with-param name="theVariableID" select="'Body first footer'"/>
@@ -301,20 +298,20 @@
 	
 	<xsl:template name="insertBodyOddFooter">
 		<fo:static-content flow-name="odd-body-footer">
-            <fo:table xsl:use-attribute-sets="namespace-user-table-nb">
+            <fo:table xsl:use-attribute-sets="TableNB">
 				<fo:table-column column-width="proportional-column-width(1)" column-number="1"/>
 				<fo:table-column column-width="proportional-column-width(1)" column-number="2"/>
 				<fo:table-column column-width="proportional-column-width(1)" column-number="3"/>
 				<fo:table-body>  
 					<fo:table-row>
-						<fo:table-cell xsl:use-attribute-sets="namespace-user-table-no">
+						<fo:table-cell xsl:use-attribute-sets="TDNB">
 							<fo:block></fo:block>
 						</fo:table-cell>
-						<fo:table-cell xsl:use-attribute-sets="namespace-user-table-no" text-align="center">
+						<fo:table-cell xsl:use-attribute-sets="TDNB" text-align="center">
 							<fo:block>DebriefNG Cheat Sheets</fo:block>
 							<fo:block>www.debrief.info</fo:block>
 						</fo:table-cell>
-						<fo:table-cell xsl:use-attribute-sets="namespace-user-table-no">
+						<fo:table-cell xsl:use-attribute-sets="TDNB">
 							<fo:block xsl:use-attribute-sets="__body__first__footer">
 								<xsl:call-template name="insertVariable">
 									<xsl:with-param name="theVariableID" select="'Body first footer'"/>
@@ -366,24 +363,24 @@
 	
 	<xsl:template name="insertBodyLastFooter">
         <fo:static-content flow-name="last-body-footer">
-			<fo:block  text-align="end" xsl:use-attribute-sets="namespace-user-school-style" end-indent="20mm" margin-bottom="10pt">
+			<fo:block  text-align="end" xsl:use-attribute-sets="schoolstyle" end-indent="20mm" margin-bottom="10pt">
 				Signed: <fo:leader leader-length="3cm" leader-pattern-width="1mm" leader-pattern="rule"></fo:leader>
 				Date: <fo:leader leader-length="3cm" leader-pattern-width="1mm" leader-pattern="rule"></fo:leader>
 				</fo:block>
-            <fo:table xsl:use-attribute-sets="namespace-user-table-nb">
+            <fo:table xsl:use-attribute-sets="TableNB">
 				<fo:table-column column-width="proportional-column-width(1)" column-number="1"/>
 				<fo:table-column column-width="proportional-column-width(1)" column-number="2"/>
 				<fo:table-column column-width="proportional-column-width(1)" column-number="3"/>
 				<fo:table-body>  
 					<fo:table-row>
-						<fo:table-cell xsl:use-attribute-sets="namespace-user-table-no">
+						<fo:table-cell xsl:use-attribute-sets="TDNB">
 							<fo:block></fo:block>
 						</fo:table-cell>
-						<fo:table-cell xsl:use-attribute-sets="namespace-user-table-no" text-align="center">
+						<fo:table-cell xsl:use-attribute-sets="TDNB" text-align="center">
 							<fo:block>DebriefNG Cheat Sheets</fo:block>
 							<fo:block>www.debrief.info</fo:block>
 						</fo:table-cell>
-						<fo:table-cell xsl:use-attribute-sets="namespace-user-table-no">
+						<fo:table-cell xsl:use-attribute-sets="TDNB">
 							<fo:block xsl:use-attribute-sets="__body__first__footer">
 								<xsl:call-template name="insertVariable">
 									<xsl:with-param name="theVariableID" select="'Body first footer'"/>
@@ -456,8 +453,8 @@
 						</xsl:with-param>
 					</xsl:call-template>
 				</fo:block>
-				<fo:block  xsl:use-attribute-sets="namespace-user-school-style" text-align="left" start-indent="20mm">
-					Name: <fo:leader leader-length="3cm" leader-pattern-width="1mm" leader-pattern="rule"/> Date: <fo:leader leader-length="3cm" leader-pattern-width="1mm" leader-pattern="rule"/>
+				<fo:block  xsl:use-attribute-sets="schoolstyle" text-align="left" start-indent="20mm">
+					Name: <fo:leader leader-length="3cm" leader-pattern-width="1mm" leader-pattern="rule"></fo:leader> Date: <fo:leader leader-length="3cm" leader-pattern-width="1mm" leader-pattern="rule"></fo:leader>
 				</fo:block>
 				<fo:block>
 					<fo:external-graphic content-width="175.9mm" src="url({concat($artworkPrefix, '/Customization/OpenTopic/common/artwork/debrief_banner.jpg')})" />
@@ -592,6 +589,7 @@
                 <fo:region-after region-name="odd-glossary-footer" xsl:use-attribute-sets="region-after"/>
             </fo:simple-page-master>
 
+
             <!--Sequences-->
           <xsl:call-template name="generate-page-sequence-master">
             <xsl:with-param name="master-name" select="'toc-sequence'"/>
@@ -600,6 +598,7 @@
           <xsl:call-template name="generate-page-sequence-master">
             <xsl:with-param name="master-name" select="'body-sequence'"/>
             <xsl:with-param name="master-reference" select="'body'"/>
+			
           </xsl:call-template>
           <xsl:call-template name="generate-page-sequence-master">
             <xsl:with-param name="master-name" select="'ditamap-body-sequence'"/>
@@ -628,6 +627,7 @@
         <xsl:variable name="topicType">
             <xsl:call-template name="determineTopicType"/>
         </xsl:variable>
+
         <xsl:choose>
             <xsl:when test="$topicType = 'topicChapter'">
                 <xsl:call-template name="processTopicChapter"/>
@@ -687,7 +687,7 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:when>
-            <xsl:otherwise>
+      <xsl:otherwise>
                 <xsl:apply-templates select="." mode="processUnknowTopic">
                     <xsl:with-param name="topicType" select="$topicType"/>
                 </xsl:apply-templates>
@@ -731,5 +731,4 @@
 		  </fo:repeatable-page-master-alternatives>
 		</fo:page-sequence-master>
 	  </xsl:template>
-    
 </xsl:stylesheet>
