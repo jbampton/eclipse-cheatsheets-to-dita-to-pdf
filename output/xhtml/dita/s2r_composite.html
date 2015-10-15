@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="task"/>
+<meta name="DC.Title" content="Single Sided Reconstruction in Debrief"/>
+<meta name="abstract" content="Before running through this cheat-sheet, you should really have completed the A Debrief walkthrough cheat-sheet, so you know how to configure Debrief and how to load your data. If you haven't completed the Debrief walkthrough, click on Restore Welcome at the top of this window (or select Welcome from the Help menu), navigate to the Tutorials tab, and start the Debrief walkthrough."/>
+<meta name="description" content="Before running through this cheat-sheet, you should really have completed the A Debrief walkthrough cheat-sheet, so you know how to configure Debrief and how to load your data. If you haven't completed the Debrief walkthrough, click on Restore Welcome at the top of this window (or select Welcome from the Help menu), navigate to the Tutorials tab, and start the Debrief walkthrough."/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="d5e3"/>
+<link rel="stylesheet" type="text/css" href="../commonltr.css"/>
+<title>Single Sided Reconstruction in Debrief</title>
+</head>
+<body id="d5e3">
+
+
+   <h1 class="title topictitle1">Single Sided Reconstruction in Debrief</h1>
+
+   <p class="shortdesc">
+         Before running through this cheat-sheet, you should really have 
+         completed the <strong class="ph b">A Debrief walkthrough</strong>  cheat-sheet, so you 
+         know how to configure Debrief and how to load your data.  
+         If you haven't completed the Debrief walkthrough, 
+         click on <strong class="ph b">Restore Welcome</strong> at the top of this window (or select <strong class="ph b">Welcome</strong> from the Help menu), 
+         navigate to the Tutorials tab, and start the Debrief walkthrough.
+      </p>
+
+   <div class="topic task nested1" id="d5e32">
+      <h2 class="title topictitle2">Working with target tracks</h2>
+
+      <p class="shortdesc">
+            Now it's time to start building the target track
+         </p>
+
+      <div class="topic task nested2" id="d5e40">
+         <h3 class="title topictitle3">Groom sensor data</h3>
+
+         
+         <div class="body taskbody"><p class="shortdesc">
+         This cheat sheet is going to work through creating preparing the ownship sensor data ready for production of TMA tracks.
+      </p>
+
+            <ol class="ol steps"><li class="li step stepexpand" id="d5e40__d18e9">
+                  <span class="ph cmd">Load datafiles</span>
+                  <div class="itemgroup info">
+         We're using new datafiles for this step, so double-click on <strong class="ph b">nonsuch.rep</strong> in the Navigator to load ownship track (and select <strong class="ph b">DR</strong> mode when asked).  Perform a Fit to Window once loaded to have a look at the track. Next, drag in <strong class="ph b">sensor.dsf</strong>. Now, <strong class="ph b">don't worry </strong> if it doesn't appear on the plot - this is by intention.
+      </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+<li class="li step stepexpand" id="d5e40__d18e27">
+                  <span class="ph cmd">Make sensor data visible</span>
+                  <div class="itemgroup info">
+         To keep the plot tidy, sensor data is not shown by default when loaded.  Expand <strong class="ph b">Track:NONSUCH</strong> in the <strong class="ph b">Outline View</strong>, then open <strong class="ph b">Sensors</strong>, then select <strong class="ph b">Sensor:Sensor_A (52 items)</strong>. Once the Sensor A sensor data is selected, click on the tick icon in the toolbar at top of the Outline View view, to make the sensor data visible - and it will appear on the plot.
+      </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+<li class="li step stepexpand" id="d5e40__d18e45">
+                  <span class="ph cmd">Resolve ambiguity</span>
+                  <div class="itemgroup info">
+         In our data you can see one bearing fan heading off to the WNW, and the other off towards NNE.  Intelligence tells us (well, Ian H tells us) that the actual contact is off to the NW.  If we open the Time Controller view and drag the time slider back and forth we'll see the current position highlight moving from top-right to bottom left. Thus, the NW block of sensor data is to the Starboard of the track. (Use <strong class="ph b">Click to perform</strong> below if you wish,  to open the Time Controller).
+      </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+<li class="li step stepexpand" id="d5e40__d18e56">
+                  <span class="ph cmd">Drop ambiguous data</span>
+                  <div class="itemgroup info">
+         Now, using the Outline View, expand the <strong class="ph b">SENSOR_A</strong> dataset and select all of the child items (select the top one, scroll to the bottom of the list, then select the bottom one whilst holding down the shift-key).  Now, right click on one of the entries and select <strong class="ph b">Keep starboard bearings</strong>.  The port bearings will dissappear.
+      </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+<li class="li step stepexpand" id="d5e40__d18e69">
+                  <span class="ph cmd">Open grid editor</span>
+                  <div class="itemgroup info">
+         In this tutoral we're going to be editing the raw sensor data using the Grid Editor.  So, select <strong class="ph b">Grid Editor</strong> from the <strong class="ph b">Window/Show view menu</strong> (or click on the link below).      </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+<li class="li step stepexpand" id="d5e40__d18e83">
+                  <span class="ph cmd">Indicate data to edit</span>
+                  <div class="itemgroup info">
+         The grid editor listens out for the current selection on the Outline View.  So, if the item on the Outline View is suitable for being edited in grid format it will be shown in the grid editor (though this behaviour can be cancelled by clicking on the lock icon in the grid editor toolbar).  If you open the <strong class="ph b">Track:NONSUCH</strong> item and select the positions you'll see them appear in the grid editor.  Now click on the sensor data for Track:NONSUCH (<strong class="ph b">Sensor:SENSOR_A(52 items)</strong>.
+      </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+<li class="li step stepexpand" id="d5e40__d18e95">
+                  <span class="ph cmd">Get this user interface tidied up</span>
+                  <div class="itemgroup info">
+         We've now got quite a few panels open, so we're going to tidy them a little.  If you're on a multi-monitor setup the we're going to put the grid editor onto the other screen.  To do this, pick up the grid editor by clicking and dragging its tab-bar title, and drag it over to the other screen. Once it's on the other screen resize it to view all the columns (resize the panel using the  drag-handles at the bottom right).
+      </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+<li class="li step stepexpand" id="d5e40__d18e101">
+                  <span class="ph cmd">View the data</span>
+                  <div class="itemgroup info">
+         The scrollbar on the right hand side lets you move forwards and backwards through the data (with newest items shown at the top).  Most cells in the grid are editable, including the date, and green/red buttons are provided in the toolbar to <strong class="ph b">add</strong>/<strong class="ph b">remove</strong> rows.  You don't need to do it in this tutorial, but when you click on <strong class="ph b">Add</strong>, it will insert a duplicate of the currently selected row immediately beneath it - hopefully reducing the amount of manual entry required.
+      </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+<li class="li step stepexpand" id="d5e40__d18e116">
+                  <span class="ph cmd">Work on an attribute</span>
+                  <div class="itemgroup info">
+         Beyond straight-forward text-editing of data, selecting an attribute offers greater editing capabilities.  So, start off by clicking on the header cell at the top of the frequency column (so, just click on the word <strong class="ph b">Frequency</strong>).  As you do, you'll see a graph appear in the bottom half of the view. The graph is a waterfall display of frequency, with the most recent value at the top. Zoom in on data by dragging a region on the graph using a top-left to bottom-right motion.  Zoom out again by dragging bottom-right to top-left. Go on, have a go.
+      </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+<li class="li step stepexpand" id="d5e40__d18e125">
+                  <span class="ph cmd">Fix dodgy frequency observation</span>
+                  <div class="itemgroup info">
+         If you zoom out to look at all the frequency data you'll see that whilst the frequency data seems fairly constant near the top of the dataset (49.99), there are occasional instances where the data value seems too low (when viewed in the context of a steady ownship track).  We're going to fix an errant data point by dragging it.  Firstly, zoom in on the data around the time 05:20.  You'll see that the data-point at 05:19:11 is quite a lot lower than its neighbours.  Move it by clicking inside the square data point and dragging the symbol so that it's in line with it's neighbours. Note that if the neighbours were in a steady drift you could align by eye where you drop the data point to align with the more tidily.
+      </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+<li class="li step stepexpand" id="d5e40__d18e132">
+                  <span class="ph cmd">Smooth period of data</span>
+                  <div class="itemgroup info">
+         We'll now switch to bearing data.  Click on the <strong class="ph b">Bearing</strong> column to view a graph of bearing data. Fairly near the top of the bearing data you will see three steps in the data, around the period 05:10 to 05:20.  Zoom in on these three steps.  It appears that the last smooth data point before the steps is at 05:10:44, and the first after the steps is at 05:21:30.  We're going to interpolate the data points between these two values, so first we must tell Debrief which are the points we intend keeping.  So, in the grid (in the top half of the editor), click on the empty space at the left of row 05:10:44 then hold down the <strong class="ph b">Control</strong> key and click on row 05:21:30.  As you do this, the Interpolate (calculator) button in the grid editor toolbar should become enabled. Click on the interpolate button and the data will be smoothed.  You may select <strong class="ph b">Undo</strong> from the edit menu to undo an interpolation operation.
+      </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+<li class="li step stepexpand" id="d5e40__d18e147">
+                  <span class="ph cmd">Getting clever with interpolation</span>
+                  <div class="itemgroup info">
+         Note that we only selected a single point at each end of the poor data.  There are two other, more advanced ways of doing the interpolation.  If we had selected multiple points at the ends of the dodgy data then Debrief would have made the interpolated values fit through a cubic spline that passed through the selected points.  Similarly, if we had selected one or more points in the middle of the dodgy data (in addition to point(s) at the ends) then Debrief would have fitted a curve through the end and mid points of the dataset.
+      </div>
+                  <div class="itemgroup stepxmp">optional</div>
+               </li>
+<li class="li step stepexpand" id="d5e40__d18e153">
+                  <span class="ph cmd">Set array offset</span>
+                  <div class="itemgroup info">
+         We can move on now that we've tidied the sensor data.  As you'll see, the sensor data is ambiguous, as produced by a towed array.  Currently Debrief is plotting the sensor cuts against the attack datum of the platform, but we need to apply an offset for this sensor (-451m in this case).   So, select <strong class="ph b">Sensor:SENSOR_A</strong> in the <strong class="ph b">Outline View</strong>, then open the <strong class="ph b">Properties Window</strong> (the click to perform button below will also open it).  In the Properties Window you'll see the <strong class="ph b">SensorOffset</strong> attribute.  This allows you to enter a custom offset or to choose from a set of lengths from a shared datafile (see the Help entry for this item for further details).  Anyway, ignore the shared values and enter -451 in this field, click on the Plot, and you'll see the bearings jump to reflect the change. To see where the current array centre is, switch on <strong class="ph b">Plot Array Centre</strong> from the properties for the parent track - you'll see a cross appear astern of the current submarine location. 
+      </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+<li class="li step stepexpand" id="d5e40__d18e176">
+                  <span class="ph cmd">Reduce data density</span>
+                  <div class="itemgroup info">
+      Whilst it isn't necessary for this exercise, Debrief does allow you to reduce the density of the sensor data.  If you right-click on <strong class="ph b">Sensor:SENSOR_A</strong>, then navigate down into the <strong class="ph b">SENSOR_A</strong> sub-menu you will see a <strong class="ph b">Visible Frequency</strong> option. Using one of these options will pass through sensor data and hide sensor observations between the specified frequency.  The sensor cuts remain available, and can be made visible again by selecting a smaller visible frequency.  Note, instead of this you could have resampled the ownship positions and sensor cuts by right-clicking on the parent track and selecting <strong class="ph b">Resample data at</strong>.
+      </div>
+                  <div class="itemgroup stepxmp">optional</div>
+               </li>
+</ol>
+
+            <div class="section result">
+               We've now got a track with lovely smooth sensor data. Hmm.
+            </div>
+
+         </div>
+
+      </div>
+
+      <div class="topic task nested2" id="d5e55">
+         <h3 class="title topictitle3">Generate a target track</h3>
+
+         
+         <div class="body taskbody"><p class="shortdesc">
+         This cheat sheet is going to work through creating a segment of target track from bearing data.  The target track is going to represent a period of straight-line motion, and can be interpreted as a Manual TMA Solution.  You should have open a tidy track and sensor data as produced in the previous cheat-sheet.  Feel free to close the Grid Editor window now that we're concentrating on the plot.
+      </p>
+
+            <ol class="ol steps"><li class="li step stepexpand" id="d5e55__d19e9">
+                  <span class="ph cmd">Decide on contact period</span>
+                  <div class="itemgroup info">
+         The capable analyst will be able to recognise a couple of periods of steady bearing rate that lend themselves to being the basis of TMA solutions.  The first one we're going to use is the first dozen or so sensor cuts.  We can see that after a period of about 10 unsteady cuts there's another steady period - we'll use that for a solution a little later.
+      </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+<li class="li step stepexpand" id="d5e55__d19e15">
+                  <span class="ph cmd">Highlight contacts</span>
+                  <div class="itemgroup info">
+         We're going to change the color of the contacts to use for our first solution.  Double-click somewhere along the bearing line for the last data point in first period of steady bearing data - it will be highlighted in the Outline View.  By my (unqualified eye), the last data point is the one at <strong class="ph b">090722 044127</strong>.  Click on that to select it.  Next scroll back up to the start of the sensor data, hold down the &lt;shift&gt; key and click on the first entry.  This period of sensor data is now selected.  Before creating a TMA segment based on it we're going to highlight it in a unique color. So, right-click anywhere on it, and select <strong class="ph b">Multiple items/Color/Orange</strong>.
+      </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+<li class="li step stepexpand" id="d5e55__d19e27">
+                  <span class="ph cmd">Generate the TMA segment</span>
+                  <div class="itemgroup info">
+         Next, with the set of data still selected (or reselect it if you've lost the selection) we're going to create a solution based upon it.  When we generate a TMA segment based on sensor data, Debrief creates a track segment of steady course/speed data points, with one data-point at the time of each sensor cut used to generate the segment.  Let's get on with it.
+      </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+<li class="li step stepexpand" id="d5e55__d19e33">
+                  <span class="ph cmd">Follow the generate TMA wizard</span>
+                  <div class="itemgroup info">
+          Now, right click on the selected sensor data and select <strong class="ph b">Generate TMA solution from selected cuts</strong>. Once the TMA wizard opens, it will invite you to enter an initial range and bearing to the contact.  Enter 1 nautical mile (nm) for the solution, and leave the bearing unaltered (since it's using the bearing from our first sensor cut).  Then click <strong class="ph b">Next</strong>.  The wizard will then invite you to enter an initial solution. Based on our understanding of the sensor fan and a complete guess, enter 220 for the course and 6 knots for the speed, then press <strong class="ph b">Finish</strong>.  You will see a red track appear, labelled with <strong class="ph b">TMA_</strong> and the time of the first cut used.   The solutions have times in their name to make it easier for you to manage them.
+      </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+<li class="li step stepexpand" id="d5e55__d19e52">
+                  <span class="ph cmd">Recognise track data</span>
+                  <div class="itemgroup info">
+         If you expand the new track in the <strong class="ph b">Outline View</strong> you'll see the <strong class="ph b">Positions</strong> child item.  Notice that the icon for this item shows a straight-line section of data with an associated (but tiny) compass rose).  The equivalent object for <strong class="ph b">Track:NONSUCH</strong> shows a non straight-line set of positions.  Also, note that on the plot, the name of the TMA segment is shown in italics, to denote that it's not based on actual position recordings.
+      </div>
+                  <div class="itemgroup stepxmp">optional</div>
+               </li>
+<li class="li step stepexpand" id="d5e55__d19e67">
+                  <span class="ph cmd">Put the tracks on the tote</span>
+                  <div class="itemgroup info">
+         To view residuals, we must indicate to Debrief which is the ownship and which is the target.  Debrief can hold many more than two tracks, so we must inform it which two tracks we want to compare with each other. So, in the Outline View, first select the <strong class="ph b">Track:NONSUCH</strong> item, then click on the <strong class="ph b">1</strong>  (primary) in the Outline View toolbar.  Next, click on the <strong class="ph b">Track_xxxx</strong> item and select <strong class="ph b">2</strong> (secondary) button in the Outline View toolbar.  If you switch to the <strong class="ph b">Track Tote</strong> view (shortcut provided below) you'll now see it contains our primary and secondary tracks - and we've successfully indicated who we want to view in the residuals plot.
+      </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+<li class="li step stepexpand" id="d5e55__d19e90">
+                  <span class="ph cmd">Drag the track segment</span>
+                  <div class="itemgroup info">
+         You may now manipulate the track segment to minimise the bearing and frequency residuals. Start by clicking on <strong class="ph b">Drag Track Segment</strong> on the Debrief toolbar. As you do, the <strong class="ph b">Bearing Residuals</strong> view will be brought to the front.  You can expand this view by dragging it's sides, or to make it much larger you can pick it up by clicking and dragging the <strong class="ph b">Bearing Residuals</strong> tab above it, and dragging it to another monitor.  
+In this view are the 4 drag operation buttons, that control how you drag the track. The cursor hand will go green when over a valid hot-spot: either end of the track.  In some drag modes you can <strong class="ph b">translate</strong> a track by clicking on the hotspot at its mid-point.  Have a go at selecting <strong class="ph b">Shear</strong> mode and dragging the ends of the track - to optimise the bearing errors.
+     </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+<li class="li step stepexpand" id="d5e55__d19e119">
+                  <span class="ph cmd">Generate second TMA segment</span>
+                  <div class="itemgroup info">
+         Once you're happy with the first solution it's time to move on.   It would appear from the sensor data that the turn is represented by about 13 cuts before a further straight line section of data.
+So, on the plot, now click on the first sensor cut of the second steady set of bearings - that cut will be highlighted in the <strong class="ph b">Outline View</strong>. Now scroll down to the end of the data and shift-click the last sensor cut.  We've now selected the cuts to be used for the second track segment.  Right click on one of the selected items and select <strong class="ph b">Multiple items/Color/Green</strong>.  The cuts will turn green.  Now right-click again on the cuts and click on <strong class="ph b">Generate TMA solution from selected cuts</strong>, and complete the wizard once again.
+      </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+<li class="li step stepexpand" id="d5e55__d19e134">
+                  <span class="ph cmd">Refine second solution</span>
+                  <div class="itemgroup info">
+         Now, find the new solution in the Outline View and set it as the secondary track.   Once the new solution is marked as secondary you are able to start dragging/refining this solution.  Give it a go.
+      </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+</ol>
+
+            <div class="section result">
+               We now have a pair of target track sections.
+            </div>
+
+         </div>
+
+      </div>
+
+      <div class="topic task nested2" id="d5e67">
+         <h3 class="title topictitle3">Merging one or more tracks</h3>
+
+         
+         <div class="body taskbody"><p class="shortdesc">
+         This cheat sheet covers the process for merging two or more tracks.  These tracks may be conventional platform tracks produced from positional sensor data, or they may be TMA tracks produced from the analysis of bearing data.<span class="ph"/>
+Please see the associated help page for a discussion of the track merge operation.
+      </p>
+
+            <ol class="ol steps"><li class="li step stepexpand" id="d5e67__d20e11">
+                  <span class="ph cmd">Select tracks</span>
+                  <div class="itemgroup info">
+         In this tutorial you have generated two track sections and you now wish to combine them into one track.  In the Outline View, select the two tracks <strong class="ph b">TMA_xxxx</strong> and <strong class="ph b">TMA_yyyy</strong> (use the [control] key to multi-select).
+      </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+<li class="li step stepexpand" id="d5e67__d20e23">
+                  <span class="ph cmd">Right click on tracks</span>
+                  <div class="itemgroup info">
+         Next, right click on one of the selected tracks and select <strong class="ph b">Group tracks into TMA_xxxx</strong>.  You'll see the second track dissappear, and inside the <strong class="ph b">TMA_xxxx</strong> track you'll see two track segments,
+      </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+<li class="li step stepexpand" id="d5e67__d20e35">
+                  <span class="ph cmd">Provide infill positions</span>
+                  <div class="itemgroup info">
+         Debrief is now able to provide a track section between the two existing track segments.  To do this, open the <strong class="ph b">Track:TMA_xxxx</strong> track, and then the <strong class="ph b">Track segments (2 items)</strong> item.  Inside you'll see the two new segments.  Select both of them, and right-click on one of them - you'll be able to select <strong class="ph b">Generate infill segment</strong>.  You'll see a new segment appear both in the Outline View and the plot.  Notice that the infill segment is shown as a dotted line - to indicate that this track segment is not based on any evidence, it's just been calculated to join the tracks either side.
+      </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+<li class="li step stepexpand" id="d5e67__d20e50">
+                  <span class="ph cmd">Merge tracks</span>
+                  <div class="itemgroup info">
+         You can continue to keep your target track represented as 3 or more track segments for as long as you like.  But, when you need to export the data for presentation or subsequent analysis then you need to merge them.  To do this, select the parent item for the track segments (<strong class="ph b">Track segments (3 items)</strong>), right-click on it and select <strong class="ph b">Merge all track segments</strong>.  The tracks will merge.  Note, alternatively you could have selected different track segments to merge by selecting them individually at the next level down.
+      </div>
+                  <div class="itemgroup stepxmp"/>
+               </li>
+</ol>
+
+            <div class="section result">
+               That's all the skills you need for single sided reconstruction using Debrief.  Clearly there's probably now another step to be performed in how you exploit your shiny new track, but that would depend on your analysis objective.
+            </div>
+
+         </div>
+
+      </div>
+
+   </div>
+
+
+</body>
+</html>

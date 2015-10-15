@@ -1,0 +1,21 @@
+[OPTIONS]
+Compiled file=map.chm
+Contents file=map.hhc
+Default Window=default
+Full-text search=Yes
+Display compile progress=No
+Index file=map.hhk
+Binary Index=No
+Language=0x0409 English (United States)
+Default topic=dita/intro_composite.html
+Title=Debrief Topic Map
+
+[FILES]
+dita/analysis_composite.html
+dita/intro_composite.html
+dita/s2r_composite.html
+dita/satc_composite.html
+
+
+[INFOTYPES]
+

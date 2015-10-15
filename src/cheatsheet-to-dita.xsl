@@ -19,7 +19,7 @@
             <xsl:for-each select="collection(iri-to-uri('../cheatsheets-xml-test-data/?select=[a-zA-Z]*_composite.xml;recurse=yes'))">
                 <xsl:sort  select="count(document('')//debrief:order/debrief:value[. = tokenize(document-uri(current()),'/')[last()]]/preceding-sibling::debrief:value)"/>
                 
-                <xsl:result-document href="../dita-output/dita/{substring-before(tokenize(document-uri(/),'/')[last()],'.')}.dita" doctype-public="-//OASIS//DTD DITA Task//EN" doctype-system="task.dtd">
+                <xsl:result-document href="../output/dita/{substring-before(tokenize(document-uri(/),'/')[last()],'.')}.dita" doctype-public="-//OASIS//DTD DITA Task//EN" doctype-system="task.dtd">
                     <xsl:apply-templates select="/compositeCheatsheet"/>
                 </xsl:result-document>
                 
