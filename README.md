@@ -33,7 +33,6 @@ How DITA-OT PDF Plugins work:
 	- PDF Plugins are comprised of some XML config files, some artwork and some custom XSL (XSLT/XSL-FO/XPath) code 
 	- DITA-OT provides that base XSL code that you 'override' with your custom work.
 	- Custom XSL can be placed in two XSL files both named custom.xsl.  I placed all the custom code at 'src/libs/DITA-OT1.8.5/plugins/info.debrief/cfg/fo/xsl/custom.xsl' for this project.  The other file is seen in the adjacent 'attrs' directory.  Placing the custom code only in these two files follows best practice techniques on how to build a DITA-OT PDF plugin.
-	-
 
 Project Set Up, Build and Run.
 
