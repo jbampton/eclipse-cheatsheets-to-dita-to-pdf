@@ -27,11 +27,13 @@ The two parts of the transformation and rendering comprise of:
 	
 How DITA-OT PDF Plugins work:
 
-1. 	- Plugins are placed in the DITA-OT plugins directory.  You can see the plugin I built in this directory named 'info.debrief'.
+1.	- Plugins are placed in the DITA-OT plugins directory.  You can see the plugin I built in this directory named 'info.debrief'.
 	- When ready a plugin must be integrated into DITA-OT using Apache Ant.  On the command line it would be -> ant -f integrator.xml
 	- Every plugin has a 'transtype' -> this plugins transtype is 'debrief'
 	- PDF Plugins are comprised of some XML config files, some artwork and some custom XSL (XSLT/XSL-FO/XPath) code 
-
+	- DITA-OT provides that base XSL code that you 'override' with your custom work.
+	- Custom XSL can be placed in two XSL files both named custom.xsl.  I placed all the custom code at 'src/libs/DITA-OT1.8.5/plugins/info.debrief/cfg/fo/xsl/custom.xsl' for this project.  The other file is seen in the adjacent 'attrs' directory.  Placing the custom code only in these two files follows best practice techniques on how to build a DITA-OT PDF plugin.
+	-
 
 Project Set Up, Build and Run.
 
