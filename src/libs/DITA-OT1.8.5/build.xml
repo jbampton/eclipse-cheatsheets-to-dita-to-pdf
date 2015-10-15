@@ -19,7 +19,7 @@
   
   <path id="dost.class.path">
     
-<pathelement location="${dita.dir}${file.separator}plugins/org.dita.pdf2/lib/fo.jar"/>
+<pathelement location="${fop.dir}/build/fop.jar"/>
     <pathelement location="${dita.dir}${file.separator}lib${file.separator}dost.jar"></pathelement>
   </path>
   
@@ -296,7 +296,7 @@
                 
 <classpath>
                     
-<fileset dir="${dita.plugin.org.dita.legacypdf.dir}/lib">
+<fileset dir="${fop.dir}/lib">
                         
 <include name="*.jar"></include>
                     </fileset>

@@ -9,19 +9,16 @@
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.8"/>
     <property name="source" value="1.8"/>
+    <import file="build.xml"/>
     <import file="build1.xml"/>
     <path id="eclipse-cheatsheets-to-dita-to-pdf.classpath">
         <pathelement location="bin"/>
+        <pathelement location="build1.xml"/>
     </path>
     <target name="init">
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
             <fileset dir="src">
-                <exclude name="**/*.java"/>
-            </fileset>
-        </copy>
-        <copy includeemptydirs="false" todir="bin">
-            <fileset dir="cheat-sheets">
                 <exclude name="**/*.java"/>
             </fileset>
         </copy>
@@ -36,7 +33,6 @@
         <echo message="${ant.project.name}: ${ant.file}"/>
         <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
             <src path="src"/>
-            <src path="cheat-sheets"/>
             <classpath refid="eclipse-cheatsheets-to-dita-to-pdf.classpath"/>
         </javac>
     </target>

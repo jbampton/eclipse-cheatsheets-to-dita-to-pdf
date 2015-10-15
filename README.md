@@ -21,8 +21,10 @@ The two parts of the transformation comprise of:
 2.	- "info.debrief" plugin should be placed in the DITA-OT plugins directory.
 	- You must then integrate "info.debrief" with the DITA-OT plug-in integration process using Apache Ant
 	- Set the transtype to 'debrief'
+	- You must add the jar files from DITA-OT to Ant inside Eclipse. Go Preferences -> Ant -> Runtime -> Classpath tab -> click Global Entries -> click Add Jars -> navigate to "src/libs/DITA-OT1.8.5/lib" and add all the Jar files from that directory.
+	-
 	- the 'dita-output/out' folder contains the resulting PDF output from step 2
-	- The 'info.debrief' plugin is comprised of some XML config files, some artwork images and some custom XSL (XSLT/XSL-FO/XPath) code 
+	- The 'info.debrief' plugin is comprised of some XML config files, some artwork and some custom XSL (XSLT/XSL-FO/XPath) code 
 	- the 'info.debrief' plugin produces the PDF via a XSL - Formatting Objects Processor (FO Processor)
 	- We used Apache FOP 1.0 for the FO Processor
 	- We used DITA-OT 1.8.5.
@@ -43,8 +45,8 @@ Project Set Up, Build and Run.
 	
 	
 2.  - right click on build1.xml and select -> Run As -> Ant Build
-	- this should run and re-create the DITA XML output in the 'dita-output' directory.  There should be five DITA files, one parent Ditamap and 4 task files with the Ditamap at the root of the output folder with task files nested together in the sub folder 'dita'.
-	- more work to come on adding to the build file to do the second step
+	- this should run and re-create the DITA XML output in the 'dita-output' directory.  There should be five DITA files, one parent Ditamap and 4 task files with the Ditamap at the root of the output folder with task files together in the sub folder 'dita'.
+	- more work to come on making the build file complete the second step.
 
 
 Eclipse - https://eclipse.org/ 

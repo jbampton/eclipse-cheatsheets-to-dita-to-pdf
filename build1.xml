@@ -2,24 +2,24 @@
 <?eclipse.ant.import?>
 <project name="eclipse-cheatsheets-to-dita-to-pdf" default="TransformAll" basedir=".">
      
-	<property name="step1.code" value="src${file.separator}cheatsheet-to-dita.xsl"/>
+	<property name="cheatsheets.to.dita" value="src${file.separator}cheatsheet-to-dita.xsl"/>
 	<property name="dita.output.dir" value="dita-output"/>
-	<property name="path.to.saxon" value="src${file.separator}libs${file.separator}SaxonHE9-6-0-7J${file.separator}saxon9he.jar"/>
-	<property name="dita.dir" value="src${file.separator}libs${file.separator}DITA-OT1.8.5"/>		
-	
+	<property name="saxon.dir" value="src${file.separator}libs${file.separator}SaxonHE9-6-0-7J${file.separator}saxon9he.jar"/>
+	<property name="dita-ot.dir" value="src${file.separator}libs${file.separator}DITA-OT1.8.5"/>		
+	<property name="fop.dir" value="src${file.separator}libs${file.separator}fop-1.1"/>
 	
 	<target name="xslt2">
 	   <!-- create the root Ditamap file an the four child task files  -->
-   		<xslt in="test.xml" out="${dita.output.dir}${file.separator}map.ditamap" style="${step1.code}" force="true">
-   			<classpath location="${path.to.saxon}"/>
+   		<xslt in="test.xml" out="${dita.output.dir}${file.separator}map.ditamap" style="${cheatsheets.to.dita}" force="true">
+   			<classpath location="${saxon.dir}"/>
    		</xslt>
-	</target>	
-	
+	</target>
+		
 	<target name="toPdf">
 		<!-- run the Ditamap through DITA-OT to produce the PDF -->
-		<ant antfile="${dita.dir}${file.separator}build.xml">
+		<ant antfile="${dita-ot.dir}${file.separator}build.xml">
 		  <property name="args.input" location="${dita.output.dir}${file.separator}map.ditamap"/>
-		  <property name="output.dir" location="dita-ouput${file.separator}out"/>
+		  <property name="output.dir" location="${dita.output.dir}${file.separator}out"/>
 		  <property name="transtype" value="debrief"/>
 		</ant>
 	</target>	
