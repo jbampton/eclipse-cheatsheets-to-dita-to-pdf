@@ -17,11 +17,11 @@ The two parts of the transformation and rendering comprise of:
 1.	- Use cheatsheet-to-dita.xsl which requires an XSLT 2.0 compliant processor.
 	- I used SaxonHE9-6-0-7J from Saxonica which is currently the latest version.
 	- This file takes as input a collection on XML files (Eclipse cheat sheets) and creates multiple output files - a parent DITA Map and some associated tasks.
-	- The 'dita-output' and sub 'dita' folder contains the dynamically created DITA files from this step
+	- The 'output' and sub 'dita' folder contains the dynamically created DITA files from this step
 	
 	
 2.	- The 'info.debrief' custom DITA-OT plugin produces the PDF via the DITA-OT base libraries and a XSL - Formatting Objects Processor (FO Processor)
-	- The 'dita-output/pdf' folder contains the resulting PDF output from step 2
+	- The 'output/pdf' folder contains the resulting PDF output from step 2
 	- I used Apache FOP 1.1 for the FO Processor and DITA-OT 1.8.5
 	
 	
@@ -29,8 +29,8 @@ How DITA-OT PDF Plugins work:
 
 1. 	- Plugins are placed in the DITA-OT plugins directory.  You can see the plugin I built in this directory named 'info.debrief'.
 	- When ready a plugin must be integrated into DITA-OT using Apache Ant.  On the command line it would be -> ant -f integrator.xml
-	- Every plugin has a transtype -> this plugins transtype is 'debrief'
-	- Plugins are comprised of some XML config files, some artwork and some custom XSL (XSLT/XSL-FO/XPath) code 
+	- Every plugin has a 'transtype' -> this plugins transtype is 'debrief'
+	- PDF Plugins are comprised of some XML config files, some artwork and some custom XSL (XSLT/XSL-FO/XPath) code 
 
 
 Project Set Up, Build and Run.
