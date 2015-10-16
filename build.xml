@@ -1,53 +1,91 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- WARNING: Eclipse auto-generated file.
-              Any modifications will be overwritten.
-              To include a user specific buildfile here, simply create one in the same
-              directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. --><project basedir="." default="build" name="eclipse-cheatsheets-to-dita-to-pdf">
-    <property environment="env"/>
-    <property name="ECLIPSE_HOME" value="../../../../Applications/Eclipse.app/Contents/Eclipse/"/>
-    <property name="debuglevel" value="source,lines,vars"/>
-    <property name="target" value="1.8"/>
-    <property name="source" value="1.8"/>
-    <import file="build.xml"/>
-    <import file="build1.xml"/>
-    <path id="eclipse-cheatsheets-to-dita-to-pdf.classpath">
-        <pathelement location="bin"/>
-        <pathelement location="build1.xml"/>
-    </path>
-    <target name="init">
-        <mkdir dir="bin"/>
-        <copy includeemptydirs="false" todir="bin">
-            <fileset dir="src">
-                <exclude name="**/*.java"/>
-            </fileset>
-        </copy>
-    </target>
-    <target name="clean">
-        <delete dir="bin"/>
-    </target>
-    <target depends="clean" name="cleanall"/>
-    <target depends="build-subprojects,build-project" name="build"/>
-    <target name="build-subprojects"/>
-    <target depends="init" name="build-project">
-        <echo message="${ant.project.name}: ${ant.file}"/>
-        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
-            <src path="src"/>
-            <classpath refid="eclipse-cheatsheets-to-dita-to-pdf.classpath"/>
-        </javac>
-    </target>
-    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
-    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
-        <copy todir="${ant.library.dir}">
-            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
-        </copy>
-        <unzip dest="${ant.library.dir}">
-            <patternset includes="jdtCompilerAdapter.jar"/>
-            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
-        </unzip>
-    </target>
-    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
-        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
-        <antcall target="build"/>
-    </target>
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="eclipse-cheatsheets-to-dita-to-pdf" default="TransformAll" basedir=".">
+     
+	<property name="cheatsheets.to.dita" value="src${file.separator}cheatsheet-to-dita.xsl"/>
+	<property name="output.dir" value="output"/>
+	<property name="libs.dir" value="src${file.separator}libs${file.separator}"/>
+	
+	<property name="dita-ot.dir" value="${libs.dir}DITA-OT1.8.5"/>
+	<property name="saxon.dir" value="${libs.dir}SaxonHE9-6-0-7J"/>			
+	<property name="fop.dir" value="${libs.dir}fop-1.1"/>
+	
+	<property name="saxon.jar" value="${saxon.dir}${file.separator}saxon9he.jar"/>
+	
+	<property name="output.dir.sep" value="${output.dir}${file.separator}"/>
+	<property name="output.ditamap" value="${output.dir.sep}map.ditamap"/>
+	<property name="dita.build.file" value="${dita-ot.dir}${file.separator}build.xml"/>
+		
+	<target name="xslt2">
+	   <!-- create the root Ditamap file an the four child task files  -->
+   		<xslt in="test.xml" out="${output.ditamap}" style="${cheatsheets.to.dita}" force="true">
+   			<classpath location="${saxon.jar}"/>
+   		</xslt>
+	</target>
+	
+	<target name="toPdf">
+		<!-- run the Ditamap through DITA-OT to produce the PDF -->
+		<ant antfile="${dita.build.file}">
+		  <property name="args.input" location="${output.ditamap}"/>
+		  <property name="output.dir" location="${output.dir.sep}pdf"/>
+		  <property name="transtype" value="debrief"/>
+		</ant>
+	</target>	
+	
+	<target name="toXHTML">
+		<!-- run the Ditamap through DITA-OT to produce the XHTML -->
+		<ant antfile="${dita.build.file}">
+		  <property name="args.input" location="${output.ditamap}"/>
+		  <property name="output.dir" location="${output.dir.sep}xhtml"/>
+		  <property name="transtype" value="xhtml"/>
+		</ant>
+	</target>
+	
+	<target name="toTocJS">
+		<!-- run the Ditamap through DITA-OT to produce the TocJS -->
+		<ant antfile="${dita.build.file}">
+		  <property name="args.input" location="${output.ditamap}"/>
+		  <property name="output.dir" location="${output.dir.sep}tocjs"/>
+		  <property name="transtype" value="tocjs"/>
+		</ant>
+	</target>	
+	
+	<target name="toHTML-Help">
+		<!-- run the Ditamap through DITA-OT to produce the HTML Help -->
+		<ant antfile="${dita.build.file}">
+		  <property name="args.input" location="${output.ditamap}"/>
+		  <property name="output.dir" location="${output.dir.sep}htmlhelp"/>
+		  <property name="transtype" value="htmlhelp"/>
+		</ant>
+	</target>
+	
+	<target name="toDocbook">
+		<!-- run the Ditamap through DITA-OT to produce the Docbook -->
+		<ant antfile="${dita.build.file}">
+		  <property name="args.input" location="${output.ditamap}"/>
+		  <property name="output.dir" location="${output.dir.sep}docbook"/>
+		  <property name="transtype" value="docbook"/>
+		</ant>
+	</target>
+	
+	<!-- ODT output is not currently building and is not included in TransformAll -->
+	<target name="toODT">
+		<!-- run the Ditamap through DITA-OT to produce the Docbook -->
+		<ant antfile="${dita.build.file}">
+		  <property name="args.input" location="${output.ditamap}"/>
+		  <property name="output.dir" location="${output.dir.sep}odt"/>
+		  <property name="transtype" value="odt"/>
+		</ant>
+	</target>
+	
+	<!-- Word output is not currently building and is not included in TransformAll -->
+	<target name="toWord">
+		<ant antfile="${dita.build.file}">
+		  <property name="args.input" location="${output.ditamap}"/>
+		  <property name="output.dir" location="${output.dir.sep}wordrtf"/>
+		  <property name="transtype" value="wordrtf"/>
+		</ant>
+	</target>
+	
+	<target name="TransformAll" depends="xslt2, toPdf, toXHTML, toTocJS, toHTML-Help, toDocbook"/>	
+	
 </project>
