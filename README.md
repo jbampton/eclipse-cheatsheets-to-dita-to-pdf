@@ -47,12 +47,12 @@ Project Set Up, Build and Run.
 	
 		
 	
-2.  - right click on build1.xml and select -> Run As -> Ant Build -> (first one)
+2.  - right click on build.xml and select -> Run As -> Ant Build -> (first one)
 	- The above should run build all tasks, creating all output formats in one go.
 	- this should run and re-create the DITA XML output in the 'output' directory.  There should be five DITA files, one parent Ditamap and 4 task files with the Ditamap at the root of the output folder with task files together in the sub folder 'dita'
 	- The final resulting PDF should be called map.pdf and located in the 'pdf' folder.
 	- There are currently 4 other output formats (Docbook, HTMLHelp, TocJS, XHTML) as seen by the names of the folders in the 'output' directory.  The PDF output is vastly superior to the others which have no customization.  The Docbook output is a work in progress. 
-	- If you want to choose which output formats to render, you can right click on build1.xml and select -> Run As -> Ant Build -> (second one), and then select which output format you would like on the 'Targets' tab under 'Check targets to execute' and click Run
+	- If you want to choose which output formats to render, you can right click on build.xml and select -> Run As -> Ant Build -> (second one), and then select which output format you would like on the 'Targets' tab under 'Check targets to execute' and click Run
 
 Eclipse - https://eclipse.org/ 
 
