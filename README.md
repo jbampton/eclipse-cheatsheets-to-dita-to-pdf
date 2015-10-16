@@ -4,20 +4,22 @@ I worked on https://github.com/debrief/debrief and this project is based on some
 
 Note: Now supporting multiple output formats - PDF, HTMLHelp, TocJS, XHTML.
 
-This is mainly a Java based project in that all the code libraries use Java (Apache FOP, Saxon, DITA Open Toolkit (DITA-OT), Apache ANT, Eclipse) and it's also heavily XML based.   Development was originally done in oXygen XML Editor then ported to Eclipse.
+This is mainly a Java based project in that all the code libraries use Java (Apache FOP, Saxon, DITA Open Toolkit (DITA-OT), Apache ANT, Eclipse) and it also uses XML heavily.   Development was originally done in oXygen XML Editor then ported to Eclipse.
 
 The roadmap for this project is make the "info.debrief" custom DITA-OT plugin compatible with the latest versions of the libraries (DITA-OT 2.1, Apache FOP 2.0) and with the full Apache ANT build code and in depth instructions on how to get up and running inside Eclipse and more.... 
 
-Basically this code takes a set of Eclipse cheat sheets and transforms them to PDF.  Using PDF allows us to print nicely formated cheat sheets on paper which allows the user to work through the cheat sheets with a pen and check off each item as then go.  Using cheat sheets physically on paper was seen as a new way to learn and was the original concept of the Debrief cheat sheets publishing project I originally worked on.
+This code takes a set of Eclipse cheat sheets and transforms them to PDF.  Using PDF allows us to print nicely formated cheat sheets on paper which allows the user to work through the cheat sheets with a pen and check off each item as they go.  Using cheat sheets physically on paper was seen as a new way to learn and was the original concept of the Debrief cheat sheets publishing project I originally worked on.
 
-It's a two step process first the DITA XML is created from the Eclipse cheat sheets and then you use the DITA-Open Toolkit to create the PDF from the auto created DITA files.
+Darwin Information Typing Architecture (DITA) is an XML data model for authoring and using DITA-OT you can publish those ideas. The DITA standard is maintained by the OASIS DITA Technical Committee.
+
+It's a two step process first the DITA XML is created from the Eclipse cheat sheets (XML files) and then you use the DITA-Open Toolkit to create the PDF from the auto created DITA files.
 
 The two parts of the transformation and rendering comprise of:
 
 1.	- Use cheatsheet-to-dita.xsl which requires an XSLT 2.0 compliant processor.
 	- I used SaxonHE9-6-0-7J from Saxonica which is currently the latest version.
 	- This file takes as input a collection on XML files (Eclipse cheat sheets) and creates multiple output files - a parent DITA Map and some associated tasks.
-	- The 'output' and sub 'dita' folder contains the dynamically created DITA files from this step
+	- The 'output' and sub 'dita' folder contains the dynamically created DITA files from this step. 
 	
 	
 2.	- The 'info.debrief' custom DITA-OT plugin produces the PDF via the DITA-OT base libraries and a XSL - Formatting Objects Processor (FO Processor)
@@ -47,7 +49,7 @@ Project Set Up, Build and Run.
 	
 		
 	
-2.  - right click on build.xml and select -> Run As -> Ant Build -> (first one)
+2.  - Right click on build.xml and select -> Run As -> Ant Build -> (first one)
 	- The above should run build all tasks, creating all working output formats in one go.
 	- This should run and re-create the DITA XML output in the 'output' directory.  There should be five DITA files, one parent Ditamap at and 4 task files with the Ditamap at the root of the output folder with task files together in the sub folder 'dita'
 	- The final resulting PDF should be called map.pdf and located in the 'pdf' folder.
@@ -89,3 +91,5 @@ Generate sample DITA-OT plugin - https://dita-generator-hrd.appspot.com/pdf-plug
 Creating DITA-OT plugins - http://dita-ot.sourceforge.net/1.5.4/dev_ref/plugins-overview.html
 
 Customizing PDF output - http://www.dita-ot.org/1.8/readme/dita2pdf-customization.html
+
+The Organization for the Advancement of Structured Information Standards (OASIS) - https://en.wikipedia.org/wiki/OASIS_(organization)
