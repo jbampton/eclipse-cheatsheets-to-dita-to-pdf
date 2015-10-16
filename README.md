@@ -8,7 +8,7 @@ This is mainly a Java based project in that all the code libraries use Java (Apa
 
 The roadmap for this project is make the "info.debrief" custom DITA-OT plugin compatible with the latest versions of the libraries (DITA-OT 2.1, Apache FOP 2.0) and with the full Apache ANT build code and in depth instructions on how to get up and running inside Eclipse and more.... 
 
-This code takes a set of Eclipse cheat sheets and transforms them to PDF.  Using PDF allows us to print nicely formated cheat sheets on paper which allows the user to work through the cheat sheets with a pen and check off each item as they go.  Using cheat sheets physically on paper was seen as a new way to learn and was the original concept of the Debrief cheat sheets publishing project I originally worked on.
+When built and run this project takes a set of Eclipse cheat sheets and transforms them to PDF.  Using PDF allows us to print nicely formated cheat sheets on paper which allows the user to work through the cheat sheets with a pen and check off each item as they go.  Using cheat sheets physically on paper was seen as a new way to learn and was the original concept of the Debrief cheat sheets publishing project I worked on.
 
 Darwin Information Typing Architecture (DITA) is an XML data model for authoring and using DITA-OT you can publish those ideas. The DITA standard is maintained by the OASIS DITA Technical Committee.
 
@@ -38,9 +38,9 @@ How DITA-OT PDF Plugins work:
 
 Project Set Up, Build and Run.
 
-1. 	- Download Eclipse Mars and install and then open.	
+1. 	- Download Eclipse Mars at https://eclipse.org/downloads/ and install and then open.	
 	- Clone Git repo
-	- Switch your Eclipse workspace to the parent of the folder above.
+	- Switch your Eclipse workspace to the parent of the folder you cloned into
 	- Then go -> File -> New -> Project
 	- Select 'Java Project' click next
 	- Enter 'eclipse-cheatsheets-to-dita-to-pdf' in the Project Name field
@@ -50,8 +50,8 @@ Project Set Up, Build and Run.
 		
 	
 2.  - Right click on build.xml and select -> Run As -> Ant Build -> (first one)
-	- The above should run build all tasks, creating all working output formats in one go.
-	- This should run and re-create the DITA XML output in the 'output' directory.  There should be five DITA files, one parent Ditamap at and 4 task files with the Ditamap at the root of the output folder with task files together in the sub folder 'dita'
+	- This should run and build all tasks, creating all working output formats in one go.
+	- This process re-creates the DITA XML output in the 'output' directory.  There should be five DITA files, one parent Ditamap at and 4 task files with the Ditamap at the root of the output folder with task files together in the sub folder 'dita'
 	- The final resulting PDF should be called map.pdf and located in the 'pdf' folder.
 	- There are currently 4 other output formats (Docbook, HTMLHelp, TocJS, XHTML) as seen by the names of the folders in the 'output' directory.  The PDF output is vastly superior to the others which have no customization.  The Docbook output is a work in progress. 
 	- If you want to choose which output formats to render, you can right click on build.xml and select -> Run As -> Ant Build -> (second one), and then select which output format you would like on the 'Targets' tab under 'Check targets to execute' and click Run
