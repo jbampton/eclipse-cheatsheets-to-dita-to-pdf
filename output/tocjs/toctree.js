@@ -7,14 +7,14 @@
     
    
    
-   var objd4e27 = { label: "Getting started with Debrief NG", href:"dita/intro_composite.html", target:"contentwin" };
-    var d4e27 = new YAHOO.widget.TextNode(objd4e27, root, false);
-   var objd4e42 = { label: "Controlling what you view", href:"dita/analysis_composite.html", target:"contentwin" };
-    var d4e42 = new YAHOO.widget.TextNode(objd4e42, root, false);
-   var objd4e57 = { label: "Single Sided Reconstruction in Debrief", href:"dita/s2r_composite.html", target:"contentwin" };
-    var d4e57 = new YAHOO.widget.TextNode(objd4e57, root, false);
-   var objd4e82 = { label: "Walkthrough", href:"dita/satc_composite.html", target:"contentwin" };
-    var d4e82 = new YAHOO.widget.TextNode(objd4e82, root, false);
+   var objd4e46 = { label: "Getting started with Debrief NG", href:"dita/intro_composite.html", target:"contentwin" };
+    var d4e46 = new YAHOO.widget.TextNode(objd4e46, root, false);
+   var objd4e76 = { label: "Controlling what you view", href:"dita/analysis_composite.html", target:"contentwin" };
+    var d4e76 = new YAHOO.widget.TextNode(objd4e76, root, false);
+   var objd4e106 = { label: "Single Sided Reconstruction in Debrief", href:"dita/s2r_composite.html", target:"contentwin" };
+    var d4e106 = new YAHOO.widget.TextNode(objd4e106, root, false);
+   var objd4e146 = { label: "Walkthrough", href:"dita/satc_composite.html", target:"contentwin" };
+    var d4e146 = new YAHOO.widget.TextNode(objd4e146, root, false);
 
       tree.draw(); 
       } 

@@ -4,12 +4,19 @@
 <map>
    <title>Debrief Topic Map</title>
    <topicmeta>
+      <searchtitle>Eclipse cheat sheets to PDF</searchtitle>
+      <shortdesc>Document Publishing Adventures with the DITA Open Toolkit</shortdesc>
       <author>Debrief</author>
+      <author>John Bampton</author>
+      <source>http://debrief.info/</source>
       <publisher>Github John Bampton</publisher>
-      <keywords>
-         <keyword>XSLT</keyword>
-         <keyword>Saxon</keyword>
-      </keywords>
+      <critdates>
+         <created date="2015-10-17"/>
+      </critdates>
+      <audience type="programmer" job="troubleshooting" experiencelevel="expert"/>
+      <category>Java</category>
+      <category>Document Publishing</category>
+      <othermeta name="Publishing" content="PDF,TocJS,XHTML,DITA,HTMLhelp"/>
    </topicmeta>
    <topicref href="dita/intro_composite.dita" type="task"/>
    <topicref href="dita/analysis_composite.dita" type="task"/>

@@ -103,4 +103,6 @@ Customizing PDF output - http://www.dita-ot.org/1.8/readme/dita2pdf-customizatio
 
 The Organization for the Advancement of Structured Information Standards (OASIS) - https://en.wikipedia.org/wiki/OASIS_(organization)
 
+Dublin Core Metadata Initiative - http://dublincore.org/
+
 Got 15 minutes and want to learn Git? https://try.github.io/levels/1/challenges/1
