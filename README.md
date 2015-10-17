@@ -81,8 +81,6 @@ DITA - https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture
 
 DITA-Open Toolkit - http://www.dita-ot.org/
 
-DITA-OT installing plugins - http://dita-ot.sourceforge.net/1.7/dev_ref/plugins-installing.html
-
 W3C - The Extensible Stylesheet Language Family (XSL) - http://www.w3.org/Style/XSL/
 
 W3C XSLT 2.0 - http://www.w3.org/TR/xslt20/ 
@@ -93,7 +91,21 @@ XSL-FO Processors - http://www.w3.org/community/ppl/wiki/XSL-FO_Processors
 
 XML - https://en.wikipedia.org/wiki/XML
 
+Adobe PDF - https://en.wikipedia.org/wiki/Portable_Document_Format
+
+XHTML - https://en.wikipedia.org/wiki/XHTML
+
+Dublin Core Metadata Initiative - http://dublincore.org/
+
+Microsoft HTML Help 1.4 - https://msdn.microsoft.com/en-us/library/windows/desktop/ms670169(v=vs.85).aspx
+
+The Organization for the Advancement of Structured Information Standards (OASIS) - https://en.wikipedia.org/wiki/OASIS_(organization)
+
 oXygen XML Editor - http://www.oxygenxml.com
+
+DITA to TocJS - http://www.dita-ot.org/1.8/readme/dita2tocjs.html
+
+DITA-OT installing plugins - http://dita-ot.sourceforge.net/1.7/dev_ref/plugins-installing.html
 
 Generate sample DITA-OT plugin - https://dita-generator-hrd.appspot.com/pdf-plugin/
 
@@ -101,8 +113,6 @@ Creating DITA-OT plugins - http://dita-ot.sourceforge.net/1.5.4/dev_ref/plugins-
 
 Customizing PDF output - http://www.dita-ot.org/1.8/readme/dita2pdf-customization.html
 
-The Organization for the Advancement of Structured Information Standards (OASIS) - https://en.wikipedia.org/wiki/OASIS_(organization)
-
-Dublin Core Metadata Initiative - http://dublincore.org/
-
 Got 15 minutes and want to learn Git? https://try.github.io/levels/1/challenges/1
+
+Ruby regular expression editor - http://rubular.com/
