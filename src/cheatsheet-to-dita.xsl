@@ -16,6 +16,18 @@
     <xsl:template match="/" name="root">
         <map>
             <title>Debrief Topic Map</title>
+            
+            <topicmeta>
+			    <author>Debrief</author>
+			   <!--  <subject>DITA-OT Publishing Case Study...Yo lets BUILD!</subject> -->
+			    <publisher>Github John Bampton</publisher>
+			    <keywords>
+				    <keyword>XSLT</keyword>
+				    <keyword>Saxon</keyword>
+			    </keywords>
+			    
+			  </topicmeta>
+            
             <xsl:for-each select="collection(iri-to-uri('../cheatsheets-xml-test-data/?select=[a-zA-Z]*_composite.xml;recurse=yes'))">
                 <xsl:sort  select="count(document('')//debrief:order/debrief:value[. = tokenize(document-uri(current()),'/')[last()]]/preceding-sibling::debrief:value)"/>
                 

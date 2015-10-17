@@ -129,7 +129,7 @@
 <!--		<xsl:attribute name="margin-left">-8pt</xsl:attribute>-->
     </xsl:attribute-set>
 	
-	<xsl:template match="/" mode="toc"></xsl:template>
+	<!-- <xsl:template match="/" mode="toc"></xsl:template>-->
 	
 	<xsl:template name="createFrontMatter_1.0">
         <fo:page-sequence master-reference="front-matter" xsl:use-attribute-sets="__force__page__count">
