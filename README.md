@@ -6,7 +6,7 @@ Note: Now supporting multiple output formats - PDF, HTMLHelp, TocJS, XHTML.
 
 This is mainly a Java based project in that all the code libraries use Java (Apache FOP, Saxon, DITA Open Toolkit (DITA-OT), Apache ANT, Eclipse) and it also uses XML heavily.   Development was originally done in oXygen XML Editor then ported to Eclipse.
 
-The roadmap for this project is make the "info.debrief" custom DITA-OT plugin compatible with the latest versions of the libraries (DITA-OT 2.1, Apache FOP 2.0) and with the full Apache ANT build code and in depth instructions on how to get up and running inside Eclipse and more.... 
+The roadmap for this project is make the "info.debrief" custom DITA-OT plugin compatible with DITA-OT 2.1 and with the full Apache ANT build code and in depth instructions on how to get up and running inside Eclipse and more.... 
 
 When built and run this project takes a set of Eclipse cheat sheets and transforms them to PDF.  Using PDF allows us to print nicely formated cheat sheets on paper which allows the user to work through the cheat sheets with a pen and check off each item as they go.  Using cheat sheets physically on paper was seen as a new way to learn and was the original concept of the Debrief cheat sheets publishing project I worked on.
 
@@ -24,7 +24,7 @@ The two parts of the transformation and rendering comprise of:
 	
 2.	- The 'info.debrief' custom DITA-OT plugin produces the PDF via the DITA-OT base libraries and a XSL - Formatting Objects Processor (FO Processor)
 	- The 'output/pdf' folder contains the resulting PDF output from step 2
-	- I used Apache FOP 1.1 for the FO Processor and DITA-OT 1.8.5
+	- I used Apache FOP 2.0 for the FO Processor and DITA-OT 1.8.5
 
 
 Project Set Up, Build and Run.
@@ -50,12 +50,18 @@ Project Set Up, Build and Run.
 How DITA-OT PDF Plugins work:
 
 Plugins are placed in the DITA-OT plugins directory.  You can see the plugin I built in this directory named 'info.debrief'.
-When ready a plugin must be integrated into DITA-OT using Apache Ant.  
+
+When ready a plugin must be integrated into DITA-OT using Apache Ant. 
+ 
 On the command line it would be -> ant -f integrator.xml
+
 Every plugin has a 'transtype' -> this plugins transtype is 'debrief'
+
 PDF Plugins are comprised of some XML config files, some artwork and some custom XSL (XSLT/XSL-FO/XPath) code 
 DITA-OT provides that base XSL code that you 'override' with your custom work.
-Custom XSL can be placed in two XSL files both named custom.xsl.  I placed all the custom code at 'src/libs/DITA-OT1.8.5/plugins/info.debrief/cfg/fo/xsl/custom.xsl' for this project.  The other file is seen in the adjacent 'attrs' directory.  
+
+Custom XSL can be placed in two XSL files both named custom.xsl.  I placed all the custom code at 'src/libs/DITA-OT1.8.5/plugins/info.debrief/cfg/fo/xsl/custom.xsl' for this project.  The other file is seen in the adjacent 'attrs' directory. 
+ 
 Placing the custom code only in these two files follows best practice techniques on how to build a DITA-OT PDF plugin.
 
 

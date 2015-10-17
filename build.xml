@@ -7,7 +7,7 @@
 	
 	<property name="dita-ot.dir" value="${libs.dir}DITA-OT1.8.5"/>
 	<property name="saxon.dir" value="${libs.dir}SaxonHE9-6-0-7J"/>			
-	<property name="fop.dir" value="${libs.dir}fop-1.1"/>
+	<property name="fop.dir" value="${libs.dir}fop-2.0"/>
 	
 	<property name="saxon.jar" value="${saxon.dir}${file.separator}saxon9he.jar"/>
 	
