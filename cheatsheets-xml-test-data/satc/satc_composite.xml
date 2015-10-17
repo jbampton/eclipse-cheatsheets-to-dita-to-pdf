@@ -59,7 +59,7 @@ You now have a Debrief <b>Project</b>, to contain your tutorial data.
                   that contains a folder called <b>SATC</b>. If there is one there, you can skip this step.
                </intro>
                <onCompletion>
-                  <b>Conclusion</b>&lt;br&gt;
+                  <b>Conclusion</b><br/>
                   Ok, you&apos;ve found the Debrief <b>Sample Data</b>.  You&apos;re ready for the tutorial now.
                </onCompletion>
                <param name="path" value="../GettingStarted/FindingYourData.xml"/>
