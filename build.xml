@@ -2,20 +2,24 @@
 <project name="eclipse-cheatsheets-to-dita-to-pdf" default="TransformAll" basedir=".">
      
 	<property name="cheatsheets.to.dita" value="src${file.separator}cheatsheet-to-dita.xsl"/>
-	<property name="output.dir" value="output"/>
+	
+	<property name="debrief.output.dir" value="output${file.separator}debrief${file.separator}"/>
+	<property name="infosvg.output.dir" value="output${file.separator}infosvg${file.separator}"/>
+	
 	<property name="lib.dir" value="src${file.separator}libs${file.separator}"/>
 	
 	<property name="dita-ot.dir" value="${lib.dir}DITA-OT1.8.5"/>
 	<property name="saxon.dir" value="${dita-ot.dir}/lib/saxon"/>		
 	<property name="saxon.jar" value="${saxon.dir}${file.separator}saxon9he.jar"/>
 	
-	<property name="output.dir.sep" value="${output.dir}${file.separator}"/>
-	<property name="output.ditamap" value="${output.dir.sep}map.ditamap"/>
+	<property name="debrief.output.dir.sep" value="${debrief.output.dir}${file.separator}"/>
+	<property name="debrief.output.ditamap" value="${debrief.output.dir.sep}map.ditamap"/>
+	
 	<property name="dita.build.file" value="${dita-ot.dir}${file.separator}build.xml"/>
 		
 	<target name="xslt2">
 	   <!-- create the root Ditamap file an the four child task files  -->
-   		<xslt in="test.xml" out="${output.ditamap}" style="${cheatsheets.to.dita}" force="true">
+   		<xslt in="test.xml" out="${debrief.output.ditamap}" style="${cheatsheets.to.dita}" force="true">
    			<classpath location="${saxon.jar}"/>
    		</xslt>
 	</target>
@@ -24,8 +28,8 @@
 	<target name="toPDF-SVG">
 			
 			<ant antfile="${dita.build.file}">
-			  <property name="args.input" location="${output.ditamap}"/>
-			  <property name="output.dir" location="${output.dir.sep}pdf"/>
+			  <property name="args.input" location="${debrief.output.ditamap}"/>
+			  <property name="output.dir" location="${debrief.output.dir.sep}pdf"/>
 			  <property name="transtype" value="infosvg"/>
 			</ant>
 		</target>	
@@ -34,8 +38,8 @@
 	<target name="toPDF">
 		<!-- run the Ditamap through DITA-OT to produce the PDF -->
 		<ant antfile="${dita.build.file}">
-		  <property name="args.input" location="${output.ditamap}"/>
-		  <property name="output.dir" location="${output.dir.sep}pdf"/>
+		  <property name="args.input" location="${debrief.output.ditamap}"/>
+		  <property name="output.dir" location="${debrief.output.dir.sep}pdf"/>
 		  <property name="transtype" value="debrief"/>
 		</ant>
 	</target>	
@@ -43,8 +47,8 @@
 	<target name="toXHTML">
 		<!-- run the Ditamap through DITA-OT to produce the XHTML -->
 		<ant antfile="${dita.build.file}">
-		  <property name="args.input" location="${output.ditamap}"/>
-		  <property name="output.dir" location="${output.dir.sep}xhtml"/>
+		  <property name="args.input" location="${debrief.output.ditamap}"/>
+		  <property name="output.dir" location="${debrief.output.dir.sep}xhtml"/>
 		  <property name="transtype" value="xhtml"/>
 		</ant>
 	</target>
@@ -52,8 +56,8 @@
 	<target name="toTocJS">
 		<!-- run the Ditamap through DITA-OT to produce the TocJS -->
 		<ant antfile="${dita.build.file}">
-		  <property name="args.input" location="${output.ditamap}"/>
-		  <property name="output.dir" location="${output.dir.sep}tocjs"/>
+		  <property name="args.input" location="${debrief.output.ditamap}"/>
+		  <property name="output.dir" location="${debrief.output.dir.sep}tocjs"/>
 		  <property name="transtype" value="tocjs"/>
 		</ant>
 	</target>	
@@ -61,8 +65,8 @@
 	<target name="toHTMLHelp">
 		<!-- run the Ditamap through DITA-OT to produce the HTML Help -->
 		<ant antfile="${dita.build.file}">
-		  <property name="args.input" location="${output.ditamap}"/>
-		  <property name="output.dir" location="${output.dir.sep}htmlhelp"/>
+		  <property name="args.input" location="${debrief.output.ditamap}"/>
+		  <property name="output.dir" location="${debrief.output.dir.sep}htmlhelp"/>
 		  <property name="transtype" value="htmlhelp"/>
 		</ant>
 	</target>
@@ -70,8 +74,8 @@
 	<target name="toDocbook">
 		<!-- run the Ditamap through DITA-OT to produce the Docbook -->
 		<ant antfile="${dita.build.file}">
-		  <property name="args.input" location="${output.ditamap}"/>
-		  <property name="output.dir" location="${output.dir.sep}docbook"/>
+		  <property name="args.input" location="${debrief.output.ditamap}"/>
+		  <property name="output.dir" location="${debrief.output.dir.sep}docbook"/>
 		  <property name="transtype" value="docbook"/>
 		</ant>
 	</target>
@@ -80,8 +84,8 @@
 	<target name="toODT">
 		<!-- run the Ditamap through DITA-OT to produce the ODT -->
 		<ant antfile="${dita.build.file}">
-		  <property name="args.input" location="${output.ditamap}"/>
-		  <property name="output.dir" location="${output.dir.sep}odt"/>
+		  <property name="args.input" location="${debrief.output.ditamap}"/>
+		  <property name="output.dir" location="${debrief.output.dir.sep}odt"/>
 		  <property name="transtype" value="odt"/>
 		</ant>
 	</target>
@@ -89,8 +93,8 @@
 	<!-- Word output is not currently building and is not included in TransformAll -->
 	<target name="toWord">
 		<ant antfile="${dita.build.file}">
-		  <property name="args.input" location="${output.ditamap}"/>
-		  <property name="output.dir" location="${output.dir.sep}wordrtf"/>
+		  <property name="args.input" location="${debrief.output.ditamap}"/>
+		  <property name="output.dir" location="${debrief.output.dir.sep}wordrtf"/>
 		  <property name="transtype" value="wordrtf"/>
 		</ant>
 	</target>

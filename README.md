@@ -19,7 +19,7 @@ The two parts of the transformation and rendering comprise of:
 1.	- This is the transformation step and it uses cheatsheet-to-dita.xsl which requires an XSLT 2.0 compliant processor.
 	- I used SaxonHE9-6-0-7J from Saxonica which is currently the latest version.
 	- This file takes as input a collection on XML files (Eclipse cheat sheets) and creates multiple output files - a parent DITA Map and some associated tasks.
-	- The 'output' and sub 'dita' folder contains the dynamically created (transformed) DITA files from this step. 
+	- The 'output/debrief' and sub 'dita' folder contains the dynamically created (transformed) DITA files from this step. 
 	
 	
 2.	- This is the rendering (printing) step and the 'info.debrief' custom DITA-OT plugin produces the PDF via the DITA-OT base libraries and a XSL - Formatting Objects Processor (FO Processor)
@@ -41,9 +41,9 @@ Project Set Up, Build and Run.
 	
 2.  - Right click on build.xml and select -> Run As -> Ant Build -> (first one)
 	- This should run and build all tasks, creating all working output formats in one go.
-	- This process re-creates the DITA XML output in the 'output' directory.  There should be five DITA files, one parent Ditamap at and 4 task files with the Ditamap at the root of the output folder with task files together in the sub folder 'dita'
+	- This process re-creates the DITA XML output in the 'output' directory.  There should be five DITA files, one parent Ditamap at and 4 task files with the Ditamap at the root of the 'output/debrief' folder with task files together in the sub folder 'dita'
 	- The final resulting PDF should be called map.pdf and located in the 'pdf' folder.
-	- There are currently 4 other output formats (Docbook, HTMLHelp, TocJS, XHTML) as seen by the names of the folders in the 'output' directory.  The PDF output is vastly superior to the others which have no customization.  The Docbook output is a work in progress. 
+	- There are currently 4 other output formats (Docbook, HTMLHelp, TocJS, XHTML) as seen by the names of the folders in the 'output/debrief' directory.  The PDF output is vastly superior to the others which have no customization.  The Docbook output is a work in progress. 
 	- If you want to choose which output formats to render, you can right click on build.xml and select -> Run As -> Ant Build -> (second one), and then select which output format you would like on the 'Targets' tab under 'Check targets to execute' and click Run
 
 	
