@@ -19,7 +19,7 @@
   
   <path id="dost.class.path">
     
-<pathelement location="${fop.dir}/build/fop.jar"/>
+<pathelement location="${dita.dir}${file.separator}plugins/org.dita.pdf2/lib/fo.jar"/>
     <pathelement location="${dita.dir}${file.separator}lib${file.separator}dost.jar"></pathelement>
   </path>
   
@@ -27,7 +27,7 @@
     <dita-ot-fail id="DOTA001F">
       <condition>
         <and>
-          <not><equals arg1="${transtype}" arg2="xhtml" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="htmlhelp" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="tocjs" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="eclipsehelp" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="troff" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="pdf2" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="debrief" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="eclipsecontent" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="legacypdf" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="javahelp" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="wordrtf" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="odt" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="pdf" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="docbook" casesensitive="false"/></not>
+          <not><equals arg1="${transtype}" arg2="xhtml" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="htmlhelp" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="tocjs" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="eclipsehelp" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="troff" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="pdf2" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="infosvg" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="debrief" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="eclipsecontent" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="legacypdf" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="javahelp" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="wordrtf" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="odt" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="pdf" casesensitive="false"/></not><not><equals arg1="${transtype}" arg2="docbook" casesensitive="false"/></not>
         </and>
       </condition>
       <param name="1" value="${transtype}"></param>
@@ -47,7 +47,7 @@
     </antcall>
   </target>
   
-  <property name='dita.plugin.org.dita.base.dir' location='${dita.dir}'/><property name='dita.plugin.org.dita.htmlhelp.dir' location='${dita.dir}/plugins/org.dita.htmlhelp'/><property name='dita.plugin.org.dita.specialization.h2d.dir' location='${dita.dir}/plugins/h2d'/><property name='dita.plugin.com.sophos.tocjs.dir' location='${dita.dir}/plugins/com.sophos.tocjs'/><property name='dita.plugin.org.dita.eclipsehelp.dir' location='${dita.dir}/plugins/org.dita.eclipsehelp'/><property name='dita.plugin.org.dita.specialization.dita11.dir' location='${dita.dir}/plugins/org.dita.specialization.dita11'/><property name='dita.plugin.org.dita.troff.dir' location='${dita.dir}/plugins/org.dita.troff'/><property name='dita.plugin.info.debrief.dir' location='${dita.dir}/plugins/info.debrief'/><property name='dita.plugin.org.dita.eclipsecontent.dir' location='${dita.dir}/plugins/org.dita.eclipsecontent'/><property name='dita.plugin.org.dita.legacypdf.dir' location='${dita.dir}/plugins/legacypdf'/><property name='dita.plugin.org.dita.javahelp.dir' location='${dita.dir}/plugins/org.dita.javahelp'/><property name='dita.plugin.org.dita.specialization.eclipsemap.dir' location='${dita.dir}/plugins/org.dita.specialization.eclipsemap'/><property name='dita.plugin.org.dita.wordrtf.dir' location='${dita.dir}/plugins/org.dita.wordrtf'/><property name='dita.plugin.org.dita.odt.dir' location='${dita.dir}/plugins/org.dita.odt'/><property name='dita.plugin.org.dita.xhtml.dir' location='${dita.dir}/plugins/org.dita.xhtml'/><property name='dita.plugin.org.dita.specialization.dita132.dir' location='${dita.dir}/plugins/org.dita.specialization.dita132'/><property name='dita.plugin.org.dita.pdf.dir' location='${dita.dir}/plugins/org.dita.pdf'/><property name='dita.plugin.org.dita.pdf2.dir' location='${dita.dir}/plugins/org.dita.pdf2'/><property name='dita.plugin.org.dita.docbook.dir' location='${dita.dir}/plugins/org.dita.docbook'/>
+  <property name='dita.plugin.org.dita.base.dir' location='${dita.dir}'/><property name='dita.plugin.org.dita.htmlhelp.dir' location='${dita.dir}/plugins/org.dita.htmlhelp'/><property name='dita.plugin.org.dita.specialization.h2d.dir' location='${dita.dir}/plugins/h2d'/><property name='dita.plugin.com.sophos.tocjs.dir' location='${dita.dir}/plugins/com.sophos.tocjs'/><property name='dita.plugin.org.dita.eclipsehelp.dir' location='${dita.dir}/plugins/org.dita.eclipsehelp'/><property name='dita.plugin.org.dita.specialization.dita11.dir' location='${dita.dir}/plugins/org.dita.specialization.dita11'/><property name='dita.plugin.org.dita.troff.dir' location='${dita.dir}/plugins/org.dita.troff'/><property name='dita.plugin.info.svg.dir' location='${dita.dir}/plugins/info.svg'/><property name='dita.plugin.info.debrief.dir' location='${dita.dir}/plugins/info.debrief'/><property name='dita.plugin.org.dita.eclipsecontent.dir' location='${dita.dir}/plugins/org.dita.eclipsecontent'/><property name='dita.plugin.org.dita.legacypdf.dir' location='${dita.dir}/plugins/legacypdf'/><property name='dita.plugin.org.dita.javahelp.dir' location='${dita.dir}/plugins/org.dita.javahelp'/><property name='dita.plugin.org.dita.specialization.eclipsemap.dir' location='${dita.dir}/plugins/org.dita.specialization.eclipsemap'/><property name='dita.plugin.org.dita.wordrtf.dir' location='${dita.dir}/plugins/org.dita.wordrtf'/><property name='dita.plugin.org.dita.odt.dir' location='${dita.dir}/plugins/org.dita.odt'/><property name='dita.plugin.org.dita.xhtml.dir' location='${dita.dir}/plugins/org.dita.xhtml'/><property name='dita.plugin.org.dita.specialization.dita132.dir' location='${dita.dir}/plugins/org.dita.specialization.dita132'/><property name='dita.plugin.org.dita.pdf.dir' location='${dita.dir}/plugins/org.dita.pdf'/><property name='dita.plugin.org.dita.pdf2.dir' location='${dita.dir}/plugins/org.dita.pdf2'/><property name='dita.plugin.org.dita.docbook.dir' location='${dita.dir}/plugins/org.dita.docbook'/>
   <!-- 
   This file is part of the DITA Open Toolkit project hosted on
   Sourceforge.net. See the accompanying license.txt file for
@@ -296,7 +296,7 @@
                 
 <classpath>
                     
-<fileset dir="${fop.dir}/lib">
+<fileset dir="${dita.plugin.org.dita.legacypdf.dir}/lib">
                         
 <include name="*.jar"></include>
                     </fileset>
@@ -404,6 +404,14 @@
 
 
   
+<target name="infosvg.init">
+    
+<property name="customization.dir" location="${dita.plugin.info.debrief.dir}/cfg"></property>
+  </target>
+  
+<target name="dita2infosvg" depends="infosvg.init, dita2pdf2"></target>
+
+  
 <target name="debrief.init">
     
 <property name="customization.dir" location="${dita.plugin.info.debrief.dir}/cfg"></property>
@@ -448,7 +456,7 @@
     <echo level="info">  args.input=&lt;file&gt;</echo>
     <echo level="info">    Path and name of the input file.</echo>
     <echo level="info"></echo>
-    <echo level="info">  transtype={debrief|docbook|eclipsecontent|eclipsehelp|htmlhelp|javahelp|legacypdf|odt|pdf|pdf2|tocjs|troff|wordrtf|xhtml}</echo>
+    <echo level="info">  transtype={debrief|docbook|eclipsecontent|eclipsehelp|htmlhelp|infosvg|javahelp|legacypdf|odt|pdf|pdf2|tocjs|troff|wordrtf|xhtml}</echo>
     <echo level="info">    Transformation type.</echo>
     <echo level="info"></echo>
     <echo level="info">Optional properties:</echo>

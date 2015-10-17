@@ -3,11 +3,11 @@
      
 	<property name="cheatsheets.to.dita" value="src${file.separator}cheatsheet-to-dita.xsl"/>
 	<property name="output.dir" value="output"/>
-	<property name="libs.dir" value="src${file.separator}libs${file.separator}"/>
+	<property name="lib.dir" value="src${file.separator}libs${file.separator}"/>
 	
-	<property name="dita-ot.dir" value="${libs.dir}DITA-OT1.8.5"/>
-	<property name="saxon.dir" value="${libs.dir}SaxonHE9-6-0-7J"/>			
-	<property name="fop.dir" value="${libs.dir}fop-2.0"/>
+	<property name="dita-ot.dir" value="${lib.dir}DITA-OT1.8.5"/>
+	<property name="saxon.dir" value="${dita-ot.dir}/lib/saxon"/>			
+	<property name="fop.dir" value="${lib.dir}fop-2.0"/>
 	
 	<property name="saxon.jar" value="${saxon.dir}${file.separator}saxon9he.jar"/>
 	
@@ -22,7 +22,18 @@
    		</xslt>
 	</target>
 	
-	<target name="toPdf">
+	<!--
+	<target name="toPDF-SVG">
+			
+			<ant antfile="${dita.build.file}">
+			  <property name="args.input" location="${output.ditamap}"/>
+			  <property name="output.dir" location="${output.dir.sep}pdf"/>
+			  <property name="transtype" value="infosvg"/>
+			</ant>
+		</target>	
+	-->
+	
+	<target name="toPDF">
 		<!-- run the Ditamap through DITA-OT to produce the PDF -->
 		<ant antfile="${dita.build.file}">
 		  <property name="args.input" location="${output.ditamap}"/>
@@ -49,7 +60,7 @@
 		</ant>
 	</target>	
 	
-	<target name="toHTML-Help">
+	<target name="toHTMLHelp">
 		<!-- run the Ditamap through DITA-OT to produce the HTML Help -->
 		<ant antfile="${dita.build.file}">
 		  <property name="args.input" location="${output.ditamap}"/>
@@ -69,7 +80,7 @@
 	
 	<!-- ODT output is not currently building and is not included in TransformAll -->
 	<target name="toODT">
-		<!-- run the Ditamap through DITA-OT to produce the Docbook -->
+		<!-- run the Ditamap through DITA-OT to produce the ODT -->
 		<ant antfile="${dita.build.file}">
 		  <property name="args.input" location="${output.ditamap}"/>
 		  <property name="output.dir" location="${output.dir.sep}odt"/>
@@ -86,6 +97,6 @@
 		</ant>
 	</target>
 	
-	<target name="TransformAll" depends="xslt2, toPdf, toXHTML, toTocJS, toHTML-Help, toDocbook"/>	
+	<target name="TransformAll" depends="xslt2, toPDF, toXHTML, toTocJS, toHTMLHelp, toDocbook"/>	
 	
 </project>

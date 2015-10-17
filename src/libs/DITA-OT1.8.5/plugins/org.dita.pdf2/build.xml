@@ -114,7 +114,7 @@ with those set forth herein.
         
     <path id="project.class.path">
       <pathelement path="${java.class.path}"></pathelement>
-      <fileset dir="${saxon.dir}">
+      <fileset dir="${lib.dir}/saxon">
         <include name="**/*.jar"></include>
       </fileset>
       <!--
