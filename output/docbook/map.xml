@@ -1120,82 +1120,83 @@ Let's start off with an easy scenario. We're going to work on an engagement wher
                   </listitem>
                </orderedlist>
                <para id="sctnd2222e137" remap="result">
-                  <emphasis role="bold" id="bd2222e139" remap="b">Conclusion</emphasis>&lt;br&gt;
-                  Ok, you've found the Debrief <emphasis role="bold" id="bd2222e142" remap="b">Sample Data</emphasis>.  You're ready for the tutorial now.
+                  <emphasis role="bold" id="bd2222e139" remap="b">Conclusion</emphasis>
+                  <phrase id="phrsd2222e142" remap="ph"/>
+                  Ok, you've found the Debrief <emphasis role="bold" id="bd2222e144" remap="b">Sample Data</emphasis>.  You're ready for the tutorial now.
                </para>
             </section>
-            <section remap="task" id="d6e117">
-               <title id="ttld2222e150" remap="title">Generating links to your existing data</title>
-               <para id="parad2222e153" remap="shortdesc">Here we are going to copy in an existing set of sample data. We aren't
+            <section remap="task" id="d6e118">
+               <title id="ttld2222e152" remap="title">Generating links to your existing data</title>
+               <para id="parad2222e155" remap="shortdesc">Here we are going to copy in an existing set of sample data. We aren't
 			going to link to the original set, since we don't want to modify it,
 			or we don't have modify access.
-			<phrase id="phrsd2222e155" remap="ph"/> The steps presume that the Debrief <emphasis role="bold" id="bd2222e157" remap="b">Sample data</emphasis> is in the
-			<emphasis role="bold" id="bd2222e160" remap="b">Debrief\DebriefNG</emphasis> folder that is probably in a <emphasis role="bold" id="bd2222e163" remap="b">Programs</emphasis> network share.</para>
-               <orderedlist id="old2222e169" remap="steps">
+			<phrase id="phrsd2222e157" remap="ph"/> The steps presume that the Debrief <emphasis role="bold" id="bd2222e159" remap="b">Sample data</emphasis> is in the
+			<emphasis role="bold" id="bd2222e162" remap="b">Debrief\DebriefNG</emphasis> folder that is probably in a <emphasis role="bold" id="bd2222e165" remap="b">Programs</emphasis> network share.</para>
+               <orderedlist id="old2222e171" remap="steps">
                   <listitem remap="step" id="d21e20">
                      <para remap="#PCDATA">
-                        <phrase id="phrsd2222e173" remap="cmd">Check Navigator is open</phrase>
+                        <phrase id="phrsd2222e175" remap="cmd">Check Navigator is open</phrase>
                      </para>
                      <para remap="#PCDATA">In the top left hand corner of Debrief you should find the Navigator window. If
-			it isn't there, select <emphasis role="bold" id="bd2222e178" remap="b">Navigator</emphasis> from Debrief's Window/Show View
+			it isn't there, select <emphasis role="bold" id="bd2222e180" remap="b">Navigator</emphasis> from Debrief's Window/Show View
 			menu.</para>
                   </listitem>
                   <listitem remap="step" id="d21e29">
                      <para remap="#PCDATA">
-                        <phrase id="phrsd2222e187" remap="cmd">Check you have a workspace</phrase>
+                        <phrase id="phrsd2222e189" remap="cmd">Check you have a workspace</phrase>
                      </para>
                      <para remap="#PCDATA">Before you can import the existing data, you need to define a project for your
 			work. This is a parent folder within which your data (or links to your data) is stored. If your Navigator
-			window is empty, you must follow the <emphasis role="bold" id="bd2222e192" remap="b">Generating a project</emphasis> cheat-sheet accessed
+			window is empty, you must follow the <emphasis role="bold" id="bd2222e194" remap="b">Generating a project</emphasis> cheat-sheet accessed
 			from the Help/Cheat Sheets menu.</para>
                   </listitem>
                   <listitem remap="step" id="d21e38">
                      <para remap="#PCDATA">
-                        <phrase id="phrsd2222e201" remap="cmd">Prepare to drag in data</phrase>
+                        <phrase id="phrsd2222e203" remap="cmd">Prepare to drag in data</phrase>
                      </para>
                      <para remap="#PCDATA">
 			The sample data is going to be dragged in.  In order to do this, the relevant
 			windows both need to be visible at the same time.
-			<phrase id="phrsd2222e206" remap="ph"/>
+			<phrase id="phrsd2222e208" remap="ph"/>
 			So, open Windows Explorer and then arrange your on-screen Windows so that Debrief
-			is also visible. Then, navigate in Windows Explorer so that you can see the <emphasis role="bold" id="bd2222e208" remap="b">sample_data</emphasis>
-			folder. It's in the <emphasis role="bold" id="bd2222e211" remap="b">Debrief/DebriefNG</emphasis> folder.
+			is also visible. Then, navigate in Windows Explorer so that you can see the <emphasis role="bold" id="bd2222e210" remap="b">sample_data</emphasis>
+			folder. It's in the <emphasis role="bold" id="bd2222e213" remap="b">Debrief/DebriefNG</emphasis> folder.
 		</para>
                   </listitem>
                   <listitem remap="step" id="d21e52">
                      <para remap="#PCDATA">
-                        <phrase id="phrsd2222e220" remap="cmd">Drag in sample data</phrase>
+                        <phrase id="phrsd2222e222" remap="cmd">Drag in sample data</phrase>
                      </para>
                      <para remap="#PCDATA">
-			Now that you are ready to import, pick up the <emphasis role="bold" id="bd2222e225" remap="b">sample_data</emphasis> folder using your mouse, and drop it into
-			 a project in the <emphasis role="bold" id="bd2222e228" remap="b">Navigator</emphasis> window of Debrief.  A dialog will open asking you if you wish
-			to <emphasis role="bold" id="bd2222e231" remap="b">Copy files and folders</emphasis> or <emphasis role="bold" id="bd2222e234" remap="b">Link to files and folders</emphasis>.  Select the <emphasis role="bold" id="bd2222e237" remap="b">Copy</emphasis> option.
+			Now that you are ready to import, pick up the <emphasis role="bold" id="bd2222e227" remap="b">sample_data</emphasis> folder using your mouse, and drop it into
+			 a project in the <emphasis role="bold" id="bd2222e230" remap="b">Navigator</emphasis> window of Debrief.  A dialog will open asking you if you wish
+			to <emphasis role="bold" id="bd2222e233" remap="b">Copy files and folders</emphasis> or <emphasis role="bold" id="bd2222e236" remap="b">Link to files and folders</emphasis>.  Select the <emphasis role="bold" id="bd2222e239" remap="b">Copy</emphasis> option.
 		</para>
                   </listitem>
                </orderedlist>
-               <para id="sctnd2222e245" remap="result">
-                  <emphasis role="bold" id="bd2222e247" remap="b">Conclusion</emphasis>
-                  <phrase id="phrsd2222e250" remap="ph"/>
-                  Ok, you've found the Debrief <emphasis role="bold" id="bd2222e252" remap="b">Sample Data</emphasis>.  You're ready for the tutorial now.
+               <para id="sctnd2222e247" remap="result">
+                  <emphasis role="bold" id="bd2222e249" remap="b">Conclusion</emphasis>
+                  <phrase id="phrsd2222e252" remap="ph"/>
+                  Ok, you've found the Debrief <emphasis role="bold" id="bd2222e254" remap="b">Sample Data</emphasis>.  You're ready for the tutorial now.
                </para>
             </section>
          </section>
       </section>
-      <section remap="task" id="d6e204">
-         <title id="ttld2222e262" remap="title">Multi Leg Solution</title>
-         <para id="parad2222e265" remap="shortdesc">
+      <section remap="task" id="d6e205">
+         <title id="ttld2222e264" remap="title">Multi Leg Solution</title>
+         <para id="parad2222e267" remap="shortdesc">
             Now for something a little more advanced. In this tutorial we're going to work with a scenario with several targets zigs, where a number of contributions are required to get a good quality solution.
          </para>
-         <section remap="task" id="d6e209">
-            <title id="ttld2222e270" remap="title">Loading the data</title>
-            <para id="parad2222e273" remap="shortdesc">
+         <section remap="task" id="d6e210">
+            <title id="ttld2222e272" remap="title">Loading the data</title>
+            <para id="parad2222e275" remap="shortdesc">
          We've got a Debrief plot file pre-prepared to let you avoid 
-         some of the steps in the single-leg tutorial, called  <emphasis role="bold" id="bd2222e275" remap="b">L2_Scenario.xml</emphasis>.
+         some of the steps in the single-leg tutorial, called  <emphasis role="bold" id="bd2222e277" remap="b">L2_Scenario.xml</emphasis>.
       </para>
-            <orderedlist id="old2222e281" remap="steps">
+            <orderedlist id="old2222e283" remap="steps">
                <listitem remap="step" id="d22e12">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2222e285" remap="cmd">Find the data file</phrase>
+                     <phrase id="phrsd2222e287" remap="cmd">Find the data file</phrase>
                   </para>
                   <para remap="#PCDATA">         
          The data-file for this tutorial is contained in the SATC sub-folder, as were the 
@@ -1204,43 +1205,43 @@ Let's start off with an easy scenario. We're going to work on an engagement wher
                </listitem>
                <listitem remap="step" id="d22e18">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2222e296" remap="cmd">Drag in the file</phrase>
+                     <phrase id="phrsd2222e298" remap="cmd">Drag in the file</phrase>
                   </para>
                   <para remap="#PCDATA">         
          Before you load the data-file, close any existing Debrief plots, then drag 
-         in the <emphasis role="bold" id="bd2222e301" remap="b">L2_Scenario.xml</emphasis> data-file from the SATC folder we used in the previous tutorial.
-         <phrase id="phrsd2222e304" remap="ph"/>
-                     <phrase id="phrsd2222e306" remap="ph"/>
+         in the <emphasis role="bold" id="bd2222e303" remap="b">L2_Scenario.xml</emphasis> data-file from the SATC folder we used in the previous tutorial.
+         <phrase id="phrsd2222e306" remap="ph"/>
+                     <phrase id="phrsd2222e308" remap="ph"/>
          You will see a Blue Ownship track, with a bearing fan in nice pretty shades of green, purple and red.
       </para>
                </listitem>
             </orderedlist>
-            <para id="sctnd2222e313" remap="result"/>
+            <para id="sctnd2222e315" remap="result"/>
          </section>
-         <section remap="task" id="d6e217">
-            <title id="ttld2222e319" remap="title">Grooming the data</title>
-            <para id="parad2222e322" remap="shortdesc">
+         <section remap="task" id="d6e218">
+            <title id="ttld2222e321" remap="title">Grooming the data</title>
+            <para id="parad2222e324" remap="shortdesc">
          Let's understand the data we've got, before we start playing with it
       </para>
-            <orderedlist id="old2222e327" remap="steps">
+            <orderedlist id="old2222e329" remap="steps">
                <listitem remap="step" id="d23e9">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2222e331" remap="cmd">View the ownship track</phrase>
+                     <phrase id="phrsd2222e333" remap="cmd">View the ownship track</phrase>
                   </para>
                   <para remap="#PCDATA">         
-         When you view the tutoral plot you will see an ownship track.  Use the Debrief <emphasis role="bold" id="bd2222e336" remap="b">Time Controller</emphasis> and <emphasis role="bold" id="bd2222e339" remap="b">Track Tote</emphasis> to 
-         familiarise yourself with the general motion of the <emphasis role="bold" id="bd2222e342" remap="b">OWNSHIP</emphasis> track.  You'll see that it starts in the 
+         When you view the tutoral plot you will see an ownship track.  Use the Debrief <emphasis role="bold" id="bd2222e338" remap="b">Time Controller</emphasis> and <emphasis role="bold" id="bd2222e341" remap="b">Track Tote</emphasis> to 
+         familiarise yourself with the general motion of the <emphasis role="bold" id="bd2222e344" remap="b">OWNSHIP</emphasis> track.  You'll see that it starts in the 
          North-East of the area, then travels quite slowly at 2.5 knots, with two straight legs.
       </para>
                </listitem>
                <listitem remap="step" id="d23e24">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2222e351" remap="cmd">View the sensor data</phrase>
+                     <phrase id="phrsd2222e353" remap="cmd">View the sensor data</phrase>
                   </para>
                   <para remap="#PCDATA">         
          The identification of straight legs is pivotal to the SATC process, since they greatly constrain
          the possible solution combinations.
-         <phrase id="phrsd2222e356" remap="ph"/>
+         <phrase id="phrsd2222e358" remap="ph"/>
          Just as when conducting Manual TMA generation using Debrief, the best practice for this process is to color the sensor cuts according
          to the leg they're contained in.  If you examine the Ownship sensor data, you'll see 
          that the first and second legs have been coloured in green and purple, respectively. Between each leg, a
@@ -1249,106 +1250,106 @@ Let's start off with an easy scenario. We're going to work on an engagement wher
                </listitem>
                <listitem remap="step" id="d23e32">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2222e364" remap="cmd">Mark the final target leg</phrase>
+                     <phrase id="phrsd2222e366" remap="cmd">Mark the final target leg</phrase>
                   </para>
                   <para remap="#PCDATA">         
          Whilst the first two target legs have been coloured, the last one hasn't. Let's do it now. 
-         <phrase id="phrsd2222e369" remap="ph"/>
-                     <phrase id="phrsd2222e371" remap="ph"/>
+         <phrase id="phrsd2222e371" remap="ph"/>
+                     <phrase id="phrsd2222e373" remap="ph"/>
          Expand the sensor data
-         in the Outline View, and select the sensor cuts from <emphasis role="bold" id="bd2222e373" remap="b">100112 134230</emphasis> until the end of the
-         dataset, at <emphasis role="bold" id="bd2222e376" remap="b">100112 140000</emphasis>.  Now use the <emphasis role="bold" id="bd2222e379" remap="b">Properties</emphasis> view to change the color of these cuts to <emphasis role="bold" id="bd2222e383" remap="b">Yellow</emphasis> 
+         in the Outline View, and select the sensor cuts from <emphasis role="bold" id="bd2222e375" remap="b">100112 134230</emphasis> until the end of the
+         dataset, at <emphasis role="bold" id="bd2222e378" remap="b">100112 140000</emphasis>.  Now use the <emphasis role="bold" id="bd2222e381" remap="b">Properties</emphasis> view to change the color of these cuts to <emphasis role="bold" id="bd2222e385" remap="b">Yellow</emphasis> 
          (or obviously you could right-click and select Color &gt; Yellow).
       </para>
                </listitem>
                <listitem remap="step" id="d23e53">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2222e392" remap="cmd">Create the scenario</phrase>
+                     <phrase id="phrsd2222e394" remap="cmd">Create the scenario</phrase>
                   </para>
                   <para remap="#PCDATA">
          The most significant block of information in generating a solution is the bearing data.  So, the 
          first step is to provide the bearing data.  We are going to use all of the Ownship sensor data for this
-         solution, so right-click on the <emphasis role="bold" id="bd2222e397" remap="b">Sensor:Plain (145 items)</emphasis> sensor, and select <emphasis role="bold" id="bd2222e400" remap="b">Semi Auto TMA</emphasis> / 
-         <emphasis role="bold" id="bd2222e403" remap="b">Create new scenario from these cuts</emphasis>.
-         <phrase id="phrsd2222e406" remap="ph"/>As with the previous tutorial, you will see the new scenario (called <emphasis role="bold" id="bd2222e408" remap="b">121200.00</emphasis> appear in the Outline View, and the 
-         <emphasis role="bold" id="bd2222e412" remap="b">Maintain Contributions</emphasis> view will open. 
-         <phrase id="phrsd2222e415" remap="ph"/>You will also see that the <emphasis role="bold" id="bd2222e417" remap="b">Maintain Contributions</emphasis> view contains just the one contribution.
+         solution, so right-click on the <emphasis role="bold" id="bd2222e399" remap="b">Sensor:Plain (145 items)</emphasis> sensor, and select <emphasis role="bold" id="bd2222e402" remap="b">Semi Auto TMA</emphasis> / 
+         <emphasis role="bold" id="bd2222e405" remap="b">Create new scenario from these cuts</emphasis>.
+         <phrase id="phrsd2222e408" remap="ph"/>As with the previous tutorial, you will see the new scenario (called <emphasis role="bold" id="bd2222e410" remap="b">121200.00</emphasis> appear in the Outline View, and the 
+         <emphasis role="bold" id="bd2222e414" remap="b">Maintain Contributions</emphasis> view will open. 
+         <phrase id="phrsd2222e417" remap="ph"/>You will also see that the <emphasis role="bold" id="bd2222e419" remap="b">Maintain Contributions</emphasis> view contains just the one contribution.
       </para>
                </listitem>
                <listitem remap="step" id="d23e83">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2222e426" remap="cmd">Rename the scenario</phrase>
+                     <phrase id="phrsd2222e428" remap="cmd">Rename the scenario</phrase>
                   </para>
                   <para remap="#PCDATA">         
-         To make it easier to navigate the data, please use the <emphasis role="bold" id="bd2222e431" remap="b">Properties</emphasis> view to rename 
-         the new scenario to <emphasis role="bold" id="bd2222e434" remap="b">Tutorial Scenario</emphasis>
+         To make it easier to navigate the data, please use the <emphasis role="bold" id="bd2222e433" remap="b">Properties</emphasis> view to rename 
+         the new scenario to <emphasis role="bold" id="bd2222e436" remap="b">Tutorial Scenario</emphasis>
                   </para>
                </listitem>
                <listitem remap="step" id="d23e95">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2222e444" remap="cmd">Try to generate a solution</phrase>
+                     <phrase id="phrsd2222e446" remap="cmd">Try to generate a solution</phrase>
                   </para>
                   <para remap="#PCDATA">         
-         Hey, why not try to generate a solution.  Just click on <emphasis role="bold" id="bd2222e449" remap="b">Calculate Solution</emphasis> at the top of the
-         <emphasis role="bold" id="bd2222e452" remap="b">Maintain Contributions</emphasis> view.  You will see Debrief do a couple of seconds of processing, and then stop.
+         Hey, why not try to generate a solution.  Just click on <emphasis role="bold" id="bd2222e451" remap="b">Calculate Solution</emphasis> at the top of the
+         <emphasis role="bold" id="bd2222e454" remap="b">Maintain Contributions</emphasis> view.  You will see Debrief do a couple of seconds of processing, and then stop.
          This is because Debrief doesn't have enough information to generate a solution.  It needs to know
          one or more straight legs.         
       </para>
                </listitem>
             </orderedlist>
-            <para id="sctnd2222e460" remap="result"/>
+            <para id="sctnd2222e462" remap="result"/>
          </section>
-         <section remap="task" id="d6e225">
-            <title id="ttld2222e466" remap="title">Playing with legs</title>
-            <para id="parad2222e469" remap="shortdesc">
+         <section remap="task" id="d6e226">
+            <title id="ttld2222e468" remap="title">Playing with legs</title>
+            <para id="parad2222e471" remap="shortdesc">
          After the bearing measurements, knowledge of the straight legs is the most valuable set of information for SATC.
       </para>
-            <orderedlist id="old2222e474" remap="steps">
+            <orderedlist id="old2222e476" remap="steps">
                <listitem remap="step" id="d24e9">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2222e478" remap="cmd">Mark first leg</phrase>
+                     <phrase id="phrsd2222e480" remap="cmd">Mark first leg</phrase>
                   </para>
                   <para remap="#PCDATA">         
-         Ok, let's mark the first leg. In the <emphasis role="bold" id="bd2222e483" remap="b">Outline View</emphasis>, expand the Ownship sensor data, and select all of the
-         <emphasis role="bold" id="bd2222e486" remap="b">Green</emphasis> cuts.  Now, right-click on them, and select <emphasis role="bold" id="bd2222e489" remap="b">Semi Auto TMA</emphasis> / <emphasis role="bold" id="bd2222e492" remap="b">Add to Tutorial Scenario</emphasis> / 
-         <emphasis role="bold" id="bd2222e495" remap="b">Straight leg for period covered by [sensor cuts]</emphasis>. When asked, give it the name <emphasis role="bold" id="bd2222e499" remap="b">First Leg</emphasis>.
-         <phrase id="phrsd2222e502" remap="ph"/>
-                     <phrase id="phrsd2222e504" remap="ph"/>
-                     <emphasis role="bold" id="bd2222e506" remap="b">Note:</emphasis> selecting the cuts and "giving" them to the solution isn't actually adding
+         Ok, let's mark the first leg. In the <emphasis role="bold" id="bd2222e485" remap="b">Outline View</emphasis>, expand the Ownship sensor data, and select all of the
+         <emphasis role="bold" id="bd2222e488" remap="b">Green</emphasis> cuts.  Now, right-click on them, and select <emphasis role="bold" id="bd2222e491" remap="b">Semi Auto TMA</emphasis> / <emphasis role="bold" id="bd2222e494" remap="b">Add to Tutorial Scenario</emphasis> / 
+         <emphasis role="bold" id="bd2222e497" remap="b">Straight leg for period covered by [sensor cuts]</emphasis>. When asked, give it the name <emphasis role="bold" id="bd2222e501" remap="b">First Leg</emphasis>.
+         <phrase id="phrsd2222e504" remap="ph"/>
+                     <phrase id="phrsd2222e506" remap="ph"/>
+                     <emphasis role="bold" id="bd2222e508" remap="b">Note:</emphasis> selecting the cuts and "giving" them to the solution isn't actually adding
          the cuts - the solution knows about the cuts already.  We're justing using the block of cuts
           as a convenient way of specifying the start and end times for the leg.
       </para>
                </listitem>
                <listitem remap="step" id="d24e39">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2222e515" remap="cmd">Try to generate a solution (again)</phrase>
+                     <phrase id="phrsd2222e517" remap="cmd">Try to generate a solution (again)</phrase>
                   </para>
                   <para remap="#PCDATA">         
-         Ok, now we should be able to generate a solution.  Again, click on <emphasis role="bold" id="bd2222e520" remap="b">Calculate Solution</emphasis> at the top of the
-         <emphasis role="bold" id="bd2222e523" remap="b">Maintain Contributions</emphasis> view.  You will see Debrief do a couple of seconds of processing, you'll see
-         a line graph appearing in the <emphasis role="bold" id="bd2222e526" remap="b">Performance</emphasis> area of the <emphasis role="bold" id="bd2222e529" remap="b">Maintain Contributions</emphasis> view, and a green
+         Ok, now we should be able to generate a solution.  Again, click on <emphasis role="bold" id="bd2222e522" remap="b">Calculate Solution</emphasis> at the top of the
+         <emphasis role="bold" id="bd2222e525" remap="b">Maintain Contributions</emphasis> view.  You will see Debrief do a couple of seconds of processing, you'll see
+         a line graph appearing in the <emphasis role="bold" id="bd2222e528" remap="b">Performance</emphasis> area of the <emphasis role="bold" id="bd2222e531" remap="b">Maintain Contributions</emphasis> view, and a green
          line will appear on the plot.  Zooming in on the plot shows us that the single leg is 9.2 kts, at 319 degrees.  If we 
          zoom out again, we can see that, Yes, this could be a solution that fits in the data.
-         <phrase id="phrsd2222e532" remap="ph"/>
-                     <emphasis role="bold" id="bd2222e535" remap="b">Note:</emphasis> the use of randomisation in the SATC process means that your calculated speeds may well be different
+         <phrase id="phrsd2222e534" remap="ph"/>
+                     <emphasis role="bold" id="bd2222e537" remap="b">Note:</emphasis> the use of randomisation in the SATC process means that your calculated speeds may well be different
          to mine. Don't worry, this is intended.
       </para>
                </listitem>
                <listitem remap="step" id="d24e61">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2222e544" remap="cmd">Mark second leg</phrase>
+                     <phrase id="phrsd2222e546" remap="cmd">Mark second leg</phrase>
                   </para>
                   <para remap="#PCDATA">         
-         Now, we'll mark the second leg. In the <emphasis role="bold" id="bd2222e549" remap="b">Outline View</emphasis>, expand the Ownship sensor data, and select all of the
-         <emphasis role="bold" id="bd2222e552" remap="b">Purple</emphasis> cuts.  Now, right-click on them, and select <emphasis role="bold" id="bd2222e555" remap="b">Semi Auto TMA</emphasis> / <emphasis role="bold" id="bd2222e558" remap="b">Add to Tutorial Scenario</emphasis> / 
-         <emphasis role="bold" id="bd2222e561" remap="b">Straight leg for period covered by [sensor cuts]</emphasis>. When asked, give it the name <emphasis role="bold" id="bd2222e565" remap="b">Second Leg</emphasis>.
-         <phrase id="phrsd2222e568" remap="ph"/>The solution on the plot will disappear, since the new data means that it's probably incorrect.
-         <phrase id="phrsd2222e570" remap="ph"/>To see the effect of the new leg, click again on the <emphasis role="bold" id="bd2222e572" remap="b">Calculate Solution</emphasis> button.
+         Now, we'll mark the second leg. In the <emphasis role="bold" id="bd2222e551" remap="b">Outline View</emphasis>, expand the Ownship sensor data, and select all of the
+         <emphasis role="bold" id="bd2222e554" remap="b">Purple</emphasis> cuts.  Now, right-click on them, and select <emphasis role="bold" id="bd2222e557" remap="b">Semi Auto TMA</emphasis> / <emphasis role="bold" id="bd2222e560" remap="b">Add to Tutorial Scenario</emphasis> / 
+         <emphasis role="bold" id="bd2222e563" remap="b">Straight leg for period covered by [sensor cuts]</emphasis>. When asked, give it the name <emphasis role="bold" id="bd2222e567" remap="b">Second Leg</emphasis>.
+         <phrase id="phrsd2222e570" remap="ph"/>The solution on the plot will disappear, since the new data means that it's probably incorrect.
+         <phrase id="phrsd2222e572" remap="ph"/>To see the effect of the new leg, click again on the <emphasis role="bold" id="bd2222e574" remap="b">Calculate Solution</emphasis> button.
       </para>
                </listitem>
                <listitem remap="step" id="d24e93">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2222e581" remap="cmd">Generate updated solution</phrase>
+                     <phrase id="phrsd2222e583" remap="cmd">Generate updated solution</phrase>
                   </para>
                   <para remap="#PCDATA">         
          Now generate a new solution.  You'll see two legs present, the first with 12.1 knots, and the second with 14.1 knots.
@@ -1358,69 +1359,69 @@ Let's start off with an easy scenario. We're going to work on an engagement wher
                </listitem>
                <listitem remap="step" id="d24e100">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2222e592" remap="cmd">Mark third leg</phrase>
+                     <phrase id="phrsd2222e594" remap="cmd">Mark third leg</phrase>
                   </para>
                   <para remap="#PCDATA">         
-         Ok, now let's mark the third leg using the <emphasis role="bold" id="bd2222e597" remap="b">Yellow</emphasis> cuts, and re-generate the solution again.  The solution
+         Ok, now let's mark the third leg using the <emphasis role="bold" id="bd2222e599" remap="b">Yellow</emphasis> cuts, and re-generate the solution again.  The solution
          produced has a speed of 4.8 knots.
-         <phrase id="phrsd2222e600" remap="ph"/>So, now we have a three-leg solution that is compliant with our sensor data, and our straight leg forecasts.
-         <phrase id="phrsd2222e602" remap="ph"/>We can take a step to verify this by switching on the location constraints.  First, select the <emphasis role="bold" id="bd2222e604" remap="b">Tutorial Scenario</emphasis>
-          in the <emphasis role="bold" id="bd2222e607" remap="b">Outline View</emphasis>. Then, in the <emphasis role="bold" id="bd2222e611" remap="b">Properties</emphasis> window, switch on <emphasis role="bold" id="bd2222e614" remap="b">ShowLocationConstraints</emphasis>. You'll see
-         lots and lots of clutter on the plot. Also switch on <emphasis role="bold" id="bd2222e617" remap="b">OnlyPlotLegEnds</emphasis>.  This shows the calculated location 
+         <phrase id="phrsd2222e602" remap="ph"/>So, now we have a three-leg solution that is compliant with our sensor data, and our straight leg forecasts.
+         <phrase id="phrsd2222e604" remap="ph"/>We can take a step to verify this by switching on the location constraints.  First, select the <emphasis role="bold" id="bd2222e606" remap="b">Tutorial Scenario</emphasis>
+          in the <emphasis role="bold" id="bd2222e609" remap="b">Outline View</emphasis>. Then, in the <emphasis role="bold" id="bd2222e613" remap="b">Properties</emphasis> window, switch on <emphasis role="bold" id="bd2222e616" remap="b">ShowLocationConstraints</emphasis>. You'll see
+         lots and lots of clutter on the plot. Also switch on <emphasis role="bold" id="bd2222e619" remap="b">OnlyPlotLegEnds</emphasis>.  This shows the calculated location 
          constraints at the start and end of each leg.  We can see that yes, the solution is compliant with them.
       </para>
                </listitem>
                <listitem remap="step" id="d24e129">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2222e627" remap="cmd">Give speed constraint</phrase>
+                     <phrase id="phrsd2222e629" remap="cmd">Give speed constraint</phrase>
                   </para>
                   <para remap="#PCDATA">         
          So, we've got a solution.  But, I think it can be improved.  Let's try to give the target a consistent speed. We're
-         going to give a speed constraint to the whole period of the engagement. We could have done this by right-clicking on the whole <emphasis role="bold" id="bd2222e632" remap="b">Sensor:Plain</emphasis>
-         object, but an alternate way of doing this is to right-click on our <emphasis role="bold" id="bd2222e635" remap="b">Tutorial Scenario</emphasis> object in the <emphasis role="bold" id="bd2222e638" remap="b">Outline View</emphasis>,  
-         and selecting <emphasis role="bold" id="bd2222e641" remap="b">Add Speed Forecast for period covered by [Tutorial Scenario]</emphasis>.  A wizard will open, name the contribution
-         as <emphasis role="bold" id="bd2222e644" remap="b">Overall Speed</emphasis>. You will see this new constraint displayed in the <emphasis role="bold" id="bd2222e648" remap="b">Maintain Contributions</emphasis> view - with a default set
+         going to give a speed constraint to the whole period of the engagement. We could have done this by right-clicking on the whole <emphasis role="bold" id="bd2222e634" remap="b">Sensor:Plain</emphasis>
+         object, but an alternate way of doing this is to right-click on our <emphasis role="bold" id="bd2222e637" remap="b">Tutorial Scenario</emphasis> object in the <emphasis role="bold" id="bd2222e640" remap="b">Outline View</emphasis>,  
+         and selecting <emphasis role="bold" id="bd2222e643" remap="b">Add Speed Forecast for period covered by [Tutorial Scenario]</emphasis>.  A wizard will open, name the contribution
+         as <emphasis role="bold" id="bd2222e646" remap="b">Overall Speed</emphasis>. You will see this new constraint displayed in the <emphasis role="bold" id="bd2222e650" remap="b">Maintain Contributions</emphasis> view - with a default set
          of hard constraints shown: zero to forty knots.
       </para>
                </listitem>
                <listitem remap="step" id="d24e154">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2222e657" remap="cmd">Adjust speed constraint</phrase>
+                     <phrase id="phrsd2222e659" remap="cmd">Adjust speed constraint</phrase>
                   </para>
                   <para remap="#PCDATA">
          Ok, let's generate a new solution.  A constraint of 0-40 knots isn't much of a constraint at all, so it has little effect.  So,
-         expand the <emphasis role="bold" id="bd2222e662" remap="b">Speed Constraint - overall speed</emphasis> item in the <emphasis role="bold" id="bd2222e665" remap="b">Maintain Contributions</emphasis> view. Now reduce the maximum speed from 
+         expand the <emphasis role="bold" id="bd2222e664" remap="b">Speed Constraint - overall speed</emphasis> item in the <emphasis role="bold" id="bd2222e667" remap="b">Maintain Contributions</emphasis> view. Now reduce the maximum speed from 
          40 knots down to 15 knots.  If you still have the Location constraints visible, you will see them adjust to repesent the new constraint.
-         <phrase id="phrsd2222e668" remap="ph"/>This is because the vessel can't travel as far in each leg.  Also, increase the minimum speed to 8 knots.  Re-generate the solution
+         <phrase id="phrsd2222e670" remap="ph"/>This is because the vessel can't travel as far in each leg.  Also, increase the minimum speed to 8 knots.  Re-generate the solution
          and see what you think.  
       </para>
                </listitem>
                <listitem remap="step" id="d24e168">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2222e676" remap="cmd">Provide speed estimate</phrase>
+                     <phrase id="phrsd2222e678" remap="cmd">Provide speed estimate</phrase>
                   </para>
                   <para remap="#PCDATA">
          Lastly, let's try an estimate.  The estimate will make the algorithm favour solutions near that value, though
          it will still consider solutions that are still within the min/max hard constraints.  Try an estimate of 9 knots, and re-generate
          the solution.  I get a solution with speeds of 9, 13, and 9 knots.  But, I can see that if the overall solution was moved nearer to ownship,
          I may be able to achieve a consistent speed. So, now reduce the max speed to 10 knots, and re-generate the solution.  
-         <phrase id="phrsd2222e681" remap="ph"/>This gives me legs that are 9.6, 8.9 and 9.0 knots.  I may then choose to drag in the min/max sliders to really force
+         <phrase id="phrsd2222e683" remap="ph"/>This gives me legs that are 9.6, 8.9 and 9.0 knots.  I may then choose to drag in the min/max sliders to really force
          the solution onto a particular speed, but I'm ok with this answer.
       </para>
                </listitem>
                <listitem remap="step" id="d24e176">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2222e689" remap="cmd">Verify solution</phrase>
+                     <phrase id="phrsd2222e691" remap="cmd">Verify solution</phrase>
                   </para>
                   <para remap="#PCDATA">
-         Ok, now how good is that solution?  In the <emphasis role="bold" id="bd2222e694" remap="b">Outline View</emphasis>, make the <emphasis role="bold" id="bd2222e697" remap="b">SUBJECT</emphasis> track visible.  You should see
+         Ok, now how good is that solution?  In the <emphasis role="bold" id="bd2222e696" remap="b">Outline View</emphasis>, make the <emphasis role="bold" id="bd2222e699" remap="b">SUBJECT</emphasis> track visible.  You should see
          that the generated solution is very close to the truth track, even with this low bearing rate data.  If you wish to 
          verify the calculated solution against the truth track, you can view the XY Range plot (again) and see the separation
          between the two tracks.
       </para>
                </listitem>
             </orderedlist>
-            <para id="sctnd2222e705" remap="result">
+            <para id="sctnd2222e707" remap="result">
                And that's all for the walkthrough of Debrief's Semi-Automatic Track Construction.  You're now on your own.
             </para>
          </section>

@@ -85,12 +85,13 @@ Let's start off with an easy scenario. We're going to work on an engagement wher
                   </step>
                </steps>
                <result>
-                  <b>Conclusion</b>&lt;br&gt;
+                  <b>Conclusion</b>
+                  <ph/>
                   Ok, you've found the Debrief <b>Sample Data</b>.  You're ready for the tutorial now.
                </result>
             </taskbody>
          </task>
-         <task id="d6e117">
+         <task id="d6e118">
             <title>Generating links to your existing data</title>
             <shortdesc>Here we are going to copy in an existing set of sample data. We aren't
 			going to link to the original set, since we don't want to modify it,
@@ -145,12 +146,12 @@ Let's start off with an easy scenario. We're going to work on an engagement wher
          </task>
       </task>
    </task>
-   <task id="d6e204">
+   <task id="d6e205">
       <title>Multi Leg Solution</title>
       <shortdesc>
             Now for something a little more advanced. In this tutorial we're going to work with a scenario with several targets zigs, where a number of contributions are required to get a good quality solution.
          </shortdesc>
-      <task id="d6e209">
+      <task id="d6e210">
          <title>Loading the data</title>
          <shortdesc>
          We've got a Debrief plot file pre-prepared to let you avoid 
@@ -181,7 +182,7 @@ Let's start off with an easy scenario. We're going to work on an engagement wher
             <result/>
          </taskbody>
       </task>
-      <task id="d6e217">
+      <task id="d6e218">
          <title>Grooming the data</title>
          <shortdesc>
          Let's understand the data we've got, before we start playing with it
@@ -258,7 +259,7 @@ Let's start off with an easy scenario. We're going to work on an engagement wher
             <result/>
          </taskbody>
       </task>
-      <task id="d6e225">
+      <task id="d6e226">
          <title>Playing with legs</title>
          <shortdesc>
          After the bearing measurements, knowledge of the straight legs is the most valuable set of information for SATC.

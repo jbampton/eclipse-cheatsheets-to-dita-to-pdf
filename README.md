@@ -4,7 +4,7 @@ I worked on https://github.com/debrief/debrief and this project is based on some
 
 Note: Now supporting multiple output formats - PDF, HTMLHelp, TocJS, XHTML.
 
-This is mainly a Java based project in that all the code libraries use Java (Apache FOP, Saxon, DITA Open Toolkit (DITA-OT), Apache ANT, Eclipse) and it also uses XML heavily.   Development was originally done in oXygen XML Editor then ported to Eclipse.
+This is mainly a Java based project in that all the code libraries use Java (Apache FOP, Saxon, DITA Open Toolkit, Apache ANT, Eclipse) and it also uses XML heavily.   Development was originally done in oXygen XML Editor then ported to Eclipse.
 
 The roadmap for this project is make the "info.debrief" custom DITA-OT plugin compatible with DITA-OT 2.1 and with the full Apache ANT build code and in depth instructions on how to get up and running inside Eclipse and more.... 
 
@@ -16,14 +16,14 @@ It's a two step process first the DITA XML is created from the Eclipse cheat she
 
 The two parts of the transformation and rendering comprise of:
 
-1.	- Use cheatsheet-to-dita.xsl which requires an XSLT 2.0 compliant processor.
+1.	- This is the transformation step and it uses cheatsheet-to-dita.xsl which requires an XSLT 2.0 compliant processor.
 	- I used SaxonHE9-6-0-7J from Saxonica which is currently the latest version.
 	- This file takes as input a collection on XML files (Eclipse cheat sheets) and creates multiple output files - a parent DITA Map and some associated tasks.
-	- The 'output' and sub 'dita' folder contains the dynamically created DITA files from this step. 
+	- The 'output' and sub 'dita' folder contains the dynamically created (transformed) DITA files from this step. 
 	
 	
-2.	- The 'info.debrief' custom DITA-OT plugin produces the PDF via the DITA-OT base libraries and a XSL - Formatting Objects Processor (FO Processor)
-	- The 'output/pdf' folder contains the resulting PDF output from step 2
+2.	- This is the rendering (printing) step and the 'info.debrief' custom DITA-OT plugin produces the PDF via the DITA-OT base libraries and a XSL - Formatting Objects Processor (FO Processor)
+	- The 'output/pdf' folder contains the resulting PDF output from this step
 	- I used Apache FOP 2.0 for the FO Processor and DITA-OT 1.8.5
 
 
