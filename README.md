@@ -113,6 +113,8 @@ Creating DITA-OT plugins - http://dita-ot.sourceforge.net/1.5.4/dev_ref/plugins-
 
 Customizing PDF output - http://www.dita-ot.org/1.8/readme/dita2pdf-customization.html
 
+XSLT FAQ. Docbook FAQ. Braille. - http://www.dpawson.co.uk/
+
 Got 15 minutes and want to learn Git? https://try.github.io/levels/1/challenges/1
 
 Ruby regular expression editor - http://rubular.com/
