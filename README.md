@@ -4,7 +4,7 @@ I worked on https://github.com/debrief/debrief and this project is based on some
 
 Note: Now supporting multiple output formats - PDF, HTMLHelp, TocJS, XHTML.
 
-This program runs inside Eclipse, an integrated development environment (IDE) and is mainly a Java based project in that all the code libraries use Java (Apache FOP, Saxon, DITA Open Toolkit, Apache ANT, Eclipse) and it also uses XML heavily.   Development was originally done in oXygen XML Editor then ported to Eclipse.
+This program runs inside Eclipse, an integrated development environment (IDE) and is mainly a Java based project in that all the code libraries use Java (Apache FOP, Saxon, DITA Open Toolkit, Apache ANT, Eclipse) and it also uses XSL and XML heavily.   Development was originally done in oXygen XML Editor then ported to Eclipse.
 
 The roadmap for this project is make the "info.debrief" custom DITA-OT plugin compatible with DITA-OT 2.1 and with the full Apache ANT build code and in depth instructions on how to get up and running inside Eclipse and more.... 
 
