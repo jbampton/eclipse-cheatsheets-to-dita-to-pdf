@@ -119,7 +119,11 @@ Customizing PDF output - http://www.dita-ot.org/1.8/readme/dita2pdf-customizatio
 
 XSLT FAQ. Docbook FAQ. Braille. - http://www.dpawson.co.uk/
 
-Homebrew — The missing package manager for OS X - http://brew.sh/
+Homebrew — The missing package manager for OS X - http://brew.sh/ 
+
+Install Ant with Homebrew - http://brewformulas.org/Ant
+
+Installing Apache Ant - http://ant.apache.org/manual/install.html
 
 Got 15 minutes and want to learn Git? https://try.github.io/levels/1/challenges/1
 
