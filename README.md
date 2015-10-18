@@ -51,9 +51,11 @@ How DITA-OT PDF Plugins work:
 
 Plugins are placed in the DITA-OT plugins directory.  You can see the plugin I built in this directory named 'info.debrief'.
 
-When ready a plugin must be integrated into DITA-OT using Apache Ant. 
+When ready a plugin must be integrated into DITA-OT using Apache Ant.  I built this project using OS X and I installed Ant through Homebrew.  
  
 On the command line from inside the root DITA-OT folder it would be -> ant -f integrator.xml
+
+You can also run the integrator inside Eclipse as an Ant build by right clicking on 'src/libs/DITA-OT1.8.5/integrator.xml' and selecting -> Run As -> Ant Build and this should integrate the plugin with the toolkit.
 
 Every plugin has a 'transtype' -> this plugins transtype is 'debrief'
 
@@ -116,6 +118,8 @@ Creating DITA-OT plugins - http://dita-ot.sourceforge.net/1.5.4/dev_ref/plugins-
 Customizing PDF output - http://www.dita-ot.org/1.8/readme/dita2pdf-customization.html
 
 XSLT FAQ. Docbook FAQ. Braille. - http://www.dpawson.co.uk/
+
+Homebrew — The missing package manager for OS X - http://brew.sh/
 
 Got 15 minutes and want to learn Git? https://try.github.io/levels/1/challenges/1
 
