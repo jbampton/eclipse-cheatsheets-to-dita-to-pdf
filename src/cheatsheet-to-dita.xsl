@@ -18,7 +18,10 @@
             <title>Debrief Topic Map</title>
            
             
-            
+            <!--	this topic meta content was not part of the original Debrief project
+            		and is just used for testing some new features and does not follow
+            		DITA guidelines on authoring
+             -->
             <topicmeta>
             	<searchtitle>Eclipse cheat sheets to PDF</searchtitle>
             	<shortdesc>Document Publishing Adventures with the DITA Open Toolkit</shortdesc>
