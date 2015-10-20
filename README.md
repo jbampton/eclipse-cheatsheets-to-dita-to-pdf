@@ -26,18 +26,89 @@ The two parts of the transformation and rendering comprise of:
 	- The 'output/debrief/pdf' folder contains the resulting PDF output from this step
 	- I used Apache FOP 2.0 for the FO Processor and DITA-OT 1.8.5
 
+** Build Instructions **
 
-Project Set Up, Build and Run.
+19 October 2015
 
-1. 	- Download Eclipse Mars at https://eclipse.org/downloads/ and install and then open.	
-	- Clone Git repo
-	- Switch your Eclipse workspace to the parent of the folder you cloned into
-	- Then go -> File -> New -> Project
-	- Select 'Java Project' click next
-	- Enter 'eclipse-cheatsheets-to-dita-to-pdf' in the Project Name field
-	- Un-check location checkbox and enter in the parent folder of the project. In project layout select -> 'Use project folder as root for sources and class files' radio button and then click Next.
-	- on the next screen just click 'Finish'
-	- You must add the JAR files from SaxonHE and DITA-OT to Ant inside Eclipse. Go Preferences -> Ant -> Runtime -> Classpath tab -> click Global Entries -> click Add JARs -> navigate to "src/libs/DITA-OT1.8.5/lib" and add all the JAR files from that directory.  Click add JARS again and add saxon9he.jar from  "src/libs/SaxonHE9-6-0-7J".  Make sure to click Apply and then click Ok.
+Mac OS X:
+
+** Install Eclipse **
+
+Go to: https://www.eclipse.org/downloads/?osType=macosx
+
+In the box near top labelled "Try the Eclipse Installer", click on "64 bit" in next to "Mac OS X".
+
+Download Eclipse installer application.
+
+Unzip resulting download (eclipse-inst-mac64.tar.gz) by double-clicking on it if downloader did not already unzip it.
+
+Run "Eclipse Installer" application.
+
+Choose "Eclipse IDE for Java Developers" option. (Other options and Eclipse modules are not necessary for this build.)
+
+This option allows you to specify an "Installation Folder." The default option may be a folder within your individual directory.
+
+It will be more useful to change this and install Eclipse within a directory titled "Eclipse" within the system's main Application directory.
+
+Click on the folder icon to navigate to the Applications directory and create an "Eclipse" target sub-directory before installing.
+
+Then click the "Install" button. The installation process may take a few minutes.
+
+Launch Eclipse for the first time. Doing so will ask you to Select a "workspace." The default option "/Users/[your username]/Documents/workspace" will work fine.
+
+Quit Eclipse for now.
+
+
+** Install GitHub **
+
+The build's repository is found within GitHub, and the "GitHub Desktop for Mac" application will allow you to clone and work on the build more easily, while retaining a link to the primary source and thus obtaining updates and having the option to submit modifications which could be candidates for inclusion.
+
+Go to: https://desktop.github.com/
+
+Click on the "Download GitHub Desktop" button.
+
+Unzip the resulting file: GitHub Desktop 214.zip
+
+This expands to: GitHub Desktop
+
+Move this to your system's Applications directory.
+
+
+
+** Clone the project to your desktop computer **
+
+Go to the GitHub repository for this project:
+
+https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf
+
+Click on the "Clone in Desktop" button on the right-hand side.
+
+You will be presented with a dialog box that specifies: "This link needs to be opened with an application. Send to:"
+
+Choose "GitHub Desktop" and click the "OK" button.
+
+In the "Clone As:" dialog box, accept the default option, which is to create a clone with the same name as the original: eclipse-cheatsheets-to-dita-to-pdf
+
+Click the "Clone" button.
+
+You will see a progress bar indicate the progress of files being downloaded from GitHub onto your desktop computer, into a local repository directory.
+
+Quit GitHub Desktop.
+
+
+** Import project into Eclipse **
+
+Launch Eclipse.
+
+In menu bar, choose: File > Import > General > Existing Projects
+
+Navigate to the "eclipse-cheatsheets-to-dita-to-pdf" project, which (by default) should be within the "Users/[your user name]/GitHub" directory (or wherever you put it when you cloned it to your desktop).
+
+This will bring the project into Eclipse.
+
+If you have not already done so, click on the "Workspace" button so that you can view the project.
+
+You must add the JAR files from SaxonHE and DITA-OT to Ant inside Eclipse. Go Preferences -> Ant -> Runtime -> Classpath tab -> click Global Entries -> click Add JARs -> navigate to "src/libs/DITA-OT1.8.5/lib" and add all the JAR files from that directory.  Click add JARS again and add saxon9he.jar from  "src/libs/SaxonHE9-6-0-7J".  Make sure to click Apply and then click Ok.
 		
 	
 2.  - Right click on build.xml and select -> Run As -> Ant Build -> (first one)
