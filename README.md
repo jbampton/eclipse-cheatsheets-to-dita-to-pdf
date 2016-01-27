@@ -75,7 +75,7 @@ Move this to your system's Applications directory.
 
 Go to the GitHub repository for this project:
 
-<a href="https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf">https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf</a>
+[https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf](https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf)
 
 Click on the "Clone in Desktop" button on the right-hand side.
 
