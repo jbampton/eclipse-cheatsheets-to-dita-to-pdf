@@ -26,17 +26,13 @@ The two parts of the transformation and rendering comprise of:
 	- The 'output/debrief/pdf' folder contains the resulting PDF output from this step
 	- I used Apache FOP 2.0 for the FO Processor and DITA-OT 1.8.5
 
-** Build Instructions **
+##Build Instructions - Mac OS X
 
-19 October 2015
+######Install Eclipse
 
-Mac OS X:
+Go to: [Eclipse Downloads](https://www.eclipse.org/downloads/?osType=macosx)
 
-** Install Eclipse **
-
-Go to: https://www.eclipse.org/downloads/?osType=macosx
-
-In the box near top labelled "Try the Eclipse Installer", click on "64 bit" in next to "Mac OS X".
+In the box near top labelled "Try the Eclipse Installer", click on "64 bit" under "Mac OS X".
 
 Download Eclipse installer application.
 
@@ -59,11 +55,11 @@ Launch Eclipse for the first time. Doing so will ask you to Select a "workspace.
 Quit Eclipse for now.
 
 
-** Install GitHub **
+######Install GitHub
 
 The build's repository is found within GitHub, and the "GitHub Desktop for Mac" application will allow you to clone and work on the build more easily, while retaining a link to the primary source and thus obtaining updates and having the option to submit modifications which could be candidates for inclusion.
 
-Go to: https://desktop.github.com/
+Go to: [GitHub Desktop](https://desktop.github.com/)
 
 Click on the "Download GitHub Desktop" button.
 
@@ -75,11 +71,11 @@ Move this to your system's Applications directory.
 
 
 
-** Clone the project to your desktop computer **
+######Clone the project to your desktop computer
 
 Go to the GitHub repository for this project:
 
-https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf
+[https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf](https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf)
 
 Click on the "Clone in Desktop" button on the right-hand side.
 
@@ -96,7 +92,7 @@ You will see a progress bar indicate the progress of files being downloaded from
 Quit GitHub Desktop.
 
 
-** Import project into Eclipse **
+######Import project into Eclipse
 
 Launch Eclipse.
 
@@ -119,7 +115,7 @@ You must add the JAR files from SaxonHE and DITA-OT to Ant inside Eclipse. Go Pr
 	- If you want to choose which output formats to render, you can right click on build.xml and select -> Run As -> Ant Build -> (second one), and then select which output format you would like on the 'Targets' tab under 'Check targets to execute' and click Run
 
 	
-How DITA-OT PDF Plugins work:
+##How DITA-OT PDF Plugins work:
 
 Plugins are placed in the DITA-OT plugins directory.  You can see the plugin I built in this directory named 'info.debrief'.
 
@@ -204,3 +200,7 @@ Got 15 minutes and want to learn Git? https://try.github.io/levels/1/challenges/
 Ruby regular expression editor - http://rubular.com/
 
 Essential programmer training - http://www.codewars.com/
+
+Mastering Markdown - https://guides.github.com/features/mastering-markdown/
+
+GitHub Desktop - https://desktop.github.com/
