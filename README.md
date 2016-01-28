@@ -32,6 +32,8 @@ The two parts of the transformation and rendering comprise of:
 
 Go to: [Eclipse Downloads](https://www.eclipse.org/downloads/?osType=macosx)
 
+![Eclipse Downloads](documentation/images/download_eclipse.png)
+
 In the box near top labelled "Try the Eclipse Installer", click on "64 bit" under "Mac OS X".
 
 Download Eclipse installer application.
