@@ -38,6 +38,14 @@ In the box near top labelled "Try the Eclipse Installer", click on "64 bit" unde
 
 Download Eclipse installer application.
 
+You should check the checksum of the Eclipse file you download.
+
+Depending on which type of checksum you choose: MD5, SHA1, SHA-512 the commands are slightly different:
+
+I used SHA-512 so the in a terminal in the directory or folder where you downloaded the Eclipse package to, the command to type would be: shasum -a 512 filename
+
+For more information on the shasum or md5 command open a terminal and type -> man shasum  or man md5.
+
 Unzip resulting download (eclipse-inst-mac64.tar.gz) by double-clicking on it if downloader did not already unzip it.
 
 Run "Eclipse Installer" application.
