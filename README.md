@@ -1,4 +1,4 @@
-# Eclipse cheat sheets to DITA to PDF
+#Eclipse cheat sheets to DITA to PDF
 
 I worked on https://github.com/debrief/debrief and this project is based on some parts of the document publishing that I did in that project.  See the glossary of links at the bottom of this README which describe the technologies being used.
 
