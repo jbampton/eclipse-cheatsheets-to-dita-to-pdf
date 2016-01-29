@@ -192,6 +192,22 @@ Custom XSL can be placed in two XSL files both named custom.xsl.  I placed all t
 Placing the custom code only in these two files follows best practice techniques on how to build a DITA-OT PDF plugin.
 
 
+##Homebrew usage
+
+Open a terminal and type:
+
+###man brew
+![man brew](documentation/images/man_brew.png)
+
+Before using Homebrew you should ensure it's up to date so run the next command:
+
+###brew doctor
+![brew doctor](documentation/images/brew_doctor.png)
+
+##Example output of running a brew install command.  The image show pouring brews from their bottles
+![pouring brews](documentation/images/pouring_brews.png)
+
+
 ##List of resources and technologies used on this GitHub project	
 
 Eclipse - https://eclipse.org/ 
