@@ -28,7 +28,7 @@ The two parts of the transformation and rendering comprise of:
 
 ##Yo let's build...watch the build run on Youtube....BrisVegas Build Style...
 
-[See the build run in 1080p](https://www.youtube.com/watch?v=ZTDg24DILVw)
+[See the build run full screen in 1080p](https://www.youtube.com/watch?v=ZTDg24DILVw)
 
 
 
