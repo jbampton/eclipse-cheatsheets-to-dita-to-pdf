@@ -101,7 +101,7 @@ Go to: [GitHub Desktop](https://desktop.github.com/)
 
 Click on the "Download GitHub Desktop" button.
 
-Unzip the resulting file: GitHub Desktop 214.zip
+Unzip the resulting file: GitHub Desktop 216.zip
 
 This expands to: GitHub Desktop
 
