@@ -178,7 +178,9 @@ On the command line from inside the root DITA-OT folder it would be -> ant -f in
 
 You can also run the integrator inside Eclipse as an Ant build by right clicking on 'src/libs/DITA-OT1.8.5/integrator.xml' and selecting -> Run As -> Ant Build and this should integrate the plugin with the toolkit.
 
-Every plugin has a 'transtype' -> this plugins transtype is 'debrief'
+Every DITA-OT PDF plugin has a file name plugin.xml at its root where you set the configuration values. The plugin id must match the folder name of the plugin.  Every plugin has a 'transtype' -> this plugins transtype is 'debrief'.  You can see the plugin.xml file and where to set the plugin id and transtype in the next image:
+
+![plugin.xml](documentation/images/transtype.png)
 
 PDF Plugins are comprised of some XML config files, some artwork and some custom XSL (XSLT/XSL-FO/XPath) code 
 DITA-OT provides that base XSL code that you 'override' with your custom work.
