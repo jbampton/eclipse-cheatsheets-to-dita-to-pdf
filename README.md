@@ -28,7 +28,7 @@ The two parts of the transformation and rendering comprise of:
 
 ##Build Instructions - Mac OS X
 
-######Install Eclipse
+###Install Eclipse
 
 Go to: [Eclipse Downloads](https://www.eclipse.org/downloads/?osType=macosx)
 
@@ -71,7 +71,7 @@ Launch Eclipse for the first time. Doing so will ask you to Select a "workspace.
 Quit Eclipse for now.
 
 
-######Install GitHub
+###Install GitHub
 
 The build's repository is found within GitHub, and the "GitHub Desktop for Mac" application will allow you to clone and work on the build more easily, while retaining a link to the primary source and thus obtaining updates and having the option to submit modifications which could be candidates for inclusion.
 
@@ -89,7 +89,7 @@ Move this to your system's Applications directory.
 
 
 
-######Clone the project to your desktop computer
+###Clone the project to your desktop computer
 
 Go to the GitHub repository for this project:
 
@@ -116,7 +116,7 @@ You will see a progress bar indicate the progress of files being downloaded from
 Quit GitHub Desktop.
 
 
-######Import project into Eclipse
+###Import project into Eclipse
 
 Launch Eclipse.
 
