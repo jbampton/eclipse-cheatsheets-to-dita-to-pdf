@@ -155,6 +155,8 @@ Custom XSL can be placed in two XSL files both named custom.xsl.  I placed all t
 Placing the custom code only in these two files follows best practice techniques on how to build a DITA-OT PDF plugin.
 
 
+##List of technologies used on this GitHub project	
+
 Eclipse - https://eclipse.org/ 
 
 Eclipse cheat sheets - http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-cheatsheets.htm
