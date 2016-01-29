@@ -26,6 +26,12 @@ The two parts of the transformation and rendering comprise of:
 	- The 'output/debrief/pdf' folder contains the resulting PDF output from this step
 	- I used Apache FOP 2.0 for the FO Processor and DITA-OT 1.8.5
 
+##Yo let's build...watch the build run on Youtube....BrisVegas Build Style...
+
+[See the build run in 1080p](https://www.youtube.com/watch?v=ZTDg24DILVw)
+
+
+
 ##Build Instructions - Mac OS X
 
 ###Install Eclipse
@@ -131,12 +137,19 @@ If you have not already done so, click on the "Workspace" button so that you can
 You must add the JAR files from SaxonHE and DITA-OT to Ant inside Eclipse. Go Preferences -> Ant -> Runtime -> Classpath tab -> click Global Entries -> click Add JARs -> navigate to "src/libs/DITA-OT1.8.5/lib" and add all the JAR files from that directory.  Click add JARS again and add saxon9he.jar from  "src/libs/SaxonHE9-6-0-7J".  Make sure to click Apply and then click Ok.
 		
 	
-2.  - Right click on build.xml and select -> Run As -> Ant Build -> (first one)
-	- This should run and build all tasks, creating all working output formats in one go.
-	- This process re-creates the DITA XML output in the 'output' directory.  There should be five DITA files, one parent Ditamap at and 4 task files with the Ditamap at the root of the 'output/debrief' folder with task files together in the sub folder 'dita'
-	- The final resulting PDF should be called map.pdf and located in the 'pdf' folder.
-	- There are currently 4 other output formats (Docbook, HTMLHelp, TocJS, XHTML) as seen by the names of the folders in the 'output/debrief' directory.  The PDF output is vastly superior to the others which have no customization.  The Docbook output is a work in progress. 
-	- If you want to choose which output formats to render, you can right click on build.xml and select -> Run As -> Ant Build -> (second one), and then select which output format you would like on the 'Targets' tab under 'Check targets to execute' and click Run
+Right click on build.xml and select -> Run As -> Ant Build -> (first one)
+
+![Run the build](documentation/images/ant_build.png)
+
+This should run and build all tasks, creating all working output formats in one go.
+
+This process re-creates the DITA XML output in the 'output' directory.  There should be five DITA files, one parent Ditamap at and 4 task files with the Ditamap at the root of the 'output/debrief' folder with task files together in the sub folder 'dita'
+
+The final resulting PDF should be called map.pdf and located in the 'pdf' folder.
+
+There are currently 4 other output formats (Docbook, HTMLHelp, TocJS, XHTML) as seen by the names of the folders in the 'output/debrief' directory.  The PDF output is vastly superior to the others which have no customization.  The Docbook output is a work in progress. 
+
+If you want to choose which output formats to render, you can right click on build.xml and select -> Run As -> Ant Build -> (second one), and then select which output format you would like on the 'Targets' tab under 'Check targets to execute' and click Run
 
 	
 ##How DITA-OT PDF Plugins work:
