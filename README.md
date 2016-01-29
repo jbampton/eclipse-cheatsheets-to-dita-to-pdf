@@ -107,6 +107,8 @@ This expands to: GitHub Desktop
 
 Move this to your system's Applications directory.
 
+![Applications directory](documentation/images/applications_folder.png)
+
 
 
 ###Clone the project to your desktop computer
