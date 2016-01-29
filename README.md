@@ -97,9 +97,15 @@ Go to the GitHub repository for this project:
 
 Click on the the icon just to left of 'Download ZIP' that when the mouse is over says: 'Save jbampton/eclipse-cheatsheets-to-dita-to-pdf to your computer and use in GitHub Desktop'
 
-You will be presented with a dialog box that specifies: "This link needs to be opened with an application. Send to:"
+![Clone my repository](documentation/images/clone_repo.png)
 
-Choose "GitHub Desktop" and click the "OK" button.
+You will be presented with a dialog box that will ask you if open want to open the link with GitHub Desktop.  The dialog box will look different depending on which web browser you are using.  Below are what the dialog boxes look like:
+
+Google Chrome
+
+![Chrome dialog](documentation/images/chrome_dialog.png)
+
+You will need to click launch application.
 
 In the "Clone As:" dialog box, accept the default option, which is to create a clone with the same name as the original: eclipse-cheatsheets-to-dita-to-pdf
 
