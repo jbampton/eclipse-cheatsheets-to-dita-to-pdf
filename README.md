@@ -56,7 +56,17 @@ I used SHA-512 so the in a terminal in the directory or folder where you downloa
 
 You should check the output of the shasum command matches what's displayed on the Eclipse website for the type of checksum you choose.
 
-For more information on the shasum or md5 command open a terminal and type -> man shasum  or man md5.
+For more information on the shasum or md5 command open a terminal and type:
+
+####man shasum  
+![man shasum](documentation/images/man_shasum.png)
+
+####man md5
+![man md5](documentation/images/man_md5.png)
+
+Use the up and down arrows on the keyboard to navigate through the man page documentation.
+
+To exit from the man pages type: q
 
 Unzip resulting download (eclipse-inst-mac64.tar.gz) by double-clicking on it if downloader did not already unzip it.
 
