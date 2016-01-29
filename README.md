@@ -205,6 +205,8 @@ Installing Apache Ant - http://ant.apache.org/manual/install.html
 
 Codecademy - Learn the Command Line - https://www.codecademy.com/courses/learn-the-command-line
 
+Codecademy - Learn Java - https://www.codecademy.com/learn/learn-java
+
 Got 15 minutes and want to learn Git? https://try.github.io/levels/1/challenges/1
 
 Ruby regular expression editor - http://rubular.com/
@@ -214,3 +216,5 @@ Essential programmer training - http://www.codewars.com/
 Mastering Markdown - https://guides.github.com/features/mastering-markdown/
 
 GitHub Desktop - https://desktop.github.com/
+
+Microsoft File Checksum Integrity Verifier - https://www.microsoft.com/en-au/download/details.aspx?id=11533
