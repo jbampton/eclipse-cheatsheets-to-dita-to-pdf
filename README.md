@@ -263,3 +263,12 @@ GitHub Desktop - https://desktop.github.com/
 Microsoft File Checksum Integrity Verifier - https://www.microsoft.com/en-au/download/details.aspx?id=11533
 
 TechSmith Camtasia - https://www.techsmith.com/camtasia.html
+
+MD5 - https://en.wikipedia.org/wiki/MD5
+
+sha1sum - https://en.wikipedia.org/wiki/Sha1sum
+
+IDE - Integrated Development Environment - https://en.wikipedia.org/wiki/Integrated_development_environment
+
+Git (software) - https://en.wikipedia.org/wiki/Git_(software)
+
