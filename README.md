@@ -42,7 +42,13 @@ You should check the checksum of the Eclipse file you download.
 
 Depending on which type of checksum you choose: MD5, SHA1, SHA-512 the commands are slightly different:
 
+First you should click on the checksum type in the image below:
+
+![Eclipse checksums](documentation/images/eclipse_checksums.png)
+
 I used SHA-512 so the in a terminal in the directory or folder where you downloaded the Eclipse package to, the command to type would be: shasum -a 512 filename
+
+You should check the output of the shasum command matches what's displayed on the Eclipse website for the type of checksum you choose.
 
 For more information on the shasum or md5 command open a terminal and type -> man shasum  or man md5.
 
@@ -89,7 +95,7 @@ Go to the GitHub repository for this project:
 
 [https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf](https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf)
 
-Click on the "Clone in Desktop" button on the right-hand side.
+Click on the the icon just to left of 'Download ZIP' that when the mouse is over says: 'Save jbampton/eclipse-cheatsheets-to-dita-to-pdf to your computer and use in GitHub Desktop'
 
 You will be presented with a dialog box that specifies: "This link needs to be opened with an application. Send to:"
 
