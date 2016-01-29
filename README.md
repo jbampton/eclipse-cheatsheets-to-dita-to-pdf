@@ -52,6 +52,10 @@ First you should click on the checksum type in the image below:
 
 ![Eclipse checksums](documentation/images/eclipse_checksums.png)
 
+On OS X, open your Applications folder, then open the Utilities folder. Open the Terminal application.
+
+![OS X terminal](documentation/images/terminal.png)
+
 I used SHA-512 so the in a terminal in the directory or folder where you downloaded the Eclipse package to, the command to type would be: shasum -a 512 filename
 
 You should check the output of the shasum command matches what's displayed on the Eclipse website for the type of checksum you choose.
@@ -272,3 +276,6 @@ IDE - Integrated Development Environment - https://en.wikipedia.org/wiki/Integra
 
 Git (software) - https://en.wikipedia.org/wiki/Git_(software)
 
+man page - https://en.wikipedia.org/wiki/Man_page
+
+Terminal (OS X) - https://en.wikipedia.org/wiki/Terminal_(OS_X)
