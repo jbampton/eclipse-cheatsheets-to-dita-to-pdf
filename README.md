@@ -71,6 +71,8 @@ The build's repository is found within GitHub, and the "GitHub Desktop for Mac" 
 
 Go to: [GitHub Desktop](https://desktop.github.com/)
 
+![GitHub Desktop](documentation/images/github_desktop.png)
+
 Click on the "Download GitHub Desktop" button.
 
 Unzip the resulting file: GitHub Desktop 214.zip
