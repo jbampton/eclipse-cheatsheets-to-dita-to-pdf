@@ -145,7 +145,10 @@ Quit GitHub Desktop.
 
 Launch Eclipse.
 
-In menu bar, choose: File > Import > General > Existing Projects
+In menu bar, choose: File > Import 
+![File import](documentation/images/eclipse_file_import.png)
+
+Then > General > Existing Projects
 
 Navigate to the "eclipse-cheatsheets-to-dita-to-pdf" project, which (by default) should be within the "Users/[your user name]/GitHub" directory (or wherever you put it when you cloned it to your desktop).
 
