@@ -56,9 +56,12 @@ On OS X, open your Applications folder, then open the Utilities folder. Open the
 
 ![OS X terminal](documentation/images/terminal.png)
 
-I used SHA-512 so the in a terminal in the directory or folder where you downloaded the Eclipse package to, the command to type would be: shasum -a 512 filename
+I used SHA-512 so the in a terminal in the directory or folder where you downloaded the Eclipse package to, the command to type would be:
 
-You should check the output of the shasum command matches what's displayed on the Eclipse website for the type of checksum you choose.
+###shasum -a 512 eclipse-inst-mac64.tar.gz
+![eclipse shasum](documentation/images/example_shasum.png)
+
+You should check the output of the shasum command matches what's displayed on the Eclipse website for the type of checksum you choose.  You can select the text in the terminal and then copy it and then find it on the Eclipse website.
 
 For more information on the shasum or md5 command open a terminal and type:
 
@@ -204,8 +207,11 @@ Before using Homebrew you should ensure it's up to date so run the next command:
 ###brew doctor
 ![brew doctor](documentation/images/brew_doctor.png)
 
-##Example output of running a brew install command.  The image show pouring brews from their bottles
+###Example output of running a brew install command.  The image show pouring brews from their bottles
 ![pouring brews](documentation/images/pouring_brews.png)
+
+###brew list
+![brew list](documentation/images/brew_list.png)
 
 
 ##List of resources and technologies used on this GitHub project	
