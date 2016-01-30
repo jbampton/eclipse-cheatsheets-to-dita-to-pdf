@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?><!-- This file is part of the DITA Open Toolkit project.
+     See the accompanying license.txt file for applicable licenses.--><!-- (c) Copyright IBM Corp. 2004, 2005 All Rights Reserved. --><langlist>  
+  <!-- This file is part of the DITA Open Toolkit project.
+     See the accompanying license.txt file for applicable licenses.--><!-- (c) Copyright IBM Corp. 2004, 2005 All Rights Reserved. -->  
+  
+<lang xml:lang="ar" filename="strings-ar-eg.xml"></lang>
+  
+<lang xml:lang="ar-eg" filename="strings-ar-eg.xml"></lang>
+  
+<lang xml:lang="be" filename="strings-be-by.xml"></lang>
+  
+<lang xml:lang="be-by" filename="strings-be-by.xml"></lang>
+  
+<lang xml:lang="bg" filename="strings-bg-bg.xml"></lang>
+  
+<lang xml:lang="bg-bg" filename="strings-bg-bg.xml"></lang>
+  
+<lang xml:lang="ca" filename="strings-ca-es.xml"></lang>
+  
+<lang xml:lang="ca-es" filename="strings-ca-es.xml"></lang>
+  
+<lang xml:lang="cs" filename="strings-cs-cz.xml"></lang>
+  
+<lang xml:lang="cs-cz" filename="strings-cs-cz.xml"></lang>
+  
+<lang xml:lang="da" filename="strings-da-dk.xml"></lang>
+  
+<lang xml:lang="da-dk" filename="strings-da-dk.xml"></lang>
+  
+<lang xml:lang="de" filename="strings-de-de.xml"></lang>
+  
+<lang xml:lang="de-ch" filename="strings-de-de.xml"></lang>
+  
+<lang xml:lang="de-de" filename="strings-de-de.xml"></lang>
+  
+<lang xml:lang="el" filename="strings-el-gr.xml"></lang>
+  
+<lang xml:lang="el-gr" filename="strings-el-gr.xml"></lang>
+  
+<lang xml:lang="en" filename="strings-en-us.xml"></lang>
+  
+<lang xml:lang="en-ca" filename="strings-en-us.xml"></lang>
+  
+<lang xml:lang="en-gb" filename="strings-en-us.xml"></lang>
+  
+<lang xml:lang="en-us" filename="strings-en-us.xml"></lang>
+  
+<lang xml:lang="es" filename="strings-es-es.xml"></lang>
+  
+<lang xml:lang="es-es" filename="strings-es-es.xml"></lang>
+  
+<lang xml:lang="es-419" filename="strings-es-es.xml"></lang>
+  
+<lang xml:lang="et" filename="strings-et-ee.xml"></lang>
+  
+<lang xml:lang="et-ee" filename="strings-et-ee.xml"></lang>
+  
+<lang xml:lang="fi" filename="strings-fi-fi.xml"></lang>
+  
+<lang xml:lang="fi-fi" filename="strings-fi-fi.xml"></lang>
+  
+<lang xml:lang="fr" filename="strings-fr-fr.xml"></lang>
+  
+<lang xml:lang="fr-be" filename="strings-fr-fr.xml"></lang>
+  
+<lang xml:lang="fr-ca" filename="strings-fr-fr.xml"></lang>
+  
+<lang xml:lang="fr-ch" filename="strings-fr-fr.xml"></lang>
+  
+<lang xml:lang="fr-fr" filename="strings-fr-fr.xml"></lang>
+  
+<lang xml:lang="he" filename="strings-he-il.xml"></lang>
+  
+<lang xml:lang="he-il" filename="strings-he-il.xml"></lang>
+  
+<lang xml:lang="hr" filename="strings-hr-hr.xml"></lang>
+  
+<lang xml:lang="hr-hr" filename="strings-hr-hr.xml"></lang>
+  
+<lang xml:lang="hu" filename="strings-hu-hu.xml"></lang>
+  
+<lang xml:lang="hu-hu" filename="strings-hu-hu.xml"></lang>
+  
+<lang xml:lang="hi" filename="strings-hi-in.xml"></lang>
+  
+<lang xml:lang="hi-in" filename="strings-hi-in.xml"></lang>
+  
+<lang xml:lang="id" filename="strings-id-id.xml"></lang>
+  
+<lang xml:lang="id-id" filename="strings-id-id.xml"></lang>
+  
+<lang xml:lang="is" filename="strings-is-is.xml"></lang>
+  
+<lang xml:lang="is-is" filename="strings-is-is.xml"></lang>
+  
+<lang xml:lang="it" filename="strings-it-it.xml"></lang>
+  
+<lang xml:lang="it-ch" filename="strings-it-it.xml"></lang>
+  
+<lang xml:lang="it-it" filename="strings-it-it.xml"></lang>
+  
+<lang xml:lang="ja" filename="strings-ja-jp.xml"></lang>
+  
+<lang xml:lang="ja-jp" filename="strings-ja-jp.xml"></lang>
+  
+<lang xml:lang="kk" filename="strings-kk-kz.xml"></lang>
+  
+<lang xml:lang="kk-kz" filename="strings-kk-kz.xml"></lang>
+  
+<lang xml:lang="ko" filename="strings-ko-kr.xml"></lang>
+  
+<lang xml:lang="ko-kr" filename="strings-ko-kr.xml"></lang>
+  
+<lang xml:lang="lt" filename="strings-lt-lt.xml"></lang>
+  
+<lang xml:lang="lt-lt" filename="strings-lt-lt.xml"></lang>
+  
+<lang xml:lang="lv" filename="strings-lv-lv.xml"></lang>
+  
+<lang xml:lang="lv-lv" filename="strings-lv-lv.xml"></lang>
+  
+<lang xml:lang="mk" filename="strings-mk-mk.xml"></lang>
+  
+<lang xml:lang="mk-mk" filename="strings-mk-mk.xml"></lang>
+  
+<lang xml:lang="ms" filename="strings-ms-my.xml"></lang>
+  
+<lang xml:lang="ms-my" filename="strings-ms-my.xml"></lang>
+  
+<lang xml:lang="nl" filename="strings-nl-nl.xml"></lang>
+  
+<lang xml:lang="nl-be" filename="strings-nl-nl.xml"></lang>
+  
+<lang xml:lang="nl-nl" filename="strings-nl-nl.xml"></lang>
+  
+<lang xml:lang="no" filename="strings-no-no.xml"></lang>
+  
+<lang xml:lang="no-no" filename="strings-no-no.xml"></lang>
+  
+<lang xml:lang="pl" filename="strings-pl-pl.xml"></lang>
+  
+<lang xml:lang="pl-pl" filename="strings-pl-pl.xml"></lang>
+  
+<lang xml:lang="pt" filename="strings-pt-pt.xml"></lang>
+  
+<lang xml:lang="pt-br" filename="strings-pt-br.xml"></lang>
+  
+<lang xml:lang="pt-pt" filename="strings-pt-pt.xml"></lang>
+  
+<lang xml:lang="ro" filename="strings-ro-ro.xml"></lang>
+  
+<lang xml:lang="ro-ro" filename="strings-ro-ro.xml"></lang>
+  
+<lang xml:lang="ru" filename="strings-ru-ru.xml"></lang>
+  
+<lang xml:lang="ru-ru" filename="strings-ru-ru.xml"></lang>
+  
+<lang xml:lang="sk" filename="strings-sk-sk.xml"></lang>
+  
+<lang xml:lang="sk-sk" filename="strings-sk-sk.xml"></lang>
+  
+<lang xml:lang="sl" filename="strings-sl-si.xml"></lang>
+  
+<lang xml:lang="sl-si" filename="strings-sl-si.xml"></lang>
+  
+<lang xml:lang="sr" filename="strings-sr-sp.xml"></lang>
+  
+<lang xml:lang="sr-rs" filename="strings-sr-sp.xml"></lang>
+  
+<lang xml:lang="sr-sp" filename="strings-sr-sp.xml"></lang>
+  
+<lang xml:lang="sr-latn-rs" filename="strings-sr-latn-rs.xml"></lang>
+  
+<lang xml:lang="sv" filename="strings-sv-se.xml"></lang>
+  
+<lang xml:lang="sv-se" filename="strings-sv-se.xml"></lang>
+  
+<lang xml:lang="th" filename="strings-th-th.xml"></lang>
+  
+<lang xml:lang="th-th" filename="strings-th-th.xml"></lang>
+  
+<lang xml:lang="tr" filename="strings-tr-tr.xml"></lang>
+  
+<lang xml:lang="tr-tr" filename="strings-tr-tr.xml"></lang>
+  
+<lang xml:lang="uk" filename="strings-uk-ua.xml"></lang>
+  
+<lang xml:lang="uk-ua" filename="strings-uk-ua.xml"></lang>
+  
+<lang xml:lang="ur" filename="strings-ur-pk.xml"></lang>
+  
+<lang xml:lang="ur-pk" filename="strings-ur-pk.xml"></lang>
+  
+<lang xml:lang="zh" filename="strings-zh-cn.xml"></lang>
+  
+<lang xml:lang="zh-cn" filename="strings-zh-cn.xml"></lang>
+  
+<lang xml:lang="zh-hans" filename="strings-zh-cn.xml"></lang>
+  
+<lang xml:lang="zh-tw" filename="strings-zh-tw.xml"></lang>
+  
+<lang xml:lang="zh-hant" filename="strings-zh-tw.xml"></lang>
+<!-- This file is part of the DITA Open Toolkit project.
+     See the accompanying license.txt file for applicable licenses. -->
+  
+<lang filename="ar.xml" xml:lang="ar"></lang>
+  
+<lang filename="ca.xml" xml:lang="ca"></lang>
+  
+<lang filename="cs.xml" xml:lang="cs"></lang>
+  
+<lang filename="da.xml" xml:lang="da"></lang>
+  
+<lang filename="de.xml" xml:lang="de"></lang>
+  
+<lang filename="en.xml" xml:lang="en"></lang>
+  
+<lang filename="es.xml" xml:lang="es"></lang>
+  
+<lang filename="fi.xml" xml:lang="fi"></lang>
+  
+<lang filename="fr.xml" xml:lang="fr"></lang>
+  
+<lang filename="he.xml" xml:lang="he"></lang>
+  
+<lang filename="hr.xml" xml:lang="hr"></lang>
+  
+<lang filename="hu.xml" xml:lang="hu"></lang>
+  
+<lang filename="is.xml" xml:lang="is"></lang>
+  
+<lang filename="it.xml" xml:lang="it"></lang>
+  
+<lang filename="ja.xml" xml:lang="ja"></lang>
+  
+<lang filename="lv.xml" xml:lang="lv"></lang>
+  
+<lang filename="nl.xml" xml:lang="nl"></lang>
+  
+<lang filename="no.xml" xml:lang="no"></lang>
+  
+<lang filename="pl.xml" xml:lang="pl"></lang>
+  
+<lang filename="pt.xml" xml:lang="pt"></lang>
+  
+<lang filename="pt_BR.xml" xml:lang="pt-BR"></lang>
+  
+<lang filename="ro.xml" xml:lang="ro"></lang>
+  
+<lang filename="ru.xml" xml:lang="ru"></lang>
+  
+<lang filename="sk.xml" xml:lang="sk"></lang>
+  
+<lang filename="sl.xml" xml:lang="sl"></lang>
+  
+<lang filename="sv.xml" xml:lang="sv"></lang>
+  
+<lang filename="tr.xml" xml:lang="tr"></lang>
+  
+<lang filename="zh_CN.xml" xml:lang="zh-CN"></lang>
+<!-- This file is part of the DITA Open Toolkit project.
+     See the accompanying license.txt file for applicable licenses.-->
+  
+<lang xml:lang="de" filename="strings-de-de.xml"></lang>
+  
+<lang xml:lang="de-de" filename="strings-de-de.xml"></lang>
+  
+<lang xml:lang="en" filename="strings-en-us.xml"></lang>
+  
+<lang xml:lang="en-us" filename="strings-en-us.xml"></lang>
+  
+<lang xml:lang="es" filename="strings-es-es.xml"></lang>
+  
+<lang xml:lang="es-es" filename="strings-es-es.xml"></lang>
+  
+<lang xml:lang="fr" filename="strings-fr-fr.xml"></lang>
+  
+<lang xml:lang="fr-fr" filename="strings-fr-fr.xml"></lang>
+  
+<lang xml:lang="id" filename="strings-id-id.xml"></lang>
+  
+<lang xml:lang="id-id" filename="strings-id-id.xml"></lang>
+  
+<lang xml:lang="it" filename="strings-it-it.xml"></lang>
+  
+<lang xml:lang="it-it" filename="strings-it-it.xml"></lang>
+  
+<lang xml:lang="ja" filename="strings-ja-jp.xml"></lang>
+  
+<lang xml:lang="ja-jp" filename="strings-ja-jp.xml"></lang>
+  
+<lang xml:lang="kk" filename="strings-kk-kz.xml"></lang>
+  
+<lang xml:lang="kk-kz" filename="strings-kk-kz.xml"></lang>
+  
+<lang xml:lang="ms" filename="strings-ms-my.xml"></lang>
+  
+<lang xml:lang="ms-my" filename="strings-ms-my.xml"></lang>
+  
+<lang xml:lang="zh" filename="strings-zh-cn.xml"></lang>
+  
+<lang xml:lang="zh-cn" filename="strings-zh-cn.xml"></lang>
+
+</langlist>
