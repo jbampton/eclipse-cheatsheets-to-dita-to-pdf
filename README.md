@@ -26,9 +26,9 @@ The two parts of the transformation and rendering comprise of:
 	- The 'output/debrief/pdf' folder contains the resulting PDF output from this step
 	- I used Apache FOP 2.0 for the FO Processor and DITA-OT 1.8.5
 
-##Yo let's build...watch the build run on Youtube....BrisVegas Build Style...
+##Yo let's build...watch the Star Wars build run on Youtube....BrisVegas Jedi Master Style...
 
-[See the build run full screen in 1080p](https://www.youtube.com/watch?v=ZTDg24DILVw)
+[See the build run full screen in 1080p](https://youtu.be/LJ5DsFP_THo)
 
 
 
