@@ -17,7 +17,7 @@ It's a two step process first the DITA XML is created from the Eclipse cheat she
 The two parts of the transformation and rendering comprise of:
 
 1.	- This is the transformation step and it uses cheatsheet-to-dita.xsl which requires an XSLT 2.0 compliant processor.
-	- I used SaxonHE9-6-0-7J from Saxonica which is currently the latest version.
+	- I used SaxonHE9-6-0-7J from Saxonica.
 	- This file takes as input a collection on XML files (Eclipse cheat sheets) and creates multiple output files - a parent DITA Map and some associated tasks.
 	- The 'output/debrief' and sub 'dita' folder contains the dynamically created (transformed) DITA files from this step. 
 	
