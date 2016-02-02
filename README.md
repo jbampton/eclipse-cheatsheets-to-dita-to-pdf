@@ -38,7 +38,7 @@ The two parts of the transformation and rendering comprise of:
 
 Go to: [Eclipse Downloads](https://www.eclipse.org/downloads/?osType=macosx)
 
-![Eclipse Downloads](documentation/images/download_eclipse.png)
+![Eclipse Downloads](documentation/images/eclipse/download_eclipse.png)
 
 In the box near top labelled "Try the Eclipse Installer", click on "64 bit" under "Mac OS X".
 
@@ -50,26 +50,26 @@ Depending on which type of checksum you choose: MD5, SHA1, SHA-512 the commands 
 
 First you should click on the checksum type in the image below:
 
-![Eclipse checksums](documentation/images/eclipse_checksums.png)
+![Eclipse checksums](documentation/images/eclipse/eclipse_checksums.png)
 
 On OS X, open your Applications folder, then open the Utilities folder. Open the Terminal application.
 
-![OS X terminal](documentation/images/terminal.png)
+![OS X terminal](documentation/images/osx/terminal.png)
 
 I used SHA-512 so the in a terminal in the directory or folder where you downloaded the Eclipse package to, the command to type would be:
 
 ###shasum -a 512 eclipse-inst-mac64.tar.gz
-![eclipse shasum](documentation/images/example_shasum.png)
+![eclipse shasum](documentation/images/terminal/example_shasum.png)
 
 You should check the output of the shasum command matches what's displayed on the Eclipse website for the type of checksum you choose.  You can select the text in the terminal and then copy it and then find it on the Eclipse website.
 
 For more information on the shasum or md5 command open a terminal and type:
 
 ####man shasum  
-![man shasum](documentation/images/man_shasum.png)
+![man shasum](documentation/images/man/man_shasum.png)
 
 ####man md5
-![man md5](documentation/images/man_md5.png)
+![man md5](documentation/images/man/man_md5.png)
 
 Use the up and down arrows on the keyboard to navigate through the man page documentation.
 
@@ -100,7 +100,7 @@ The build's repository is found within GitHub, and the "GitHub Desktop for Mac" 
 
 Go to: [GitHub Desktop](https://desktop.github.com/)
 
-![GitHub Desktop](documentation/images/github_desktop.png)
+![GitHub Desktop](documentation/images/github/github_desktop.png)
 
 Click on the "Download GitHub Desktop" button.
 
@@ -110,7 +110,7 @@ This expands to: GitHub Desktop
 
 Move this to your system's Applications directory.
 
-![Applications directory](documentation/images/applications_folder.png)
+![Applications directory](documentation/images/osx/applications_folder.png)
 
 
 
@@ -122,13 +122,13 @@ Go to the GitHub repository for this project:
 
 Click on the the icon just to left of 'Download ZIP' that when the mouse is over says: 'Save jbampton/eclipse-cheatsheets-to-dita-to-pdf to your computer and use in GitHub Desktop'
 
-![Clone my repository](documentation/images/clone_repo.png)
+![Clone my repository](documentation/images/github/clone_repo.png)
 
 You will be presented with a dialog box that will ask you if open want to open the link with GitHub Desktop.  The dialog box will look different depending on which web browser you are using.  Below are what the dialog boxes look like:
 
 Google Chrome
 
-![Chrome dialog](documentation/images/chrome_dialog.png)
+![Chrome dialog](documentation/images/dialogs/chrome_dialog.png)
 
 You will need to click launch application.
 
@@ -146,7 +146,7 @@ Quit GitHub Desktop.
 Launch Eclipse.
 
 In menu bar, choose: File > Import 
-![File import](documentation/images/eclipse_file_import.png)
+![File import](documentation/images/eclipse/eclipse_file_import.png)
 
 Then > General > Existing Projects
 
@@ -161,7 +161,7 @@ You must add the JAR files from SaxonHE and DITA-OT to Ant inside Eclipse. Go Pr
 	
 Right click on build.xml and select -> Run As -> Ant Build -> (first one)
 
-![Run the build](documentation/images/ant_build.png)
+![Run the build](documentation/images/ant/ant_build.png)
 
 This should run and build all tasks, creating all working output formats in one go.
 
@@ -186,7 +186,7 @@ You can also run the integrator inside Eclipse as an Ant build by right clicking
 
 Every DITA-OT PDF plugin has a file name plugin.xml at its root where you set the configuration values. The plugin id must match the folder name of the plugin.  Every plugin has a 'transtype' -> this plugins transtype is 'debrief'.  You can see the plugin.xml file and where to set the plugin id and transtype in the next image:
 
-![plugin.xml](documentation/images/transtype.png)
+![plugin.xml](documentation/images/dita/transtype.png)
 
 PDF Plugins are comprised of some XML config files, some artwork and some custom XSL (XSLT/XSL-FO/XPath) code 
 DITA-OT provides that base XSL code that you 'override' with your custom work.
@@ -203,18 +203,18 @@ Placing the custom code only in these two files follows best practice techniques
 Open a terminal and type:
 
 ###man brew
-![man brew](documentation/images/man_brew.png)
+![man brew](documentation/images/man/man_brew.png)
 
 Before using Homebrew you should ensure it's up to date so run the next command:
 
 ###brew doctor
-![brew doctor](documentation/images/brew_doctor.png)
+![brew doctor](documentation/images/homebrew/brew_doctor.png)
 
 ###Example output of running a brew install command.  The image show pouring brews from their bottles
-![pouring brews](documentation/images/pouring_brews.png)
+![pouring brews](documentation/images/homebrew/pouring_brews.png)
 
 ###brew list
-![brew list](documentation/images/brew_list.png)
+![brew list](documentation/images/homebrew/brew_list.png)
 
 
 ##List of resources and technologies used on this GitHub project	
