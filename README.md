@@ -151,7 +151,14 @@ In menu bar, choose: File > Import
 Then > General > Existing Projects into Workspace -> click Next
 ![General -> Existing Projects](documentation/images/eclipse/eclipse_general_existing.png)
 
+You will presented with the next dialog
+![Import projects](documentation/images/eclipse/import_projects.png)
+
+Click 'Browse' next to 'Select root directory'
+
 Navigate to the "eclipse-cheatsheets-to-dita-to-pdf" project, which (by default) should be within the "Users/[your user name]/GitHub" directory (or wherever you put it when you cloned it to your desktop).
+
+![GitHub folder](documentation/images/osx/github_folder.png)
 
 This will bring the project into Eclipse.
 
