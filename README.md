@@ -146,12 +146,15 @@ Quit GitHub Desktop.
 Launch Eclipse.
 
 In menu bar, choose: File > Import 
+
 ![File import](documentation/images/eclipse/eclipse_file_import.png)
 
 Then > General > Existing Projects into Workspace -> click Next
+
 ![General -> Existing Projects](documentation/images/eclipse/eclipse_general_existing.png)
 
 You will presented with the next dialog
+
 ![Import projects](documentation/images/eclipse/import_projects.png)
 
 Click 'Browse' next to 'Select root directory'
