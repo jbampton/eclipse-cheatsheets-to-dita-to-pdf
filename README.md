@@ -172,8 +172,13 @@ The final resulting PDF should be called map.pdf and located in the 'pdf' folder
 
 There are currently 4 other output formats (Docbook, HTMLHelp, TocJS, XHTML) as seen by the names of the folders in the 'output/debrief' directory.  The PDF output is vastly superior to the others which have no customization.  The Docbook output is a work in progress. 
 
-If you want to choose which output formats to render, you can right click on build.xml and select -> Run As -> Ant Build -> (second one), and then select which output format you would like on the 'Targets' tab under 'Check targets to execute' and click Run
+If you want to choose which output formats to render, you can right click on build.xml and select -> Run As -> Ant Build -> (second one). 
 
+![Ant Build](documentation/images/ant/ant_build2.png)
+
+Then select which output format you would like on the 'Targets' tab under 'Check targets to execute' and click Run
+
+![Ant Edit Config](documentation/images/ant/ant_edit_config.png)
 	
 ##How DITA-OT PDF Plugins work:
 
