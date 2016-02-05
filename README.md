@@ -153,7 +153,7 @@ Then > General > Existing Projects into Workspace -> click Next
 
 ![General -> Existing Projects](documentation/images/eclipse/eclipse_general_existing.png)
 
-You will presented with the next dialog
+You will be presented with the next dialog
 
 ![Import projects](documentation/images/eclipse/import_projects.png)
 
