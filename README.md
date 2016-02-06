@@ -132,6 +132,12 @@ Google Chrome
 
 You will need to click launch application.
 
+Firefox
+
+![Firefox dialog](documentation/images/dialogs/firefox_dialog.png)
+
+You will need to select GitHub Desktop then click OK
+
 In the "Clone As:" dialog box, accept the default option, which is to create a clone with the same name as the original: eclipse-cheatsheets-to-dita-to-pdf
 
 Click the "Clone" button.
