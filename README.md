@@ -167,7 +167,15 @@ This will bring the project into Eclipse.
 
 If you have not already done so, click on the "Workspace" button so that you can view the project.
 
-You must add the JAR files from SaxonHE and DITA-OT to Ant inside Eclipse. Go Preferences -> Ant -> Runtime -> Classpath tab -> click Global Entries -> click Add JARs -> navigate to "src/libs/DITA-OT1.8.5/lib" and add all the JAR files from that directory.  Click add JARS again and add saxon9he.jar from  "src/libs/SaxonHE9-6-0-7J".  Make sure to click Apply and then click Ok.
+You must add the JAR files from SaxonHE and DITA-OT to Ant inside Eclipse. Go Eclipse -> Preferences
+
+![Eclipse Preferences](documentation/images/eclipse/eclipse_preferences.png)
+
+Then -> Ant -> Runtime -> Classpath tab -> click Global Entries
+
+![Ant Runtime Classpath Global Entries](documentation/images/eclipse/ant_runtime_global_entries.png)
+
+Then -> click Add JARs -> navigate to "src/libs/DITA-OT1.8.5/lib" and add all the JAR files from that directory.  Click add JARS again and add saxon9he.jar from  "src/libs/SaxonHE9-6-0-7J".  Make sure to click Apply and then click Ok.
 		
 	
 Right click on build.xml and select -> Run As -> Ant Build -> (first one)
@@ -194,11 +202,15 @@ Then select which output format you would like on the 'Targets' tab under 'Check
 
 Plugins are placed in the DITA-OT plugins directory.  You can see the plugin I built in this directory named 'info.debrief'.
 
+![info.debrief plugin location](documentation/images/dita/info.debrief_plugin_location.png)
+
 When ready a plugin must be integrated into DITA-OT using Apache Ant.  I built this project using OS X and I installed Ant through Homebrew.  
  
 On the command line from inside the root DITA-OT folder it would be -> ant -f integrator.xml
 
-You can also run the integrator inside Eclipse as an Ant build by right clicking on 'src/libs/DITA-OT1.8.5/integrator.xml' and selecting -> Run As -> Ant Build and this should integrate the plugin with the toolkit.
+You can also run the integrator inside Eclipse as an Ant build by right clicking on 'src/libs/DITA-OT1.8.5/integrator.xml' and selecting -> Run As -> Ant Build (first one) and this should integrate the plugin with the toolkit.
+
+![Run DITA-OT integrator inside eclipse with Ant](documentation/images/eclipse/eclipse_run_dita_ot_integrator.png)
 
 Every DITA-OT PDF plugin has a file name plugin.xml at its root where you set the configuration values. The plugin id must match the folder name of the plugin.  Every plugin has a 'transtype' -> this plugins transtype is 'debrief'.  You can see the plugin.xml file and where to set the plugin id and transtype in the next image:
 
@@ -210,6 +222,8 @@ DITA-OT provides that base XSL code that you 'override' with your custom work.
 The two main files that configure plugins are plugin.xml and integrator.xml which should be in the root of the plugin folder.  The 'cfg' folder contains the rest of the customization.
 
 Custom XSL can be placed in two XSL files both named custom.xsl.  I placed all the custom code at 'src/libs/DITA-OT1.8.5/plugins/info.debrief/cfg/fo/xsl/custom.xsl' for this project.  The other file is seen in the adjacent 'attrs' directory. 
+ 
+![custom.xsl](documentation/images/dita/custom.xsl.png) 
  
 Placing the custom code only in these two files follows best practice techniques on how to build a DITA-OT PDF plugin.
 
