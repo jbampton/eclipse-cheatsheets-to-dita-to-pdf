@@ -181,7 +181,11 @@ Then -> Ant -> Runtime -> Classpath tab -> click Global Entries
 
 ![Ant Runtime Classpath Global Entries](documentation/images/eclipse/ant_runtime_global_entries.png)
 
-Then -> click Add JARs -> navigate to "src/libs/DITA-OT1.8.5/lib" and add all the JAR files from that directory.  Click add JARS again and add saxon9he.jar from  "src/libs/SaxonHE9-6-0-7J".  Make sure to click Apply and then click Ok.
+Then -> click Add JARs - you will be presented with the next dialog
+
+![Add JARs](documentation/images/eclipse/add_jars.png)
+
+Then-> Expand 'eclipse-cheatsheets-to-dita-to-pdf' and navigate to "src/libs/DITA-OT1.8.5/lib" and add all the JAR files from that directory.  Click add JARS again and add saxon9he.jar from  "src/libs/SaxonHE9-6-0-7J".  Make sure to click Apply and then click Ok.
 		
 	
 Right click on build.xml and select -> Run As -> Ant Build -> (first one)
