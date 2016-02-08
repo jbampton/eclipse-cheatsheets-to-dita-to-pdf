@@ -19,11 +19,11 @@ The two parts of the transformation and rendering comprise of:
 1.	- This is the transformation step and it uses cheatsheet-to-dita.xsl which requires an XSLT 2.0 compliant processor.
 	- I used SaxonHE9-6-0-7J from Saxonica.
 	- This file takes as input a collection on XML files (Eclipse cheat sheets) and creates multiple output files - a parent DITA Map and some associated tasks.
-	- The 'output/debrief' and sub 'dita' folder contains the dynamically created (transformed) DITA files from this step. 
+	- The "output/debrief" and sub "dita" folder contains the dynamically created (transformed) DITA files from this step. 
 	
 	
 2.	- This is the rendering (printing) step and the 'info.debrief' custom DITA-OT plugin produces the PDF via the DITA-OT base libraries and a XSL - Formatting Objects Processor (FO Processor)
-	- The 'output/debrief/pdf' folder contains the resulting PDF output from this step
+	- The "output/debrief/pdf" folder contains the resulting PDF output from this step
 	- I used Apache FOP 2.0 for the FO Processor and DITA-OT 1.8.5
 
 ##Yo let's build...watch the Star Wars build run on Youtube....BrisVegas Jedi Master Style...
@@ -58,7 +58,7 @@ On OS X, open your Applications folder, then open the Utilities folder. Open the
 
 I used SHA-512 so in a terminal in the directory or folder where you downloaded the Eclipse package to, the command to type would be:
 
-###shasum -a 512 eclipse-inst-mac64.tar.gz
+####shasum -a 512 eclipse-inst-mac64.tar.gz
 ![eclipse shasum](documentation/images/terminal/example_shasum.png)
 
 You should check the output of the shasum command matches what's displayed on the Eclipse website for the type of checksum you choose.  You can select the text in the terminal, copy it and then find it on the Eclipse website.
