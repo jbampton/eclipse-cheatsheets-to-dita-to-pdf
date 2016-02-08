@@ -209,7 +209,7 @@ Then select which output format you would like on the "Targets" tab under "Check
 
 ![Ant Edit Config](documentation/images/ant/ant_edit_config.png)
 	
-##How DITA-OT PDF Plugins work:
+##How DITA-OT PDF Plugins work
 
 Plugins are placed in the DITA-OT plugins directory.  You can see the plugin I built in this directory named "info.debrief".
 
@@ -232,7 +232,7 @@ DITA-OT provides that base XSL code that you 'override' with your custom work.
 
 The two main files that configure plugins are <u>plugin.xml</u> and <u>integrator.xml</u> which should be in the root of the plugin folder.  The "cfg" folder contains the rest of the customization.
 
-Custom XSL can be placed in two XSL files both named custom.xsl.  I placed all the custom code at "src/libs/DITA-OT1.8.5/plugins/info.debrief/cfg/fo/xsl/custom.xsl" for this project.  The other file is seen in the adjacent "attrs" directory. 
+Custom XSL can be placed in two XSL files both named "custom.xsl".  I placed all the custom code at "src/libs/DITA-OT1.8.5/plugins/info.debrief/cfg/fo/xsl/custom.xsl" for this project.  The other file is seen in the adjacent "attrs" directory. 
  
 ![custom.xsl](documentation/images/dita/custom.xsl.png) 
  
