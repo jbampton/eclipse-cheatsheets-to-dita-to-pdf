@@ -251,6 +251,9 @@ Open a terminal and type:
 ###brew doctor
 ![brew doctor](documentation/images/homebrew/brew_doctor.png)
 
+###brew update
+![brew update](documentation/images/homebrew/brew_update.png)
+
 ###Example output of running a brew install command.  The image shows pouring brews from their bottles
 ![pouring brews](documentation/images/homebrew/pouring_brews.png)
 
