@@ -1,1 +1,444 @@
-hello cheatsheeets...
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Eclipse-cheatsheets-to-dita-to-pdf by jbampton</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Eclipse-cheatsheets-to-dita-to-pdf</h1>
+        <p>Transforms Eclipse cheat sheets to PDF via the DITA Open Toolkit, Eclipse, Apache FOP, Saxon, Apache Ant, XSL, XML</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+<a id="eclipse-cheat-sheets-to-dita-to-pdf" class="anchor" href="#eclipse-cheat-sheets-to-dita-to-pdf" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Eclipse cheat sheets to DITA to PDF</h1>
+
+<p>I worked on the open source Java based project <a href="http://debrief.info/">Debrief</a> the leading maritime analysis tool which is also on GitHub at <a href="https://github.com/debrief/debrief">https://github.com/debrief/debrief</a>. This project is based on some parts of the document publishing that I did in that project.  See the glossary of links at the bottom of this README which describes the technologies being used.</p>
+
+<p>Note: Now supporting multiple output formats - PDF, HTMLHelp, TocJS, XHTML.</p>
+
+<p>This program runs inside Eclipse, an integrated development environment (IDE) and is mainly a Java based project in that all the code libraries use Java (Apache FOP, Saxon, DITA Open Toolkit, Apache ANT, Eclipse) and it also uses XSL and XML heavily. Using Eclipse allows us to create a publishing pipeline creating all the working output formats one after the other, in one click by building the project.   Development was originally done in oXygen XML Editor then ported to Eclipse. </p>
+
+<p>The roadmap for this project is make the "info.debrief" custom DITA-OT plugin compatible with DITA-OT 2.1 and with the full Apache ANT build code and in depth instructions on how to get up and running inside Eclipse and more.... </p>
+
+<p>When built and run this project takes a set of Eclipse cheat sheets and transforms them to PDF.  Eclipse cheat sheets are obviously best viewed inside Eclipse.  Using PDF allows us to print nicely formatted cheat sheets on paper which allows the user to work through the cheat sheets with a pen and check off each item as they go.  Using cheat sheets physically on paper was seen as a new way to learn and was the original concept of the Debrief cheat sheets publishing project I worked on.</p>
+
+<p>Darwin Information Typing Architecture (DITA) is an XML data model for authoring and using DITA-OT you can publish those ideas. The DITA standard is maintained by the OASIS DITA Technical Committee.  Some of the largest and most successful companies in the world use DITA. The next link is an informal list of <a href="http://www.ditawriter.com/companies-using-dita/">companies using DITA</a></p>
+
+<p>It's a two-step process first the DITA XML is created from the Eclipse cheat sheets (XML files) and then you use the DITA-Open Toolkit to create the PDF from the auto created DITA files.</p>
+
+<p>The two parts of the transformation and rendering comprise of:</p>
+
+<ol>
+<li>
+<ul>
+<li>This is the transformation step and it uses cheatsheet-to-dita.xsl which requires an XSLT 2.0 compliant processor.</li>
+</ul>
+
+<ul>
+<li>I used SaxonHE9-6-0-7J from Saxonica.</li>
+<li>This file takes as input a collection on XML files (Eclipse cheat sheets) and creates multiple output files - a parent DITA Map and some associated tasks.</li>
+<li>The "output/debrief" and sub "dita" folder contains the dynamically created (transformed) DITA files from this step. </li>
+</ul>
+</li>
+<li>
+<ul>
+<li>This is the rendering (printing) step and the 'info.debrief' custom DITA-OT plugin produces the PDF via the DITA-OT base libraries and a XSL - Formatting Objects Processor (FO Processor)</li>
+</ul>
+
+<ul>
+<li>The "output/debrief/pdf" folder contains the resulting PDF output from this step</li>
+<li>I used Apache FOP 2.0 for the FO Processor and DITA-OT 1.8.5</li>
+</ul>
+</li>
+</ol>
+
+<h2>
+<a id="yo-lets-buildwatch-the-star-wars-build-run-on-youtubebrisvegas-jedi-master-style" class="anchor" href="#yo-lets-buildwatch-the-star-wars-build-run-on-youtubebrisvegas-jedi-master-style" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Yo let's build...watch the Star Wars build run on Youtube....BrisVegas Jedi Master Style...</h2>
+
+<p><a href="https://youtu.be/LJ5DsFP_THo">See the build run full screen in 1080p</a></p>
+
+<h2>
+<a id="build-instructions---mac-os-x" class="anchor" href="#build-instructions---mac-os-x" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Build Instructions - Mac OS X</h2>
+
+<h3>
+<a id="install-eclipse" class="anchor" href="#install-eclipse" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install Eclipse</h3>
+
+<p>Go to: <a href="https://www.eclipse.org/downloads/?osType=macosx">Eclipse Downloads</a></p>
+
+<p><img src="documentation/images/eclipse/download_eclipse.png" alt="Eclipse Downloads"></p>
+
+<p>In the box near top labelled "Try the Eclipse Installer", click on "64 bit" under "Mac OS X".</p>
+
+<p>Download Eclipse installer application.</p>
+
+<p>You should check the checksum of the Eclipse file you download.</p>
+
+<p>Depending on which type of checksum you choose: MD5, SHA1, SHA-512 the commands are slightly different:</p>
+
+<p>First you should click on the checksum type in the image below:</p>
+
+<p><img src="documentation/images/eclipse/eclipse_checksums.png" alt="Eclipse checksums"></p>
+
+<p>On OS X, open your Applications folder, then open the Utilities folder. Open the Terminal application.</p>
+
+<p><img src="documentation/images/osx/terminal.png" alt="OS X terminal"></p>
+
+<p>I used SHA-512 so in a terminal in the directory or folder where you downloaded the Eclipse package to, the command to type would be:</p>
+
+<h4>
+<a id="shasum--a-512-eclipse-inst-mac64targz" class="anchor" href="#shasum--a-512-eclipse-inst-mac64targz" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>shasum -a 512 eclipse-inst-mac64.tar.gz</h4>
+
+<p><img src="documentation/images/terminal/example_shasum.png" alt="eclipse shasum"></p>
+
+<p>You should check the output of the shasum command matches what's displayed on the Eclipse website for the type of checksum you choose.  You can select the text in the terminal, copy it and then find it on the Eclipse website.</p>
+
+<p>For more information on the shasum or md5 command open a terminal and type:</p>
+
+<h4>
+<a id="man-shasum" class="anchor" href="#man-shasum" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>man shasum</h4>
+
+<p><img src="documentation/images/man/man_shasum.png" alt="man shasum"></p>
+
+<h4>
+<a id="man-md5" class="anchor" href="#man-md5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>man md5</h4>
+
+<p><img src="documentation/images/man/man_md5.png" alt="man md5"></p>
+
+<p>Use the up and down arrows on the keyboard to navigate through the man page documentation.</p>
+
+<p>To exit from the man pages type: q</p>
+
+<p>Unzip resulting download (eclipse-inst-mac64.tar.gz) by double-clicking on it if downloader did not already unzip it.</p>
+
+<p>Run "Eclipse Installer" application.</p>
+
+<p>Choose "Eclipse IDE for Java Developers" option. (Other options and Eclipse modules are not necessary for this build.)</p>
+
+<p>This option allows you to specify an "Installation Folder." The default option may be a folder within your individual directory.</p>
+
+<p>It will be more useful to change this and install Eclipse within a directory titled "Eclipse" within the system's main Application directory.</p>
+
+<p>Click on the folder icon to navigate to the Applications directory and create an "Eclipse" target sub-directory before installing.</p>
+
+<p>Then click the "Install" button. The installation process may take a few minutes.</p>
+
+<p>Launch Eclipse for the first time. Doing so will ask you to Select a "workspace." The default option "/Users/[your username]/Documents/workspace" will work fine.</p>
+
+<p>Quit Eclipse for now.</p>
+
+<h3>
+<a id="install-github-desktop" class="anchor" href="#install-github-desktop" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install GitHub Desktop</h3>
+
+<p>The build's repository is found within GitHub, and the "GitHub Desktop for Mac" application will allow you to clone and work on the build more easily, while retaining a link to the primary source, and thus obtaining updates and having the option to submit modifications which could be candidates for inclusion.</p>
+
+<p>Go to: <a href="https://desktop.github.com/">GitHub Desktop</a></p>
+
+<p><img src="documentation/images/github/github_desktop.png" alt="GitHub Desktop"></p>
+
+<p>Click on the "Download GitHub Desktop" button.</p>
+
+<p>Unzip the resulting file: GitHub Desktop 216.zip</p>
+
+<p>This expands to: GitHub Desktop</p>
+
+<p>Move this to your system's Applications directory.</p>
+
+<p><img src="documentation/images/osx/applications_folder.png" alt="Applications directory"></p>
+
+<h3>
+<a id="clone-the-project-to-your-desktop-computer" class="anchor" href="#clone-the-project-to-your-desktop-computer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Clone the project to your desktop computer</h3>
+
+<p>Go to the GitHub repository for this project:</p>
+
+<p><a href="https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf">https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf</a></p>
+
+<p>Click on the icon just to left of "Download ZIP" that when you hover your mouse over it, it will display "Save jbampton/eclipse-cheatsheets-to-dita-to-pdf to your computer and use in GitHub Desktop"</p>
+
+<p><img src="documentation/images/github/clone_repo.png" alt="Clone my repository"></p>
+
+<p>You will be presented with a dialog box that will ask if you want to open the link with GitHub Desktop. The dialog box will look different depending on which web browser you are using.  Below is how the dialog boxes look like:</p>
+
+<p>Google Chrome</p>
+
+<p><img src="documentation/images/dialogs/chrome_dialog.png" alt="Chrome dialog"></p>
+
+<p>You will need to click launch application.</p>
+
+<p>Firefox</p>
+
+<p><img src="documentation/images/dialogs/firefox_dialog.png" alt="Firefox dialog"></p>
+
+<p>You will need to select "GitHub Desktop" then click "OK"</p>
+
+<p>In the "Clone As:" dialog box, accept the default option, which is to create a clone with the same name as the original: eclipse-cheatsheets-to-dita-to-pdf</p>
+
+<p>Click the "Clone" button.</p>
+
+<p>You will see a progress bar indicating the progress of files being downloaded from GitHub onto your desktop computer, into a local repository directory.</p>
+
+<p>Quit GitHub Desktop.</p>
+
+<h3>
+<a id="import-project-into-eclipse" class="anchor" href="#import-project-into-eclipse" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Import project into Eclipse</h3>
+
+<p>Launch Eclipse.</p>
+
+<p>In menu bar, choose: File &gt; Import </p>
+
+<p><img src="documentation/images/eclipse/eclipse_file_import.png" alt="File import"></p>
+
+<p>Then &gt; General &gt; Existing Projects into Workspace -&gt; click "Next"</p>
+
+<p><img src="documentation/images/eclipse/eclipse_general_existing.png" alt="General -&gt; Existing Projects"></p>
+
+<p>You will be presented with the next dialog</p>
+
+<p><img src="documentation/images/eclipse/import_projects.png" alt="Import projects"></p>
+
+<p>Click "Browse" next to "Select root directory"</p>
+
+<p>Navigate to the "eclipse-cheatsheets-to-dita-to-pdf" project, which (by default) should be within the "Users/[your user name]/GitHub" directory (or wherever you put it when you cloned it to your desktop).</p>
+
+<p><img src="documentation/images/osx/github_folder.png" alt="GitHub folder"></p>
+
+<p>This will bring the project into Eclipse.</p>
+
+<p>If you have not already done so, click on the "Workspace" button so that you can view the project.</p>
+
+<p>You must add the JAR files from SaxonHE and DITA-OT to Ant inside Eclipse. </p>
+
+<p>Go to Eclipse -&gt; Preferences</p>
+
+<p><img src="documentation/images/eclipse/eclipse_preferences.png" alt="Eclipse Preferences"></p>
+
+<p>Then -&gt; Ant -&gt; Runtime -&gt; Classpath tab -&gt; click "Global Entries"</p>
+
+<p><img src="documentation/images/eclipse/ant_runtime_global_entries.png" alt="Ant Runtime Classpath Global Entries"></p>
+
+<p>Then -&gt; click "Add JARs" - you will be presented with the next dialog</p>
+
+<p><img src="documentation/images/eclipse/add_jars.png" alt="Add JARs"></p>
+
+<p>Then-&gt; expand 'eclipse-cheatsheets-to-dita-to-pdf' and navigate to "src/libs/DITA-OT1.8.5/lib" and add all the JAR files from that directory.  Click "Add JARs" again and add "saxon9he.jar" from  "src/libs/SaxonHE9-6-0-7J".  Make sure to click "Apply" and then click "Ok".</p>
+
+<p>Right click on build.xml and select -&gt; Run As -&gt; Ant Build -&gt; (first one)</p>
+
+<p><img src="documentation/images/ant/ant_build.png" alt="Run the build"></p>
+
+<p>This should run and build all tasks, creating all working output formats in one go.</p>
+
+<p>This process re-creates the DITA XML output in the "output" directory.  There should be five DITA files, one parent Ditamap at and 4 task files with the Ditamap at the root of the "output/debrief" folder with task files together in the sub folder "dita"</p>
+
+<p>The final resulting PDF should be called map.pdf and located in the "pdf" folder.</p>
+
+<p>There are currently 4 other output formats (Docbook, HTMLHelp, TocJS, XHTML) as seen by the names of the folders in the "output/debrief" directory.  The PDF output is vastly superior to the others which have no customization.  The Docbook output is a work in progress. </p>
+
+<p>If you want to choose which output formats to render, you can right click on "build.xml" and select -&gt; Run As -&gt; Ant Build -&gt; (second one). </p>
+
+<p><img src="documentation/images/ant/ant_build2.png" alt="Ant Build"></p>
+
+<p>Then select which output format you would like on the "Targets" tab under "Check targets to execute" and click "Run"</p>
+
+<p><img src="documentation/images/ant/ant_edit_config.png" alt="Ant Edit Config"></p>
+
+<h2>
+<a id="how-dita-ot-pdf-plugins-work" class="anchor" href="#how-dita-ot-pdf-plugins-work" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How DITA-OT PDF Plugins work</h2>
+
+<p>Plugins are placed in the DITA-OT plugins directory.  You can see the plugin I built in this directory named "info.debrief".</p>
+
+<p><img src="documentation/images/dita/info.debrief_plugin_location.png" alt="info.debrief plugin location"></p>
+
+<p>When ready a plugin must be integrated into DITA-OT using <strong>Apache Ant</strong>.  I built this project using OS X and I installed Ant through <strong>Homebrew</strong>.  </p>
+
+<p>On the command line from inside the root DITA-OT folder it would be -&gt; ant -f integrator.xml</p>
+
+<p>You can also run the integrator inside Eclipse as an Ant build by right clicking on "src/libs/DITA-OT1.8.5/integrator.xml" and selecting -&gt; Run As -&gt; Ant Build (first one) and this should integrate the plugin with the toolkit.</p>
+
+<p><img src="documentation/images/eclipse/eclipse_run_dita_ot_integrator.png" alt="Run DITA-OT integrator inside eclipse with Ant"></p>
+
+<p>Every DITA-OT PDF plugin has a file name plugin.xml at its root where you set the configuration values. The plugin id must match the folder name of the plugin.  Every plugin has a "transtype" -&gt; this plugins transtype is "debrief".  You can see the plugin.xml file and where to set the plugin id and transtype in the next image:</p>
+
+<p><img src="documentation/images/dita/transtype.png" alt="plugin.xml"></p>
+
+<p>PDF Plugins are comprised of some XML config files, some artwork and some custom XSL (XSLT/XSL-FO/XPath) code 
+DITA-OT provides that base XSL code that you 'override' with your custom work.</p>
+
+<p>The two main files that configure plugins are plugin.xml and integrator.xml which should be in the root of the plugin folder.  The "cfg" folder contains the rest of the customization.</p>
+
+<p>Custom XSL can be placed in two XSL files both named "custom.xsl".  I placed all the custom code at "src/libs/DITA-OT1.8.5/plugins/info.debrief/cfg/fo/xsl/custom.xsl" for this project.  The other file is seen in the adjacent "attrs" directory. </p>
+
+<p><img src="documentation/images/dita/custom.xsl.png" alt="custom.xsl"> </p>
+
+<p>Placing the custom code only in these two files follows best practice techniques on how to build a DITA-OT PDF plugin.</p>
+
+<h2>
+<a id="homebrew-usage" class="anchor" href="#homebrew-usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Homebrew usage</h2>
+
+<p>Open a terminal and type:</p>
+
+<h3>
+<a id="man-brew" class="anchor" href="#man-brew" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>man brew</h3>
+
+<p><img src="documentation/images/man/man_brew.png" alt="man brew"></p>
+
+<p><strong>Before using Homebrew you should ensure it's up to date. Run the next command:</strong></p>
+
+<h3>
+<a id="brew-doctor" class="anchor" href="#brew-doctor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>brew doctor</h3>
+
+<p><img src="documentation/images/homebrew/brew_doctor.png" alt="brew doctor"></p>
+
+<h3>
+<a id="brew-update" class="anchor" href="#brew-update" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>brew update</h3>
+
+<p><img src="documentation/images/homebrew/brew_update.png" alt="brew update"></p>
+
+<h3>
+<a id="example-output-of-running-a-brew-install-command--the-image-shows-pouring-brews-from-their-bottles" class="anchor" href="#example-output-of-running-a-brew-install-command--the-image-shows-pouring-brews-from-their-bottles" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example output of running a brew install command.  The image shows pouring brews from their bottles</h3>
+
+<p><img src="documentation/images/homebrew/pouring_brews.png" alt="pouring brews"></p>
+
+<h3>
+<a id="brew-list" class="anchor" href="#brew-list" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>brew list</h3>
+
+<p><img src="documentation/images/homebrew/brew_list.png" alt="brew list"></p>
+
+<h2>
+<a id="list-of-resources-and-technologies-used-on-this-github-project" class="anchor" href="#list-of-resources-and-technologies-used-on-this-github-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>List of resources and technologies used on this GitHub project</h2>
+
+<p>Eclipse - <a href="https://eclipse.org/">https://eclipse.org/</a> </p>
+
+<p>Eclipse cheat sheets - <a href="http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-cheatsheets.htm">http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-cheatsheets.htm</a></p>
+
+<p>The Apache Software Foundation - <a href="http://www.apache.org/">http://www.apache.org/</a></p>
+
+<p>Apache FOP - <a href="https://xmlgraphics.apache.org/fop/">https://xmlgraphics.apache.org/fop/</a></p>
+
+<p>Apache ANT - <a href="http://ant.apache.org">http://ant.apache.org</a></p>
+
+<p>Saxon XSLT - <a href="https://en.wikipedia.org/wiki/Saxon_XSLT">https://en.wikipedia.org/wiki/Saxon_XSLT</a></p>
+
+<p>Saxon - <a href="http://saxon.sourceforge.net/">http://saxon.sourceforge.net/</a></p>
+
+<p>Saxonica - <a href="http://www.saxonica.com/welcome/welcome.xml">http://www.saxonica.com/welcome/welcome.xml</a></p>
+
+<p>Online community for the Darwin Information Typing Architecture OASIS Standard - <a href="http://dita.xml.org/">http://dita.xml.org/</a></p>
+
+<p>DITA - <a href="https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture">https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture</a></p>
+
+<p>DITA-Open Toolkit - <a href="http://www.dita-ot.org/">http://www.dita-ot.org/</a></p>
+
+<p>W3C - The Extensible Stylesheet Language Family (XSL) - <a href="http://www.w3.org/Style/XSL/">http://www.w3.org/Style/XSL/</a></p>
+
+<p>W3C XSLT 2.0 - <a href="http://www.w3.org/TR/xslt20/">http://www.w3.org/TR/xslt20/</a> </p>
+
+<p>XSL Formatting Objects - <a href="https://en.wikipedia.org/wiki/XSL_Formatting_Objects">https://en.wikipedia.org/wiki/XSL_Formatting_Objects</a></p>
+
+<p>XSL-FO Processors - <a href="http://www.w3.org/community/ppl/wiki/XSL-FO_Processors">http://www.w3.org/community/ppl/wiki/XSL-FO_Processors</a></p>
+
+<p>XML - <a href="https://en.wikipedia.org/wiki/XML">https://en.wikipedia.org/wiki/XML</a></p>
+
+<p>Adobe PDF - <a href="https://en.wikipedia.org/wiki/Portable_Document_Format">https://en.wikipedia.org/wiki/Portable_Document_Format</a></p>
+
+<p>XHTML - <a href="https://en.wikipedia.org/wiki/XHTML">https://en.wikipedia.org/wiki/XHTML</a></p>
+
+<p>Dublin Core Metadata Initiative - <a href="http://dublincore.org/">http://dublincore.org/</a></p>
+
+<p>Microsoft HTML Help 1.4 - <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms670169(v=vs.85).aspx">https://msdn.microsoft.com/en-us/library/windows/desktop/ms670169(v=vs.85).aspx</a></p>
+
+<p>The Organization for the Advancement of Structured Information Standards (OASIS) - <a href="https://en.wikipedia.org/wiki/OASIS_(organization)">https://en.wikipedia.org/wiki/OASIS_(organization)</a></p>
+
+<p>oXygen XML Editor - <a href="http://www.oxygenxml.com">http://www.oxygenxml.com</a></p>
+
+<p>DITA to TocJS - <a href="http://www.dita-ot.org/1.8/readme/dita2tocjs.html">http://www.dita-ot.org/1.8/readme/dita2tocjs.html</a></p>
+
+<p>DITA-OT installing plugins - <a href="http://dita-ot.sourceforge.net/1.7/dev_ref/plugins-installing.html">http://dita-ot.sourceforge.net/1.7/dev_ref/plugins-installing.html</a></p>
+
+<p>Generate sample DITA-OT plugin - <a href="https://dita-generator-hrd.appspot.com/pdf-plugin/">https://dita-generator-hrd.appspot.com/pdf-plugin/</a></p>
+
+<p>Creating DITA-OT plugins - <a href="http://dita-ot.sourceforge.net/1.5.4/dev_ref/plugins-overview.html">http://dita-ot.sourceforge.net/1.5.4/dev_ref/plugins-overview.html</a></p>
+
+<p>Customizing PDF output - <a href="http://www.dita-ot.org/1.8/readme/dita2pdf-customization.html">http://www.dita-ot.org/1.8/readme/dita2pdf-customization.html</a></p>
+
+<p>XSLT FAQ. Docbook FAQ. Braille. - <a href="http://www.dpawson.co.uk/">http://www.dpawson.co.uk/</a></p>
+
+<p>Homebrew — The missing package manager for OS X - <a href="http://brew.sh/">http://brew.sh/</a> </p>
+
+<p>Install Ant with Homebrew - <a href="http://brewformulas.org/Ant">http://brewformulas.org/Ant</a></p>
+
+<p>Installing Apache Ant - <a href="http://ant.apache.org/manual/install.html">http://ant.apache.org/manual/install.html</a></p>
+
+<p>Codecademy - Learn the Command Line - <a href="https://www.codecademy.com/courses/learn-the-command-line">https://www.codecademy.com/courses/learn-the-command-line</a></p>
+
+<p>Codecademy - Learn Java - <a href="https://www.codecademy.com/learn/learn-java">https://www.codecademy.com/learn/learn-java</a></p>
+
+<p>Got 15 minutes and want to learn Git? <a href="https://try.github.io/levels/1/challenges/1">https://try.github.io/levels/1/challenges/1</a></p>
+
+<p>Ruby regular expression editor - <a href="http://rubular.com/">http://rubular.com/</a></p>
+
+<p>Essential programmer training - <a href="http://www.codewars.com/">http://www.codewars.com/</a></p>
+
+<p>Mastering Markdown - <a href="https://guides.github.com/features/mastering-markdown/">https://guides.github.com/features/mastering-markdown/</a></p>
+
+<p>GitHub Desktop - <a href="https://desktop.github.com/">https://desktop.github.com/</a></p>
+
+<p>Microsoft File Checksum Integrity Verifier - <a href="https://www.microsoft.com/en-au/download/details.aspx?id=11533">https://www.microsoft.com/en-au/download/details.aspx?id=11533</a></p>
+
+<p>TechSmith Camtasia - <a href="https://www.techsmith.com/camtasia.html">https://www.techsmith.com/camtasia.html</a></p>
+
+<p>MD5 - <a href="https://en.wikipedia.org/wiki/MD5">https://en.wikipedia.org/wiki/MD5</a></p>
+
+<p>sha1sum - <a href="https://en.wikipedia.org/wiki/Sha1sum">https://en.wikipedia.org/wiki/Sha1sum</a></p>
+
+<p>IDE - Integrated Development Environment - <a href="https://en.wikipedia.org/wiki/Integrated_development_environment">https://en.wikipedia.org/wiki/Integrated_development_environment</a></p>
+
+<p>Git (software) - <a href="https://en.wikipedia.org/wiki/Git_(software)">https://en.wikipedia.org/wiki/Git_(software)</a></p>
+
+<p>man page - <a href="https://en.wikipedia.org/wiki/Man_page">https://en.wikipedia.org/wiki/Man_page</a></p>
+
+<p>Terminal (OS X) - <a href="https://en.wikipedia.org/wiki/Terminal_(OS_X)">https://en.wikipedia.org/wiki/Terminal_(OS_X)</a></p>
+
+<h2>
+<a id="contributions" class="anchor" href="#contributions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributions</h2>
+
+<p>Fork and pull request. Simple.</p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/jbampton">jbampton</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
