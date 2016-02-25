@@ -34,6 +34,14 @@ The two parts of the transformation and rendering comprise of:
 
 ##Build Instructions - Mac OS X
 
+###Install Java
+
+You need to install the Java Development Kit (JDK) as Eclipse needs Java to run so you should first read the [Java Platform, Standard Edition Installation Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html)
+
+So then go to: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+Choose the JDK version for your [Operating System](https://en.wikipedia.org/wiki/Operating_system).
+
 ###Install Eclipse
 
 Go to: [Eclipse Downloads](https://www.eclipse.org/downloads/?osType=macosx)
