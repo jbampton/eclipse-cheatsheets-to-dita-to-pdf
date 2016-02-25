@@ -249,7 +249,11 @@ If you want to choose which output formats to render, you can right click on "bu
 
 ![Ant Build](documentation/images/ant/ant_build2.png)
 
-Then select which output format you would like on the "Targets" tab under "Check targets to execute" and click "Run"
+Then select which output format you would like on the "Targets" tab under "Check targets to execute".
+
+The base target is "xslt2", this creates the DITA-XML files from the input Eclipse cheat sheets (XML).  You must have the "xslt2" target checked if you are running any other targets other than "TransformALL"
+
+Finally click "Run".
 
 ![Ant Edit Config](documentation/images/ant/ant_edit_config.png)
 	
