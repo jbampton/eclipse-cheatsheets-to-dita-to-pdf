@@ -33,6 +33,8 @@ If you are not already Gung-Ho on Java and all things tech, then try a few short
 - https://www.codeschool.com/courses/try-git
 - https://www.codecademy.com/learn/learn-git
 
+And then come train in the [REAL DOJO](http://www.codewars.com) and reach your highest potential, become faster, stronger and more powerful......JEDI MASTER LEVEL.....!??!?!!  
+
 
 ##Yo let's build...watch the Star Wars build run on Youtube....BrisVegas Jedi Master Style...
 
