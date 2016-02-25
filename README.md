@@ -34,13 +34,21 @@ The two parts of the transformation and rendering comprise of:
 
 ##Build Instructions - Mac OS X
 
-###Install Java
-
-First you should check if Java is already installed on your system. 
+###Install Git
 
 On OS X, open your Applications folder, then open the Utilities folder. Open the Terminal application.
 
 ![OS X terminal](documentation/images/osx/terminal.png)
+
+In the terminal type:
+
+####git --help
+
+This will either print the usage of the git command if git is already installed, or trigger the Command Line Tools (OS X) for Xcode to install.
+
+###Install Java
+
+First you should check if Java is already installed on your system. 
 
 In the terminal type:
 
