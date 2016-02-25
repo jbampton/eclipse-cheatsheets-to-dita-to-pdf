@@ -137,13 +137,33 @@ Choose "Eclipse IDE for Java Developers" option. (Other options and Eclipse modu
 
 This option allows you to specify an "Installation Folder." The default option may be a folder within your individual directory.
 
+![Eclipse Installer install location](documentation/images/eclipse/eclipse-installer-2.png)
+
 It will be more useful to change this and install Eclipse within a directory titled "Eclipse" within the system's main Application directory.
 
 Click on the folder icon to navigate to the Applications directory and create an "Eclipse" target sub-directory before installing.
 
-Then click the "Install" button. The installation process may take a few minutes.
+![Applications - Eclipse folder](documentation/images/osx/applications-folder-eclipse.png)
+
+![Eclipse Installer install location](documentation/images/eclipse/eclipse-installer-3.png)
+
+Then click the "Install" button.
+
+You will be presented with the Eclipse Foundation Software User Agreement, so click "Accept Now" after reading it. 
+
+![Eclipse Foundation Software User Agreement](documentation/images/eclipse/eclipse-software-user-agreement.png)
+
+The installation process may take a few minutes and you will be presented with a green "installing" loading bar style indicator.
+
+![Installing Eclipse](documentation/images/eclipse/eclipse-installer-4.png)
+
+When Eclipse has finished installing you will be presented with the "Launch" green button.
+
+![Eclipse is now installed](documentation/images/eclipse/eclipse-installer-5.png)
 
 Launch Eclipse for the first time. Doing so will ask you to Select a "workspace." The default option "/Users/[your username]/Documents/workspace" will work fine.
+
+![Eclipse select workspace](documentation/images/eclipse/eclipse-select-workspace.png)
 
 Quit Eclipse for now.
 
@@ -202,7 +222,7 @@ Quit GitHub Desktop.
 
 ###Install Homebrew and Apache Ant
 
-The project uses [Homebrew](http://brew.sh/) and I installed Apache Ant inside Homebrew with the [Ant](http://brewformulas.org/Ant).  Towards the bottom of this README.md there is some information on Homebrew usage.
+The project uses [Homebrew](http://brew.sh/) and I installed Apache Ant inside Homebrew with the [Ant](http://brewformulas.org/Ant) Homebrew formula.  Towards the bottom of this README.md there is some information on Homebrew usage.
 
 
 ###Import project into Eclipse
