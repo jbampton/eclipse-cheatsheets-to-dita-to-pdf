@@ -4,7 +4,7 @@ I worked on the [open source](https://en.wikipedia.org/wiki/Open_source) [Java](
 
 Note: Now supporting multiple output formats - PDF, HTMLHelp, TocJS, XHTML.
 
-This program runs inside [Eclipse](https://www.eclipse.org/), an [integrated development environment](https://en.wikipedia.org/wiki/Integrated_development_environment) (IDE) and is mainly a Java based project in that all the code libraries use Java ([Apache FOP](https://xmlgraphics.apache.org/fop/), [Saxon](https://sourceforge.net/projects/saxon/files/Saxon-HE/), [DITA Open Toolkit](http://www.dita-ot.org/), [Apache ANT](http://ant.apache.org/), Eclipse) and it also uses XSL and XML heavily. Using Eclipse allows us to create a publishing pipeline creating all the working output formats one after the other, in one click by building the project.   Development was originally done in oXygen XML Editor then ported to Eclipse. 
+This program runs inside [Eclipse](https://www.eclipse.org/), an [integrated development environment](https://en.wikipedia.org/wiki/Integrated_development_environment) (IDE) and is mainly a Java based project in that all the code libraries use Java ([Apache FOP](https://xmlgraphics.apache.org/fop/), [Saxon](https://sourceforge.net/projects/saxon/files/Saxon-HE/), [DITA Open Toolkit](http://www.dita-ot.org/), [Apache ANT](http://ant.apache.org/), Eclipse) and it also uses [XSL](https://www.w3.org/Style/XSL/) and [XML](https://www.w3.org/XML/) heavily. Using Eclipse allows us to create a publishing pipeline creating all the working output formats one after the other, in one click by building the project.   Development was originally done in [oXygen XML Editor](https://www.oxygenxml.com) then ported to Eclipse. 
 
 The roadmap for this project is make the "info.debrief" custom DITA-OT plugin compatible with DITA-OT 2.1 and with the full Apache ANT build code and in depth instructions on how to get up and running inside Eclipse and more.... 
 
@@ -304,6 +304,8 @@ XSL-FO Processors - http://www.w3.org/community/ppl/wiki/XSL-FO_Processors
 XML - https://en.wikipedia.org/wiki/XML
 
 Adobe PDF - https://en.wikipedia.org/wiki/Portable_Document_Format
+
+Adobe Acrobat Reader DC - https://get.adobe.com/reader/
 
 XHTML - https://en.wikipedia.org/wiki/XHTML
 
