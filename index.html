@@ -42,7 +42,7 @@
         <h1>
 <a id="eclipse-cheat-sheets-to-dita-to-pdf" class="anchor" href="#eclipse-cheat-sheets-to-dita-to-pdf" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Eclipse cheat sheets to DITA to PDF</h1>
 
-<p>I worked on the <a href="https://en.wikipedia.org/wiki/Open_source">open source</a> <a href="https://www.oracle.com/java/index.html">Java</a> based project <a href="http://debrief.info/">Debrief</a> the leading maritime analysis tool which is also on GitHub at <a href="https://github.com/debrief/debrief">https://github.com/debrief/debrief</a>. This project is based on some parts of the document publishing that I did in that project.  See the glossary of links at the bottom of this README which describes the technologies being used.</p>
+<p>I worked on the <a href="https://en.wikipedia.org/wiki/Open_source">open source</a> <a href="https://www.oracle.com/java/index.html">Java</a> based project <a href="http://debrief.info/">Debrief</a> the leading maritime analysis tool which is also on GitHub at <a href="https://github.com/debrief/debrief">https://github.com/debrief/debrief</a>. This project aims to be a easy to follow tutorial on Java and is based on some parts of the document publishing that I did in the Debrief project.  The glossary of links at the bottom of this README describe the technologies being used.</p>
 
 <p>Note: Now supporting multiple output formats - PDF, HTMLHelp, TocJS, XHTML.</p>
 
@@ -82,10 +82,28 @@
 </li>
 </ol>
 
+<p>If you are not already Gung-Ho on Java and all things tech, then try a few short online courses:</p>
+
+<ul>
+<li><a href="https://www.codecademy.com/learn/learn-java">https://www.codecademy.com/learn/learn-java</a></li>
+<li><a href="https://www.codecademy.com/learn/learn-the-command-line">https://www.codecademy.com/learn/learn-the-command-line</a></li>
+<li><a href="https://www.codeschool.com/courses/try-git">https://www.codeschool.com/courses/try-git</a></li>
+<li><a href="https://www.codecademy.com/learn/learn-git">https://www.codecademy.com/learn/learn-git</a></li>
+</ul>
+
+<p>And then come train in the <a href="http://www.codewars.com">REAL DOJO</a> and reach your highest potential, become faster, stronger and more powerful......JEDI MASTER LEVEL.....!??!?!!  </p>
+
 <h2>
 <a id="yo-lets-buildwatch-the-star-wars-build-run-on-youtubebrisvegas-jedi-master-style" class="anchor" href="#yo-lets-buildwatch-the-star-wars-build-run-on-youtubebrisvegas-jedi-master-style" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Yo let's build...watch the Star Wars build run on Youtube....BrisVegas Jedi Master Style...</h2>
 
 <p><a href="https://youtu.be/LJ5DsFP_THo">See the build run full screen in 1080p</a></p>
+
+<h2>
+<a id="build-instructions" class="anchor" href="#build-instructions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Build Instructions</h2>
+
+<p>The project was originally developed on OS X and the documentation below lists the instructions on how to set up and build the project for OS X.</p>
+
+<p>The <a href="https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf/wiki/Windows-Build-Instructions">Windows build instructions</a> for this project will be soon on this repositories wiki. </p>
 
 <h2>
 <a id="build-instructions---mac-os-x" class="anchor" href="#build-instructions---mac-os-x" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Build Instructions - Mac OS X</h2>
@@ -111,6 +129,8 @@
 
 <p><img src="documentation/images/man/man-git.png" alt="man git"></p>
 
+<p>Use the up and down arrows to navigate through the man page and press 'q' to quit.</p>
+
 <h3>
 <a id="install-java" class="anchor" href="#install-java" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install Java</h3>
 
@@ -125,6 +145,8 @@
 
 <h4>
 <a id="man-java" class="anchor" href="#man-java" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>man java</h4>
+
+<p><img src="documentation/images/man/man-java.png" alt="man java"></p>
 
 <p>If Java is not installed you need to install the Java Development Kit (JDK) as Eclipse needs Java to run so you should first read the <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html">Java Platform, Standard Edition Installation Guide</a></p>
 
@@ -186,13 +208,33 @@
 
 <p>This option allows you to specify an "Installation Folder." The default option may be a folder within your individual directory.</p>
 
+<p><img src="documentation/images/eclipse/eclipse-installer-2.png" alt="Eclipse Installer install location"></p>
+
 <p>It will be more useful to change this and install Eclipse within a directory titled "Eclipse" within the system's main Application directory.</p>
 
 <p>Click on the folder icon to navigate to the Applications directory and create an "Eclipse" target sub-directory before installing.</p>
 
-<p>Then click the "Install" button. The installation process may take a few minutes.</p>
+<p><img src="documentation/images/osx/applications-folder-eclipse.png" alt="Applications - Eclipse folder"></p>
+
+<p><img src="documentation/images/eclipse/eclipse-installer-3.png" alt="Eclipse Installer install location"></p>
+
+<p>Then click the "Install" button.</p>
+
+<p>You will be presented with the Eclipse Foundation Software User Agreement, so click "Accept Now" after reading it. </p>
+
+<p><img src="documentation/images/eclipse/eclipse-software-user-agreement.png" alt="Eclipse Foundation Software User Agreement"></p>
+
+<p>The installation process may take a few minutes and you will be presented with a green "installing" loading bar style indicator.</p>
+
+<p><img src="documentation/images/eclipse/eclipse-installer-4.png" alt="Installing Eclipse"></p>
+
+<p>When Eclipse has finished installing you will be presented with the "Launch" green button.</p>
+
+<p><img src="documentation/images/eclipse/eclipse-installer-5.png" alt="Eclipse is now installed"></p>
 
 <p>Launch Eclipse for the first time. Doing so will ask you to Select a "workspace." The default option "/Users/[your username]/Documents/workspace" will work fine.</p>
+
+<p><img src="documentation/images/eclipse/eclipse-select-workspace.png" alt="Eclipse select workspace"></p>
 
 <p>Quit Eclipse for now.</p>
 
@@ -247,6 +289,11 @@
 <p>You will see a progress bar indicating the progress of files being downloaded from GitHub onto your desktop computer, into a local repository directory.</p>
 
 <p>Quit GitHub Desktop.</p>
+
+<h3>
+<a id="install-homebrew-and-apache-ant" class="anchor" href="#install-homebrew-and-apache-ant" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install Homebrew and Apache Ant</h3>
+
+<p>The project uses <a href="http://brew.sh/">Homebrew</a> and I installed Apache Ant inside Homebrew with the <a href="http://brewformulas.org/Ant">Ant</a> Homebrew formula.  Towards the bottom of this README.md there is some information on Homebrew usage.</p>
 
 <h3>
 <a id="import-project-into-eclipse" class="anchor" href="#import-project-into-eclipse" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Import project into Eclipse</h3>
@@ -307,7 +354,11 @@
 
 <p><img src="documentation/images/ant/ant_build2.png" alt="Ant Build"></p>
 
-<p>Then select which output format you would like on the "Targets" tab under "Check targets to execute" and click "Run"</p>
+<p>Then select which output format you would like on the "Targets" tab under "Check targets to execute".</p>
+
+<p>The base target is "xslt2", this creates the DITA-XML files from the input Eclipse cheat sheets (XML).  You must have the "xslt2" target checked if you are running any other targets other than "TransformALL"</p>
+
+<p>Finally click "Run".</p>
 
 <p><img src="documentation/images/ant/ant_edit_config.png" alt="Ant Edit Config"></p>
 
