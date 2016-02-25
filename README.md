@@ -36,7 +36,21 @@ The two parts of the transformation and rendering comprise of:
 
 ###Install Java
 
-You need to install the Java Development Kit (JDK) as Eclipse needs Java to run so you should first read the [Java Platform, Standard Edition Installation Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html)
+First you should check if Java is already installed on your system. 
+
+On OS X, open your Applications folder, then open the Utilities folder. Open the Terminal application.
+
+![OS X terminal](documentation/images/osx/terminal.png)
+
+In the terminal type:
+
+####java -h
+
+If it's installed you can read up about Java more by typing:
+
+####man java
+
+If Java is not installed you need to install the Java Development Kit (JDK) as Eclipse needs Java to run so you should first read the [Java Platform, Standard Edition Installation Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html)
 
 So then go to: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
@@ -59,10 +73,6 @@ Depending on which type of checksum you choose: MD5, SHA1, SHA-512 the commands 
 First you should click on the checksum type in the image below:
 
 ![Eclipse checksums](documentation/images/eclipse/eclipse_checksums.png)
-
-On OS X, open your Applications folder, then open the Utilities folder. Open the Terminal application.
-
-![OS X terminal](documentation/images/osx/terminal.png)
 
 I used SHA-512 so in a terminal in the directory or folder where you downloaded the Eclipse package to, the command to type would be:
 
@@ -88,6 +98,8 @@ Unzip resulting download (eclipse-inst-mac64.tar.gz) by double-clicking on it if
 Run "Eclipse Installer" application.
 
 Choose "Eclipse IDE for Java Developers" option. (Other options and Eclipse modules are not necessary for this build.)
+
+![Eclipse installer](documentation/images/eclipse/eclipse-installer-1.png)
 
 This option allows you to specify an "Installation Folder." The default option may be a folder within your individual directory.
 
