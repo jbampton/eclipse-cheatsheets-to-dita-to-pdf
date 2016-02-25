@@ -42,17 +42,17 @@
         <h1>
 <a id="eclipse-cheat-sheets-to-dita-to-pdf" class="anchor" href="#eclipse-cheat-sheets-to-dita-to-pdf" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Eclipse cheat sheets to DITA to PDF</h1>
 
-<p>I worked on the open source Java based project <a href="http://debrief.info/">Debrief</a> the leading maritime analysis tool which is also on GitHub at <a href="https://github.com/debrief/debrief">https://github.com/debrief/debrief</a>. This project is based on some parts of the document publishing that I did in that project.  See the glossary of links at the bottom of this README which describes the technologies being used.</p>
+<p>I worked on the <a href="https://en.wikipedia.org/wiki/Open_source">open source</a> <a href="https://www.oracle.com/java/index.html">Java</a> based project <a href="http://debrief.info/">Debrief</a> the leading maritime analysis tool which is also on GitHub at <a href="https://github.com/debrief/debrief">https://github.com/debrief/debrief</a>. This project is based on some parts of the document publishing that I did in that project.  See the glossary of links at the bottom of this README which describes the technologies being used.</p>
 
 <p>Note: Now supporting multiple output formats - PDF, HTMLHelp, TocJS, XHTML.</p>
 
-<p>This program runs inside Eclipse, an integrated development environment (IDE) and is mainly a Java based project in that all the code libraries use Java (Apache FOP, Saxon, DITA Open Toolkit, Apache ANT, Eclipse) and it also uses XSL and XML heavily. Using Eclipse allows us to create a publishing pipeline creating all the working output formats one after the other, in one click by building the project.   Development was originally done in oXygen XML Editor then ported to Eclipse. </p>
+<p>This program runs inside <a href="https://www.eclipse.org/">Eclipse</a>, an <a href="https://en.wikipedia.org/wiki/Integrated_development_environment">integrated development environment</a> (IDE) and is mainly a Java based project in that all the code libraries use Java (<a href="https://xmlgraphics.apache.org/fop/">Apache FOP</a>, <a href="https://sourceforge.net/projects/saxon/files/Saxon-HE/">Saxon</a>, <a href="http://www.dita-ot.org/">DITA Open Toolkit</a>, <a href="http://ant.apache.org/">Apache ANT</a>, Eclipse) and it also uses <a href="https://www.w3.org/Style/XSL/">XSL</a> and <a href="https://www.w3.org/XML/">XML</a> heavily. Using Eclipse allows us to create a publishing pipeline creating all the working output formats one after the other, in one click by building the project.   Development was originally done in <a href="https://www.oxygenxml.com">oXygen XML Editor</a> then ported to Eclipse. </p>
 
 <p>The roadmap for this project is make the "info.debrief" custom DITA-OT plugin compatible with DITA-OT 2.1 and with the full Apache ANT build code and in depth instructions on how to get up and running inside Eclipse and more.... </p>
 
-<p>When built and run this project takes a set of Eclipse cheat sheets and transforms them to PDF.  Eclipse cheat sheets are obviously best viewed inside Eclipse.  Using PDF allows us to print nicely formatted cheat sheets on paper which allows the user to work through the cheat sheets with a pen and check off each item as they go.  Using cheat sheets physically on paper was seen as a new way to learn and was the original concept of the Debrief cheat sheets publishing project I worked on.</p>
+<p>When built and run this project takes a set of <a href="http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-cheatsheets.htm">Eclipse cheat sheets</a> and transforms them to PDF.  Eclipse cheat sheets are obviously best viewed inside Eclipse.  Using PDF allows us to print nicely formatted cheat sheets on paper which allows the user to work through the cheat sheets with a pen and check off each item as they go.  Using cheat sheets physically on paper was seen as a new way to learn and was the original concept of the Debrief cheat sheets publishing project I worked on.</p>
 
-<p>Darwin Information Typing Architecture (DITA) is an XML data model for authoring and using DITA-OT you can publish those ideas. The DITA standard is maintained by the OASIS DITA Technical Committee.  Some of the largest and most successful companies in the world use DITA. The next link is an informal list of <a href="http://www.ditawriter.com/companies-using-dita/">companies using DITA</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture">Darwin Information Typing Architecture</a> (DITA) is an XML data model for authoring and using DITA-OT you can publish those ideas. The DITA standard is maintained by the <a href="https://www.oasis-open.org/">OASIS</a> <a href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita">DITA Technical Committee</a>.  Some of the largest and most successful companies in the world use DITA. The next link is an informal list of <a href="http://www.ditawriter.com/companies-using-dita/">companies using DITA</a></p>
 
 <p>It's a two-step process first the DITA XML is created from the Eclipse cheat sheets (XML files) and then you use the DITA-Open Toolkit to create the PDF from the auto created DITA files.</p>
 
@@ -91,6 +91,41 @@
 <a id="build-instructions---mac-os-x" class="anchor" href="#build-instructions---mac-os-x" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Build Instructions - Mac OS X</h2>
 
 <h3>
+<a id="install-git" class="anchor" href="#install-git" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install Git</h3>
+
+<p>On OS X, open your Applications folder, then open the Utilities folder. Open the Terminal application.</p>
+
+<p><img src="documentation/images/osx/terminal.png" alt="OS X terminal"></p>
+
+<p>In the terminal type:</p>
+
+<h4>
+<a id="git---help" class="anchor" href="#git---help" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git --help</h4>
+
+<p>This will either print the usage of the git command if git is already installed, or trigger the Command Line Tools (OS X) for Xcode to install.</p>
+
+<h3>
+<a id="install-java" class="anchor" href="#install-java" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install Java</h3>
+
+<p>First you should check if Java is already installed on your system. </p>
+
+<p>In the terminal type:</p>
+
+<h4>
+<a id="java--h" class="anchor" href="#java--h" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>java -h</h4>
+
+<p>If it's installed you can read up about Java more by typing:</p>
+
+<h4>
+<a id="man-java" class="anchor" href="#man-java" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>man java</h4>
+
+<p>If Java is not installed you need to install the Java Development Kit (JDK) as Eclipse needs Java to run so you should first read the <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html">Java Platform, Standard Edition Installation Guide</a></p>
+
+<p>So then go to: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a></p>
+
+<p>Choose the JDK version for your <a href="https://en.wikipedia.org/wiki/Operating_system">Operating System</a>.</p>
+
+<h3>
 <a id="install-eclipse" class="anchor" href="#install-eclipse" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install Eclipse</h3>
 
 <p>Go to: <a href="https://www.eclipse.org/downloads/?osType=macosx">Eclipse Downloads</a></p>
@@ -108,10 +143,6 @@
 <p>First you should click on the checksum type in the image below:</p>
 
 <p><img src="documentation/images/eclipse/eclipse_checksums.png" alt="Eclipse checksums"></p>
-
-<p>On OS X, open your Applications folder, then open the Utilities folder. Open the Terminal application.</p>
-
-<p><img src="documentation/images/osx/terminal.png" alt="OS X terminal"></p>
 
 <p>I used SHA-512 so in a terminal in the directory or folder where you downloaded the Eclipse package to, the command to type would be:</p>
 
@@ -143,6 +174,8 @@
 <p>Run "Eclipse Installer" application.</p>
 
 <p>Choose "Eclipse IDE for Java Developers" option. (Other options and Eclipse modules are not necessary for this build.)</p>
+
+<p><img src="documentation/images/eclipse/eclipse-installer-1.png" alt="Eclipse installer"></p>
 
 <p>This option allows you to specify an "Installation Folder." The default option may be a folder within your individual directory.</p>
 
@@ -369,6 +402,8 @@ DITA-OT provides that base XSL code that you 'override' with your custom work.</
 <p>XML - <a href="https://en.wikipedia.org/wiki/XML">https://en.wikipedia.org/wiki/XML</a></p>
 
 <p>Adobe PDF - <a href="https://en.wikipedia.org/wiki/Portable_Document_Format">https://en.wikipedia.org/wiki/Portable_Document_Format</a></p>
+
+<p>Adobe Acrobat Reader DC - <a href="https://get.adobe.com/reader/">https://get.adobe.com/reader/</a></p>
 
 <p>XHTML - <a href="https://en.wikipedia.org/wiki/XHTML">https://en.wikipedia.org/wiki/XHTML</a></p>
 
