@@ -31,6 +31,12 @@ The two parts of the transformation and rendering comprise of:
 [See the build run full screen in 1080p](https://youtu.be/LJ5DsFP_THo)
 
 
+##Build Instructions
+
+The project was originally developed on OS X and the documentation below lists the instructions on how to set up and build the project for OS X.
+
+The [Windows build instructions](https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf/wiki/Windows-Build-Instructions) for this project will be soon on this repositories wiki. 
+
 
 ##Build Instructions - Mac OS X
 
@@ -179,6 +185,10 @@ Click the "Clone" button.
 You will see a progress bar indicating the progress of files being downloaded from GitHub onto your desktop computer, into a local repository directory.
 
 Quit GitHub Desktop.
+
+###Install Homebrew and Apache Ant
+
+The project uses [Homebrew](http://brew.sh/) and I installed Apache Ant inside Homebrew with the [Ant](http://brewformulas.org/Ant).  Towards the bottom of this README.md there is some information on Homebrew usage.
 
 
 ###Import project into Eclipse
