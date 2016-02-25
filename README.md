@@ -17,7 +17,7 @@ It's a two-step process first the DITA XML is created from the Eclipse cheat she
 The two parts of the transformation and rendering comprise of:
 
 1.	- This is the transformation step and it uses cheatsheet-to-dita.xsl which requires an XSLT 2.0 compliant processor.
-	- I used SaxonHE9-6-0-7J from Saxonica.
+	- I used the open source product SaxonHE9-6-0-7J from [Saxonica](http://www.saxonica.com/welcome/welcome.xml).
 	- This file takes as input a collection on XML files (Eclipse cheat sheets) and creates multiple output files - a parent DITA Map and some associated tasks.
 	- The "output/debrief" and sub "dita" folder contains the dynamically created (transformed) DITA files from this step. 
 	
@@ -45,6 +45,11 @@ In the terminal type:
 ####git --help
 
 This will either print the usage of the git command if git is already installed, or trigger the Command Line Tools (OS X) for Xcode to install.
+
+After the Command Line Tools are installed go back to the terminal and type:
+
+####man git
+
 
 ###Install Java
 
