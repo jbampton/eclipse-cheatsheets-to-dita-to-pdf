@@ -50,6 +50,7 @@ After the Command Line Tools are installed go back to the terminal and type:
 
 ####man git
 
+![man git](documentation/images/man/man-git.png)
 
 ###Install Java
 
