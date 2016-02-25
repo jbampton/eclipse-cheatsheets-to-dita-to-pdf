@@ -1,6 +1,6 @@
 #Eclipse cheat sheets to DITA to PDF
 
-I worked on the [open source](https://en.wikipedia.org/wiki/Open_source) [Java](https://www.oracle.com/java/index.html) based project [Debrief](http://debrief.info/) the leading maritime analysis tool which is also on GitHub at [https://github.com/debrief/debrief](https://github.com/debrief/debrief). This project is based on some parts of the document publishing that I did in that project.  See the glossary of links at the bottom of this README which describes the technologies being used.
+I worked on the [open source](https://en.wikipedia.org/wiki/Open_source) [Java](https://www.oracle.com/java/index.html) based project [Debrief](http://debrief.info/) the leading maritime analysis tool which is also on GitHub at [https://github.com/debrief/debrief](https://github.com/debrief/debrief). This project aims to be a easy to follow tutorial on Java and is based on some parts of the document publishing that I did in the Debrief project.  The glossary of links at the bottom of this README describe the technologies being used.
 
 Note: Now supporting multiple output formats - PDF, HTMLHelp, TocJS, XHTML.
 
@@ -25,6 +25,14 @@ The two parts of the transformation and rendering comprise of:
 2.	- This is the rendering (printing) step and the 'info.debrief' custom DITA-OT plugin produces the PDF via the DITA-OT base libraries and a XSL - Formatting Objects Processor (FO Processor)
 	- The "output/debrief/pdf" folder contains the resulting PDF output from this step
 	- I used Apache FOP 2.0 for the FO Processor and DITA-OT 1.8.5
+
+If you are not already Gung-Ho on Java and all things tech, then try a few short online courses:
+
+- https://www.codecademy.com/learn/learn-java
+- https://www.codecademy.com/learn/learn-the-command-line
+- https://www.codeschool.com/courses/try-git
+- https://www.codecademy.com/learn/learn-git
+
 
 ##Yo let's build...watch the Star Wars build run on Youtube....BrisVegas Jedi Master Style...
 
@@ -58,6 +66,8 @@ After the Command Line Tools are installed go back to the terminal and type:
 
 ![man git](documentation/images/man/man-git.png)
 
+Use the up and down arrows to navigate through the man page and press 'q' to quit.
+
 ###Install Java
 
 First you should check if Java is already installed on your system. 
@@ -69,6 +79,8 @@ In the terminal type:
 If it's installed you can read up about Java more by typing:
 
 ####man java
+
+![man java](documentation/images/man/man-java.png)
 
 If Java is not installed you need to install the Java Development Kit (JDK) as Eclipse needs Java to run so you should first read the [Java Platform, Standard Edition Installation Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html)
 
