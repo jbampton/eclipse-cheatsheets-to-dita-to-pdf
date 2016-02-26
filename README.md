@@ -17,7 +17,7 @@ It's a two-step process first the DITA XML is created from the Eclipse cheat she
 The two parts of the transformation and rendering comprise of:
 
 1.	- This is the transformation step and it uses cheatsheet-to-dita.xsl which requires an XSLT 2.0 compliant processor.
-	- I used the open source product SaxonHE9-6-0-7J from [Saxonica](http://www.saxonica.com/welcome/welcome.xml).
+	- I used the open source product Saxon from [Saxonica](http://www.saxonica.com/welcome/welcome.xml) which came included with the DITA-OT library.
 	- This file takes as input a collection on XML files (Eclipse cheat sheets) and creates multiple output files - a parent DITA Map and some associated tasks.
 	- The "output/debrief" and sub "dita" folder contains the dynamically created (transformed) DITA files from this step. 
 	
@@ -265,7 +265,7 @@ Then -> click "Add JARs" - you will be presented with the next dialog
 
 ![Add JARs](documentation/images/eclipse/add_jars.png)
 
-Then-> expand 'eclipse-cheatsheets-to-dita-to-pdf' and navigate to "src/libs/DITA-OT1.8.5/lib" and add all the JAR files from that directory.  Click "Add JARs" again and add "saxon9he.jar" from  "src/libs/SaxonHE9-6-0-7J".  Make sure to click "Apply" and then click "Ok".
+Then-> expand 'eclipse-cheatsheets-to-dita-to-pdf' and navigate to "src/libs/dita-ot-2.2.1/lib" and add all the JAR files from that directory.    Make sure to click "Apply" and then click "Ok".
 	
 Right click on build.xml and select -> Run As -> Ant Build -> (first one)
 
