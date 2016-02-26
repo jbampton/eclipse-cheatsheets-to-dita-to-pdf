@@ -48,7 +48,7 @@
 
 <p>This program runs inside <a href="https://www.eclipse.org/">Eclipse</a>, an <a href="https://en.wikipedia.org/wiki/Integrated_development_environment">integrated development environment</a> (IDE) and is mainly a Java based project in that all the code libraries use Java (<a href="https://xmlgraphics.apache.org/fop/">Apache FOP</a>, <a href="https://sourceforge.net/projects/saxon/files/Saxon-HE/">Saxon</a>, <a href="http://www.dita-ot.org/">DITA Open Toolkit</a>, <a href="http://ant.apache.org/">Apache ANT</a>, Eclipse) and it also uses <a href="https://www.w3.org/Style/XSL/">XSL</a> and <a href="https://www.w3.org/XML/">XML</a> heavily. Using Eclipse allows us to create a publishing pipeline creating all the working output formats one after the other, in one click by building the project.   Development was originally done in <a href="https://www.oxygenxml.com">oXygen XML Editor</a> then ported to Eclipse. </p>
 
-<p>The roadmap for this project is make the "info.debrief" custom DITA-OT plugin compatible with DITA-OT 2.1 and with the full Apache ANT build code and in depth instructions on how to get up and running inside Eclipse and more.... </p>
+<p>The roadmap for this project is to keep the "info.debrief" custom DITA-OT plugin up to date with the latest current version of DITA-OT, in depth instructions on how to get up and running inside Eclipse and more in a tutorial style format. </p>
 
 <p>When built and run this project takes a set of <a href="http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-cheatsheets.htm">Eclipse cheat sheets</a> and transforms them to PDF.  Eclipse cheat sheets are obviously best viewed inside Eclipse.  Using PDF allows us to print nicely formatted cheat sheets on paper which allows the user to work through the cheat sheets with a pen and check off each item as they go.  Using cheat sheets physically on paper was seen as a new way to learn and was the original concept of the Debrief cheat sheets publishing project I worked on.</p>
 
@@ -65,7 +65,7 @@
 </ul>
 
 <ul>
-<li>I used the open source product SaxonHE9-6-0-7J from <a href="http://www.saxonica.com/welcome/welcome.xml">Saxonica</a>.</li>
+<li>I used the open source product Saxon from <a href="http://www.saxonica.com/welcome/welcome.xml">Saxonica</a> which came included with the DITA-OT 2.2.1 library.</li>
 <li>This file takes as input a collection on XML files (Eclipse cheat sheets) and creates multiple output files - a parent DITA Map and some associated tasks.</li>
 <li>The "output/debrief" and sub "dita" folder contains the dynamically created (transformed) DITA files from this step. </li>
 </ul>
@@ -77,7 +77,7 @@
 
 <ul>
 <li>The "output/debrief/pdf" folder contains the resulting PDF output from this step</li>
-<li>I used Apache FOP 2.0 for the FO Processor and DITA-OT 1.8.5</li>
+<li>I used Apache FOP 2.1 for the FO Processor</li>
 </ul>
 </li>
 </ol>
@@ -336,7 +336,7 @@
 
 <p><img src="documentation/images/eclipse/add_jars.png" alt="Add JARs"></p>
 
-<p>Then-&gt; expand 'eclipse-cheatsheets-to-dita-to-pdf' and navigate to "src/libs/DITA-OT1.8.5/lib" and add all the JAR files from that directory.  Click "Add JARs" again and add "saxon9he.jar" from  "src/libs/SaxonHE9-6-0-7J".  Make sure to click "Apply" and then click "Ok".</p>
+<p>Then-&gt; expand 'eclipse-cheatsheets-to-dita-to-pdf' and navigate to "src/libs/dita-ot-2.2.1/lib" and add all the JAR files from that directory.    Make sure to click "Apply" and then click "Ok".</p>
 
 <p>Right click on build.xml and select -&gt; Run As -&gt; Ant Build -&gt; (first one)</p>
 
