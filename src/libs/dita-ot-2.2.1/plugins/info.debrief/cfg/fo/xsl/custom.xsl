@@ -142,7 +142,7 @@
 <!-- End common attribute sets  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   -->
 
 	
-	<xsl:template name="createFrontMatter_1.0">
+	<xsl:template name="createFrontMatter">
         <fo:page-sequence master-reference="front-matter" xsl:use-attribute-sets="__force__page__count">
             <xsl:call-template name="insertFrontMatterStaticContents"/>
             <fo:flow flow-name="xsl-region-body">
@@ -306,6 +306,8 @@
 	
 	<xsl:template name="insertBodyOddFooter">
 		<fo:static-content flow-name="odd-body-footer">
+            
+            
             <fo:table xsl:use-attribute-sets="namespace-custom-table-nb">
 				<fo:table-column column-width="proportional-column-width(1)" column-number="1"/>
 				<fo:table-column column-width="proportional-column-width(1)" column-number="2"/>
@@ -321,6 +323,24 @@
 						</fo:table-cell>
 						<fo:table-cell xsl:use-attribute-sets="namespace-custom-tc-0">
 							<fo:block xsl:use-attribute-sets="__body__first__footer">
+								<xsl:call-template name="getVariable">
+				                    <xsl:with-param name="id" select="'Body odd footer'"/>
+				                    <xsl:with-param name="params">
+				                        <heading>
+				                            <fo:inline xsl:use-attribute-sets="__body__odd__footer__heading">
+				                                <fo:retrieve-marker retrieve-class-name="current-header"/>
+				                            </fo:inline>
+				                        </heading>
+				                        <pagenum>
+				                            <fo:inline xsl:use-attribute-sets="__body__odd__footer__pagenum">
+				                                <fo:page-number/> of <fo:page-number-citation ref-id="{generate-id(.)}"/>
+				                            </fo:inline>
+				                        </pagenum>
+				                    </xsl:with-param>
+				                </xsl:call-template>
+								
+								<!-- 
+								
 								<xsl:call-template name="insertVariable">
 									<xsl:with-param name="theVariableID" select="'Body first footer'"/>
 									<xsl:with-param name="theParameters">
@@ -331,16 +351,19 @@
 										</heading>
 										<pagenum>
 											<fo:inline xsl:use-attribute-sets="__body__first__footer__pagenum">
-												<fo:page-number/> of <fo:page-number-citation ref-id="{generate-id(.)}"/> 
+												<fo:page-number/> of <fo:page-number-citation ref-id="{generate-id(.)}"/>
 											</fo:inline>
 										</pagenum>
 									</xsl:with-param>
 								</xsl:call-template>
+								-->
 							</fo:block>
 						</fo:table-cell>
 					</fo:table-row>
 				</fo:table-body>
 			</fo:table>	
+			
+			
         </fo:static-content>
     </xsl:template>
 
@@ -654,6 +677,12 @@
                 </xsl:if>
             </xsl:when>
             <xsl:when test="$topicType = 'topicSimple'">
+            
+            
+            
+            
+            
+             
                 <xsl:variable name="page-sequence-reference">
                     <xsl:choose>
                         <xsl:when test="$mapType = 'bookmap'">
@@ -664,10 +693,30 @@
                         </xsl:otherwise>
                     </xsl:choose>
                 </xsl:variable>
+                
+                
+                <!-- 
+                 <fo:page-sequence master-reference="{$page-sequence-reference}" 
+						force-page-count="no-force" initial-page-number="10">
+                            <xsl:call-template name="startPageNumbering"/>
+                            <xsl:call-template name="insertBodyStaticContents"/>
+                            <fo:flow flow-name="xsl-region-body">
+                                <xsl:choose>
+                                    <xsl:when test="contains(@class,' concept/concept ')"><xsl:apply-templates select="." mode="processConcept"/></xsl:when>
+                                    <xsl:when test="contains(@class,' task/task ')"><xsl:apply-templates select="." mode="processTask"/></xsl:when>
+                                    <xsl:when test="contains(@class,' reference/reference ')"><xsl:apply-templates select="." mode="processReference"/></xsl:when>
+                                    <xsl:otherwise><xsl:apply-templates select="." mode="processTopic"/></xsl:otherwise>
+                                </xsl:choose>
+								<fo:block id="{generate-id(.)}"></fo:block>
+                            </fo:flow>
+                        </fo:page-sequence>
+                 -->
+                 
                 <xsl:choose>
-                    <xsl:when test="not(ancestor::*[contains(@class,' topic/topic ')])">
+                  
+                    <xsl:when test="not(ancestor::*[2][contains(@class,' topic/topic ')])">
                         <fo:page-sequence master-reference="{$page-sequence-reference}" 
-						force-page-count="no-force" initial-page-number="1">
+						force-page-count="no-force" initial-page-number="10">
                             <xsl:call-template name="startPageNumbering"/>
                             <xsl:call-template name="insertBodyStaticContents"/>
                             <fo:flow flow-name="xsl-region-body">
@@ -681,6 +730,7 @@
                             </fo:flow>
                         </fo:page-sequence>
                     </xsl:when>
+                     
                     <xsl:otherwise>
                         <xsl:choose>
                             <xsl:when test="contains(@class,' concept/concept ')"><xsl:apply-templates select="." mode="processConcept"/></xsl:when>
@@ -689,8 +739,14 @@
                             <xsl:otherwise><xsl:apply-templates select="." mode="processTopic"/></xsl:otherwise>
                         </xsl:choose>
                     </xsl:otherwise>
+                    
                 </xsl:choose>
+                -->
+                
+                
             </xsl:when>
+            
+            
       		<xsl:otherwise>
                 <xsl:apply-templates select="." mode="processUnknowTopic">
                     <xsl:with-param name="topicType" select="$topicType"/>
@@ -698,6 +754,21 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	<xsl:template match="ph">
 		<fo:block><xsl:text>&#10;</xsl:text></fo:block>

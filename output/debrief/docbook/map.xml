@@ -5,22 +5,22 @@
    <title>Debrief Topic Map</title>
    <para/>
    <section remap="task" id="d4e3">
-      <sectioninfo id="prlgd9e13" remap="prolog">
+      <sectioninfo id="prlgd9e14" remap="prolog">
          <abstract>
-            <para id="shrtdscd9e10" remap="shortdesc">
+            <para id="shrtdscd9e12" remap="shortdesc">
          This series of cheatsheets will guide you through creating your Debrief working environment, customising it according to your preferred file locations, and loading some analysis data.  If you wish, you can widen this 'Welcome' panel to make the tutorials easier to read.  You may also find it easier to work through these cheat-sheets if you make the bottom section of this pane taller by dragging the central 'grab' bar vertically upwards
       </para>
          </abstract>
-         <author id="athrd9e14" remap="author">
+         <author id="athrd9e15" remap="author">
             <othername>John Bampton</othername>
          </author>
-         <author id="athrd9e16" remap="author">
+         <author id="athrd9e17" remap="author">
             <othername>Debrief</othername>
          </author>
-         <publisher id="pblshrd9e20" remap="publisher">
+         <publisher id="pblshrd9e21" remap="publisher">
             <publishername>Github John Bampton</publishername>
          </publisher>
-         <revhistory id="crtdtsd9e22" remap="critdates">
+         <revhistory id="crtdtsd9e23" remap="critdates">
             <revision>
                <revnumber/>
                <date>2016-02-26</date>
@@ -29,42 +29,42 @@
          </revhistory>
          <subjectset>
             <subject>
-               <subjectterm id="ctgryd9e28" remap="category">Document Publishing</subjectterm>
+               <subjectterm id="ctgryd9e29" remap="category">Document Publishing</subjectterm>
             </subject>
             <subject>
-               <subjectterm id="ctgryd9e30" remap="category">Java</subjectterm>
+               <subjectterm id="ctgryd9e31" remap="category">Java</subjectterm>
             </subject>
          </subjectset>
       </sectioninfo>
-      <title id="ttld9e7" remap="title">Getting started with Debrief NG</title>
-      <para id="parad9e10" remap="shortdesc">
+      <title id="ttld9e9" remap="title">Getting started with Debrief NG</title>
+      <para id="parad9e12" remap="shortdesc">
          This series of cheatsheets will guide you through creating your Debrief working environment, customising it according to your preferred file locations, and loading some analysis data.  If you wish, you can widen this 'Welcome' panel to make the tutorials easier to read.  You may also find it easier to work through these cheat-sheets if you make the bottom section of this pane taller by dragging the central 'grab' bar vertically upwards
       </para>
       <section remap="task" id="d4e8">
-         <title id="ttld9e35" remap="title">Defining your workspace</title>
-         <para id="parad9e38" remap="shortdesc">
+         <title id="ttld9e37" remap="title">Defining your workspace</title>
+         <para id="parad9e40" remap="shortdesc">
             In comparison with prior versions of Debrief, Debrief NG introduces the concept of a Workspace - a central repository for your assorted analysis-related documents.  Within this workspace your work is grouped into individual projects: thus you can quickly switch between concurrent analysis tasks.  Debrief's provision of projects allows you to quickly drag and drop Debrief data-files and plots.
          </para>
          <section remap="task" id="d4e16">
-            <title id="ttld9e43" remap="title">Generating a project for your data</title>
-            <para id="parad9e46" remap="shortdesc">Debrief NG stores it's data in a local folder called a Project. It's into this
+            <title id="ttld9e45" remap="title">Generating a project for your data</title>
+            <para id="parad9e48" remap="shortdesc">Debrief NG stores it's data in a local folder called a Project. It's into this
          folder that you place analysis files and links to existing data folders elsewhere on your
          machine/network. This tutorial will lead you through creating a new, blank project.
       </para>
-            <orderedlist id="old9e51" remap="steps">
+            <orderedlist id="old9e53" remap="steps">
                <listitem remap="step" id="d7e9">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e55" remap="cmd">Check Navigator is open</phrase>
+                     <phrase id="phrsd9e57" remap="cmd">Check Navigator is open</phrase>
                   </para>
                   <para remap="#PCDATA">In the top left hand corner of Debrief you should find the Navigator window. If
          it isn't there, select "Navigator" from Debrief's Window/Show View menu.</para>
                </listitem>
                <listitem remap="step" id="d7e15">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e66" remap="cmd">Learn about the Show View menu</phrase>
+                     <phrase id="phrsd9e68" remap="cmd">Learn about the Show View menu</phrase>
                   </para>
                   <para remap="#PCDATA"> Was the navigator view already open? If it was then you've missed out on
-         the Show View menu. Just open the Window menu from the top of Debrief, and select <emphasis role="bold" id="bd9e71" remap="b">Show
+         the Show View menu. Just open the Window menu from the top of Debrief, and select <emphasis role="bold" id="bd9e73" remap="b">Show
             view</emphasis>. A list of Debrief-specific views will open. So, in the future, if you're
          directed to a view but you can't find it, just remember you can open any view from
          this menu, </para>
@@ -72,28 +72,28 @@
                </listitem>
                <listitem remap="step" id="d7e24">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e81" remap="cmd">Learn about the Quick Access panel</phrase>
+                     <phrase id="phrsd9e83" remap="cmd">Learn about the Quick Access panel</phrase>
                   </para>
                   <para remap="#PCDATA"> Alternatively, whereever you are in Debrief, you can popup the quick access
-         panel. Just hold down the <emphasis role="bold" id="bd9e86" remap="b">[ctrl]</emphasis> key, press <emphasis role="bold" id="bd9e89" remap="b">3</emphasis> and a yellow post-it like menu
+         panel. Just hold down the <emphasis role="bold" id="bd9e88" remap="b">[ctrl]</emphasis> key, press <emphasis role="bold" id="bd9e91" remap="b">3</emphasis> and a yellow post-it like menu
          will appear. As you start typing 'Navigator' the list of available commands will
          shrink down until your required view is open. Obviously, this is of greater relevance to
          those who favour keyboard over mouse. </para>
                </listitem>
                <listitem remap="step" id="d7e36">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e98" remap="cmd">Learn about Views in Debrief</phrase>
+                     <phrase id="phrsd9e100" remap="cmd">Learn about Views in Debrief</phrase>
                   </para>
                   <para remap="#PCDATA"> As you'll have read, the Navigator panel is an example of a View in
          Debrief. Views are supplemental panels that provide additional information (or control) to
-         the conventional 2D Debrief plot. They can be closed by clicking on the <emphasis role="bold" id="bd9e103" remap="b">X</emphasis> icon on
+         the conventional 2D Debrief plot. They can be closed by clicking on the <emphasis role="bold" id="bd9e105" remap="b">X</emphasis> icon on
          their name tab. They can also be dragged around, both within Debrief (to put them, for
          example on the opposite side of the application), or out of Debrief into a separate window.
          When you close Debrief, it remembers the views that were previously open. </para>
                </listitem>
                <listitem remap="step" id="d7e46">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e112" remap="cmd">Check you need a project</phrase>
+                     <phrase id="phrsd9e114" remap="cmd">Check you need a project</phrase>
                   </para>
                   <para remap="#PCDATA">If the navigator window is empty, then you need to create a project. If the
          window already contains a folder-icon (possibly containing sample data) then hey, you're
@@ -103,75 +103,75 @@
                </listitem>
                <listitem remap="step" id="d7e52">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e124" remap="cmd">Create a 'General' project</phrase>
+                     <phrase id="phrsd9e126" remap="cmd">Create a 'General' project</phrase>
                   </para>
-                  <para remap="#PCDATA">Right-click in the Navigator view, and select <emphasis role="bold" id="bd9e129" remap="b">Project...</emphasis> from the
-            <emphasis role="bold" id="bd9e132" remap="b">New</emphasis> sub-menu. The New Project wizard will open. From the <emphasis role="bold" id="bd9e135" remap="b">General</emphasis> folder,
-         select <emphasis role="bold" id="bd9e138" remap="b">Project</emphasis>, and then press <emphasis role="bold" id="bd9e141" remap="b">Next</emphasis>. Now just enter a name for your project
+                  <para remap="#PCDATA">Right-click in the Navigator view, and select <emphasis role="bold" id="bd9e131" remap="b">Project...</emphasis> from the
+            <emphasis role="bold" id="bd9e134" remap="b">New</emphasis> sub-menu. The New Project wizard will open. From the <emphasis role="bold" id="bd9e137" remap="b">General</emphasis> folder,
+         select <emphasis role="bold" id="bd9e140" remap="b">Project</emphasis>, and then press <emphasis role="bold" id="bd9e143" remap="b">Next</emphasis>. Now just enter a name for your project
          (this could be the name of the current exercise). If you're in a workplace where users
-         are unable to create folders in their home directory, clear the <emphasis role="bold" id="bd9e145" remap="b">Use default location</emphasis>
-         checkbox, and <emphasis role="bold" id="bd9e148" remap="b">Browse</emphasis> to a folder in your personal working directories. (Note: you can ignore 'Working Sets' for now).
+         are unable to create folders in their home directory, clear the <emphasis role="bold" id="bd9e147" remap="b">Use default location</emphasis>
+         checkbox, and <emphasis role="bold" id="bd9e150" remap="b">Browse</emphasis> to a folder in your personal working directories. (Note: you can ignore 'Working Sets' for now).
          Then just press the 'Finish' button, and you will see the new project in your workspace.
       </para>
                </listitem>
             </orderedlist>
-            <para id="sctnd9e156" remap="result">
+            <para id="sctnd9e158" remap="result">
                You've now created a project into which you can store your Debrief data
             </para>
          </section>
          <section remap="task" id="d4e34">
-            <title id="ttld9e163" remap="title">Generating links to your existing data</title>
-            <para id="parad9e166" remap="shortdesc">Debrief NG stores it's data in a local folder called a Project. While
+            <title id="ttld9e165" remap="title">Generating links to your existing data</title>
+            <para id="parad9e168" remap="shortdesc">Debrief NG stores it's data in a local folder called a Project. While
 			these are frequently created afresh to store new analysis data, it's also possible
 			to denote your existing data directories as sub-folders (via links). This tutorial leads
 			you through generating links to your existing data folders. If you've installed
 			Debrief in the past, chances are you still have a Debrief installation folder (in
 			C:\Program Files\Debrief 2003). If you do still have this folder, you can usefully link
 			it in within this tutorial to provide some sample data. If you don't have an
-			existing Debrief installation, then add the folder called <emphasis role="bold" id="bd9e168" remap="b">sample_data</emphasis> located in
+			existing Debrief installation, then add the folder called <emphasis role="bold" id="bd9e170" remap="b">sample_data</emphasis> located in
 			the top-level folder of your Debrief NG installation (typically in c:\DebriefNG under MS
 			Windows if you have Debrief installed locally, or in the Debrief\DebriefNG folder
 			if you are on a site using a Programs folder from a shared
 			network drive).</para>
-            <orderedlist id="old9e174" remap="steps">
+            <orderedlist id="old9e176" remap="steps">
                <listitem remap="step" id="d8e12">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e178" remap="cmd">Check Navigator is open</phrase>
+                     <phrase id="phrsd9e180" remap="cmd">Check Navigator is open</phrase>
                   </para>
                   <para remap="#PCDATA">In the top left hand corner of Debrief you should find the Navigator window. If
-			it isn't there, select <emphasis role="bold" id="bd9e183" remap="b">Navigator</emphasis> from Debrief's Window/Show View
+			it isn't there, select <emphasis role="bold" id="bd9e185" remap="b">Navigator</emphasis> from Debrief's Window/Show View
 			menu.</para>
                </listitem>
                <listitem remap="step" id="d8e21">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e192" remap="cmd">Check you have a workspace</phrase>
+                     <phrase id="phrsd9e194" remap="cmd">Check you have a workspace</phrase>
                   </para>
                   <para remap="#PCDATA">Before you can link in existing data, you need to define a project for your
 			work. This is a parent folder within which your links are stored. If your Navigator
-			window is empty, you must follow the <emphasis role="bold" id="bd9e197" remap="b">Generating a project</emphasis> cheat-sheet accessed
+			window is empty, you must follow the <emphasis role="bold" id="bd9e199" remap="b">Generating a project</emphasis> cheat-sheet accessed
 			from the Help/Cheat Sheets menu.</para>
                </listitem>
                <listitem remap="step" id="d8e30">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e206" remap="cmd">Add a new Folder</phrase>
+                     <phrase id="phrsd9e208" remap="cmd">Add a new Folder</phrase>
                   </para>
                   <para remap="#PCDATA">Right-click on your current project in the Navigator view, then select
-				<emphasis role="bold" id="bd9e211" remap="b">Folder</emphasis> from the <emphasis role="bold" id="bd9e214" remap="b">New</emphasis> sub-menu. The New Folder wizard will open. Instead
+				<emphasis role="bold" id="bd9e213" remap="b">Folder</emphasis> from the <emphasis role="bold" id="bd9e216" remap="b">New</emphasis> sub-menu. The New Folder wizard will open. Instead
 			of creating a fresh child folder to store our data, we're going to link to an
 			existing folder. So, whilst still in the New Folder Wizard, click the
 			'Advanced' button to display the Advanced options. Next, click on the
 			'Link to alternate location (Linked folder)', and click on
 			'Browse...' to navigate to an existing data folder on your machine or the
-			network, clicking on <emphasis role="bold" id="bd9e217" remap="b">Finish</emphasis> to, erm, Finish. <phrase id="phrsd9e220" remap="ph"/>
-                     <emphasis role="bold" id="bd9e222" remap="b">If you don't have your own
-			data</emphasis>, please use the <emphasis role="bold" id="bd9e226" remap="b">sample_data</emphasis> folder that's installed in your Debrief
-			installation folder (for a deployed Debrief) or<phrase id="phrsd9e229" remap="ph"/>
+			network, clicking on <emphasis role="bold" id="bd9e219" remap="b">Finish</emphasis> to, erm, Finish. <phrase id="phrsd9e222" remap="ph"/>
+                     <emphasis role="bold" id="bd9e224" remap="b">If you don't have your own
+			data</emphasis>, please use the <emphasis role="bold" id="bd9e228" remap="b">sample_data</emphasis> folder that's installed in your Debrief
+			installation folder (for a deployed Debrief) or<phrase id="phrsd9e231" remap="ph"/>
 			org.mwc.cmap.combined.feature/root_installs (if you are running a development version of
 			Debrief).</para>
                </listitem>
                <listitem remap="step" id="d8e55">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e237" remap="cmd">Done</phrase>
+                     <phrase id="phrsd9e239" remap="cmd">Done</phrase>
                   </para>
                   <para remap="#PCDATA">Well done, there you are. Just repeat this process to add any other data
 			directories you want to load data from. You've probably just created a link to the
@@ -179,60 +179,60 @@
 			folder.</para>
                </listitem>
             </orderedlist>
-            <para id="sctnd9e247" remap="result">
+            <para id="sctnd9e249" remap="result">
                You can now repeat this process to create links to your other Debrief data directories.
             </para>
          </section>
          <section remap="task" id="d4e55">
-            <title id="ttld9e254" remap="title">Configuring legacy data</title>
-            <para id="parad9e257" remap="shortdesc">
+            <title id="ttld9e256" remap="title">Configuring legacy data</title>
+            <para id="parad9e259" remap="shortdesc">
          In addition to plotting your recorded vehicle data, Debrief is able to show a number of datasets in backdrop form.
-<phrase id="phrsd9e259" remap="ph"/>
+<phrase id="phrsd9e261" remap="ph"/>
 These range from Vectored datasets such as VPF through to gridded datasets such as ETOPO-2
       </para>
-            <orderedlist id="old9e264" remap="steps">
+            <orderedlist id="old9e266" remap="steps">
                <listitem remap="step" id="d9e11">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e268" remap="cmd">How to configure VPF library datasets</phrase>
+                     <phrase id="phrsd9e270" remap="cmd">How to configure VPF library datasets</phrase>
                   </para>
                   <para remap="#PCDATA">
-         The steps to configure VPF and Etopo are covered in Debrief's user manual.  If you wish to learn this at this stage, use the 'Question Mark' help link alongside, else search for <emphasis role="bold" id="bd9e273" remap="b">VPF</emphasis> in Debrief's online help at some future stage. Here's a clue though, you go into the <emphasis role="bold" id="bd9e276" remap="b">Maritime Analysis</emphasis> section of the Preferences.
+         The steps to configure VPF and Etopo are covered in Debrief's user manual.  If you wish to learn this at this stage, use the 'Question Mark' help link alongside, else search for <emphasis role="bold" id="bd9e275" remap="b">VPF</emphasis> in Debrief's online help at some future stage. Here's a clue though, you go into the <emphasis role="bold" id="bd9e278" remap="b">Maritime Analysis</emphasis> section of the Preferences.
       </para>
                </listitem>
                <listitem remap="step" id="d9e23">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e285" remap="cmd">How to configure ETOPO library data</phrase>
+                     <phrase id="phrsd9e287" remap="cmd">How to configure ETOPO library data</phrase>
                   </para>
                   <para remap="#PCDATA">
          Use the help link to the side of this text to open the guidance on how to configure the location of the ETOPO data.
       </para>
                </listitem>
             </orderedlist>
-            <para id="sctnd9e295" remap="result">
-               <emphasis role="bold" id="bd9e297" remap="b">Conclusion</emphasis>
+            <para id="sctnd9e297" remap="result">
+               <emphasis role="bold" id="bd9e299" remap="b">Conclusion</emphasis>
             </para>
          </section>
       </section>
       <section remap="task" id="d4e76">
-         <title id="ttld9e306" remap="title">Viewing some data</title>
-         <para id="parad9e309" remap="shortdesc">
+         <title id="ttld9e308" remap="title">Viewing some data</title>
+         <para id="parad9e311" remap="shortdesc">
             This series of steps will guide you through creating then populating a new Debrief plot.
          </para>
          <section remap="task" id="d4e81">
-            <title id="ttld9e314" remap="title">Creating a new plot in Debrief</title>
-            <para id="parad9e317" remap="shortdesc">This tutorial will lead you through creating a new, blank plot in Debrief.
+            <title id="ttld9e316" remap="title">Creating a new plot in Debrief</title>
+            <para id="parad9e319" remap="shortdesc">This tutorial will lead you through creating a new, blank plot in Debrief.
 		</para>
-            <orderedlist id="old9e322" remap="steps">
+            <orderedlist id="old9e324" remap="steps">
                <listitem remap="step" id="d10e9">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e326" remap="cmd">Check you have a Project</phrase>
+                     <phrase id="phrsd9e328" remap="cmd">Check you have a Project</phrase>
                   </para>
                   <para remap="#PCDATA">Before you can create a Plot, you must have a Project into which the Plot is created. If you haven't created a project, go to the "Generating a project" cheatsheet, then return here.
 		</para>
                </listitem>
                <listitem remap="step" id="d10e15">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e337" remap="cmd">Choose location for plot file</phrase>
+                     <phrase id="phrsd9e339" remap="cmd">Choose location for plot file</phrase>
                   </para>
                   <para remap="#PCDATA">
        Debrief will store the new plot in one of your existing folders.  If your navigator contains links to both shared training data and personal data folders, it's probably best to create this plot in your personal data folder.
@@ -240,81 +240,81 @@ These range from Vectored datasets such as VPF through to gridded datasets such 
                </listitem>
                <listitem remap="step" id="d10e21">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e348" remap="cmd">Create new plot</phrase>
+                     <phrase id="phrsd9e350" remap="cmd">Create new plot</phrase>
                   </para>
-                  <para remap="#PCDATA">In the Navigator view, right-click on the parent folder for your new plot and select <emphasis role="bold" id="bd9e353" remap="b">New</emphasis>/<emphasis role="bold" id="bd9e356" remap="b">Debrief Plot</emphasis> and the Wizard will open.  Once the wizard opens, the first step is to confirm where you would like the plot to be stored (it's <emphasis role="bold" id="bd9e359" remap="b">Container</emphasis>). If you're not happy with the specified location click on <emphasis role="bold" id="bd9e362" remap="b">Browse</emphasis> button and select the top-level folder of your data directories.  Also provide a filename.
+                  <para remap="#PCDATA">In the Navigator view, right-click on the parent folder for your new plot and select <emphasis role="bold" id="bd9e355" remap="b">New</emphasis>/<emphasis role="bold" id="bd9e358" remap="b">Debrief Plot</emphasis> and the Wizard will open.  Once the wizard opens, the first step is to confirm where you would like the plot to be stored (it's <emphasis role="bold" id="bd9e361" remap="b">Container</emphasis>). If you're not happy with the specified location click on <emphasis role="bold" id="bd9e364" remap="b">Browse</emphasis> button and select the top-level folder of your data directories.  Also provide a filename.
 Using the wizard, follow the series of tabs to indicate what information you'd like shown in the background of the plot, clicking Finish to complete.  Some of the steps will not advance until all of the necessary fields have been filled.
 		</para>
                </listitem>
                <listitem remap="step" id="d10e39">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e371" remap="cmd">Finished</phrase>
+                     <phrase id="phrsd9e373" remap="cmd">Finished</phrase>
                   </para>
                   <para remap="#PCDATA">
        Once the Wizard has closed, the plot you've created can be found in the folder you specified.
     </para>
                </listitem>
             </orderedlist>
-            <para id="sctnd9e381" remap="result">
+            <para id="sctnd9e383" remap="result">
                Note that we didn't have to use the wizard steps, we could have inserted chart features into our Plot by hand using the Chart Features menu.
             </para>
          </section>
          <section remap="task" id="d4e96">
-            <title id="ttld9e388" remap="title">Adding data to a plot</title>
-            <para id="parad9e391" remap="shortdesc">Debrief's New Plot Wizard is quite effective at providing you with a ready-formatted backdrop to your analysis, but it doesn't load your data for you.  Here we're going to load some existing tracks to assist your getting started.
+            <title id="ttld9e390" remap="title">Adding data to a plot</title>
+            <para id="parad9e393" remap="shortdesc">Debrief's New Plot Wizard is quite effective at providing you with a ready-formatted backdrop to your analysis, but it doesn't load your data for you.  Here we're going to load some existing tracks to assist your getting started.
 		</para>
-            <orderedlist id="old9e396" remap="steps">
+            <orderedlist id="old9e398" remap="steps">
                <listitem remap="step" id="d11e9">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e400" remap="cmd">Check Navigator is open</phrase>
+                     <phrase id="phrsd9e402" remap="cmd">Check Navigator is open</phrase>
                   </para>
                   <para remap="#PCDATA">In the top left hand corner of Debrief you should find the Navigator window.  If it isn't there, select "Navigator" from Debrief's Window/Show View menu.  In the navigator, you should have a linked directory to sample data, either from a previous Debrief installation, or from within this fresh one.</para>
                </listitem>
                <listitem remap="step" id="d11e15">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e411" remap="cmd">View sample data</phrase>
+                     <phrase id="phrsd9e413" remap="cmd">View sample data</phrase>
                   </para>
                   <para remap="#PCDATA">In the Navigator, expand the folder that contains your existing Debrief files (either REP or XML).  Valid Debrief files are flagged with a Debrief icon.  See the help link for this step (the Question mark icon) to read about the two file types. </para>
                </listitem>
                <listitem remap="step" id="d11e21">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e422" remap="cmd">Drag in a simple track</phrase>
+                     <phrase id="phrsd9e424" remap="cmd">Drag in a simple track</phrase>
                   </para>
-                  <para remap="#PCDATA">If you've already got a plot open (maybe one from earlier steps in the tutorial), close it now by clicking on the cross in the small tab-shaped icon above it.  Don't worry about saving the tutorial files.  Drag a REP track from your Navigator onto the blank plot area. The  <emphasis role="bold" id="bd9e427" remap="b">boat1.rep</emphasis> file is a simple starting point.  The plot and any associated views will promptly update.  When REP files are dragged in, you may be asked whether you wish to import the data in Over The Ground (OTG) or Dead Reckoning (DR) mode.  For this tutorial, select OTG, but see help link (?) for this step for more detail - particularly if you expect to be using DR data.</para>
+                  <para remap="#PCDATA">If you've already got a plot open (maybe one from earlier steps in the tutorial), close it now by clicking on the cross in the small tab-shaped icon above it.  Don't worry about saving the tutorial files.  Drag a REP track from your Navigator onto the blank plot area. The  <emphasis role="bold" id="bd9e429" remap="b">boat1.rep</emphasis> file is a simple starting point.  The plot and any associated views will promptly update.  When REP files are dragged in, you may be asked whether you wish to import the data in Over The Ground (OTG) or Dead Reckoning (DR) mode.  For this tutorial, select OTG, but see help link (?) for this step for more detail - particularly if you expect to be using DR data.</para>
                </listitem>
                <listitem remap="step" id="d11e30">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e436" remap="cmd">Drag in a complex plot</phrase>
+                     <phrase id="phrsd9e438" remap="cmd">Drag in a complex plot</phrase>
                   </para>
                   <para remap="#PCDATA">
-       If you have multiple tracks to analyse you can drag them onto the track plot you've just created.  But, for now, close the plot you have open (by clicking on the cross icon in it's tab.  You'll be asked if you want to save it, press <emphasis role="bold" id="bd9e441" remap="b">don't save</emphasis>.  Now drag across <emphasis role="bold" id="bd9e444" remap="b">sample.xml</emphasis>. You'll see that this plot contains more complex graphical features.
+       If you have multiple tracks to analyse you can drag them onto the track plot you've just created.  But, for now, close the plot you have open (by clicking on the cross icon in it's tab.  You'll be asked if you want to save it, press <emphasis role="bold" id="bd9e443" remap="b">don't save</emphasis>.  Now drag across <emphasis role="bold" id="bd9e446" remap="b">sample.xml</emphasis>. You'll see that this plot contains more complex graphical features.
     </para>
                </listitem>
                <listitem remap="step" id="d11e43">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e453" remap="cmd">Debrief file types</phrase>
+                     <phrase id="phrsd9e455" remap="cmd">Debrief file types</phrase>
                   </para>
                   <para remap="#PCDATA">
-       Note, you've just encountered two file types, the Replay file type (<emphasis role="bold" id="bd9e458" remap="b">.rep</emphasis>) and the Debrief file type (<emphasis role="bold" id="bd9e461" remap="b">.xml</emphasis>).  The Replay file format is a very simple, column oriented text format that's ideal for passing around track data.  But, it isn't suited to storing formatting data or user preferences.  This is where the Debrief xml file type comes in.  Whilst it's still a textual file format, it has a rich structure that allows it to store a wide range of data types and subjects.  Thus a typical flow for data is that it enters Debrief in REP format, the analyst creates a custom plot based on this data, and then stores the plot as an XML file.
+       Note, you've just encountered two file types, the Replay file type (<emphasis role="bold" id="bd9e460" remap="b">.rep</emphasis>) and the Debrief file type (<emphasis role="bold" id="bd9e463" remap="b">.xml</emphasis>).  The Replay file format is a very simple, column oriented text format that's ideal for passing around track data.  But, it isn't suited to storing formatting data or user preferences.  This is where the Debrief xml file type comes in.  Whilst it's still a textual file format, it has a rich structure that allows it to store a wide range of data types and subjects.  Thus a typical flow for data is that it enters Debrief in REP format, the analyst creates a custom plot based on this data, and then stores the plot as an XML file.
     </para>
                </listitem>
                <listitem remap="step" id="d11e55">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e471" remap="cmd">Done</phrase>
+                     <phrase id="phrsd9e473" remap="cmd">Done</phrase>
                   </para>
                   <para remap="#PCDATA">There you are, your track data is now on the plot.  Note, tracks can't only be dragged from the Navigator. If you arrange your windows correctly you can drag tracks in directly from Windows Explorer.  Read the help for this step to learn how to implement 'right-click' support for Debrief files</para>
                </listitem>
             </orderedlist>
-            <para id="sctnd9e481" remap="result"/>
+            <para id="sctnd9e483" remap="result"/>
          </section>
          <section remap="task" id="d4e108">
-            <title id="ttld9e487" remap="title">Editing your data</title>
-            <para id="parad9e490" remap="shortdesc">So, you've found your data, loaded it into Debrief, and now you want to make
+            <title id="ttld9e489" remap="title">Editing your data</title>
+            <para id="parad9e492" remap="shortdesc">So, you've found your data, loaded it into Debrief, and now you want to make
 			some changes to it. This cheat-sheet will give you some pointers.</para>
-            <orderedlist id="old9e495" remap="steps">
+            <orderedlist id="old9e497" remap="steps">
                <listitem remap="step" id="d12e9">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e499" remap="cmd">Check you have some data</phrase>
+                     <phrase id="phrsd9e501" remap="cmd">Check you have some data</phrase>
                   </para>
                   <para remap="#PCDATA">In the top left hand corner of Debrief you should find the Navigator window. If
 			it isn't there, select "Navigator" from Debrief's Window/Show View menu. Also check you
@@ -323,36 +323,36 @@ Using the wizard, follow the series of tabs to indicate what information you'd l
                </listitem>
                <listitem remap="step" id="d12e15">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e510" remap="cmd">Open the sample plot-file</phrase>
+                     <phrase id="phrsd9e512" remap="cmd">Open the sample plot-file</phrase>
                   </para>
                   <para remap="#PCDATA">If it's not already open, double-click on 'sample.xml' in the
 			Navigator window, and the sample plot will open.</para>
                </listitem>
                <listitem remap="step" id="d12e21">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e521" remap="cmd">Fit to window</phrase>
+                     <phrase id="phrsd9e523" remap="cmd">Fit to window</phrase>
                   </para>
                   <para remap="#PCDATA">You can also experiment with zooming in and out.  Click the zoom out
-			button once to zoom out, or put plot into <emphasis role="bold" id="bd9e526" remap="b">Zoom In</emphasis> mode by clicking on the Zoom In
-			button. Now, when you drag an area, the map will zoom in on that viewport.<phrase id="phrsd9e529" remap="ph"/>
+			button once to zoom out, or put plot into <emphasis role="bold" id="bd9e528" remap="b">Zoom In</emphasis> mode by clicking on the Zoom In
+			button. Now, when you drag an area, the map will zoom in on that viewport.<phrase id="phrsd9e531" remap="ph"/>
 			Lastly, to make sure all of the data is visible, click on the "Fit-to-Window"
 			toolbar button. Read more about the toolbar buttons by clicking on the help-link to the
 			right of this text.  </para>
                </listitem>
                <listitem remap="step" id="d12e32">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e537" remap="cmd">View the data in tree form</phrase>
+                     <phrase id="phrsd9e539" remap="cmd">View the data in tree form</phrase>
                   </para>
-                  <para remap="#PCDATA"> In addition to viewing your data on the 2D plot, the <emphasis role="bold" id="bd9e542" remap="b">Outline View</emphasis>
-			displays it in tree form. Switch to the <emphasis role="bold" id="bd9e545" remap="b">Outline View</emphasis> view to see the data. 
-			If the Outline View isn't open already, you can open it via the <emphasis role="bold" id="bd9e548" remap="b">Window/Show View</emphasis> menu.
-			You'll see the two tracks there, together with other layers that contain <emphasis role="bold" id="bd9e551" remap="b">Chart
-				Features</emphasis> (such as the <emphasis role="bold" id="bd9e554" remap="b">Grid</emphasis> and <emphasis role="bold" id="bd9e558" remap="b">Scale</emphasis>), and the <emphasis role="bold" id="bd9e561" remap="b">Misc</emphasis> layer
+                  <para remap="#PCDATA"> In addition to viewing your data on the 2D plot, the <emphasis role="bold" id="bd9e544" remap="b">Outline View</emphasis>
+			displays it in tree form. Switch to the <emphasis role="bold" id="bd9e547" remap="b">Outline View</emphasis> view to see the data. 
+			If the Outline View isn't open already, you can open it via the <emphasis role="bold" id="bd9e550" remap="b">Window/Show View</emphasis> menu.
+			You'll see the two tracks there, together with other layers that contain <emphasis role="bold" id="bd9e553" remap="b">Chart
+				Features</emphasis> (such as the <emphasis role="bold" id="bd9e556" remap="b">Grid</emphasis> and <emphasis role="bold" id="bd9e560" remap="b">Scale</emphasis>), and the <emphasis role="bold" id="bd9e563" remap="b">Misc</emphasis> layer
 			that contains graphical annotations. </para>
                </listitem>
                <listitem remap="step" id="d12e61">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e570" remap="cmd">Make sure the properties window is open</phrase>
+                     <phrase id="phrsd9e572" remap="cmd">Make sure the properties window is open</phrase>
                   </para>
                   <para remap="#PCDATA">The properties window is normally at the bottom left of Debrief. If it's there
 			but not at the top of the 'stack', click on its title to reveal it. If you can't find
@@ -360,7 +360,7 @@ Using the wizard, follow the series of tabs to indicate what information you'd l
                </listitem>
                <listitem remap="step" id="d12e67">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e582" remap="cmd">Select an item</phrase>
+                     <phrase id="phrsd9e584" remap="cmd">Select an item</phrase>
                   </para>
                   <para remap="#PCDATA">Now double-click on one of the corners of the green rectangle near the centre
 			of the track plot. You'll now see its editable attributes appear on the properties
@@ -369,7 +369,7 @@ Using the wizard, follow the series of tabs to indicate what information you'd l
                </listitem>
                <listitem remap="step" id="d12e73">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e593" remap="cmd">Make a change</phrase>
+                     <phrase id="phrsd9e595" remap="cmd">Make a change</phrase>
                   </para>
                   <para remap="#PCDATA">Now have a go at changing the rectangle's label color. Click once on the green
 			rectangle next to 'LabelColor'. A button containing three dots will appear. Click on
@@ -379,35 +379,35 @@ Using the wizard, follow the series of tabs to indicate what information you'd l
                </listitem>
                <listitem remap="step" id="d12e79">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e604" remap="cmd">Undo the change</phrase>
+                     <phrase id="phrsd9e606" remap="cmd">Undo the change</phrase>
                   </para>
                   <para remap="#PCDATA">Oops, it appears we shouldn't have changed the label color, it
 			doesn't meet NATO MilStd 12332 Sub-para 14g (2002 version). To undo a change, first
-			click on the tab at the top of the <emphasis role="bold" id="bd9e609" remap="b">sample.xml</emphasis> plot (to tell Debrief which plot
+			click on the tab at the top of the <emphasis role="bold" id="bd9e611" remap="b">sample.xml</emphasis> plot (to tell Debrief which plot
 			we're undoing). Now click on the Edit menu, and select Undo (it's the first
 			item). The color of the label will now change back. Look on the Edit menu again, and
 			you'll see there's now a "Redo" command available - just in case
 			you're undecided about your adherence to sub-para 14g. Note, it's not just
 			edits that are undo-able, lots of operations can be undone, just have a look on the Edit
 			menu whenever you feel the need to step-back. If you think something isn't on there
-			but it should be, just ask... <emphasis role="bold" id="bd9e612" remap="b">But it did
+			but it should be, just ask... <emphasis role="bold" id="bd9e614" remap="b">But it did
 				not undo!</emphasis>. The Undo button applies to whichever is the active Debrief view. So,
 			to undo a change to the plot, first need to select the plot (or the tab containing hte
 			plot name), then press undo.</para>
                </listitem>
                <listitem remap="step" id="d12e91">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e621" remap="cmd">Edit a position</phrase>
+                     <phrase id="phrsd9e623" remap="cmd">Edit a position</phrase>
                   </para>
                   <para remap="#PCDATA">To select a position within a track, just double-click on it - its editable
 			attributes will appear in the properties window. You can now change the symbol or label
-			(<emphasis role="bold" id="bd9e626" remap="b">LabelShowing</emphasis> or <emphasis role="bold" id="bd9e629" remap="b">SymbolShowing</emphasis>, 
-			visibility, or the color (<emphasis role="bold" id="bd9e632" remap="b">Color</emphasis>) that position will be plotted in. Note: you may have to scroll up &amp; down the 
-			<emphasis role="bold" id="bd9e635" remap="b">Properties Window</emphasis> to see all of the properties.</para>
+			(<emphasis role="bold" id="bd9e628" remap="b">LabelShowing</emphasis> or <emphasis role="bold" id="bd9e631" remap="b">SymbolShowing</emphasis>, 
+			visibility, or the color (<emphasis role="bold" id="bd9e634" remap="b">Color</emphasis>) that position will be plotted in. Note: you may have to scroll up &amp; down the 
+			<emphasis role="bold" id="bd9e637" remap="b">Properties Window</emphasis> to see all of the properties.</para>
                </listitem>
                <listitem remap="step" id="d12e109">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e644" remap="cmd">Edit a whole track</phrase>
+                     <phrase id="phrsd9e646" remap="cmd">Edit a whole track</phrase>
                   </para>
                   <para remap="#PCDATA">Aaah, but how do you edit a track? Easy, just use the Outline View to select
 			it rather than clicking on the plot. Open the Outline View (or select Outline View
@@ -418,7 +418,7 @@ Using the wizard, follow the series of tabs to indicate what information you'd l
                </listitem>
                <listitem remap="step" id="d12e116">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e655" remap="cmd">Re-arrange the views</phrase>
+                     <phrase id="phrsd9e657" remap="cmd">Re-arrange the views</phrase>
                   </para>
                   <para remap="#PCDATA">Now, are you finding it a bit of pain switching between the Outline View and
 			Properties views? Using your mouse, just click and drag the Properties panel upwards -
@@ -427,7 +427,7 @@ Using the wizard, follow the series of tabs to indicate what information you'd l
                </listitem>
                <listitem remap="step" id="d12e122">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e667" remap="cmd">Edit directly from the plot itself</phrase>
+                     <phrase id="phrsd9e669" remap="cmd">Edit directly from the plot itself</phrase>
                   </para>
                   <para remap="#PCDATA">For some attributes, you don't even need to use the Properties View. Just
 			right-click on an item on your plot. The popup menu shows a series of options and
@@ -439,7 +439,7 @@ Using the wizard, follow the series of tabs to indicate what information you'd l
                </listitem>
                <listitem remap="step" id="d12e128">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e678" remap="cmd">Don't forget to save</phrase>
+                     <phrase id="phrsd9e680" remap="cmd">Don't forget to save</phrase>
                   </para>
                   <para remap="#PCDATA">Now that you've invested all that effort in your plot, don't forget to save it.
 			Just click on the floppy-disk icon on the main toolbar. If the data you're looking is
@@ -447,17 +447,17 @@ Using the wizard, follow the series of tabs to indicate what information you'd l
 			format - since REPs can't store formatting data.</para>
                </listitem>
             </orderedlist>
-            <para id="sctnd9e688" remap="result"/>
+            <para id="sctnd9e690" remap="result"/>
          </section>
          <section remap="task" id="d4e117">
-            <title id="ttld9e695" remap="title">View the UI overview in the Help</title>
-            <para id="parad9e698" remap="shortdesc">
+            <title id="ttld9e697" remap="title">View the UI overview in the Help</title>
+            <para id="parad9e700" remap="shortdesc">
          That's the end of the guided tour, you can now learn more from the online user guide.
       </para>
-            <orderedlist id="old9e703" remap="steps">
+            <orderedlist id="old9e705" remap="steps">
                <listitem remap="step" id="d13e9">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd9e707" remap="cmd">View the help guide</phrase>
+                     <phrase id="phrsd9e709" remap="cmd">View the help guide</phrase>
                   </para>
                   <para remap="#PCDATA">
          In addition to these cheat sheets, Debrief has an extensive user guide.  Now's a good time to go and read about the other features you can see in the user interface.
@@ -466,32 +466,32 @@ So, click on the help link alongside or below to open the help manual, have a re
       </para>
                </listitem>
             </orderedlist>
-            <para id="sctnd9e717" remap="result">
+            <para id="sctnd9e719" remap="result">
                You've now mastered the initial steps of using Debrief. 
                
-               <phrase id="phrsd9e719" remap="ph"/>Ok, you've finished your first cheat sheet, why not try the "Using Debrief in analysis" on next.  
+               <phrase id="phrsd9e721" remap="ph"/>Ok, you've finished your first cheat sheet, why not try the "Using Debrief in analysis" on next.  
                
             </para>
          </section>
       </section>
    </section>
    <section remap="task" id="d2e3">
-      <sectioninfo id="prlgd780e13" remap="prolog">
+      <sectioninfo id="prlgd780e14" remap="prolog">
          <abstract>
-            <para id="shrtdscd780e10" remap="shortdesc">
+            <para id="shrtdscd780e12" remap="shortdesc">
          This  tutorial is going to get you started with some of the analysis functionality within Debrief.
       </para>
          </abstract>
-         <author id="athrd780e14" remap="author">
+         <author id="athrd780e15" remap="author">
             <othername>John Bampton</othername>
          </author>
-         <author id="athrd780e16" remap="author">
+         <author id="athrd780e17" remap="author">
             <othername>Debrief</othername>
          </author>
-         <publisher id="pblshrd780e20" remap="publisher">
+         <publisher id="pblshrd780e21" remap="publisher">
             <publishername>Github John Bampton</publishername>
          </publisher>
-         <revhistory id="crtdtsd780e22" remap="critdates">
+         <revhistory id="crtdtsd780e23" remap="critdates">
             <revision>
                <revnumber/>
                <date>2016-02-26</date>
@@ -500,188 +500,188 @@ So, click on the help link alongside or below to open the help manual, have a re
          </revhistory>
          <subjectset>
             <subject>
-               <subjectterm id="ctgryd780e28" remap="category">Document Publishing</subjectterm>
+               <subjectterm id="ctgryd780e29" remap="category">Document Publishing</subjectterm>
             </subject>
             <subject>
-               <subjectterm id="ctgryd780e30" remap="category">Java</subjectterm>
+               <subjectterm id="ctgryd780e31" remap="category">Java</subjectterm>
             </subject>
          </subjectset>
       </sectioninfo>
-      <title id="ttld780e7" remap="title">Controlling what you view</title>
-      <para id="parad780e10" remap="shortdesc">
+      <title id="ttld780e9" remap="title">Controlling what you view</title>
+      <para id="parad780e12" remap="shortdesc">
          This  tutorial is going to get you started with some of the analysis functionality within Debrief.
       </para>
       <section remap="task" id="d2e14">
-         <title id="ttld780e35" remap="title">Filtering your view</title>
-         <para id="parad780e38" remap="shortdesc">With <emphasis role="bold" id="bd780e40" remap="b">ever-increasing</emphasis> data rates from multiple recording systems it is easy for an analysis plot to become swamped.  Debrief NG provides tools to reduce the volume and type of data displayed.  This tutorial will lead you through the management of large volumes of data.</para>
-         <orderedlist id="old780e46" remap="steps">
+         <title id="ttld780e37" remap="title">Filtering your view</title>
+         <para id="parad780e40" remap="shortdesc">With <emphasis role="bold" id="bd780e42" remap="b">ever-increasing</emphasis> data rates from multiple recording systems it is easy for an analysis plot to become swamped.  Debrief NG provides tools to reduce the volume and type of data displayed.  This tutorial will lead you through the management of large volumes of data.</para>
+         <orderedlist id="old780e48" remap="steps">
             <listitem remap="step" id="d14e12">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e50" remap="cmd">Check you have some data</phrase>
+                  <phrase id="phrsd780e52" remap="cmd">Check you have some data</phrase>
                </para>
                <para remap="#PCDATA">In the top left hand corner of Debrief you should find the Navigator window.  If it isn't there, select "Navigator" from Debrief's Window/Show View menu.  We're going to be working with the Sample.xml data-file from Debrief's sample data distribution.  If you can't see the sample data, refer to the online help covering how to find/load it. </para>
             </listitem>
             <listitem remap="step" id="d14e18">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e61" remap="cmd">Open a sample file</phrase>
+                  <phrase id="phrsd780e63" remap="cmd">Open a sample file</phrase>
                </para>
-               <para remap="#PCDATA">Now double-click on <emphasis role="bold" id="bd780e66" remap="b">Sample.xml</emphasis> in the navigator window.  Our sample Debrief plot should now open</para>
+               <para remap="#PCDATA">Now double-click on <emphasis role="bold" id="bd780e68" remap="b">Sample.xml</emphasis> in the navigator window.  Our sample Debrief plot should now open</para>
             </listitem>
             <listitem remap="step" id="d14e27">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e75" remap="cmd">Check you can view the data</phrase>
+                  <phrase id="phrsd780e77" remap="cmd">Check you can view the data</phrase>
                </para>
                <para remap="#PCDATA">To be sure you can see all of the data, perform a fit-to-window operation, either via the Fit-to-Window button on the toolbar, or by the Fit-to-window button on the Chart Overview panel.</para>
             </listitem>
             <listitem remap="step" id="d14e33">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e86" remap="cmd">Open the Outline View</phrase>
+                  <phrase id="phrsd780e88" remap="cmd">Open the Outline View</phrase>
                </para>
                <para remap="#PCDATA">Next, make sure the Outline View is visible.  Remember if any screen component isn't visible you just load it by selecting it from the 'Window/Show View' menu.</para>
             </listitem>
             <listitem remap="step" id="d14e40">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e97" remap="cmd">Hide shape</phrase>
+                  <phrase id="phrsd780e99" remap="cmd">Hide shape</phrase>
                </para>
                <para remap="#PCDATA">In the Outline View, expand the layer titled "Misc (xx items)".  At the top of the Outline View, is a toolbar of operations that can be applied to plot items.  After selecting an annotation from within that layer, click on the empty rectangle icon in the Outline View toolbar (next to the tick-in-rectangle). You should see the green tick disappear, together with the shape on the plot.  Show the shape again - but this time use the Outline View drop-down menu (at the right of the Outline View's toolbar). (Note that you can hide/reveal more than one item at a time by holding down the control key to perform a multiple selection.)</para>
             </listitem>
             <listitem remap="step" id="d14e46">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e109" remap="cmd">Hide whole layer</phrase>
+                  <phrase id="phrsd780e111" remap="cmd">Hide whole layer</phrase>
                </para>
                <para remap="#PCDATA">Next, experiment with hiding whole layers:  select one of the tracks in the Outline View and try hiding and revealing it.  Note, that you can expand each track to see the series of positions inside it.  Once expanded, you can select a series of point (representing a time-period) to be hidden/revealed.  But hey, there are quicker ways than that - just keep reading.</para>
             </listitem>
             <listitem remap="step" id="d14e52">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e120" remap="cmd">Show Time Controller</phrase>
+                  <phrase id="phrsd780e122" remap="cmd">Show Time Controller</phrase>
                </para>
                <para remap="#PCDATA">Now we're going to filter the plot to a particular period of time.  Start off by revealing the Time Controller view (or opening it if it isn't already visible).  The lower section of the time controller is a pair of sliders used to mark the start and end time of a variety of tasks.  </para>
             </listitem>
             <listitem remap="step" id="d14e58">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e131" remap="cmd">Select Filter to Period</phrase>
+                  <phrase id="phrsd780e133" remap="cmd">Select Filter to Period</phrase>
                </para>
                <para remap="#PCDATA">Instruct Debrief that we want the plot to be filtered according to the selected time period by selecting "Filter to period" from the Time Controller's drop-down menu (the downward facing triangle at the right-hand end of the tools at the top of the Time Controller view).</para>
             </listitem>
             <listitem remap="step" id="d14e64">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e142" remap="cmd">Trim visible time period</phrase>
+                  <phrase id="phrsd780e144" remap="cmd">Trim visible time period</phrase>
                </para>
                <para remap="#PCDATA">Now, as you drag the start and stop markers, the amount of data visible on the plot will be trimmed.  Nice.  The shaded portion between the time-sliders represents the currently visible time period.  You can drag this shaded section to move your 'windows' forwards and backwards. Hold down the shift key to lock the period to the line markers </para>
             </listitem>
          </orderedlist>
-         <para id="sctnd780e152" remap="result">
+         <para id="sctnd780e154" remap="result">
             Now you're a master of manipulating data, a skill essential both to data analysis and the collation of information for transfer to further presentation via Word or PowerPoint
          </para>
       </section>
       <section remap="task" id="d2e26">
-         <title id="ttld780e159" remap="title">Assigning primary and secondary tracks</title>
-         <para id="parad780e162" remap="shortdesc">With ever-increasing data rates from multiple recording systems it is easy for an analysis plot to become swamped.  Debrief NG provides tools to reduce the volume and type of data displayed.  This tutorial will lead you through the management of large volumes of data.</para>
-         <orderedlist id="old780e167" remap="steps">
+         <title id="ttld780e161" remap="title">Assigning primary and secondary tracks</title>
+         <para id="parad780e164" remap="shortdesc">With ever-increasing data rates from multiple recording systems it is easy for an analysis plot to become swamped.  Debrief NG provides tools to reduce the volume and type of data displayed.  This tutorial will lead you through the management of large volumes of data.</para>
+         <orderedlist id="old780e169" remap="steps">
             <listitem remap="step" id="d15e9">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e171" remap="cmd">Check you have some data</phrase>
+                  <phrase id="phrsd780e173" remap="cmd">Check you have some data</phrase>
                </para>
                <para remap="#PCDATA">In the top left hand corner of Debrief you should find the Navigator window.  If it isn't there, select "Navigator" from Debrief's Window/Show View menu.  Also check you have our sample data-files - if they're not there, find how to load them from the "Loading sample data" cheat-sheet.</para>
             </listitem>
             <listitem remap="step" id="d15e15">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e182" remap="cmd">Open the sample plot-file</phrase>
+                  <phrase id="phrsd780e184" remap="cmd">Open the sample plot-file</phrase>
                </para>
                <para remap="#PCDATA">Double-click on 'sample.xml' in the Navigator window, and the sample plot will open.</para>
             </listitem>
             <listitem remap="step" id="d15e21">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e193" remap="cmd">Fit to window</phrase>
+                  <phrase id="phrsd780e195" remap="cmd">Fit to window</phrase>
                </para>
                <para remap="#PCDATA">To make sure all of the data is visible, click on the "Fit-to-Window" toolbar button.</para>
             </listitem>
             <listitem remap="step" id="d15e27">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e204" remap="cmd">View the tote</phrase>
+                  <phrase id="phrsd780e206" remap="cmd">View the tote</phrase>
                </para>
                <para remap="#PCDATA">In the centre section of the left hand column in Debrief is the Track Tote.  If it's obscured by other view panels, click on it's tab to highlight it.  If it's not visible at all, open it by selecting "Track Tote" from the "Window/Show View" drop-down menu.</para>
             </listitem>
             <listitem remap="step" id="d15e34">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e215" remap="cmd">What can I see?</phrase>
+                  <phrase id="phrsd780e217" remap="cmd">What can I see?</phrase>
                </para>
                <para remap="#PCDATA">Once open, you should see a table consisting of two or more columns.  The left-hand column lists the calculated data fields, and an optional right-hand column shows the units used for that field.  The centre columns show the actual calculated data fields, one for each track on the tote.  The left-hand data column (OSPREY in our test data) is the primary track - that is, all calculations are shown relative to this track.  The calculations themselves are explained in greater detail in the Help manual (click on the Help icon above). </para>
             </listitem>
             <listitem remap="step" id="d15e40">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e227" remap="cmd">Move track through time</phrase>
+                  <phrase id="phrsd780e229" remap="cmd">Move track through time</phrase>
                </para>
                <para remap="#PCDATA">Ok, now open the Time Controller (in the top-section of the left hand column once again, open it from the Window menu if you can't see it).  If you drag the time-slider in the time-controller you will see the calculated data fields update.</para>
             </listitem>
             <listitem remap="step" id="d15e46">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e238" remap="cmd">Removing a track</phrase>
+                  <phrase id="phrsd780e240" remap="cmd">Removing a track</phrase>
                </para>
                <para remap="#PCDATA">As an experiement with managing the tracks on the tote, right-click on the right-hand tote's columns (but not the header) and select "Remove this track".  Yes, the secondary track will be removed, and with only one track remaining.  </para>
             </listitem>
             <listitem remap="step" id="d15e52">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e249" remap="cmd">Adding a track to the tote</phrase>
+                  <phrase id="phrsd780e251" remap="cmd">Adding a track to the tote</phrase>
                </para>
                <para remap="#PCDATA">Open the Outline View (you must know where to find that by now...).  Observe the '1' and '2' buttons on the view's toolbar, they're probably currently disabled.  They become enabled depending upon whether the currently selected item is suitable for inclusion on the tote.  Click once on the track you just removed from the tote, and both buttons will be enabled - allowing you to make the current track primary or secondary. Go on, have a go at assigning it...  It's more than just tracks that can be put on the tote, any data-item that has time and location attributes can be placed on the tote: items such as circles and labels are particularly suited.</para>
             </listitem>
             <listitem remap="step" id="d15e58">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e260" remap="cmd">Done</phrase>
+                  <phrase id="phrsd780e262" remap="cmd">Done</phrase>
                </para>
                <para remap="#PCDATA">Well done, you are now a master of the tote. </para>
             </listitem>
          </orderedlist>
-         <para id="sctnd780e270" remap="result">
+         <para id="sctnd780e272" remap="result">
             So, you now understand Primary and Secondary tracks. You're practically an analyst!
          </para>
       </section>
       <section remap="task" id="d2e41">
-         <title id="ttld780e277" remap="title">Viewing time-related vessel tracks</title>
-         <para id="parad780e280" remap="shortdesc">Debrief offers more than just a static overview of vessel tracks - it allows you to control the time period of data shown.</para>
-         <orderedlist id="old780e285" remap="steps">
+         <title id="ttld780e279" remap="title">Viewing time-related vessel tracks</title>
+         <para id="parad780e282" remap="shortdesc">Debrief offers more than just a static overview of vessel tracks - it allows you to control the time period of data shown.</para>
+         <orderedlist id="old780e287" remap="steps">
             <listitem remap="step" id="d16e9">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e289" remap="cmd">Check you have some data</phrase>
+                  <phrase id="phrsd780e291" remap="cmd">Check you have some data</phrase>
                </para>
                <para remap="#PCDATA">In the top left hand corner of Debrief you should find the Navigator window.  If it isn't there, select "Navigator" from Debrief's Window/Show View menu.  Also check you have our sample data-files - it they're not there, find how to load them from the "Loading sample data" cheat-sheet.</para>
                <para remap="#PCDATA">optional</para>
             </listitem>
             <listitem remap="step" id="d16e15">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e301" remap="cmd">Open the sample plot-file</phrase>
+                  <phrase id="phrsd780e303" remap="cmd">Open the sample plot-file</phrase>
                </para>
                <para remap="#PCDATA">Double-click on 'sample.xml' in the Navigator window, and the sample plot will open.</para>
             </listitem>
             <listitem remap="step" id="d16e21">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e312" remap="cmd">Fit to window</phrase>
+                  <phrase id="phrsd780e314" remap="cmd">Fit to window</phrase>
                </para>
                <para remap="#PCDATA">To make sure all of the data is visible, click on the "Fit-to-Window" toolbar button.</para>
             </listitem>
             <listitem remap="step" id="d16e27">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e323" remap="cmd">View the time controller</phrase>
+                  <phrase id="phrsd780e325" remap="cmd">View the time controller</phrase>
                </para>
                <para remap="#PCDATA">In the top section of the left hand column in Debrief is the Time Controller.  If it's not at the top, click on it's tab to highlight it.  If it's not visible at all, open it by selecting "Time Controller" from the "Window/Show View" drop-down menu.</para>
             </listitem>
             <listitem remap="step" id="d16e34">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e334" remap="cmd">What am I looking at?</phrase>
+                  <phrase id="phrsd780e336" remap="cmd">What am I looking at?</phrase>
                </para>
                <para remap="#PCDATA">The Time Controller is quite a busy part of the application, used for a range of time-related tasks.  Click on the help button for this step to gain an overview of the different components - and come back to this cheat-sheet once you've finished.</para>
                <para remap="#PCDATA">optional</para>
             </listitem>
             <listitem remap="step" id="d16e40">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e347" remap="cmd">Check we're in normal stepping mode</phrase>
+                  <phrase id="phrsd780e349" remap="cmd">Check we're in normal stepping mode</phrase>
                </para>
                <para remap="#PCDATA">Before we start moving through the data, just check that we're in 'normal' time stepping mode. There are two stepping modes: normal and snail - make sure we're not in the snail mode, but that the button on the Time Controller toolbar with the red track and black background is pressed.</para>
             </listitem>
             <listitem remap="step" id="d16e46">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e358" remap="cmd">Move slowly through the data</phrase>
+                  <phrase id="phrsd780e360" remap="cmd">Move slowly through the data</phrase>
                </para>
                <para remap="#PCDATA">
        Above the current time indicator are a series of buttons, similar to the pause/play/rewind you'd find on a music-player.  Click on the buttons and you'll see the time value move forwards/backwards appropriately - any the white rectangular highlight move along the vessel tracks.
@@ -689,163 +689,163 @@ So, click on the help link alongside or below to open the help manual, have a re
             </listitem>
             <listitem remap="step" id="d16e52">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e369" remap="cmd">Move quickly through the time period</phrase>
+                  <phrase id="phrsd780e371" remap="cmd">Move quickly through the time period</phrase>
                </para>
                <para remap="#PCDATA">Now drag the time-slider, and notice the white highlight rectangle move along the vessel tracks, with the current time shown in green-on-black text.  If you also have the Track Tote view open, notice how it's updating to reflect the current time.</para>
             </listitem>
             <listitem remap="step" id="d16e58">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e380" remap="cmd">Experiment with the time format options</phrase>
+                  <phrase id="phrsd780e382" remap="cmd">Experiment with the time format options</phrase>
                </para>
                <para remap="#PCDATA">The Time Controller toolbar has a drop-down list.  Within this are further drop-down lists to select the format in which the current DTG is displayed, and the increment used for moving through the plot.  Have a go at changing the time format so that you can see the full Year/Month/Day for the current DTG (yes, the Debrief test-plots are that old...).  Also have a go at changing the time increment to 15 minutes, so that you can move through the plot in large handfuls.</para>
             </listitem>
             <listitem remap="step" id="d16e64">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e391" remap="cmd">Change plotting modes</phrase>
+                  <phrase id="phrsd780e393" remap="cmd">Change plotting modes</phrase>
                </para>
-               <para remap="#PCDATA">Start off by reading through the online help on the time controllers <emphasis role="bold" id="bd780e396" remap="b">Plotting Modes</emphasis> (via the above help link).  Then have a play.  Start off by  selecting <emphasis role="bold" id="bd780e399" remap="b">Primary Centred/North Oriented</emphasis> and see how the viewport changes as you move forwards and backwards whilst in Snail mode.  Note that relative mode is selected independent of the mutually exclusive normal and snail modes.</para>
+               <para remap="#PCDATA">Start off by reading through the online help on the time controllers <emphasis role="bold" id="bd780e398" remap="b">Plotting Modes</emphasis> (via the above help link).  Then have a play.  Start off by  selecting <emphasis role="bold" id="bd780e401" remap="b">Primary Centred/North Oriented</emphasis> and see how the viewport changes as you move forwards and backwards whilst in Snail mode.  Note that relative mode is selected independent of the mutually exclusive normal and snail modes.</para>
             </listitem>
             <listitem remap="step" id="d16e77">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e408" remap="cmd">Work with time periods</phrase>
+                  <phrase id="phrsd780e410" remap="cmd">Work with time periods</phrase>
                </para>
                <para remap="#PCDATA">There's one part of the Time Controller we haven't covered yet - that's the time period selector.  As its name suggests, this is used to select a period of time.  It doesn't work in quite the same way as the time-slider however, because typically nothing happens when you adjust it.  It is typically used to select a time-period to be used in a subsequent operation.  Here's an example: select a time period of 120700 to 121000.  Now select "Export calculated data to clipboard" from the Time Controller's drop-down menu.  Three hour's worth of calculated data have just been copied onto your system clipboard, ready to be pasted into Excel.  </para>
             </listitem>
             <listitem remap="step" id="d16e83">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e420" remap="cmd">Control the visible time period</phrase>
+                  <phrase id="phrsd780e422" remap="cmd">Control the visible time period</phrase>
                </para>
-               <para remap="#PCDATA">Right, let's move on to another role of the Time Period selector.  The time-period selector is also used to select a time period when viewing time-variable graphs - but hey, let's not leap ahead of ourselves.  One last use for the time-period selector is more related to the current view.  If you select the 120600 to 120700 period, then depress the "Filter to period" icon on the Time Controller toolbar, when you move the time-sliders the plot is trimmed to that one hour period.  Holding down the shift-key makes the slider move in larger increments. Dragging the selected period whilst holding down the shift-key whilst in this mode effectively gives you the ability to jump through the exercise in one-hour blocks. <emphasis role="bold" id="bd780e425" remap="b">But</emphasis>, so we don't lose our sample data, make sure you now extend the sliders out to their full range to reveal all of our training data.</para>
+               <para remap="#PCDATA">Right, let's move on to another role of the Time Period selector.  The time-period selector is also used to select a time period when viewing time-variable graphs - but hey, let's not leap ahead of ourselves.  One last use for the time-period selector is more related to the current view.  If you select the 120600 to 120700 period, then depress the "Filter to period" icon on the Time Controller toolbar, when you move the time-sliders the plot is trimmed to that one hour period.  Holding down the shift-key makes the slider move in larger increments. Dragging the selected period whilst holding down the shift-key whilst in this mode effectively gives you the ability to jump through the exercise in one-hour blocks. <emphasis role="bold" id="bd780e427" remap="b">But</emphasis>, so we don't lose our sample data, make sure you now extend the sliders out to their full range to reveal all of our training data.</para>
             </listitem>
             <listitem remap="step" id="d16e92">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e434" remap="cmd">Super accurate time selection</phrase>
+                  <phrase id="phrsd780e436" remap="cmd">Super accurate time selection</phrase>
                </para>
-               <para remap="#PCDATA">Note, for some time export operations you may find it difficult to select the <emphasis role="bold" id="bd780e439" remap="b">exact</emphasis> time period you require. If this is the case, double-click on the start/finish time marker triangle, and the value will become editable in the Properties View</para>
+               <para remap="#PCDATA">Note, for some time export operations you may find it difficult to select the <emphasis role="bold" id="bd780e441" remap="b">exact</emphasis> time period you require. If this is the case, double-click on the start/finish time marker triangle, and the value will become editable in the Properties View</para>
             </listitem>
             <listitem remap="step" id="d16e101">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e448" remap="cmd">Time Controller's editable properties</phrase>
+                  <phrase id="phrsd780e450" remap="cmd">Time Controller's editable properties</phrase>
                </para>
                <para remap="#PCDATA">The Time Controller's drop down menu contains a series of child menus.  In some of these you'll see an 'Edit properties' element. These let you control various aspects of temporal data analysis.  Once you've selected an item from the properties drop-down its attributes will become editable on the properties view (so open it, if it's not visible).  Note - the item only appears on the properties window if the Time Controller is the active view, that is it's the most recently selected view as indicated by it's blue highlight.</para>
             </listitem>
             <listitem remap="step" id="d16e107">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e459" remap="cmd">Bookmarking the current time </phrase>
+                  <phrase id="phrsd780e461" remap="cmd">Bookmarking the current time </phrase>
                </para>
                <para remap="#PCDATA">So, just one part of the time controller left to cover now, bookmarking a particular time or event.  Debrief NG lets you insert a bookmark attached to a particular DTG in the current plot.  Let's say you're analysing a particular exercise and want to record a couple of interactions.  In Normal view mode, move the time-slider to 121011 hrs - the point when RED first react to BLUE.  Now select "Add DTG as bookmark" from the Time-Controller's drop-down menu.  A dialog box will open inviting you to add a remark for that DTG.  Enter "First contact", then press "OK".   Now move to 121131 and enter a bookmark title "Plotlock start".  Hmm, where are those bookmarks?  Open the Bookmarks view from the "Window/Show view" menu - and you'll see your two bookmarks.  Double-click on either of them to move to that time.  Now save and close your plot.   Note that the bookmarks remain effective, and you can store as many bookmarks as you like, across as many analysis plots as you like.</para>
             </listitem>
             <listitem remap="step" id="d16e113">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e470" remap="cmd">Done</phrase>
+                  <phrase id="phrsd780e472" remap="cmd">Done</phrase>
                </para>
                <para remap="#PCDATA">Well done, you've now mastered one of the most complex parts of Debrief - all downhill from now on...</para>
             </listitem>
          </orderedlist>
-         <para id="sctnd780e480" remap="result">
-            The <emphasis role="bold" id="bd780e482" remap="b">Time Controller</emphasis> is a very capable panel that provides a wide range of functionality.  You've now got an idea how to control it.
+         <para id="sctnd780e482" remap="result">
+            The <emphasis role="bold" id="bd780e484" remap="b">Time Controller</emphasis> is a very capable panel that provides a wide range of functionality.  You've now got an idea how to control it.
          </para>
       </section>
       <section remap="task" id="d2e57">
-         <title id="ttld780e491" remap="title">Analysing time-related calculated data</title>
-         <para id="parad780e494" remap="shortdesc">Debrief is capable of producing analysis products beyond the traditional graphical track plots.  After all, it's got the data hasn't it?  The most obvious derived products are the analysis plots - graphs showing time versus either a recorded data value or a calculation based on a specific set of data-values.  Why not learn more...</para>
-         <orderedlist id="old780e499" remap="steps">
+         <title id="ttld780e493" remap="title">Analysing time-related calculated data</title>
+         <para id="parad780e496" remap="shortdesc">Debrief is capable of producing analysis products beyond the traditional graphical track plots.  After all, it's got the data hasn't it?  The most obvious derived products are the analysis plots - graphs showing time versus either a recorded data value or a calculation based on a specific set of data-values.  Why not learn more...</para>
+         <orderedlist id="old780e501" remap="steps">
             <listitem remap="step" id="d17e9">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e503" remap="cmd">The big-picture</phrase>
+                  <phrase id="phrsd780e505" remap="cmd">The big-picture</phrase>
                </para>
                <para remap="#PCDATA">Right, here's the process we're going to follow.  We need to tell Debrief the time-period we want plotted, which participants to plot data for, what type of data to plot, and (for relative calculations) which is the primary track.  Let's go.</para>
             </listitem>
             <listitem remap="step" id="d17e15">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e514" remap="cmd">Check you have some data</phrase>
+                  <phrase id="phrsd780e516" remap="cmd">Check you have some data</phrase>
                </para>
                <para remap="#PCDATA">In the top left hand corner of Debrief you should find the Navigator window.  If it isn't there, select "Navigator" from Debrief's Window/Show View menu.  Also check you have our sample data-files - it they're not there, find how to load them from the "Loading sample data" cheat-sheet.</para>
             </listitem>
             <listitem remap="step" id="d17e21">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e525" remap="cmd">Open the sample plot-file</phrase>
+                  <phrase id="phrsd780e527" remap="cmd">Open the sample plot-file</phrase>
                </para>
                <para remap="#PCDATA">Double-click on 'sample.xml' in the Navigator window, and the sample plot will open.</para>
             </listitem>
             <listitem remap="step" id="d17e27">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e536" remap="cmd">Fit to window</phrase>
+                  <phrase id="phrsd780e538" remap="cmd">Fit to window</phrase>
                </para>
                <para remap="#PCDATA">To make sure all of the data is visible, click on the "Fit-to-Window" toolbar button.</para>
             </listitem>
             <listitem remap="step" id="d17e34">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e547" remap="cmd">Open the Time Controller</phrase>
+                  <phrase id="phrsd780e549" remap="cmd">Open the Time Controller</phrase>
                </para>
                <para remap="#PCDATA">In the top left hand corner of Debrief you should find the Time Controller.  If is isn't there, select "Time Controller" from Debrief's Window/Show View menu.</para>
                <para remap="#PCDATA">optional</para>
             </listitem>
             <listitem remap="step" id="d17e40">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e560" remap="cmd">Select the time period of interest</phrase>
+                  <phrase id="phrsd780e562" remap="cmd">Select the time period of interest</phrase>
                </para>
                <para remap="#PCDATA">Right, select the period 120800 to 121100 using the time-period selector at the bottom of the Time Controller  (click help button above for more advice on the time controller).  Remember that holding down the shift-key makes the sliders move in one-hour jumps.</para>
             </listitem>
             <listitem remap="step" id="d17e46">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e571" remap="cmd">Open the Outline View</phrase>
+                  <phrase id="phrsd780e573" remap="cmd">Open the Outline View</phrase>
                </para>
                <para remap="#PCDATA">Next we need to indicate what tracks we want to see information for.  In the bottom left hand corner of Debrief you should find the Outline View window.  If it isn't there, select "Outline View" from Debrief's Window/Show View menu.</para>
                <para remap="#PCDATA">optional</para>
             </listitem>
             <listitem remap="step" id="d17e52">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e583" remap="cmd">Select the tracks of interest</phrase>
+                  <phrase id="phrsd780e585" remap="cmd">Select the tracks of interest</phrase>
                </para>
                <para remap="#PCDATA">Click on the two tracks (holding down the CTRL key to select multiple items).</para>
             </listitem>
             <listitem remap="step" id="d17e58">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e594" remap="cmd">Open xy-plot</phrase>
+                  <phrase id="phrsd780e596" remap="cmd">Open xy-plot</phrase>
                </para>
                <para remap="#PCDATA">Then right-click on the selected items and click on "View XY Plot".  Next select "Range" from the drop-down list of calculations, then "OK".  Finally indicate which track is the primary (for plotting data that's based on the relationship between multiple tracks  Debrief needs to know which track is the "subject" of the calculation).</para>
             </listitem>
             <listitem remap="step" id="d17e64">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e605" remap="cmd">Navigate around the plot</phrase>
+                  <phrase id="phrsd780e607" remap="cmd">Navigate around the plot</phrase>
                </para>
                <para remap="#PCDATA">Well done, there you are.  Zoom in on the graph by dragging with the mouse, and view the whole dataset again by clicking on the graph's Fit to Window button.  Feel free to experiment with the other commands as well, or even configure the graph to use your preferred font &amp; titles.</para>
             </listitem>
             <listitem remap="step" id="d17e71">
                <para remap="#PCDATA">
-                  <phrase id="phrsd780e616" remap="cmd">Done</phrase>
+                  <phrase id="phrsd780e618" remap="cmd">Done</phrase>
                </para>
                <para remap="#PCDATA">That's almost it for plotting graphs.  The only additional thing to add is to point out that it's not just tracks that can be the plotted. If you need to track proximity of multiple vehicles to a fixed point (such as a sensor), just insert a label annotation at that point and select the label in addition to the tracks - making sure you indicate that the label/sensor is the primary.</para>
             </listitem>
          </orderedlist>
-         <para id="sctnd780e626" remap="result">
-            And that's all for using Debrief for analysis.  If you're from an organisation that conducts TMA analysis based on sensor data (or you've a general yearning to learn) why not go back to the <emphasis role="bold" id="bd780e628" remap="b">Welcome</emphasis> page (using the <emphasis role="bold" id="bd780e631" remap="b">Restore Welcome</emphasis> link at the top of this view and try the <emphasis role="bold" id="bd780e634" remap="b">Debrief support for single sided reconstruction</emphasis> tutorial.
+         <para id="sctnd780e628" remap="result">
+            And that's all for using Debrief for analysis.  If you're from an organisation that conducts TMA analysis based on sensor data (or you've a general yearning to learn) why not go back to the <emphasis role="bold" id="bd780e630" remap="b">Welcome</emphasis> page (using the <emphasis role="bold" id="bd780e633" remap="b">Restore Welcome</emphasis> link at the top of this view and try the <emphasis role="bold" id="bd780e636" remap="b">Debrief support for single sided reconstruction</emphasis> tutorial.
          </para>
       </section>
    </section>
    <section remap="task" id="d5e3">
-      <sectioninfo id="prlgd1534e22" remap="prolog">
+      <sectioninfo id="prlgd1534e23" remap="prolog">
          <abstract>
-            <para id="shrtdscd1534e10" remap="shortdesc">
+            <para id="shrtdscd1534e12" remap="shortdesc">
          Before running through this cheat-sheet, you should really have 
-         completed the <emphasis role="bold" id="bd1534e12" remap="b">A Debrief walkthrough</emphasis>  cheat-sheet, so you 
+         completed the <emphasis role="bold" id="bd1534e14" remap="b">A Debrief walkthrough</emphasis>  cheat-sheet, so you 
          know how to configure Debrief and how to load your data.  
          If you haven't completed the Debrief walkthrough, 
-         click on <emphasis role="bold" id="bd1534e15" remap="b">Restore Welcome</emphasis> at the top of this window (or select <emphasis role="bold" id="bd1534e18" remap="b">Welcome</emphasis> from the Help menu), 
+         click on <emphasis role="bold" id="bd1534e17" remap="b">Restore Welcome</emphasis> at the top of this window (or select <emphasis role="bold" id="bd1534e20" remap="b">Welcome</emphasis> from the Help menu), 
          navigate to the Tutorials tab, and start the Debrief walkthrough.
       </para>
          </abstract>
-         <author id="athrd1534e23" remap="author">
+         <author id="athrd1534e24" remap="author">
             <othername>John Bampton</othername>
          </author>
-         <author id="athrd1534e25" remap="author">
+         <author id="athrd1534e26" remap="author">
             <othername>Debrief</othername>
          </author>
-         <publisher id="pblshrd1534e29" remap="publisher">
+         <publisher id="pblshrd1534e30" remap="publisher">
             <publishername>Github John Bampton</publishername>
          </publisher>
-         <revhistory id="crtdtsd1534e31" remap="critdates">
+         <revhistory id="crtdtsd1534e32" remap="critdates">
             <revision>
                <revnumber/>
                <date>2016-02-26</date>
@@ -854,83 +854,83 @@ So, click on the help link alongside or below to open the help manual, have a re
          </revhistory>
          <subjectset>
             <subject>
-               <subjectterm id="ctgryd1534e37" remap="category">Document Publishing</subjectterm>
+               <subjectterm id="ctgryd1534e38" remap="category">Document Publishing</subjectterm>
             </subject>
             <subject>
-               <subjectterm id="ctgryd1534e39" remap="category">Java</subjectterm>
+               <subjectterm id="ctgryd1534e40" remap="category">Java</subjectterm>
             </subject>
          </subjectset>
       </sectioninfo>
-      <title id="ttld1534e7" remap="title">Single Sided Reconstruction in Debrief</title>
-      <para id="parad1534e10" remap="shortdesc">
+      <title id="ttld1534e9" remap="title">Single Sided Reconstruction in Debrief</title>
+      <para id="parad1534e12" remap="shortdesc">
          Before running through this cheat-sheet, you should really have 
-         completed the <emphasis role="bold" id="bd1534e12" remap="b">A Debrief walkthrough</emphasis>  cheat-sheet, so you 
+         completed the <emphasis role="bold" id="bd1534e14" remap="b">A Debrief walkthrough</emphasis>  cheat-sheet, so you 
          know how to configure Debrief and how to load your data.  
          If you haven't completed the Debrief walkthrough, 
-         click on <emphasis role="bold" id="bd1534e15" remap="b">Restore Welcome</emphasis> at the top of this window (or select <emphasis role="bold" id="bd1534e18" remap="b">Welcome</emphasis> from the Help menu), 
+         click on <emphasis role="bold" id="bd1534e17" remap="b">Restore Welcome</emphasis> at the top of this window (or select <emphasis role="bold" id="bd1534e20" remap="b">Welcome</emphasis> from the Help menu), 
          navigate to the Tutorials tab, and start the Debrief walkthrough.
       </para>
       <section remap="task" id="d5e32">
-         <title id="ttld1534e44" remap="title">Working with target tracks</title>
-         <para id="parad1534e47" remap="shortdesc">
+         <title id="ttld1534e46" remap="title">Working with target tracks</title>
+         <para id="parad1534e49" remap="shortdesc">
             Now it's time to start building the target track
          </para>
          <section remap="task" id="d5e40">
-            <title id="ttld1534e52" remap="title">Groom sensor data</title>
-            <para id="parad1534e55" remap="shortdesc">
+            <title id="ttld1534e54" remap="title">Groom sensor data</title>
+            <para id="parad1534e57" remap="shortdesc">
          This cheat sheet is going to work through creating preparing the ownship sensor data ready for production of TMA tracks.
       </para>
-            <orderedlist id="old1534e60" remap="steps">
+            <orderedlist id="old1534e62" remap="steps">
                <listitem remap="step" id="d18e9">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e64" remap="cmd">Load datafiles</phrase>
+                     <phrase id="phrsd1534e66" remap="cmd">Load datafiles</phrase>
                   </para>
                   <para remap="#PCDATA">
-         We're using new datafiles for this step, so double-click on <emphasis role="bold" id="bd1534e69" remap="b">nonsuch.rep</emphasis> in the Navigator to load ownship track (and select <emphasis role="bold" id="bd1534e72" remap="b">DR</emphasis> mode when asked).  Perform a Fit to Window once loaded to have a look at the track. Next, drag in <emphasis role="bold" id="bd1534e75" remap="b">sensor.dsf</emphasis>. Now, <emphasis role="bold" id="bd1534e78" remap="b">don't worry </emphasis> if it doesn't appear on the plot - this is by intention.
+         We're using new datafiles for this step, so double-click on <emphasis role="bold" id="bd1534e71" remap="b">nonsuch.rep</emphasis> in the Navigator to load ownship track (and select <emphasis role="bold" id="bd1534e74" remap="b">DR</emphasis> mode when asked).  Perform a Fit to Window once loaded to have a look at the track. Next, drag in <emphasis role="bold" id="bd1534e77" remap="b">sensor.dsf</emphasis>. Now, <emphasis role="bold" id="bd1534e80" remap="b">don't worry </emphasis> if it doesn't appear on the plot - this is by intention.
       </para>
                </listitem>
                <listitem remap="step" id="d18e27">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e87" remap="cmd">Make sensor data visible</phrase>
+                     <phrase id="phrsd1534e89" remap="cmd">Make sensor data visible</phrase>
                   </para>
                   <para remap="#PCDATA">
-         To keep the plot tidy, sensor data is not shown by default when loaded.  Expand <emphasis role="bold" id="bd1534e92" remap="b">Track:NONSUCH</emphasis> in the <emphasis role="bold" id="bd1534e95" remap="b">Outline View</emphasis>, then open <emphasis role="bold" id="bd1534e98" remap="b">Sensors</emphasis>, then select <emphasis role="bold" id="bd1534e101" remap="b">Sensor:Sensor_A (52 items)</emphasis>. Once the Sensor A sensor data is selected, click on the tick icon in the toolbar at top of the Outline View view, to make the sensor data visible - and it will appear on the plot.
+         To keep the plot tidy, sensor data is not shown by default when loaded.  Expand <emphasis role="bold" id="bd1534e94" remap="b">Track:NONSUCH</emphasis> in the <emphasis role="bold" id="bd1534e97" remap="b">Outline View</emphasis>, then open <emphasis role="bold" id="bd1534e100" remap="b">Sensors</emphasis>, then select <emphasis role="bold" id="bd1534e103" remap="b">Sensor:Sensor_A (52 items)</emphasis>. Once the Sensor A sensor data is selected, click on the tick icon in the toolbar at top of the Outline View view, to make the sensor data visible - and it will appear on the plot.
       </para>
                </listitem>
                <listitem remap="step" id="d18e45">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e110" remap="cmd">Resolve ambiguity</phrase>
+                     <phrase id="phrsd1534e112" remap="cmd">Resolve ambiguity</phrase>
                   </para>
                   <para remap="#PCDATA">
-         In our data you can see one bearing fan heading off to the WNW, and the other off towards NNE.  Intelligence tells us (well, Ian H tells us) that the actual contact is off to the NW.  If we open the Time Controller view and drag the time slider back and forth we'll see the current position highlight moving from top-right to bottom left. Thus, the NW block of sensor data is to the Starboard of the track. (Use <emphasis role="bold" id="bd1534e115" remap="b">Click to perform</emphasis> below if you wish,  to open the Time Controller).
+         In our data you can see one bearing fan heading off to the WNW, and the other off towards NNE.  Intelligence tells us (well, Ian H tells us) that the actual contact is off to the NW.  If we open the Time Controller view and drag the time slider back and forth we'll see the current position highlight moving from top-right to bottom left. Thus, the NW block of sensor data is to the Starboard of the track. (Use <emphasis role="bold" id="bd1534e117" remap="b">Click to perform</emphasis> below if you wish,  to open the Time Controller).
       </para>
                </listitem>
                <listitem remap="step" id="d18e56">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e124" remap="cmd">Drop ambiguous data</phrase>
+                     <phrase id="phrsd1534e126" remap="cmd">Drop ambiguous data</phrase>
                   </para>
                   <para remap="#PCDATA">
-         Now, using the Outline View, expand the <emphasis role="bold" id="bd1534e129" remap="b">SENSOR_A</emphasis> dataset and select all of the child items (select the top one, scroll to the bottom of the list, then select the bottom one whilst holding down the shift-key).  Now, right click on one of the entries and select <emphasis role="bold" id="bd1534e132" remap="b">Keep starboard bearings</emphasis>.  The port bearings will dissappear.
+         Now, using the Outline View, expand the <emphasis role="bold" id="bd1534e131" remap="b">SENSOR_A</emphasis> dataset and select all of the child items (select the top one, scroll to the bottom of the list, then select the bottom one whilst holding down the shift-key).  Now, right click on one of the entries and select <emphasis role="bold" id="bd1534e134" remap="b">Keep starboard bearings</emphasis>.  The port bearings will dissappear.
       </para>
                </listitem>
                <listitem remap="step" id="d18e69">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e141" remap="cmd">Open grid editor</phrase>
+                     <phrase id="phrsd1534e143" remap="cmd">Open grid editor</phrase>
                   </para>
                   <para remap="#PCDATA">
-         In this tutoral we're going to be editing the raw sensor data using the Grid Editor.  So, select <emphasis role="bold" id="bd1534e146" remap="b">Grid Editor</emphasis> from the <emphasis role="bold" id="bd1534e149" remap="b">Window/Show view menu</emphasis> (or click on the link below).      </para>
+         In this tutoral we're going to be editing the raw sensor data using the Grid Editor.  So, select <emphasis role="bold" id="bd1534e148" remap="b">Grid Editor</emphasis> from the <emphasis role="bold" id="bd1534e151" remap="b">Window/Show view menu</emphasis> (or click on the link below).      </para>
                </listitem>
                <listitem remap="step" id="d18e83">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e159" remap="cmd">Indicate data to edit</phrase>
+                     <phrase id="phrsd1534e161" remap="cmd">Indicate data to edit</phrase>
                   </para>
                   <para remap="#PCDATA">
-         The grid editor listens out for the current selection on the Outline View.  So, if the item on the Outline View is suitable for being edited in grid format it will be shown in the grid editor (though this behaviour can be cancelled by clicking on the lock icon in the grid editor toolbar).  If you open the <emphasis role="bold" id="bd1534e164" remap="b">Track:NONSUCH</emphasis> item and select the positions you'll see them appear in the grid editor.  Now click on the sensor data for Track:NONSUCH (<emphasis role="bold" id="bd1534e167" remap="b">Sensor:SENSOR_A(52 items)</emphasis>.
+         The grid editor listens out for the current selection on the Outline View.  So, if the item on the Outline View is suitable for being edited in grid format it will be shown in the grid editor (though this behaviour can be cancelled by clicking on the lock icon in the grid editor toolbar).  If you open the <emphasis role="bold" id="bd1534e166" remap="b">Track:NONSUCH</emphasis> item and select the positions you'll see them appear in the grid editor.  Now click on the sensor data for Track:NONSUCH (<emphasis role="bold" id="bd1534e169" remap="b">Sensor:SENSOR_A(52 items)</emphasis>.
       </para>
                </listitem>
                <listitem remap="step" id="d18e95">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e176" remap="cmd">Get this user interface tidied up</phrase>
+                     <phrase id="phrsd1534e178" remap="cmd">Get this user interface tidied up</phrase>
                   </para>
                   <para remap="#PCDATA">
          We've now got quite a few panels open, so we're going to tidy them a little.  If you're on a multi-monitor setup the we're going to put the grid editor onto the other screen.  To do this, pick up the grid editor by clicking and dragging its tab-bar title, and drag it over to the other screen. Once it's on the other screen resize it to view all the columns (resize the panel using the  drag-handles at the bottom right).
@@ -938,23 +938,23 @@ So, click on the help link alongside or below to open the help manual, have a re
                </listitem>
                <listitem remap="step" id="d18e101">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e187" remap="cmd">View the data</phrase>
+                     <phrase id="phrsd1534e189" remap="cmd">View the data</phrase>
                   </para>
                   <para remap="#PCDATA">
-         The scrollbar on the right hand side lets you move forwards and backwards through the data (with newest items shown at the top).  Most cells in the grid are editable, including the date, and green/red buttons are provided in the toolbar to <emphasis role="bold" id="bd1534e192" remap="b">add</emphasis>/<emphasis role="bold" id="bd1534e195" remap="b">remove</emphasis> rows.  You don't need to do it in this tutorial, but when you click on <emphasis role="bold" id="bd1534e198" remap="b">Add</emphasis>, it will insert a duplicate of the currently selected row immediately beneath it - hopefully reducing the amount of manual entry required.
+         The scrollbar on the right hand side lets you move forwards and backwards through the data (with newest items shown at the top).  Most cells in the grid are editable, including the date, and green/red buttons are provided in the toolbar to <emphasis role="bold" id="bd1534e194" remap="b">add</emphasis>/<emphasis role="bold" id="bd1534e197" remap="b">remove</emphasis> rows.  You don't need to do it in this tutorial, but when you click on <emphasis role="bold" id="bd1534e200" remap="b">Add</emphasis>, it will insert a duplicate of the currently selected row immediately beneath it - hopefully reducing the amount of manual entry required.
       </para>
                </listitem>
                <listitem remap="step" id="d18e116">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e207" remap="cmd">Work on an attribute</phrase>
+                     <phrase id="phrsd1534e209" remap="cmd">Work on an attribute</phrase>
                   </para>
                   <para remap="#PCDATA">
-         Beyond straight-forward text-editing of data, selecting an attribute offers greater editing capabilities.  So, start off by clicking on the header cell at the top of the frequency column (so, just click on the word <emphasis role="bold" id="bd1534e212" remap="b">Frequency</emphasis>).  As you do, you'll see a graph appear in the bottom half of the view. The graph is a waterfall display of frequency, with the most recent value at the top. Zoom in on data by dragging a region on the graph using a top-left to bottom-right motion.  Zoom out again by dragging bottom-right to top-left. Go on, have a go.
+         Beyond straight-forward text-editing of data, selecting an attribute offers greater editing capabilities.  So, start off by clicking on the header cell at the top of the frequency column (so, just click on the word <emphasis role="bold" id="bd1534e214" remap="b">Frequency</emphasis>).  As you do, you'll see a graph appear in the bottom half of the view. The graph is a waterfall display of frequency, with the most recent value at the top. Zoom in on data by dragging a region on the graph using a top-left to bottom-right motion.  Zoom out again by dragging bottom-right to top-left. Go on, have a go.
       </para>
                </listitem>
                <listitem remap="step" id="d18e125">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e221" remap="cmd">Fix dodgy frequency observation</phrase>
+                     <phrase id="phrsd1534e223" remap="cmd">Fix dodgy frequency observation</phrase>
                   </para>
                   <para remap="#PCDATA">
          If you zoom out to look at all the frequency data you'll see that whilst the frequency data seems fairly constant near the top of the dataset (49.99), there are occasional instances where the data value seems too low (when viewed in the context of a steady ownship track).  We're going to fix an errant data point by dragging it.  Firstly, zoom in on the data around the time 05:20.  You'll see that the data-point at 05:19:11 is quite a lot lower than its neighbours.  Move it by clicking inside the square data point and dragging the symbol so that it's in line with it's neighbours. Note that if the neighbours were in a steady drift you could align by eye where you drop the data point to align with the more tidily.
@@ -962,15 +962,15 @@ So, click on the help link alongside or below to open the help manual, have a re
                </listitem>
                <listitem remap="step" id="d18e132">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e232" remap="cmd">Smooth period of data</phrase>
+                     <phrase id="phrsd1534e234" remap="cmd">Smooth period of data</phrase>
                   </para>
                   <para remap="#PCDATA">
-         We'll now switch to bearing data.  Click on the <emphasis role="bold" id="bd1534e237" remap="b">Bearing</emphasis> column to view a graph of bearing data. Fairly near the top of the bearing data you will see three steps in the data, around the period 05:10 to 05:20.  Zoom in on these three steps.  It appears that the last smooth data point before the steps is at 05:10:44, and the first after the steps is at 05:21:30.  We're going to interpolate the data points between these two values, so first we must tell Debrief which are the points we intend keeping.  So, in the grid (in the top half of the editor), click on the empty space at the left of row 05:10:44 then hold down the <emphasis role="bold" id="bd1534e240" remap="b">Control</emphasis> key and click on row 05:21:30.  As you do this, the Interpolate (calculator) button in the grid editor toolbar should become enabled. Click on the interpolate button and the data will be smoothed.  You may select <emphasis role="bold" id="bd1534e243" remap="b">Undo</emphasis> from the edit menu to undo an interpolation operation.
+         We'll now switch to bearing data.  Click on the <emphasis role="bold" id="bd1534e239" remap="b">Bearing</emphasis> column to view a graph of bearing data. Fairly near the top of the bearing data you will see three steps in the data, around the period 05:10 to 05:20.  Zoom in on these three steps.  It appears that the last smooth data point before the steps is at 05:10:44, and the first after the steps is at 05:21:30.  We're going to interpolate the data points between these two values, so first we must tell Debrief which are the points we intend keeping.  So, in the grid (in the top half of the editor), click on the empty space at the left of row 05:10:44 then hold down the <emphasis role="bold" id="bd1534e242" remap="b">Control</emphasis> key and click on row 05:21:30.  As you do this, the Interpolate (calculator) button in the grid editor toolbar should become enabled. Click on the interpolate button and the data will be smoothed.  You may select <emphasis role="bold" id="bd1534e245" remap="b">Undo</emphasis> from the edit menu to undo an interpolation operation.
       </para>
                </listitem>
                <listitem remap="step" id="d18e147">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e253" remap="cmd">Getting clever with interpolation</phrase>
+                     <phrase id="phrsd1534e255" remap="cmd">Getting clever with interpolation</phrase>
                   </para>
                   <para remap="#PCDATA">
          Note that we only selected a single point at each end of the poor data.  There are two other, more advanced ways of doing the interpolation.  If we had selected multiple points at the ends of the dodgy data then Debrief would have made the interpolated values fit through a cubic spline that passed through the selected points.  Similarly, if we had selected one or more points in the middle of the dodgy data (in addition to point(s) at the ends) then Debrief would have fitted a curve through the end and mid points of the dataset.
@@ -979,35 +979,35 @@ So, click on the help link alongside or below to open the help manual, have a re
                </listitem>
                <listitem remap="step" id="d18e153">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e265" remap="cmd">Set array offset</phrase>
+                     <phrase id="phrsd1534e267" remap="cmd">Set array offset</phrase>
                   </para>
                   <para remap="#PCDATA">
-         We can move on now that we've tidied the sensor data.  As you'll see, the sensor data is ambiguous, as produced by a towed array.  Currently Debrief is plotting the sensor cuts against the attack datum of the platform, but we need to apply an offset for this sensor (-451m in this case).   So, select <emphasis role="bold" id="bd1534e270" remap="b">Sensor:SENSOR_A</emphasis> in the <emphasis role="bold" id="bd1534e273" remap="b">Outline View</emphasis>, then open the <emphasis role="bold" id="bd1534e276" remap="b">Properties Window</emphasis> (the click to perform button below will also open it).  In the Properties Window you'll see the <emphasis role="bold" id="bd1534e279" remap="b">SensorOffset</emphasis> attribute.  This allows you to enter a custom offset or to choose from a set of lengths from a shared datafile (see the Help entry for this item for further details).  Anyway, ignore the shared values and enter -451 in this field, click on the Plot, and you'll see the bearings jump to reflect the change. To see where the current array centre is, switch on <emphasis role="bold" id="bd1534e282" remap="b">Plot Array Centre</emphasis> from the properties for the parent track - you'll see a cross appear astern of the current submarine location. 
+         We can move on now that we've tidied the sensor data.  As you'll see, the sensor data is ambiguous, as produced by a towed array.  Currently Debrief is plotting the sensor cuts against the attack datum of the platform, but we need to apply an offset for this sensor (-451m in this case).   So, select <emphasis role="bold" id="bd1534e272" remap="b">Sensor:SENSOR_A</emphasis> in the <emphasis role="bold" id="bd1534e275" remap="b">Outline View</emphasis>, then open the <emphasis role="bold" id="bd1534e278" remap="b">Properties Window</emphasis> (the click to perform button below will also open it).  In the Properties Window you'll see the <emphasis role="bold" id="bd1534e281" remap="b">SensorOffset</emphasis> attribute.  This allows you to enter a custom offset or to choose from a set of lengths from a shared datafile (see the Help entry for this item for further details).  Anyway, ignore the shared values and enter -451 in this field, click on the Plot, and you'll see the bearings jump to reflect the change. To see where the current array centre is, switch on <emphasis role="bold" id="bd1534e284" remap="b">Plot Array Centre</emphasis> from the properties for the parent track - you'll see a cross appear astern of the current submarine location. 
       </para>
                </listitem>
                <listitem remap="step" id="d18e176">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e291" remap="cmd">Reduce data density</phrase>
+                     <phrase id="phrsd1534e293" remap="cmd">Reduce data density</phrase>
                   </para>
                   <para remap="#PCDATA">
-      Whilst it isn't necessary for this exercise, Debrief does allow you to reduce the density of the sensor data.  If you right-click on <emphasis role="bold" id="bd1534e296" remap="b">Sensor:SENSOR_A</emphasis>, then navigate down into the <emphasis role="bold" id="bd1534e299" remap="b">SENSOR_A</emphasis> sub-menu you will see a <emphasis role="bold" id="bd1534e302" remap="b">Visible Frequency</emphasis> option. Using one of these options will pass through sensor data and hide sensor observations between the specified frequency.  The sensor cuts remain available, and can be made visible again by selecting a smaller visible frequency.  Note, instead of this you could have resampled the ownship positions and sensor cuts by right-clicking on the parent track and selecting <emphasis role="bold" id="bd1534e305" remap="b">Resample data at</emphasis>.
+      Whilst it isn't necessary for this exercise, Debrief does allow you to reduce the density of the sensor data.  If you right-click on <emphasis role="bold" id="bd1534e298" remap="b">Sensor:SENSOR_A</emphasis>, then navigate down into the <emphasis role="bold" id="bd1534e301" remap="b">SENSOR_A</emphasis> sub-menu you will see a <emphasis role="bold" id="bd1534e304" remap="b">Visible Frequency</emphasis> option. Using one of these options will pass through sensor data and hide sensor observations between the specified frequency.  The sensor cuts remain available, and can be made visible again by selecting a smaller visible frequency.  Note, instead of this you could have resampled the ownship positions and sensor cuts by right-clicking on the parent track and selecting <emphasis role="bold" id="bd1534e307" remap="b">Resample data at</emphasis>.
       </para>
                   <para remap="#PCDATA">optional</para>
                </listitem>
             </orderedlist>
-            <para id="sctnd1534e314" remap="result">
+            <para id="sctnd1534e316" remap="result">
                We've now got a track with lovely smooth sensor data. Hmm.
             </para>
          </section>
          <section remap="task" id="d5e55">
-            <title id="ttld1534e321" remap="title">Generate a target track</title>
-            <para id="parad1534e324" remap="shortdesc">
+            <title id="ttld1534e323" remap="title">Generate a target track</title>
+            <para id="parad1534e326" remap="shortdesc">
          This cheat sheet is going to work through creating a segment of target track from bearing data.  The target track is going to represent a period of straight-line motion, and can be interpreted as a Manual TMA Solution.  You should have open a tidy track and sensor data as produced in the previous cheat-sheet.  Feel free to close the Grid Editor window now that we're concentrating on the plot.
       </para>
-            <orderedlist id="old1534e329" remap="steps">
+            <orderedlist id="old1534e331" remap="steps">
                <listitem remap="step" id="d19e9">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e333" remap="cmd">Decide on contact period</phrase>
+                     <phrase id="phrsd1534e335" remap="cmd">Decide on contact period</phrase>
                   </para>
                   <para remap="#PCDATA">
          The capable analyst will be able to recognise a couple of periods of steady bearing rate that lend themselves to being the basis of TMA solutions.  The first one we're going to use is the first dozen or so sensor cuts.  We can see that after a period of about 10 unsteady cuts there's another steady period - we'll use that for a solution a little later.
@@ -1015,15 +1015,15 @@ So, click on the help link alongside or below to open the help manual, have a re
                </listitem>
                <listitem remap="step" id="d19e15">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e344" remap="cmd">Highlight contacts</phrase>
+                     <phrase id="phrsd1534e346" remap="cmd">Highlight contacts</phrase>
                   </para>
                   <para remap="#PCDATA">
-         We're going to change the color of the contacts to use for our first solution.  Double-click somewhere along the bearing line for the last data point in first period of steady bearing data - it will be highlighted in the Outline View.  By my (unqualified eye), the last data point is the one at <emphasis role="bold" id="bd1534e349" remap="b">090722 044127</emphasis>.  Click on that to select it.  Next scroll back up to the start of the sensor data, hold down the &lt;shift&gt; key and click on the first entry.  This period of sensor data is now selected.  Before creating a TMA segment based on it we're going to highlight it in a unique color. So, right-click anywhere on it, and select <emphasis role="bold" id="bd1534e352" remap="b">Multiple items/Color/Orange</emphasis>.
+         We're going to change the color of the contacts to use for our first solution.  Double-click somewhere along the bearing line for the last data point in first period of steady bearing data - it will be highlighted in the Outline View.  By my (unqualified eye), the last data point is the one at <emphasis role="bold" id="bd1534e351" remap="b">090722 044127</emphasis>.  Click on that to select it.  Next scroll back up to the start of the sensor data, hold down the &lt;shift&gt; key and click on the first entry.  This period of sensor data is now selected.  Before creating a TMA segment based on it we're going to highlight it in a unique color. So, right-click anywhere on it, and select <emphasis role="bold" id="bd1534e354" remap="b">Multiple items/Color/Orange</emphasis>.
       </para>
                </listitem>
                <listitem remap="step" id="d19e27">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e361" remap="cmd">Generate the TMA segment</phrase>
+                     <phrase id="phrsd1534e363" remap="cmd">Generate the TMA segment</phrase>
                   </para>
                   <para remap="#PCDATA">
          Next, with the set of data still selected (or reselect it if you've lost the selection) we're going to create a solution based upon it.  When we generate a TMA segment based on sensor data, Debrief creates a track segment of steady course/speed data points, with one data-point at the time of each sensor cut used to generate the segment.  Let's get on with it.
@@ -1031,129 +1031,129 @@ So, click on the help link alongside or below to open the help manual, have a re
                </listitem>
                <listitem remap="step" id="d19e33">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e372" remap="cmd">Follow the generate TMA wizard</phrase>
+                     <phrase id="phrsd1534e374" remap="cmd">Follow the generate TMA wizard</phrase>
                   </para>
                   <para remap="#PCDATA">
-          Now, right click on the selected sensor data and select <emphasis role="bold" id="bd1534e377" remap="b">Generate TMA solution from selected cuts</emphasis>. Once the TMA wizard opens, it will invite you to enter an initial range and bearing to the contact.  Enter 1 nautical mile (nm) for the solution, and leave the bearing unaltered (since it's using the bearing from our first sensor cut).  Then click <emphasis role="bold" id="bd1534e380" remap="b">Next</emphasis>.  The wizard will then invite you to enter an initial solution. Based on our understanding of the sensor fan and a complete guess, enter 220 for the course and 6 knots for the speed, then press <emphasis role="bold" id="bd1534e383" remap="b">Finish</emphasis>.  You will see a red track appear, labelled with <emphasis role="bold" id="bd1534e386" remap="b">TMA_</emphasis> and the time of the first cut used.   The solutions have times in their name to make it easier for you to manage them.
+          Now, right click on the selected sensor data and select <emphasis role="bold" id="bd1534e379" remap="b">Generate TMA solution from selected cuts</emphasis>. Once the TMA wizard opens, it will invite you to enter an initial range and bearing to the contact.  Enter 1 nautical mile (nm) for the solution, and leave the bearing unaltered (since it's using the bearing from our first sensor cut).  Then click <emphasis role="bold" id="bd1534e382" remap="b">Next</emphasis>.  The wizard will then invite you to enter an initial solution. Based on our understanding of the sensor fan and a complete guess, enter 220 for the course and 6 knots for the speed, then press <emphasis role="bold" id="bd1534e385" remap="b">Finish</emphasis>.  You will see a red track appear, labelled with <emphasis role="bold" id="bd1534e388" remap="b">TMA_</emphasis> and the time of the first cut used.   The solutions have times in their name to make it easier for you to manage them.
       </para>
                </listitem>
                <listitem remap="step" id="d19e52">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e395" remap="cmd">Recognise track data</phrase>
+                     <phrase id="phrsd1534e397" remap="cmd">Recognise track data</phrase>
                   </para>
                   <para remap="#PCDATA">
-         If you expand the new track in the <emphasis role="bold" id="bd1534e400" remap="b">Outline View</emphasis> you'll see the <emphasis role="bold" id="bd1534e403" remap="b">Positions</emphasis> child item.  Notice that the icon for this item shows a straight-line section of data with an associated (but tiny) compass rose).  The equivalent object for <emphasis role="bold" id="bd1534e406" remap="b">Track:NONSUCH</emphasis> shows a non straight-line set of positions.  Also, note that on the plot, the name of the TMA segment is shown in italics, to denote that it's not based on actual position recordings.
+         If you expand the new track in the <emphasis role="bold" id="bd1534e402" remap="b">Outline View</emphasis> you'll see the <emphasis role="bold" id="bd1534e405" remap="b">Positions</emphasis> child item.  Notice that the icon for this item shows a straight-line section of data with an associated (but tiny) compass rose).  The equivalent object for <emphasis role="bold" id="bd1534e408" remap="b">Track:NONSUCH</emphasis> shows a non straight-line set of positions.  Also, note that on the plot, the name of the TMA segment is shown in italics, to denote that it's not based on actual position recordings.
       </para>
                   <para remap="#PCDATA">optional</para>
                </listitem>
                <listitem remap="step" id="d19e67">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e417" remap="cmd">Put the tracks on the tote</phrase>
+                     <phrase id="phrsd1534e419" remap="cmd">Put the tracks on the tote</phrase>
                   </para>
                   <para remap="#PCDATA">
-         To view residuals, we must indicate to Debrief which is the ownship and which is the target.  Debrief can hold many more than two tracks, so we must inform it which two tracks we want to compare with each other. So, in the Outline View, first select the <emphasis role="bold" id="bd1534e422" remap="b">Track:NONSUCH</emphasis> item, then click on the <emphasis role="bold" id="bd1534e425" remap="b">1</emphasis>  (primary) in the Outline View toolbar.  Next, click on the <emphasis role="bold" id="bd1534e428" remap="b">Track_xxxx</emphasis> item and select <emphasis role="bold" id="bd1534e431" remap="b">2</emphasis> (secondary) button in the Outline View toolbar.  If you switch to the <emphasis role="bold" id="bd1534e434" remap="b">Track Tote</emphasis> view (shortcut provided below) you'll now see it contains our primary and secondary tracks - and we've successfully indicated who we want to view in the residuals plot.
+         To view residuals, we must indicate to Debrief which is the ownship and which is the target.  Debrief can hold many more than two tracks, so we must inform it which two tracks we want to compare with each other. So, in the Outline View, first select the <emphasis role="bold" id="bd1534e424" remap="b">Track:NONSUCH</emphasis> item, then click on the <emphasis role="bold" id="bd1534e427" remap="b">1</emphasis>  (primary) in the Outline View toolbar.  Next, click on the <emphasis role="bold" id="bd1534e430" remap="b">Track_xxxx</emphasis> item and select <emphasis role="bold" id="bd1534e433" remap="b">2</emphasis> (secondary) button in the Outline View toolbar.  If you switch to the <emphasis role="bold" id="bd1534e436" remap="b">Track Tote</emphasis> view (shortcut provided below) you'll now see it contains our primary and secondary tracks - and we've successfully indicated who we want to view in the residuals plot.
       </para>
                </listitem>
                <listitem remap="step" id="d19e90">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e443" remap="cmd">Drag the track segment</phrase>
+                     <phrase id="phrsd1534e445" remap="cmd">Drag the track segment</phrase>
                   </para>
                   <para remap="#PCDATA">
-         You may now manipulate the track segment to minimise the bearing and frequency residuals. Start by clicking on <emphasis role="bold" id="bd1534e448" remap="b">Drag Track Segment</emphasis> on the Debrief toolbar. As you do, the <emphasis role="bold" id="bd1534e451" remap="b">Bearing Residuals</emphasis> view will be brought to the front.  You can expand this view by dragging it's sides, or to make it much larger you can pick it up by clicking and dragging the <emphasis role="bold" id="bd1534e454" remap="b">Bearing Residuals</emphasis> tab above it, and dragging it to another monitor.  
-In this view are the 4 drag operation buttons, that control how you drag the track. The cursor hand will go green when over a valid hot-spot: either end of the track.  In some drag modes you can <emphasis role="bold" id="bd1534e457" remap="b">translate</emphasis> a track by clicking on the hotspot at its mid-point.  Have a go at selecting <emphasis role="bold" id="bd1534e460" remap="b">Shear</emphasis> mode and dragging the ends of the track - to optimise the bearing errors.
+         You may now manipulate the track segment to minimise the bearing and frequency residuals. Start by clicking on <emphasis role="bold" id="bd1534e450" remap="b">Drag Track Segment</emphasis> on the Debrief toolbar. As you do, the <emphasis role="bold" id="bd1534e453" remap="b">Bearing Residuals</emphasis> view will be brought to the front.  You can expand this view by dragging it's sides, or to make it much larger you can pick it up by clicking and dragging the <emphasis role="bold" id="bd1534e456" remap="b">Bearing Residuals</emphasis> tab above it, and dragging it to another monitor.  
+In this view are the 4 drag operation buttons, that control how you drag the track. The cursor hand will go green when over a valid hot-spot: either end of the track.  In some drag modes you can <emphasis role="bold" id="bd1534e459" remap="b">translate</emphasis> a track by clicking on the hotspot at its mid-point.  Have a go at selecting <emphasis role="bold" id="bd1534e462" remap="b">Shear</emphasis> mode and dragging the ends of the track - to optimise the bearing errors.
      </para>
                </listitem>
                <listitem remap="step" id="d19e119">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e469" remap="cmd">Generate second TMA segment</phrase>
+                     <phrase id="phrsd1534e471" remap="cmd">Generate second TMA segment</phrase>
                   </para>
                   <para remap="#PCDATA">
          Once you're happy with the first solution it's time to move on.   It would appear from the sensor data that the turn is represented by about 13 cuts before a further straight line section of data.
-So, on the plot, now click on the first sensor cut of the second steady set of bearings - that cut will be highlighted in the <emphasis role="bold" id="bd1534e474" remap="b">Outline View</emphasis>. Now scroll down to the end of the data and shift-click the last sensor cut.  We've now selected the cuts to be used for the second track segment.  Right click on one of the selected items and select <emphasis role="bold" id="bd1534e477" remap="b">Multiple items/Color/Green</emphasis>.  The cuts will turn green.  Now right-click again on the cuts and click on <emphasis role="bold" id="bd1534e480" remap="b">Generate TMA solution from selected cuts</emphasis>, and complete the wizard once again.
+So, on the plot, now click on the first sensor cut of the second steady set of bearings - that cut will be highlighted in the <emphasis role="bold" id="bd1534e476" remap="b">Outline View</emphasis>. Now scroll down to the end of the data and shift-click the last sensor cut.  We've now selected the cuts to be used for the second track segment.  Right click on one of the selected items and select <emphasis role="bold" id="bd1534e479" remap="b">Multiple items/Color/Green</emphasis>.  The cuts will turn green.  Now right-click again on the cuts and click on <emphasis role="bold" id="bd1534e482" remap="b">Generate TMA solution from selected cuts</emphasis>, and complete the wizard once again.
       </para>
                </listitem>
                <listitem remap="step" id="d19e134">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e489" remap="cmd">Refine second solution</phrase>
+                     <phrase id="phrsd1534e491" remap="cmd">Refine second solution</phrase>
                   </para>
                   <para remap="#PCDATA">
          Now, find the new solution in the Outline View and set it as the secondary track.   Once the new solution is marked as secondary you are able to start dragging/refining this solution.  Give it a go.
       </para>
                </listitem>
             </orderedlist>
-            <para id="sctnd1534e499" remap="result">
+            <para id="sctnd1534e501" remap="result">
                We now have a pair of target track sections.
             </para>
          </section>
          <section remap="task" id="d5e67">
-            <title id="ttld1534e506" remap="title">Merging one or more tracks</title>
-            <para id="parad1534e509" remap="shortdesc">
-         This cheat sheet covers the process for merging two or more tracks.  These tracks may be conventional platform tracks produced from positional sensor data, or they may be TMA tracks produced from the analysis of bearing data.<phrase id="phrsd1534e511" remap="ph"/>
+            <title id="ttld1534e508" remap="title">Merging one or more tracks</title>
+            <para id="parad1534e511" remap="shortdesc">
+         This cheat sheet covers the process for merging two or more tracks.  These tracks may be conventional platform tracks produced from positional sensor data, or they may be TMA tracks produced from the analysis of bearing data.<phrase id="phrsd1534e513" remap="ph"/>
 Please see the associated help page for a discussion of the track merge operation.
       </para>
-            <orderedlist id="old1534e516" remap="steps">
+            <orderedlist id="old1534e518" remap="steps">
                <listitem remap="step" id="d20e11">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e520" remap="cmd">Select tracks</phrase>
+                     <phrase id="phrsd1534e522" remap="cmd">Select tracks</phrase>
                   </para>
                   <para remap="#PCDATA">
-         In this tutorial you have generated two track sections and you now wish to combine them into one track.  In the Outline View, select the two tracks <emphasis role="bold" id="bd1534e525" remap="b">TMA_xxxx</emphasis> and <emphasis role="bold" id="bd1534e528" remap="b">TMA_yyyy</emphasis> (use the [control] key to multi-select).
+         In this tutorial you have generated two track sections and you now wish to combine them into one track.  In the Outline View, select the two tracks <emphasis role="bold" id="bd1534e527" remap="b">TMA_xxxx</emphasis> and <emphasis role="bold" id="bd1534e530" remap="b">TMA_yyyy</emphasis> (use the [control] key to multi-select).
       </para>
                </listitem>
                <listitem remap="step" id="d20e23">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e537" remap="cmd">Right click on tracks</phrase>
+                     <phrase id="phrsd1534e539" remap="cmd">Right click on tracks</phrase>
                   </para>
                   <para remap="#PCDATA">
-         Next, right click on one of the selected tracks and select <emphasis role="bold" id="bd1534e542" remap="b">Group tracks into TMA_xxxx</emphasis>.  You'll see the second track dissappear, and inside the <emphasis role="bold" id="bd1534e545" remap="b">TMA_xxxx</emphasis> track you'll see two track segments,
+         Next, right click on one of the selected tracks and select <emphasis role="bold" id="bd1534e544" remap="b">Group tracks into TMA_xxxx</emphasis>.  You'll see the second track dissappear, and inside the <emphasis role="bold" id="bd1534e547" remap="b">TMA_xxxx</emphasis> track you'll see two track segments,
       </para>
                </listitem>
                <listitem remap="step" id="d20e35">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e554" remap="cmd">Provide infill positions</phrase>
+                     <phrase id="phrsd1534e556" remap="cmd">Provide infill positions</phrase>
                   </para>
                   <para remap="#PCDATA">
-         Debrief is now able to provide a track section between the two existing track segments.  To do this, open the <emphasis role="bold" id="bd1534e559" remap="b">Track:TMA_xxxx</emphasis> track, and then the <emphasis role="bold" id="bd1534e562" remap="b">Track segments (2 items)</emphasis> item.  Inside you'll see the two new segments.  Select both of them, and right-click on one of them - you'll be able to select <emphasis role="bold" id="bd1534e565" remap="b">Generate infill segment</emphasis>.  You'll see a new segment appear both in the Outline View and the plot.  Notice that the infill segment is shown as a dotted line - to indicate that this track segment is not based on any evidence, it's just been calculated to join the tracks either side.
+         Debrief is now able to provide a track section between the two existing track segments.  To do this, open the <emphasis role="bold" id="bd1534e561" remap="b">Track:TMA_xxxx</emphasis> track, and then the <emphasis role="bold" id="bd1534e564" remap="b">Track segments (2 items)</emphasis> item.  Inside you'll see the two new segments.  Select both of them, and right-click on one of them - you'll be able to select <emphasis role="bold" id="bd1534e567" remap="b">Generate infill segment</emphasis>.  You'll see a new segment appear both in the Outline View and the plot.  Notice that the infill segment is shown as a dotted line - to indicate that this track segment is not based on any evidence, it's just been calculated to join the tracks either side.
       </para>
                </listitem>
                <listitem remap="step" id="d20e50">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd1534e574" remap="cmd">Merge tracks</phrase>
+                     <phrase id="phrsd1534e576" remap="cmd">Merge tracks</phrase>
                   </para>
                   <para remap="#PCDATA">
-         You can continue to keep your target track represented as 3 or more track segments for as long as you like.  But, when you need to export the data for presentation or subsequent analysis then you need to merge them.  To do this, select the parent item for the track segments (<emphasis role="bold" id="bd1534e579" remap="b">Track segments (3 items)</emphasis>), right-click on it and select <emphasis role="bold" id="bd1534e582" remap="b">Merge all track segments</emphasis>.  The tracks will merge.  Note, alternatively you could have selected different track segments to merge by selecting them individually at the next level down.
+         You can continue to keep your target track represented as 3 or more track segments for as long as you like.  But, when you need to export the data for presentation or subsequent analysis then you need to merge them.  To do this, select the parent item for the track segments (<emphasis role="bold" id="bd1534e581" remap="b">Track segments (3 items)</emphasis>), right-click on it and select <emphasis role="bold" id="bd1534e584" remap="b">Merge all track segments</emphasis>.  The tracks will merge.  Note, alternatively you could have selected different track segments to merge by selecting them individually at the next level down.
       </para>
                </listitem>
             </orderedlist>
-            <para id="sctnd1534e590" remap="result">
+            <para id="sctnd1534e592" remap="result">
                That's all the skills you need for single sided reconstruction using Debrief.  Clearly there's probably now another step to be performed in how you exploit your shiny new track, but that would depend on your analysis objective.
             </para>
          </section>
       </section>
    </section>
    <section remap="task" id="d6e3">
-      <sectioninfo id="prlgd2225e29" remap="prolog">
+      <sectioninfo id="prlgd2225e30" remap="prolog">
          <abstract>
-            <para id="shrtdscd2225e10" remap="shortdesc">
-               <emphasis role="bold" id="bd2225e12" remap="b">Introduction</emphasis>
-               <phrase id="phrsd2225e15" remap="ph"/>
+            <para id="shrtdscd2225e12" remap="shortdesc">
+               <emphasis role="bold" id="bd2225e14" remap="b">Introduction</emphasis>
+               <phrase id="phrsd2225e17" remap="ph"/>
 This collection of cheat sheets will teach you how to use Debrief's Semi Automated Track Construction (SATC) capabilities.
-         <phrase id="phrsd2225e17" remap="ph"/>
-               <phrase id="phrsd2225e19" remap="ph"/>
-               <emphasis role="bold" id="bd2225e21" remap="b">Tip:</emphasis>  If you have multiple monitors, you may wish to drag out this <emphasis role="bold" id="bd2225e25" remap="b">Cheat Sheets</emphasis> window to give 
+         <phrase id="phrsd2225e19" remap="ph"/>
+               <phrase id="phrsd2225e21" remap="ph"/>
+               <emphasis role="bold" id="bd2225e23" remap="b">Tip:</emphasis>  If you have multiple monitors, you may wish to drag out this <emphasis role="bold" id="bd2225e27" remap="b">Cheat Sheets</emphasis> window to give 
          you more room for the multiple Debrief windows that you will use later on. 
       </para>
          </abstract>
-         <author id="athrd2225e30" remap="author">
+         <author id="athrd2225e31" remap="author">
             <othername>John Bampton</othername>
          </author>
-         <author id="athrd2225e32" remap="author">
+         <author id="athrd2225e33" remap="author">
             <othername>Debrief</othername>
          </author>
-         <publisher id="pblshrd2225e36" remap="publisher">
+         <publisher id="pblshrd2225e37" remap="publisher">
             <publishername>Github John Bampton</publishername>
          </publisher>
-         <revhistory id="crtdtsd2225e38" remap="critdates">
+         <revhistory id="crtdtsd2225e39" remap="critdates">
             <revision>
                <revnumber/>
                <date>2016-02-26</date>
@@ -1162,91 +1162,91 @@ This collection of cheat sheets will teach you how to use Debrief's Semi Automat
          </revhistory>
          <subjectset>
             <subject>
-               <subjectterm id="ctgryd2225e44" remap="category">Document Publishing</subjectterm>
+               <subjectterm id="ctgryd2225e45" remap="category">Document Publishing</subjectterm>
             </subject>
             <subject>
-               <subjectterm id="ctgryd2225e46" remap="category">Java</subjectterm>
+               <subjectterm id="ctgryd2225e47" remap="category">Java</subjectterm>
             </subject>
          </subjectset>
       </sectioninfo>
-      <title id="ttld2225e7" remap="title">Walkthrough</title>
-      <para id="parad2225e10" remap="shortdesc">
-         <emphasis role="bold" id="bd2225e12" remap="b">Introduction</emphasis>
-         <phrase id="phrsd2225e15" remap="ph"/>
-This collection of cheat sheets will teach you how to use Debrief's Semi Automated Track Construction (SATC) capabilities.
+      <title id="ttld2225e9" remap="title">Walkthrough</title>
+      <para id="parad2225e12" remap="shortdesc">
+         <emphasis role="bold" id="bd2225e14" remap="b">Introduction</emphasis>
          <phrase id="phrsd2225e17" remap="ph"/>
+This collection of cheat sheets will teach you how to use Debrief's Semi Automated Track Construction (SATC) capabilities.
          <phrase id="phrsd2225e19" remap="ph"/>
-         <emphasis role="bold" id="bd2225e21" remap="b">Tip:</emphasis>  If you have multiple monitors, you may wish to drag out this <emphasis role="bold" id="bd2225e25" remap="b">Cheat Sheets</emphasis> window to give 
+         <phrase id="phrsd2225e21" remap="ph"/>
+         <emphasis role="bold" id="bd2225e23" remap="b">Tip:</emphasis>  If you have multiple monitors, you may wish to drag out this <emphasis role="bold" id="bd2225e27" remap="b">Cheat Sheets</emphasis> window to give 
          you more room for the multiple Debrief windows that you will use later on. 
       </para>
       <section remap="task" id="d6e45">
-         <title id="ttld2225e51" remap="title">Single Leg Solution</title>
-         <para id="parad2225e54" remap="shortdesc">
-            <emphasis role="bold" id="bd2225e56" remap="b">Introduction</emphasis>
+         <title id="ttld2225e53" remap="title">Single Leg Solution</title>
+         <para id="parad2225e56" remap="shortdesc">
+            <emphasis role="bold" id="bd2225e58" remap="b">Introduction</emphasis>
 Let's start off with an easy scenario. We're going to work on an engagement where there is just a single leg of target data.
          </para>
          <section remap="task" id="d6e80">
-            <title id="ttld2225e62" remap="title">Finding the sample data</title>
-            <para id="parad2225e65" remap="shortdesc">
+            <title id="ttld2225e64" remap="title">Finding the sample data</title>
+            <para id="parad2225e67" remap="shortdesc">
                There are two ways to load the sample data. We're probably going to end up modifying the sample data, 
                so you shouldn't
                do that if you're working on a set of sample data that's shared with other users  (since you 
-               would be modifying the <emphasis role="bold" id="bd2225e67" remap="b">master</emphasis> copy of the data). Start off by considering if your Debrief installation folder
+               would be modifying the <emphasis role="bold" id="bd2225e69" remap="b">master</emphasis> copy of the data). Start off by considering if your Debrief installation folder
                is on your local machine, or on a Network Shared Folder.
             </para>
             <section remap="task" id="d6e88">
-               <title id="ttld2225e73" remap="title">Generating links to your existing data</title>
-               <para id="parad2225e76" remap="shortdesc">Debrief NG stores it's data in a local folder called a Project. While
+               <title id="ttld2225e75" remap="title">Generating links to your existing data</title>
+               <para id="parad2225e78" remap="shortdesc">Debrief NG stores it's data in a local folder called a Project. While
 			these are frequently created afresh to store new analysis data, it's also possible
 			to denote your existing data directories as sub-folders (via links). This tutorial leads
 			you through generating links to your existing data folders. If you've installed
 			Debrief in the past, chances are you still have a Debrief installation folder (in
 			C:\Program Files\Debrief 2003). If you do still have this folder, you can usefully link
 			it in within this tutorial to provide some sample data. If you don't have an
-			existing Debrief installation, then add the folder called <emphasis role="bold" id="bd2225e78" remap="b">sample_data</emphasis> located in
+			existing Debrief installation, then add the folder called <emphasis role="bold" id="bd2225e80" remap="b">sample_data</emphasis> located in
 			the top-level folder of your Debrief NG installation (typically in c:\DebriefNG under MS
 			Windows if you have Debrief installed locally, or in the Debrief\DebriefNG folder
 			if you are on a site using a Programs folder from a shared
 			network drive).</para>
-               <orderedlist id="old2225e84" remap="steps">
+               <orderedlist id="old2225e86" remap="steps">
                   <listitem remap="step" id="d8e12">
                      <para remap="#PCDATA">
-                        <phrase id="phrsd2225e88" remap="cmd">Check Navigator is open</phrase>
+                        <phrase id="phrsd2225e90" remap="cmd">Check Navigator is open</phrase>
                      </para>
                      <para remap="#PCDATA">In the top left hand corner of Debrief you should find the Navigator window. If
-			it isn't there, select <emphasis role="bold" id="bd2225e93" remap="b">Navigator</emphasis> from Debrief's Window/Show View
+			it isn't there, select <emphasis role="bold" id="bd2225e95" remap="b">Navigator</emphasis> from Debrief's Window/Show View
 			menu.</para>
                   </listitem>
                   <listitem remap="step" id="d8e21">
                      <para remap="#PCDATA">
-                        <phrase id="phrsd2225e102" remap="cmd">Check you have a workspace</phrase>
+                        <phrase id="phrsd2225e104" remap="cmd">Check you have a workspace</phrase>
                      </para>
                      <para remap="#PCDATA">Before you can link in existing data, you need to define a project for your
 			work. This is a parent folder within which your links are stored. If your Navigator
-			window is empty, you must follow the <emphasis role="bold" id="bd2225e107" remap="b">Generating a project</emphasis> cheat-sheet accessed
+			window is empty, you must follow the <emphasis role="bold" id="bd2225e109" remap="b">Generating a project</emphasis> cheat-sheet accessed
 			from the Help/Cheat Sheets menu.</para>
                   </listitem>
                   <listitem remap="step" id="d8e30">
                      <para remap="#PCDATA">
-                        <phrase id="phrsd2225e116" remap="cmd">Add a new Folder</phrase>
+                        <phrase id="phrsd2225e118" remap="cmd">Add a new Folder</phrase>
                      </para>
                      <para remap="#PCDATA">Right-click on your current project in the Navigator view, then select
-				<emphasis role="bold" id="bd2225e121" remap="b">Folder</emphasis> from the <emphasis role="bold" id="bd2225e124" remap="b">New</emphasis> sub-menu. The New Folder wizard will open. Instead
+				<emphasis role="bold" id="bd2225e123" remap="b">Folder</emphasis> from the <emphasis role="bold" id="bd2225e126" remap="b">New</emphasis> sub-menu. The New Folder wizard will open. Instead
 			of creating a fresh child folder to store our data, we're going to link to an
 			existing folder. So, whilst still in the New Folder Wizard, click the
 			'Advanced' button to display the Advanced options. Next, click on the
 			'Link to alternate location (Linked folder)', and click on
 			'Browse...' to navigate to an existing data folder on your machine or the
-			network, clicking on <emphasis role="bold" id="bd2225e127" remap="b">Finish</emphasis> to, erm, Finish. <phrase id="phrsd2225e130" remap="ph"/>
-                        <emphasis role="bold" id="bd2225e132" remap="b">If you don't have your own
-			data</emphasis>, please use the <emphasis role="bold" id="bd2225e136" remap="b">sample_data</emphasis> folder that's installed in your Debrief
-			installation folder (for a deployed Debrief) or<phrase id="phrsd2225e139" remap="ph"/>
+			network, clicking on <emphasis role="bold" id="bd2225e129" remap="b">Finish</emphasis> to, erm, Finish. <phrase id="phrsd2225e132" remap="ph"/>
+                        <emphasis role="bold" id="bd2225e134" remap="b">If you don't have your own
+			data</emphasis>, please use the <emphasis role="bold" id="bd2225e138" remap="b">sample_data</emphasis> folder that's installed in your Debrief
+			installation folder (for a deployed Debrief) or<phrase id="phrsd2225e141" remap="ph"/>
 			org.mwc.cmap.combined.feature/root_installs (if you are running a development version of
 			Debrief).</para>
                   </listitem>
                   <listitem remap="step" id="d8e55">
                      <para remap="#PCDATA">
-                        <phrase id="phrsd2225e147" remap="cmd">Done</phrase>
+                        <phrase id="phrsd2225e149" remap="cmd">Done</phrase>
                      </para>
                      <para remap="#PCDATA">Well done, there you are. Just repeat this process to add any other data
 			directories you want to load data from. You've probably just created a link to the
@@ -1254,84 +1254,84 @@ Let's start off with an easy scenario. We're going to work on an engagement wher
 			folder.</para>
                   </listitem>
                </orderedlist>
-               <para id="sctnd2225e157" remap="result">
-                  <emphasis role="bold" id="bd2225e159" remap="b">Conclusion</emphasis>
-                  <phrase id="phrsd2225e162" remap="ph"/>
-                  Ok, you've found the Debrief <emphasis role="bold" id="bd2225e164" remap="b">Sample Data</emphasis>.  You're ready for the tutorial now.
+               <para id="sctnd2225e159" remap="result">
+                  <emphasis role="bold" id="bd2225e161" remap="b">Conclusion</emphasis>
+                  <phrase id="phrsd2225e164" remap="ph"/>
+                  Ok, you've found the Debrief <emphasis role="bold" id="bd2225e166" remap="b">Sample Data</emphasis>.  You're ready for the tutorial now.
                </para>
             </section>
             <section remap="task" id="d6e118">
-               <title id="ttld2225e172" remap="title">Generating links to your existing data</title>
-               <para id="parad2225e175" remap="shortdesc">Here we are going to copy in an existing set of sample data. We aren't
+               <title id="ttld2225e174" remap="title">Generating links to your existing data</title>
+               <para id="parad2225e177" remap="shortdesc">Here we are going to copy in an existing set of sample data. We aren't
 			going to link to the original set, since we don't want to modify it,
 			or we don't have modify access.
-			<phrase id="phrsd2225e177" remap="ph"/> The steps presume that the Debrief <emphasis role="bold" id="bd2225e179" remap="b">Sample data</emphasis> is in the
-			<emphasis role="bold" id="bd2225e182" remap="b">Debrief\DebriefNG</emphasis> folder that is probably in a <emphasis role="bold" id="bd2225e185" remap="b">Programs</emphasis> network share.</para>
-               <orderedlist id="old2225e191" remap="steps">
+			<phrase id="phrsd2225e179" remap="ph"/> The steps presume that the Debrief <emphasis role="bold" id="bd2225e181" remap="b">Sample data</emphasis> is in the
+			<emphasis role="bold" id="bd2225e184" remap="b">Debrief\DebriefNG</emphasis> folder that is probably in a <emphasis role="bold" id="bd2225e187" remap="b">Programs</emphasis> network share.</para>
+               <orderedlist id="old2225e193" remap="steps">
                   <listitem remap="step" id="d21e20">
                      <para remap="#PCDATA">
-                        <phrase id="phrsd2225e195" remap="cmd">Check Navigator is open</phrase>
+                        <phrase id="phrsd2225e197" remap="cmd">Check Navigator is open</phrase>
                      </para>
                      <para remap="#PCDATA">In the top left hand corner of Debrief you should find the Navigator window. If
-			it isn't there, select <emphasis role="bold" id="bd2225e200" remap="b">Navigator</emphasis> from Debrief's Window/Show View
+			it isn't there, select <emphasis role="bold" id="bd2225e202" remap="b">Navigator</emphasis> from Debrief's Window/Show View
 			menu.</para>
                   </listitem>
                   <listitem remap="step" id="d21e29">
                      <para remap="#PCDATA">
-                        <phrase id="phrsd2225e209" remap="cmd">Check you have a workspace</phrase>
+                        <phrase id="phrsd2225e211" remap="cmd">Check you have a workspace</phrase>
                      </para>
                      <para remap="#PCDATA">Before you can import the existing data, you need to define a project for your
 			work. This is a parent folder within which your data (or links to your data) is stored. If your Navigator
-			window is empty, you must follow the <emphasis role="bold" id="bd2225e214" remap="b">Generating a project</emphasis> cheat-sheet accessed
+			window is empty, you must follow the <emphasis role="bold" id="bd2225e216" remap="b">Generating a project</emphasis> cheat-sheet accessed
 			from the Help/Cheat Sheets menu.</para>
                   </listitem>
                   <listitem remap="step" id="d21e38">
                      <para remap="#PCDATA">
-                        <phrase id="phrsd2225e223" remap="cmd">Prepare to drag in data</phrase>
+                        <phrase id="phrsd2225e225" remap="cmd">Prepare to drag in data</phrase>
                      </para>
                      <para remap="#PCDATA">
 			The sample data is going to be dragged in.  In order to do this, the relevant
 			windows both need to be visible at the same time.
-			<phrase id="phrsd2225e228" remap="ph"/>
+			<phrase id="phrsd2225e230" remap="ph"/>
 			So, open Windows Explorer and then arrange your on-screen Windows so that Debrief
-			is also visible. Then, navigate in Windows Explorer so that you can see the <emphasis role="bold" id="bd2225e230" remap="b">sample_data</emphasis>
-			folder. It's in the <emphasis role="bold" id="bd2225e233" remap="b">Debrief/DebriefNG</emphasis> folder.
+			is also visible. Then, navigate in Windows Explorer so that you can see the <emphasis role="bold" id="bd2225e232" remap="b">sample_data</emphasis>
+			folder. It's in the <emphasis role="bold" id="bd2225e235" remap="b">Debrief/DebriefNG</emphasis> folder.
 		</para>
                   </listitem>
                   <listitem remap="step" id="d21e52">
                      <para remap="#PCDATA">
-                        <phrase id="phrsd2225e242" remap="cmd">Drag in sample data</phrase>
+                        <phrase id="phrsd2225e244" remap="cmd">Drag in sample data</phrase>
                      </para>
                      <para remap="#PCDATA">
-			Now that you are ready to import, pick up the <emphasis role="bold" id="bd2225e247" remap="b">sample_data</emphasis> folder using your mouse, and drop it into
-			 a project in the <emphasis role="bold" id="bd2225e250" remap="b">Navigator</emphasis> window of Debrief.  A dialog will open asking you if you wish
-			to <emphasis role="bold" id="bd2225e253" remap="b">Copy files and folders</emphasis> or <emphasis role="bold" id="bd2225e256" remap="b">Link to files and folders</emphasis>.  Select the <emphasis role="bold" id="bd2225e259" remap="b">Copy</emphasis> option.
+			Now that you are ready to import, pick up the <emphasis role="bold" id="bd2225e249" remap="b">sample_data</emphasis> folder using your mouse, and drop it into
+			 a project in the <emphasis role="bold" id="bd2225e252" remap="b">Navigator</emphasis> window of Debrief.  A dialog will open asking you if you wish
+			to <emphasis role="bold" id="bd2225e255" remap="b">Copy files and folders</emphasis> or <emphasis role="bold" id="bd2225e258" remap="b">Link to files and folders</emphasis>.  Select the <emphasis role="bold" id="bd2225e261" remap="b">Copy</emphasis> option.
 		</para>
                   </listitem>
                </orderedlist>
-               <para id="sctnd2225e267" remap="result">
-                  <emphasis role="bold" id="bd2225e269" remap="b">Conclusion</emphasis>
-                  <phrase id="phrsd2225e272" remap="ph"/>
-                  Ok, you've found the Debrief <emphasis role="bold" id="bd2225e274" remap="b">Sample Data</emphasis>.  You're ready for the tutorial now.
+               <para id="sctnd2225e269" remap="result">
+                  <emphasis role="bold" id="bd2225e271" remap="b">Conclusion</emphasis>
+                  <phrase id="phrsd2225e274" remap="ph"/>
+                  Ok, you've found the Debrief <emphasis role="bold" id="bd2225e276" remap="b">Sample Data</emphasis>.  You're ready for the tutorial now.
                </para>
             </section>
          </section>
       </section>
       <section remap="task" id="d6e205">
-         <title id="ttld2225e284" remap="title">Multi Leg Solution</title>
-         <para id="parad2225e287" remap="shortdesc">
+         <title id="ttld2225e286" remap="title">Multi Leg Solution</title>
+         <para id="parad2225e289" remap="shortdesc">
             Now for something a little more advanced. In this tutorial we're going to work with a scenario with several targets zigs, where a number of contributions are required to get a good quality solution.
          </para>
          <section remap="task" id="d6e210">
-            <title id="ttld2225e292" remap="title">Loading the data</title>
-            <para id="parad2225e295" remap="shortdesc">
+            <title id="ttld2225e294" remap="title">Loading the data</title>
+            <para id="parad2225e297" remap="shortdesc">
          We've got a Debrief plot file pre-prepared to let you avoid 
-         some of the steps in the single-leg tutorial, called  <emphasis role="bold" id="bd2225e297" remap="b">L2_Scenario.xml</emphasis>.
+         some of the steps in the single-leg tutorial, called  <emphasis role="bold" id="bd2225e299" remap="b">L2_Scenario.xml</emphasis>.
       </para>
-            <orderedlist id="old2225e303" remap="steps">
+            <orderedlist id="old2225e305" remap="steps">
                <listitem remap="step" id="d22e12">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2225e307" remap="cmd">Find the data file</phrase>
+                     <phrase id="phrsd2225e309" remap="cmd">Find the data file</phrase>
                   </para>
                   <para remap="#PCDATA">         
          The data-file for this tutorial is contained in the SATC sub-folder, as were the 
@@ -1340,43 +1340,43 @@ Let's start off with an easy scenario. We're going to work on an engagement wher
                </listitem>
                <listitem remap="step" id="d22e18">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2225e318" remap="cmd">Drag in the file</phrase>
+                     <phrase id="phrsd2225e320" remap="cmd">Drag in the file</phrase>
                   </para>
                   <para remap="#PCDATA">         
          Before you load the data-file, close any existing Debrief plots, then drag 
-         in the <emphasis role="bold" id="bd2225e323" remap="b">L2_Scenario.xml</emphasis> data-file from the SATC folder we used in the previous tutorial.
-         <phrase id="phrsd2225e326" remap="ph"/>
-                     <phrase id="phrsd2225e328" remap="ph"/>
+         in the <emphasis role="bold" id="bd2225e325" remap="b">L2_Scenario.xml</emphasis> data-file from the SATC folder we used in the previous tutorial.
+         <phrase id="phrsd2225e328" remap="ph"/>
+                     <phrase id="phrsd2225e330" remap="ph"/>
          You will see a Blue Ownship track, with a bearing fan in nice pretty shades of green, purple and red.
       </para>
                </listitem>
             </orderedlist>
-            <para id="sctnd2225e335" remap="result"/>
+            <para id="sctnd2225e337" remap="result"/>
          </section>
          <section remap="task" id="d6e218">
-            <title id="ttld2225e341" remap="title">Grooming the data</title>
-            <para id="parad2225e344" remap="shortdesc">
+            <title id="ttld2225e343" remap="title">Grooming the data</title>
+            <para id="parad2225e346" remap="shortdesc">
          Let's understand the data we've got, before we start playing with it
       </para>
-            <orderedlist id="old2225e349" remap="steps">
+            <orderedlist id="old2225e351" remap="steps">
                <listitem remap="step" id="d23e9">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2225e353" remap="cmd">View the ownship track</phrase>
+                     <phrase id="phrsd2225e355" remap="cmd">View the ownship track</phrase>
                   </para>
                   <para remap="#PCDATA">         
-         When you view the tutoral plot you will see an ownship track.  Use the Debrief <emphasis role="bold" id="bd2225e358" remap="b">Time Controller</emphasis> and <emphasis role="bold" id="bd2225e361" remap="b">Track Tote</emphasis> to 
-         familiarise yourself with the general motion of the <emphasis role="bold" id="bd2225e364" remap="b">OWNSHIP</emphasis> track.  You'll see that it starts in the 
+         When you view the tutoral plot you will see an ownship track.  Use the Debrief <emphasis role="bold" id="bd2225e360" remap="b">Time Controller</emphasis> and <emphasis role="bold" id="bd2225e363" remap="b">Track Tote</emphasis> to 
+         familiarise yourself with the general motion of the <emphasis role="bold" id="bd2225e366" remap="b">OWNSHIP</emphasis> track.  You'll see that it starts in the 
          North-East of the area, then travels quite slowly at 2.5 knots, with two straight legs.
       </para>
                </listitem>
                <listitem remap="step" id="d23e24">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2225e373" remap="cmd">View the sensor data</phrase>
+                     <phrase id="phrsd2225e375" remap="cmd">View the sensor data</phrase>
                   </para>
                   <para remap="#PCDATA">         
          The identification of straight legs is pivotal to the SATC process, since they greatly constrain
          the possible solution combinations.
-         <phrase id="phrsd2225e378" remap="ph"/>
+         <phrase id="phrsd2225e380" remap="ph"/>
          Just as when conducting Manual TMA generation using Debrief, the best practice for this process is to color the sensor cuts according
          to the leg they're contained in.  If you examine the Ownship sensor data, you'll see 
          that the first and second legs have been coloured in green and purple, respectively. Between each leg, a
@@ -1385,106 +1385,106 @@ Let's start off with an easy scenario. We're going to work on an engagement wher
                </listitem>
                <listitem remap="step" id="d23e32">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2225e386" remap="cmd">Mark the final target leg</phrase>
+                     <phrase id="phrsd2225e388" remap="cmd">Mark the final target leg</phrase>
                   </para>
                   <para remap="#PCDATA">         
          Whilst the first two target legs have been coloured, the last one hasn't. Let's do it now. 
-         <phrase id="phrsd2225e391" remap="ph"/>
-                     <phrase id="phrsd2225e393" remap="ph"/>
+         <phrase id="phrsd2225e393" remap="ph"/>
+                     <phrase id="phrsd2225e395" remap="ph"/>
          Expand the sensor data
-         in the Outline View, and select the sensor cuts from <emphasis role="bold" id="bd2225e395" remap="b">100112 134230</emphasis> until the end of the
-         dataset, at <emphasis role="bold" id="bd2225e398" remap="b">100112 140000</emphasis>.  Now use the <emphasis role="bold" id="bd2225e401" remap="b">Properties</emphasis> view to change the color of these cuts to <emphasis role="bold" id="bd2225e405" remap="b">Yellow</emphasis> 
+         in the Outline View, and select the sensor cuts from <emphasis role="bold" id="bd2225e397" remap="b">100112 134230</emphasis> until the end of the
+         dataset, at <emphasis role="bold" id="bd2225e400" remap="b">100112 140000</emphasis>.  Now use the <emphasis role="bold" id="bd2225e403" remap="b">Properties</emphasis> view to change the color of these cuts to <emphasis role="bold" id="bd2225e407" remap="b">Yellow</emphasis> 
          (or obviously you could right-click and select Color &gt; Yellow).
       </para>
                </listitem>
                <listitem remap="step" id="d23e53">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2225e414" remap="cmd">Create the scenario</phrase>
+                     <phrase id="phrsd2225e416" remap="cmd">Create the scenario</phrase>
                   </para>
                   <para remap="#PCDATA">
          The most significant block of information in generating a solution is the bearing data.  So, the 
          first step is to provide the bearing data.  We are going to use all of the Ownship sensor data for this
-         solution, so right-click on the <emphasis role="bold" id="bd2225e419" remap="b">Sensor:Plain (145 items)</emphasis> sensor, and select <emphasis role="bold" id="bd2225e422" remap="b">Semi Auto TMA</emphasis> / 
-         <emphasis role="bold" id="bd2225e425" remap="b">Create new scenario from these cuts</emphasis>.
-         <phrase id="phrsd2225e428" remap="ph"/>As with the previous tutorial, you will see the new scenario (called <emphasis role="bold" id="bd2225e430" remap="b">121200.00</emphasis> appear in the Outline View, and the 
-         <emphasis role="bold" id="bd2225e434" remap="b">Maintain Contributions</emphasis> view will open. 
-         <phrase id="phrsd2225e437" remap="ph"/>You will also see that the <emphasis role="bold" id="bd2225e439" remap="b">Maintain Contributions</emphasis> view contains just the one contribution.
+         solution, so right-click on the <emphasis role="bold" id="bd2225e421" remap="b">Sensor:Plain (145 items)</emphasis> sensor, and select <emphasis role="bold" id="bd2225e424" remap="b">Semi Auto TMA</emphasis> / 
+         <emphasis role="bold" id="bd2225e427" remap="b">Create new scenario from these cuts</emphasis>.
+         <phrase id="phrsd2225e430" remap="ph"/>As with the previous tutorial, you will see the new scenario (called <emphasis role="bold" id="bd2225e432" remap="b">121200.00</emphasis> appear in the Outline View, and the 
+         <emphasis role="bold" id="bd2225e436" remap="b">Maintain Contributions</emphasis> view will open. 
+         <phrase id="phrsd2225e439" remap="ph"/>You will also see that the <emphasis role="bold" id="bd2225e441" remap="b">Maintain Contributions</emphasis> view contains just the one contribution.
       </para>
                </listitem>
                <listitem remap="step" id="d23e83">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2225e448" remap="cmd">Rename the scenario</phrase>
+                     <phrase id="phrsd2225e450" remap="cmd">Rename the scenario</phrase>
                   </para>
                   <para remap="#PCDATA">         
-         To make it easier to navigate the data, please use the <emphasis role="bold" id="bd2225e453" remap="b">Properties</emphasis> view to rename 
-         the new scenario to <emphasis role="bold" id="bd2225e456" remap="b">Tutorial Scenario</emphasis>
+         To make it easier to navigate the data, please use the <emphasis role="bold" id="bd2225e455" remap="b">Properties</emphasis> view to rename 
+         the new scenario to <emphasis role="bold" id="bd2225e458" remap="b">Tutorial Scenario</emphasis>
                   </para>
                </listitem>
                <listitem remap="step" id="d23e95">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2225e466" remap="cmd">Try to generate a solution</phrase>
+                     <phrase id="phrsd2225e468" remap="cmd">Try to generate a solution</phrase>
                   </para>
                   <para remap="#PCDATA">         
-         Hey, why not try to generate a solution.  Just click on <emphasis role="bold" id="bd2225e471" remap="b">Calculate Solution</emphasis> at the top of the
-         <emphasis role="bold" id="bd2225e474" remap="b">Maintain Contributions</emphasis> view.  You will see Debrief do a couple of seconds of processing, and then stop.
+         Hey, why not try to generate a solution.  Just click on <emphasis role="bold" id="bd2225e473" remap="b">Calculate Solution</emphasis> at the top of the
+         <emphasis role="bold" id="bd2225e476" remap="b">Maintain Contributions</emphasis> view.  You will see Debrief do a couple of seconds of processing, and then stop.
          This is because Debrief doesn't have enough information to generate a solution.  It needs to know
          one or more straight legs.         
       </para>
                </listitem>
             </orderedlist>
-            <para id="sctnd2225e482" remap="result"/>
+            <para id="sctnd2225e484" remap="result"/>
          </section>
          <section remap="task" id="d6e226">
-            <title id="ttld2225e488" remap="title">Playing with legs</title>
-            <para id="parad2225e491" remap="shortdesc">
+            <title id="ttld2225e490" remap="title">Playing with legs</title>
+            <para id="parad2225e493" remap="shortdesc">
          After the bearing measurements, knowledge of the straight legs is the most valuable set of information for SATC.
       </para>
-            <orderedlist id="old2225e496" remap="steps">
+            <orderedlist id="old2225e498" remap="steps">
                <listitem remap="step" id="d24e9">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2225e500" remap="cmd">Mark first leg</phrase>
+                     <phrase id="phrsd2225e502" remap="cmd">Mark first leg</phrase>
                   </para>
                   <para remap="#PCDATA">         
-         Ok, let's mark the first leg. In the <emphasis role="bold" id="bd2225e505" remap="b">Outline View</emphasis>, expand the Ownship sensor data, and select all of the
-         <emphasis role="bold" id="bd2225e508" remap="b">Green</emphasis> cuts.  Now, right-click on them, and select <emphasis role="bold" id="bd2225e511" remap="b">Semi Auto TMA</emphasis> / <emphasis role="bold" id="bd2225e514" remap="b">Add to Tutorial Scenario</emphasis> / 
-         <emphasis role="bold" id="bd2225e517" remap="b">Straight leg for period covered by [sensor cuts]</emphasis>. When asked, give it the name <emphasis role="bold" id="bd2225e521" remap="b">First Leg</emphasis>.
-         <phrase id="phrsd2225e524" remap="ph"/>
-                     <phrase id="phrsd2225e526" remap="ph"/>
-                     <emphasis role="bold" id="bd2225e528" remap="b">Note:</emphasis> selecting the cuts and "giving" them to the solution isn't actually adding
+         Ok, let's mark the first leg. In the <emphasis role="bold" id="bd2225e507" remap="b">Outline View</emphasis>, expand the Ownship sensor data, and select all of the
+         <emphasis role="bold" id="bd2225e510" remap="b">Green</emphasis> cuts.  Now, right-click on them, and select <emphasis role="bold" id="bd2225e513" remap="b">Semi Auto TMA</emphasis> / <emphasis role="bold" id="bd2225e516" remap="b">Add to Tutorial Scenario</emphasis> / 
+         <emphasis role="bold" id="bd2225e519" remap="b">Straight leg for period covered by [sensor cuts]</emphasis>. When asked, give it the name <emphasis role="bold" id="bd2225e523" remap="b">First Leg</emphasis>.
+         <phrase id="phrsd2225e526" remap="ph"/>
+                     <phrase id="phrsd2225e528" remap="ph"/>
+                     <emphasis role="bold" id="bd2225e530" remap="b">Note:</emphasis> selecting the cuts and "giving" them to the solution isn't actually adding
          the cuts - the solution knows about the cuts already.  We're justing using the block of cuts
           as a convenient way of specifying the start and end times for the leg.
       </para>
                </listitem>
                <listitem remap="step" id="d24e39">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2225e537" remap="cmd">Try to generate a solution (again)</phrase>
+                     <phrase id="phrsd2225e539" remap="cmd">Try to generate a solution (again)</phrase>
                   </para>
                   <para remap="#PCDATA">         
-         Ok, now we should be able to generate a solution.  Again, click on <emphasis role="bold" id="bd2225e542" remap="b">Calculate Solution</emphasis> at the top of the
-         <emphasis role="bold" id="bd2225e545" remap="b">Maintain Contributions</emphasis> view.  You will see Debrief do a couple of seconds of processing, you'll see
-         a line graph appearing in the <emphasis role="bold" id="bd2225e548" remap="b">Performance</emphasis> area of the <emphasis role="bold" id="bd2225e551" remap="b">Maintain Contributions</emphasis> view, and a green
+         Ok, now we should be able to generate a solution.  Again, click on <emphasis role="bold" id="bd2225e544" remap="b">Calculate Solution</emphasis> at the top of the
+         <emphasis role="bold" id="bd2225e547" remap="b">Maintain Contributions</emphasis> view.  You will see Debrief do a couple of seconds of processing, you'll see
+         a line graph appearing in the <emphasis role="bold" id="bd2225e550" remap="b">Performance</emphasis> area of the <emphasis role="bold" id="bd2225e553" remap="b">Maintain Contributions</emphasis> view, and a green
          line will appear on the plot.  Zooming in on the plot shows us that the single leg is 9.2 kts, at 319 degrees.  If we 
          zoom out again, we can see that, Yes, this could be a solution that fits in the data.
-         <phrase id="phrsd2225e554" remap="ph"/>
-                     <emphasis role="bold" id="bd2225e557" remap="b">Note:</emphasis> the use of randomisation in the SATC process means that your calculated speeds may well be different
+         <phrase id="phrsd2225e556" remap="ph"/>
+                     <emphasis role="bold" id="bd2225e559" remap="b">Note:</emphasis> the use of randomisation in the SATC process means that your calculated speeds may well be different
          to mine. Don't worry, this is intended.
       </para>
                </listitem>
                <listitem remap="step" id="d24e61">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2225e566" remap="cmd">Mark second leg</phrase>
+                     <phrase id="phrsd2225e568" remap="cmd">Mark second leg</phrase>
                   </para>
                   <para remap="#PCDATA">         
-         Now, we'll mark the second leg. In the <emphasis role="bold" id="bd2225e571" remap="b">Outline View</emphasis>, expand the Ownship sensor data, and select all of the
-         <emphasis role="bold" id="bd2225e574" remap="b">Purple</emphasis> cuts.  Now, right-click on them, and select <emphasis role="bold" id="bd2225e577" remap="b">Semi Auto TMA</emphasis> / <emphasis role="bold" id="bd2225e580" remap="b">Add to Tutorial Scenario</emphasis> / 
-         <emphasis role="bold" id="bd2225e583" remap="b">Straight leg for period covered by [sensor cuts]</emphasis>. When asked, give it the name <emphasis role="bold" id="bd2225e587" remap="b">Second Leg</emphasis>.
-         <phrase id="phrsd2225e590" remap="ph"/>The solution on the plot will disappear, since the new data means that it's probably incorrect.
-         <phrase id="phrsd2225e592" remap="ph"/>To see the effect of the new leg, click again on the <emphasis role="bold" id="bd2225e594" remap="b">Calculate Solution</emphasis> button.
+         Now, we'll mark the second leg. In the <emphasis role="bold" id="bd2225e573" remap="b">Outline View</emphasis>, expand the Ownship sensor data, and select all of the
+         <emphasis role="bold" id="bd2225e576" remap="b">Purple</emphasis> cuts.  Now, right-click on them, and select <emphasis role="bold" id="bd2225e579" remap="b">Semi Auto TMA</emphasis> / <emphasis role="bold" id="bd2225e582" remap="b">Add to Tutorial Scenario</emphasis> / 
+         <emphasis role="bold" id="bd2225e585" remap="b">Straight leg for period covered by [sensor cuts]</emphasis>. When asked, give it the name <emphasis role="bold" id="bd2225e589" remap="b">Second Leg</emphasis>.
+         <phrase id="phrsd2225e592" remap="ph"/>The solution on the plot will disappear, since the new data means that it's probably incorrect.
+         <phrase id="phrsd2225e594" remap="ph"/>To see the effect of the new leg, click again on the <emphasis role="bold" id="bd2225e596" remap="b">Calculate Solution</emphasis> button.
       </para>
                </listitem>
                <listitem remap="step" id="d24e93">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2225e603" remap="cmd">Generate updated solution</phrase>
+                     <phrase id="phrsd2225e605" remap="cmd">Generate updated solution</phrase>
                   </para>
                   <para remap="#PCDATA">         
          Now generate a new solution.  You'll see two legs present, the first with 12.1 knots, and the second with 14.1 knots.
@@ -1494,69 +1494,69 @@ Let's start off with an easy scenario. We're going to work on an engagement wher
                </listitem>
                <listitem remap="step" id="d24e100">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2225e614" remap="cmd">Mark third leg</phrase>
+                     <phrase id="phrsd2225e616" remap="cmd">Mark third leg</phrase>
                   </para>
                   <para remap="#PCDATA">         
-         Ok, now let's mark the third leg using the <emphasis role="bold" id="bd2225e619" remap="b">Yellow</emphasis> cuts, and re-generate the solution again.  The solution
+         Ok, now let's mark the third leg using the <emphasis role="bold" id="bd2225e621" remap="b">Yellow</emphasis> cuts, and re-generate the solution again.  The solution
          produced has a speed of 4.8 knots.
-         <phrase id="phrsd2225e622" remap="ph"/>So, now we have a three-leg solution that is compliant with our sensor data, and our straight leg forecasts.
-         <phrase id="phrsd2225e624" remap="ph"/>We can take a step to verify this by switching on the location constraints.  First, select the <emphasis role="bold" id="bd2225e626" remap="b">Tutorial Scenario</emphasis>
-          in the <emphasis role="bold" id="bd2225e629" remap="b">Outline View</emphasis>. Then, in the <emphasis role="bold" id="bd2225e633" remap="b">Properties</emphasis> window, switch on <emphasis role="bold" id="bd2225e636" remap="b">ShowLocationConstraints</emphasis>. You'll see
-         lots and lots of clutter on the plot. Also switch on <emphasis role="bold" id="bd2225e639" remap="b">OnlyPlotLegEnds</emphasis>.  This shows the calculated location 
+         <phrase id="phrsd2225e624" remap="ph"/>So, now we have a three-leg solution that is compliant with our sensor data, and our straight leg forecasts.
+         <phrase id="phrsd2225e626" remap="ph"/>We can take a step to verify this by switching on the location constraints.  First, select the <emphasis role="bold" id="bd2225e628" remap="b">Tutorial Scenario</emphasis>
+          in the <emphasis role="bold" id="bd2225e631" remap="b">Outline View</emphasis>. Then, in the <emphasis role="bold" id="bd2225e635" remap="b">Properties</emphasis> window, switch on <emphasis role="bold" id="bd2225e638" remap="b">ShowLocationConstraints</emphasis>. You'll see
+         lots and lots of clutter on the plot. Also switch on <emphasis role="bold" id="bd2225e641" remap="b">OnlyPlotLegEnds</emphasis>.  This shows the calculated location 
          constraints at the start and end of each leg.  We can see that yes, the solution is compliant with them.
       </para>
                </listitem>
                <listitem remap="step" id="d24e129">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2225e649" remap="cmd">Give speed constraint</phrase>
+                     <phrase id="phrsd2225e651" remap="cmd">Give speed constraint</phrase>
                   </para>
                   <para remap="#PCDATA">         
          So, we've got a solution.  But, I think it can be improved.  Let's try to give the target a consistent speed. We're
-         going to give a speed constraint to the whole period of the engagement. We could have done this by right-clicking on the whole <emphasis role="bold" id="bd2225e654" remap="b">Sensor:Plain</emphasis>
-         object, but an alternate way of doing this is to right-click on our <emphasis role="bold" id="bd2225e657" remap="b">Tutorial Scenario</emphasis> object in the <emphasis role="bold" id="bd2225e660" remap="b">Outline View</emphasis>,  
-         and selecting <emphasis role="bold" id="bd2225e663" remap="b">Add Speed Forecast for period covered by [Tutorial Scenario]</emphasis>.  A wizard will open, name the contribution
-         as <emphasis role="bold" id="bd2225e666" remap="b">Overall Speed</emphasis>. You will see this new constraint displayed in the <emphasis role="bold" id="bd2225e670" remap="b">Maintain Contributions</emphasis> view - with a default set
+         going to give a speed constraint to the whole period of the engagement. We could have done this by right-clicking on the whole <emphasis role="bold" id="bd2225e656" remap="b">Sensor:Plain</emphasis>
+         object, but an alternate way of doing this is to right-click on our <emphasis role="bold" id="bd2225e659" remap="b">Tutorial Scenario</emphasis> object in the <emphasis role="bold" id="bd2225e662" remap="b">Outline View</emphasis>,  
+         and selecting <emphasis role="bold" id="bd2225e665" remap="b">Add Speed Forecast for period covered by [Tutorial Scenario]</emphasis>.  A wizard will open, name the contribution
+         as <emphasis role="bold" id="bd2225e668" remap="b">Overall Speed</emphasis>. You will see this new constraint displayed in the <emphasis role="bold" id="bd2225e672" remap="b">Maintain Contributions</emphasis> view - with a default set
          of hard constraints shown: zero to forty knots.
       </para>
                </listitem>
                <listitem remap="step" id="d24e154">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2225e679" remap="cmd">Adjust speed constraint</phrase>
+                     <phrase id="phrsd2225e681" remap="cmd">Adjust speed constraint</phrase>
                   </para>
                   <para remap="#PCDATA">
          Ok, let's generate a new solution.  A constraint of 0-40 knots isn't much of a constraint at all, so it has little effect.  So,
-         expand the <emphasis role="bold" id="bd2225e684" remap="b">Speed Constraint - overall speed</emphasis> item in the <emphasis role="bold" id="bd2225e687" remap="b">Maintain Contributions</emphasis> view. Now reduce the maximum speed from 
+         expand the <emphasis role="bold" id="bd2225e686" remap="b">Speed Constraint - overall speed</emphasis> item in the <emphasis role="bold" id="bd2225e689" remap="b">Maintain Contributions</emphasis> view. Now reduce the maximum speed from 
          40 knots down to 15 knots.  If you still have the Location constraints visible, you will see them adjust to repesent the new constraint.
-         <phrase id="phrsd2225e690" remap="ph"/>This is because the vessel can't travel as far in each leg.  Also, increase the minimum speed to 8 knots.  Re-generate the solution
+         <phrase id="phrsd2225e692" remap="ph"/>This is because the vessel can't travel as far in each leg.  Also, increase the minimum speed to 8 knots.  Re-generate the solution
          and see what you think.  
       </para>
                </listitem>
                <listitem remap="step" id="d24e168">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2225e698" remap="cmd">Provide speed estimate</phrase>
+                     <phrase id="phrsd2225e700" remap="cmd">Provide speed estimate</phrase>
                   </para>
                   <para remap="#PCDATA">
          Lastly, let's try an estimate.  The estimate will make the algorithm favour solutions near that value, though
          it will still consider solutions that are still within the min/max hard constraints.  Try an estimate of 9 knots, and re-generate
          the solution.  I get a solution with speeds of 9, 13, and 9 knots.  But, I can see that if the overall solution was moved nearer to ownship,
          I may be able to achieve a consistent speed. So, now reduce the max speed to 10 knots, and re-generate the solution.  
-         <phrase id="phrsd2225e703" remap="ph"/>This gives me legs that are 9.6, 8.9 and 9.0 knots.  I may then choose to drag in the min/max sliders to really force
+         <phrase id="phrsd2225e705" remap="ph"/>This gives me legs that are 9.6, 8.9 and 9.0 knots.  I may then choose to drag in the min/max sliders to really force
          the solution onto a particular speed, but I'm ok with this answer.
       </para>
                </listitem>
                <listitem remap="step" id="d24e176">
                   <para remap="#PCDATA">
-                     <phrase id="phrsd2225e711" remap="cmd">Verify solution</phrase>
+                     <phrase id="phrsd2225e713" remap="cmd">Verify solution</phrase>
                   </para>
                   <para remap="#PCDATA">
-         Ok, now how good is that solution?  In the <emphasis role="bold" id="bd2225e716" remap="b">Outline View</emphasis>, make the <emphasis role="bold" id="bd2225e719" remap="b">SUBJECT</emphasis> track visible.  You should see
+         Ok, now how good is that solution?  In the <emphasis role="bold" id="bd2225e718" remap="b">Outline View</emphasis>, make the <emphasis role="bold" id="bd2225e721" remap="b">SUBJECT</emphasis> track visible.  You should see
          that the generated solution is very close to the truth track, even with this low bearing rate data.  If you wish to 
          verify the calculated solution against the truth track, you can view the XY Range plot (again) and see the separation
          between the two tracks.
       </para>
                </listitem>
             </orderedlist>
-            <para id="sctnd2225e727" remap="result">
+            <para id="sctnd2225e729" remap="result">
                And that's all for the walkthrough of Debrief's Semi-Automatic Track Construction.  You're now on your own.
             </para>
          </section>

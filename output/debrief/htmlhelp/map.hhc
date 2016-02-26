@@ -1,17 +1,17 @@
 
 <html>
-<head>
+<head><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <!-- Sitemap 1.0 -->
 </head>
 <body>
 <UL>
-<LI><OBJECT type="text/sitemap"><param name="Name" value="Getting started with Debrief NG"/><param name="Local" value="dita/intro_composite.html"/></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Getting started with Debrief NG"><param name="Local" value="dita/intro_composite.html"></OBJECT>
 </LI>
-<LI><OBJECT type="text/sitemap"><param name="Name" value="Controlling what you view"/><param name="Local" value="dita/analysis_composite.html"/></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Controlling what you view"><param name="Local" value="dita/analysis_composite.html"></OBJECT>
 </LI>
-<LI><OBJECT type="text/sitemap"><param name="Name" value="Single Sided Reconstruction in Debrief"/><param name="Local" value="dita/s2r_composite.html"/></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Single Sided Reconstruction in Debrief"><param name="Local" value="dita/s2r_composite.html"></OBJECT>
 </LI>
-<LI><OBJECT type="text/sitemap"><param name="Name" value="Walkthrough"/><param name="Local" value="dita/satc_composite.html"/></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Walkthrough"><param name="Local" value="dita/satc_composite.html"></OBJECT>
 </LI></UL>
 </body>
 </html>

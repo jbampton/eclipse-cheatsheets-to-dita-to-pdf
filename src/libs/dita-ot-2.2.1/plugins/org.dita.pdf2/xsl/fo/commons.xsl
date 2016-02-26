@@ -207,7 +207,7 @@ See the accompanying license.txt file for applicable licenses.
   
     <!--  Bookmap Chapter processing  -->
     <xsl:template name="processTopicChapter">
-        <fo:page-sequence master-reference="body-sequence" xsl:use-attribute-sets="page-sequence.body">
+        <fo:page-sequence master-reference="body-sequence" xsl:use-attribute-sets="page-sequence.body" >
             <xsl:call-template name="startPageNumbering"/>
             <xsl:call-template name="insertBodyStaticContents"/>
             <fo:flow flow-name="xsl-region-body">

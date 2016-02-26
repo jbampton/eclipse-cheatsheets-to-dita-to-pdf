@@ -1,79 +1,79 @@
-<?xml version="1.0" encoding="utf-8"?><!-- This file is part of the DITA Open Toolkit project.
+<?xml version="1.0" encoding="UTF-8"?><!-- This file is part of the DITA Open Toolkit project.
      See the accompanying license.txt file for applicable licenses.--><xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" version="2.0" exclude-result-prefixes="xs dita-ot">
 
-  <xsl:import href="plugin:org.dita.xhtml:xsl/map2htmtoc/map2htmlImpl.xsl"></xsl:import>
+  <xsl:import href="plugin:org.dita.xhtml:xsl/map2htmtoc/map2htmlImpl.xsl"/>
 
-  <xsl:template match="*[contains(@class, &apos; map/map &apos;)]">
-    <xsl:apply-templates select="." mode="root_element"></xsl:apply-templates>
+  <xsl:template match="*[contains(@class, ' map/map ')]">
+    <xsl:apply-templates select="." mode="root_element"/>
   </xsl:template>
 
-  <xsl:template match="*[contains(@class, &apos; map/map &apos;)]" mode="chapterBody">
+  <xsl:template match="*[contains(@class, ' map/map ')]" mode="chapterBody">
     <body>
-      <xsl:apply-templates select="*[contains(@class, &apos; ditaot-d/ditaval-startprop &apos;)]/@outputclass" mode="add-ditaval-style"></xsl:apply-templates>
+      <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-startprop ')]/@outputclass" mode="add-ditaval-style"/>
       <xsl:if test="@outputclass">
-        <xsl:attribute name="class" select="@outputclass"></xsl:attribute>
+        <xsl:attribute name="class" select="@outputclass"/>
       </xsl:if>
-      <xsl:apply-templates select="." mode="addAttributesToBody"></xsl:apply-templates>
-      <xsl:call-template name="setidaname"></xsl:call-template>
-      <xsl:apply-templates select="*[contains(@class, &apos; ditaot-d/ditaval-startprop &apos;)]" mode="out-of-line"></xsl:apply-templates>
-      <xsl:call-template name="generateBreadcrumbs"></xsl:call-template>
-      <xsl:call-template name="gen-user-header"></xsl:call-template>
-      <xsl:call-template name="processHDR"></xsl:call-template>
-      <xsl:if test="$INDEXSHOW = &apos;yes&apos;">
-        <xsl:apply-templates select="/*/*[contains(@class, &apos; map/topicmeta &apos;)]/*[contains(@class, &apos; topic/keywords &apos;)]/*[contains(@class, &apos; topic/indexterm &apos;)]"></xsl:apply-templates>
+      <xsl:apply-templates select="." mode="addAttributesToBody"/>
+      <xsl:call-template name="setidaname"/>
+      <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-startprop ')]" mode="out-of-line"/>
+      <xsl:call-template name="generateBreadcrumbs"/>
+      <xsl:call-template name="gen-user-header"/>
+      <xsl:call-template name="processHDR"/>
+      <xsl:if test="$INDEXSHOW = 'yes'">
+        <xsl:apply-templates select="/*/*[contains(@class, ' map/topicmeta ')]/*[contains(@class, ' topic/keywords ')]/*[contains(@class, ' topic/indexterm ')]"/>
       </xsl:if>
-      <xsl:call-template name="gen-user-sidetoc"></xsl:call-template>
+      <xsl:call-template name="gen-user-sidetoc"/>
       <xsl:choose>
-        <xsl:when test="*[contains(@class, &apos; topic/title &apos;)]">
-          <xsl:apply-templates select="*[contains(@class, &apos; topic/title &apos;)]"></xsl:apply-templates>
+        <xsl:when test="*[contains(@class, ' topic/title ')]">
+          <xsl:apply-templates select="*[contains(@class, ' topic/title ')]"/>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:apply-templates select="@title"></xsl:apply-templates>
+          <xsl:apply-templates select="@title"/>
         </xsl:otherwise>
       </xsl:choose>
-      <xsl:apply-templates select="." mode="toc"></xsl:apply-templates>
-      <xsl:call-template name="gen-endnotes"></xsl:call-template>
-      <xsl:call-template name="gen-user-footer"></xsl:call-template>
-      <xsl:call-template name="processFTR"></xsl:call-template>
-      <xsl:apply-templates select="*[contains(@class, &apos; ditaot-d/ditaval-endprop &apos;)]" mode="out-of-line"></xsl:apply-templates>
+      <xsl:apply-templates select="." mode="toc"/>
+      <xsl:call-template name="gen-endnotes"/>
+      <xsl:call-template name="gen-user-footer"/>
+      <xsl:call-template name="processFTR"/>
+      <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-endprop ')]" mode="out-of-line"/>
     </body>
   </xsl:template>
 
-  <xsl:template match="*[contains(@class, &apos; map/map &apos;)]/*[contains(@class, &apos; topic/title &apos;)]">
+  <xsl:template match="*[contains(@class, ' map/map ')]/*[contains(@class, ' topic/title ')]">
     <h1 class="title topictitle1">
-      <xsl:call-template name="gen-user-panel-title-pfx"></xsl:call-template>
-      <xsl:apply-templates></xsl:apply-templates>
+      <xsl:call-template name="gen-user-panel-title-pfx"/>
+      <xsl:apply-templates/>
     </h1>
   </xsl:template>
 
-  <xsl:template match="*[contains(@class, &apos; map/map &apos;)]/@title">
+  <xsl:template match="*[contains(@class, ' map/map ')]/@title">
     <h1 class="title topictitle1">
-      <xsl:call-template name="gen-user-panel-title-pfx"></xsl:call-template>
-      <xsl:value-of select="."></xsl:value-of>
+      <xsl:call-template name="gen-user-panel-title-pfx"/>
+      <xsl:value-of select="."/>
     </h1>
   </xsl:template>
 
-  <xsl:template match="*[contains(@class,&apos; bookmap/bookmap &apos;)]/*[contains(@class,&apos; bookmap/booktitle &apos;)]" priority="10">
+  <xsl:template match="*[contains(@class,' bookmap/bookmap ')]/*[contains(@class,' bookmap/booktitle ')]" priority="10">
     <h1 class="title topictitle1">
-      <xsl:call-template name="gen-user-panel-title-pfx"></xsl:call-template>
-      <xsl:apply-templates select="*[contains(@class, &apos; bookmap/mainbooktitle &apos;)]/node()"></xsl:apply-templates>
+      <xsl:call-template name="gen-user-panel-title-pfx"/>
+      <xsl:apply-templates select="*[contains(@class, ' bookmap/mainbooktitle ')]/node()"/>
     </h1>
   </xsl:template>
 
   <xsl:template name="generateChapterTitle">
     <title>
       <xsl:choose>
-        <xsl:when test="/*[contains(@class,&apos; bookmap/bookmap &apos;)]/*[contains(@class,&apos; bookmap/booktitle &apos;)]/*[contains(@class, &apos; bookmap/mainbooktitle &apos;)]">
-          <xsl:call-template name="gen-user-panel-title-pfx"></xsl:call-template>
-          <xsl:value-of select="/*[contains(@class,&apos; bookmap/bookmap &apos;)]/*[contains(@class,&apos; bookmap/booktitle &apos;)]/*[contains(@class, &apos; bookmap/mainbooktitle &apos;)]"></xsl:value-of>
+        <xsl:when test="/*[contains(@class,' bookmap/bookmap ')]/*[contains(@class,' bookmap/booktitle ')]/*[contains(@class, ' bookmap/mainbooktitle ')]">
+          <xsl:call-template name="gen-user-panel-title-pfx"/>
+          <xsl:value-of select="/*[contains(@class,' bookmap/bookmap ')]/*[contains(@class,' bookmap/booktitle ')]/*[contains(@class, ' bookmap/mainbooktitle ')]"/>
         </xsl:when>
-        <xsl:when test="/*[contains(@class,&apos; map/map &apos;)]/*[contains(@class,&apos; topic/title &apos;)]">
-          <xsl:call-template name="gen-user-panel-title-pfx"></xsl:call-template>
-          <xsl:value-of select="/*[contains(@class,&apos; map/map &apos;)]/*[contains(@class,&apos; topic/title &apos;)]"></xsl:value-of>
+        <xsl:when test="/*[contains(@class,' map/map ')]/*[contains(@class,' topic/title ')]">
+          <xsl:call-template name="gen-user-panel-title-pfx"/>
+          <xsl:value-of select="/*[contains(@class,' map/map ')]/*[contains(@class,' topic/title ')]"/>
         </xsl:when>
-        <xsl:when test="/*[contains(@class,&apos; map/map &apos;)]/@title">
-          <xsl:call-template name="gen-user-panel-title-pfx"></xsl:call-template>
-          <xsl:value-of select="/*[contains(@class,&apos; map/map &apos;)]/@title"></xsl:value-of>
+        <xsl:when test="/*[contains(@class,' map/map ')]/@title">
+          <xsl:call-template name="gen-user-panel-title-pfx"/>
+          <xsl:value-of select="/*[contains(@class,' map/map ')]/@title"/>
         </xsl:when>
       </xsl:choose>
     </title>

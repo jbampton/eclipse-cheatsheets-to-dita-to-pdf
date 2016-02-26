@@ -1,222 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?><plugins><plugin id="org.dita.specialization.eclipsemap" xml:base="../plugins/org.dita.specialization.eclipsemap/plugin.xml">
-    <feature extension="dita.specialization.catalog.relative" file="catalog.xml"/>
-    <feature extension="dita.xsl.maplink" file="xsl/maplink-plugin.xsl"/>
-    <feature extension="dita.xsl.mapref" file="xsl/mapref-plugin.xsl"/>
-    <feature extension="dita.xsl.mappull" file="xsl/mappull-plugin.xsl"/>
-    <feature extension="dita.preprocess.mappull.param" file="params.xml"/>
-    <feature extension="dita.preprocess.mapref.param" file="params.xml"/>
-    <feature extension="dita.xsl.eclipse.plugin" file="xsl/map2plugin.xsl"/>
-    <feature extension="dita.conductor.target" file="script.xml"/>
-    <feature extension="dita.map.eclipse.index.pre" type="text" value="dita.index.eclipsehelp.init"/> 
-  </plugin><plugin id="org.dita.pdf2.axf" xml:base="../plugins/org.dita.pdf2.axf/plugin.xml">
+<?xml version="1.0" encoding="UTF-8"?><plugins><plugin id="com.sophos.tocjs" xml:base="../plugins/com.sophos.tocjs/plugin.xml">
+  <transtype desc="TocJS" extends="html5" name="tocjs"/>
+  <feature extension="dita.conductor.target" file="integrator.xml"/>
+</plugin><plugin id="info.debrief" xml:base="../plugins/info.debrief/plugin.xml"> 
   <require plugin="org.dita.pdf2"/>
-  <!-- extensions -->
-  <feature extension="depend.org.dita.pdf2.init.pre" value="transform.fo2pdf.ah.init"/>
-  <feature extension="depend.org.dita.pdf2.format" value="transform.fo2pdf.ah"/>
-  <feature extension="dita.conductor.lib.import" file="lib/axf.jar"/>
-  <transtype desc="PDF" name="pdf">
-    <param desc="Specifies the XSL processor." name="pdf.formatter" type="enum">
-      <val desc="Antenna House Formatter">ah</val>
-    </param>
-    <param desc="Specifies whether draft-comment and required-cleanup elements are included in the output." name="publish.required.cleanup" type="enum">
-      <val>yes</val>
-      <val>no</val>
-    </param>
-    <param desc="Specifies the user configuration file for Antenna House Formatter." name="axf.opt" type="file"/>
-  </transtype>
+  <feature extension="dita.conductor.transtype.check" value="debrief"/>
+  <feature extension="dita.transtype.print" value="debrief"/>
   <feature extension="dita.conductor.target.relative" file="integrator.xml"/>
-  <feature extension="dita.conductor.pdf2.formatter.check" value="ah"/>
-  <template file="xsl/fo/topic2fo_shell_axf_template.xsl"/>
-</plugin><plugin id="org.oasis-open.dita.v1_3" xml:base="../plugins/org.oasis-open.dita.v1_3/plugin.xml">
-  <feature extension="dita.specialization.catalog.relative" file="catalog.xml"/>
-</plugin><plugin id="org.dita.docbook" xml:base="../plugins/org.dita.docbook/plugin.xml">
-  <!-- extension points -->
-  <extension-point id="dita.xsl.docbook" name="Docbook XSLT import"/>
-  <!-- extensions -->
-  <transtype desc="DocBook" name="docbook"/>
-  <feature extension="dita.conductor.target.relative" file="conductor.xml"/>
-  <template file="xsl/dita2docbook_template.xsl"/>
-</plugin><plugin id="org.dita.pdf2" xml:base="../plugins/org.dita.pdf2/plugin.xml">
-  <!-- extension points -->
-  <extension-point id="dita.xsl.xslfo" name="PDF XSLT import"/>
-  <extension-point id="dita.xsl.xslfo.flagging-preprocess" name="PDF flagging preprocess import"/>
-  <extension-point id="dita.xsl.xslfo.i18n-postprocess" name="PDF I18N postprocess import"/>
-  <extension-point id="org.dita.pdf2.xsl.topicmerge" name="PDF2 topic merge XSLT import"/>
-  <extension-point id="depend.org.dita.pdf2.init.pre" name="Initialization pre-target"/>
-  <extension-point id="depend.org.dita.pdf2.format.pre" name="Formatting pre-target"/>
-  <extension-point id="depend.org.dita.pdf2.format" name="Formatting target"/>
-  <extension-point id="depend.org.dita.pdf2.format.post" name="Formatting post-target"/>
-  <extension-point id="org.dita.pdf2.catalog.relative" name="Configuration XML catalog"/>
-  <extension-point id="dita.conductor.pdf2.param" name="PDF XSLT parameters"/>
-  <extension-point id="dita.conductor.pdf2.formatter.check" name="Formatter check"/>
-  <!-- extensions -->
-  <feature extension="dita.conductor.lib.import" file="lib/fo.jar"/>
-  <transtype desc="PDF" name="pdf">
-    <param desc="Specifies whether to generate a label for each image; the label will contain the image file name." name="args.artlbl" type="enum">
-      <val>yes</val>
-      <val default="true">no</val>
-    </param>
-    <param desc="Specifies if the frontmatter and backmatter content order is retained in bookmap." name="args.bookmap-order" type="enum">
-      <val>retain</val>
-      <val default="true">discard</val>
-    </param>
-    <param desc="Specifies whether PDF bookmarks are by default expanded or collapsed." name="args.bookmark.style" type="enum">
-      <val>EXPANDED</val>
-      <val>COLLAPSE</val>
-    </param>
-    <param desc="Specifies whether chapter level TOCs are generated." name="args.chapter.layout" type="enum">
-      <val default="true">MINITOC</val>
-      <val>BASIC</val>
-    </param>
-    <param desc="Specifies an XSL file that is used to override the default XSL transformation." name="args.xsl.pdf" type="file"/>
-    <param desc="Specifies the customization directory." name="customization.dir" type="dir"/>
-    <param desc="Specifies the XSL processor." name="pdf.formatter" type="enum"/>
-    <param desc="Specifies whether draft-comment and required-cleanup elements are included in the output." name="publish.required.cleanup" type="enum">
-      <val>yes</val>
-      <val>no</val>
-    </param>
-    <param deprecated="true" desc="Specifies whether to retain the generated FO file." name="retain.topic.fo" type="enum">
-      <val>yes</val>
-      <val default="true">no</val>
-    </param>
-    <param desc="Enables I18N font processing." name="org.dita.pdf2.i18n.enabled" type="enum">
-      <val default="true" desc="Enables I18N processing">true</val>
-      <val desc="Disables I18N processing">false</val>
-    </param>
-  </transtype>
-  <transtype desc="PDF2" extends="pdf" name="pdf2"/>
-  <feature extension="dita.transtype.print" value="pdf"/>
-  <feature extension="dita.transtype.print" value="pdf2"/>
-  <feature extension="dita.conductor.target.relative" file="integrator.xml"/>
-  <feature extension="dita.xsl.messages" file="resource/messages.xml"/>
-  <feature extension="dita.conductor.pdf2.formatter.check" value="ah"/>
-  <feature extension="dita.xsl.strings" file="cfg/common/vars/strings.xml"/>
-  <template file="build_template.xml"/>
-  <template file="cfg/catalog_template.xml"/>
-  <template file="xsl/fo/flagging-preprocess_template.xsl"/>
-  <template file="xsl/fo/i18n-postprocess_template.xsl"/>
-  <template file="xsl/fo/topic2fo_shell_template.xsl"/>
-  <template file="xsl/common/topicmerge_template.xsl"/>
-</plugin><plugin id="org.dita.pdf2.xep" xml:base="../plugins/org.dita.pdf2.xep/plugin.xml">
-  <require plugin="org.dita.pdf2"/>
-  <!-- extensions -->
-  <feature extension="depend.org.dita.pdf2.init.pre" value="transform.fo2pdf.xep.init"/>
-  <feature extension="depend.org.dita.pdf2.format" value="transform.fo2pdf.xep"/>
-  <feature extension="dita.conductor.lib.import" file="lib/xep.jar"/>
-  <transtype desc="PDF" name="pdf">
-    <param desc="Specifies the XSL processor." name="pdf.formatter" type="enum">
-      <val desc="RenderX XEP Engine">xep</val>
-    </param>
-    <param desc="Specifies the user configuration file for RenderX." name="custom.xep.config" type="file"/>
-  </transtype>
-  <feature extension="dita.conductor.target.relative" file="integrator.xml"/>
-  <feature extension="dita.conductor.pdf2.formatter.check" value="xep"/>
-  <template file="xsl/fo/topic2fo_shell_xep_template.xsl"/>
-</plugin><plugin id="org.oasis-open.dita.v1_2" xml:base="../plugins/org.oasis-open.dita.v1_2/plugin.xml">
-  <feature extension="dita.specialization.catalog.relative" file="catalog.xml"/>
-</plugin><plugin id="org.dita.eclipsecontent" xml:base="../plugins/org.dita.eclipsecontent/plugin.xml">
-  <!-- extension points -->
-  <extension-point id="dita.xsl.dynamicdita" name="Dynamic DITA XSLT import"/>
-  <!-- extensions -->
-  <transtype desc="Eclipse content" name="eclipsecontent">
-    <param desc="The provider name of the eclipse help output." name="args.eclipse.provider" type="string">
-      <val default="true">DITA</val>
-    </param>
-    <param desc="The version number of the eclipse help output.        Tip: The toolkit ignores the value of this property when processing an Eclipse Collection Map, eclipse.dtd." name="args.eclipse.version" type="string">
-      <val default="true">1.0</val>
-    </param>
-    <param desc="Specifies the name of the TOC file." name="args.eclipsecontent.toc" type="file"/>
-  </transtype>
-  <feature extension="dita.conductor.target.relative" file="conductor.xml"/>
-  <template file="xsl/dita2dynamicdita_template.xsl"/>
-</plugin><plugin id="org.dita.wordrtf" xml:base="../plugins/org.dita.wordrtf/plugin.xml">
-  <!-- extension points -->
-  <extension-point id="dita.xsl.rtf" name="RTF XSLT import"/>
-  <!-- extensions -->
-  <transtype desc="Word RTF" name="wordrtf"/>
-  <feature extension="dita.conductor.target.relative" file="conductor.xml"/>
-  <template file="xsl/dita2rtf_template.xsl"/>
-</plugin><plugin id="org.dita.htmlhelp" xml:base="../plugins/org.dita.htmlhelp/plugin.xml">
-  <!-- extension points -->
-  <extension-point id="dita.xsl.htmlhelp.map2hhp" name="HTML Help project XSLT import"/>
-  <extension-point id="dita.xsl.htmlhelp.map2hhc" name="HTML Help content XSLT import"/>
-  <!-- extensions -->
-  <transtype desc="HTMLHelp" extends="base-html" name="htmlhelp">
-    <param desc="Specifies the name of a file that you want included in the HTML Help." name="args.htmlhelp.includefile" type="file"/>
-  </transtype>
+</plugin><plugin id="org.dita.html5" xml:base="../plugins/org.dita.html5/plugin.xml">
   <require plugin="org.dita.xhtml"/>
-  <feature extension="dita.conductor.target.relative" file="conductor.xml"/>
-  <feature extension="dita.xsl.messages" file="resource/messages.xml"/>
-  <template file="xsl/map2hhc_template.xsl"/>
-  <template file="xsl/map2hhp_template.xsl"/>
-</plugin><plugin id="org.dita.xhtml" xml:base="../plugins/org.dita.xhtml/plugin.xml">
   <!-- extension points -->
-  <extension-point id="dita.xsl.xhtml" name="HTML/XHTML XSLT import"/>
-  <extension-point id="dita.conductor.html.param" name="HTML XSLT parameters"/>
-  <extension-point id="dita.conductor.xhtml.param" name="XHTML XSLT parameters"/>
-  <extension-point id="dita.conductor.xhtml.toc.param" name="HTML/XSLT XSLT parameter"/>
-  <extension-point id="dita.xsl.htmltoc" name="HTML/XHTML TOC XSLT import"/>
-  <extension-point id="dita.xsl.html.cover" name="HTML/XHTML Cover XSLT import"/>
+  <extension-point id="dita.xsl.html5" name="HTML/XHTML XSLT import"/>
+  <extension-point id="dita.conductor.html5.param" name="XHTML XSLT parameters"/>
+  <extension-point id="dita.conductor.html5.toc.param" name="HTML/XSLT XSLT parameter"/>
+  <extension-point id="dita.xsl.html5.toc" name="HTML/XHTML TOC XSLT import"/>
+  <extension-point id="dita.xsl.html5.cover" name="HTML/XHTML Cover XSLT import"/>
   <!-- extensions -->
-  <transtype abstract="true" desc="HTML-based output" name="base-html">
-    <param desc="Specifies whether to generate a label for each image; the label will contain the image file name." name="args.artlbl" type="enum">
-      <val>yes</val>
-      <val default="true">no</val>
+  <transtype desc="HTML5" extends="common-html" name="html5">
+    <param desc="Specifies whether to generate a navigation TOC in topic pages." name="nav-toc" type="enum">
+      <val default="true" desc="No TOC">none</val>
+      <val desc="Partial TOC that shows the current topic">partial</val>
+      <val desc="Full TOC">full</val>
     </param>
-    <param desc="Specifies whether to generate breadcrumb links." name="args.breadcrumbs" type="enum">
-      <val>yes</val>
-      <val default="true">no</val>
-    </param>
-    <param desc="Specifies whether to copy the custom .css file to the output directory." name="args.copycss" type="enum">
-      <val default="true">yes</val>
-      <val>no</val>
-    </param>
-    <param desc="Specifies the name of a custom .css file." name="args.css" type="file"/>
-    <param desc="Specifies the location of a copied .css file relative to the output directory." name="args.csspath" type="file"/>
-    <param desc="Specifies the directory that contains the custom .css file." name="args.cssroot" type="file"/>
-    <param desc="Specifies the language locale file to use for sorting index entries." name="args.dita.locale" type="string"/>
-    <param desc="Specifies an XML file that contains content for a running footer." name="args.ftr" type="file"/>
-    <param desc="Specifies whether to generate extra metadata that targets parental control scanners, meta elements with name=&#34;security&#34; and name=&#34;Robots&#34;." name="args.gen.default.meta" type="enum">
-      <val>yes</val>
-      <val default="true">no</val>
-    </param>
-    <param desc="Specifies an XML file that contains content to be placed in the document head." name="args.hdf" type="file"/>
-    <param desc="Specifies an XML file that contains content for a running header." name="args.hdr" type="file"/>
-    <param desc="Specifies whether to hide links to parent topics in the HTML or XHTML output." name="args.hide.parent.link" type="enum">
-      <val>yes</val>
-      <val default="true">no</val>
-    </param>
-    <param desc="Specifies whether the content of &lt;indexterm&gt; elements are rendered in the output." name="args.indexshow" type="enum">
-      <val>yes</val>
-      <val default="true">no</val>
-    </param>
-    <param desc="Specifies the file extension for HTML or XHTML output." name="args.outext" type="string">
-      <val default="true">html</val>
-    </param>
-    <param desc="Specifies whether to include the DITA class ancestry inside the XHTML elements." name="args.xhtml.classattr" type="enum">
-      <val default="true">yes</val>
-      <val>no</val>
-    </param>
-    <param desc="Specifies a custom XSL file to be used instead of the default XSL transformation." name="args.xsl" type="file"/>
   </transtype>
-  <transtype desc="HTML5 and XHTML" extends="base-html" name="common-html">
-    <param desc="Specifies the value of the @target attribute on the &lt;base&gt; element in the TOC file." name="args.xhtml.contenttarget" type="string">
-      <val default="true">contentwin</val>
-    </param>
-    <param desc="Specifies the base name of the TOC file." name="args.xhtml.toc" type="string">
-      <val default="true">index</val>
-    </param>
-    <param desc="Specifies the value of the @class attribute on the &lt;body&gt; element in the TOC file." name="args.xhtml.toc.class" type="string"/>
-    <param desc="Specifies a custom XSL file to be used for TOC generation." name="args.xhtml.toc.xsl" type="file"/>
-  </transtype>
-  <transtype desc="XHTML" extends="common-html" name="xhtml"/>
   <feature extension="dita.conductor.target.relative" file="conductor.xml"/>
-  <feature extension="dita.xsl.messages" file="resource/messages.xml"/>
-  <template file="build_general_template.xml"/>
-  <template file="build_dita2xhtml_template.xml"/>
-  <template file="xsl/dita2html-base_template.xsl"/>
-  <template file="xsl/map2htmltoc_template.xsl"/>
-  <template file="xsl/map2html-coverImpl_template.xsl"/>
+  <feature extension="dita.conductor.xhtml.param" file="params.xml"/>
+  <template file="build_dita2html5_template.xml"/>
+</plugin><plugin id="org.dita.odt" xml:base="../plugins/org.dita.odt/plugin.xml">
+  <!-- extension points -->
+  <extension-point id="dita.xsl.odt" name="ODT XSLT import"/>
+  <!-- extensions -->
+  <transtype desc="Open Document Format" name="odt">
+    <param desc="Determines whether images are embedded as binary objects within the ODT file." name="args.odt.img.embed" type="enum">
+      <val default="true">yes</val>
+      <val>no</val>
+    </param>
+  </transtype>
+  <feature extension="dita.transtype.print" value="odt"/>
+  <feature extension="dita.conductor.target.relative" file="conductor.xml"/>
+  <feature extension="dita.xsl.strings" file="xsl/xslodt/common/strings.xml"/>
+  <template file="xsl/dita2odt_template.xsl"/>
 </plugin><plugin id="org.dita.eclipsehelp" xml:base="../plugins/org.dita.eclipsehelp/plugin.xml">
   <!-- extension points -->
   <extension-point id="dita.xsl.eclipse.plugin" name="Eclipse plugin XSLT import"/>
@@ -243,34 +65,8 @@
   <template file="build_dita2eclipsehelp_template.xml"/>
   <template file="xsl/map2eclipse_template.xsl"/>
   <template file="xsl/map2plugin_template.xsl"/>
-</plugin><plugin id="org.dita.specialization.dita11" xml:base="../plugins/org.dita.specialization.dita11/plugin.xml">
-        <feature extension="dita.specialization.catalog.relative" file="catalog.xml"/>
-    </plugin><plugin id="org.dita.html5" xml:base="../plugins/org.dita.html5/plugin.xml">
-  <require plugin="org.dita.xhtml"/>
-  <!-- extension points -->
-  <extension-point id="dita.xsl.html5" name="HTML/XHTML XSLT import"/>
-  <extension-point id="dita.conductor.html5.param" name="XHTML XSLT parameters"/>
-  <extension-point id="dita.conductor.html5.toc.param" name="HTML/XSLT XSLT parameter"/>
-  <extension-point id="dita.xsl.html5.toc" name="HTML/XHTML TOC XSLT import"/>
-  <extension-point id="dita.xsl.html5.cover" name="HTML/XHTML Cover XSLT import"/>
-  <!-- extensions -->
-  <transtype desc="HTML5" extends="common-html" name="html5">
-    <param desc="Specifies whether to generate a navigation TOC in topic pages." name="nav-toc" type="enum">
-      <val default="true" desc="No TOC">none</val>
-      <val desc="Partial TOC that shows the current topic">partial</val>
-      <val desc="Full TOC">full</val>
-    </param>
-  </transtype>
-  <feature extension="dita.conductor.target.relative" file="conductor.xml"/>
-  <feature extension="dita.conductor.xhtml.param" file="params.xml"/>
-  <template file="build_dita2html5_template.xml"/>
-</plugin><plugin id="org.dita.javahelp" xml:base="../plugins/org.dita.javahelp/plugin.xml">
-  <transtype desc="JavaHelp" extends="base-html" name="javahelp">
-    <param desc="Specifies the name of the ditamap file for a JavaHelp project." name="args.javahelp.map" type="file"/>
-    <param desc="Specifies the name of the file containing the TOC in your JavaHelp output." name="args.javahelp.toc" type="file"/>
-  </transtype>
-  <require plugin="org.dita.xhtml"/>
-  <feature extension="dita.conductor.target.relative" file="conductor.xml"/>
+</plugin><plugin id="org.oasis-open.dita.v1_2" xml:base="../plugins/org.oasis-open.dita.v1_2/plugin.xml">
+  <feature extension="dita.specialization.catalog.relative" file="catalog.xml"/>
 </plugin><plugin id="org.dita.base" xml:base="../plugins/org.dita.base/plugin.xml">
   <!-- base extension points -->
   <extension-point id="package.version" name="Plug-in version"/>
@@ -448,14 +244,94 @@
   <template file="../../xsl/preprocess/conref_template.xsl"/>
   <template file="../../xsl/preprocess/topicpull_template.xsl"/>
   <template file="../../xsl/preprocess/flag_template.xsl"/>
-</plugin><plugin id="org.dita.troff" xml:base="../plugins/org.dita.troff/plugin.xml">
-  <extension-point id="dita.xsl.troff-ast" name="Troff AST XSLT import"/>
-  <extension-point id="dita.xsl.troff" name="Troff XSLT import"/>
-  <feature extension="dita.conductor.transtype.check" value="troff"/>
+</plugin><plugin id="org.dita.pdf2" xml:base="../plugins/org.dita.pdf2/plugin.xml">
+  <!-- extension points -->
+  <extension-point id="dita.xsl.xslfo" name="PDF XSLT import"/>
+  <extension-point id="dita.xsl.xslfo.flagging-preprocess" name="PDF flagging preprocess import"/>
+  <extension-point id="dita.xsl.xslfo.i18n-postprocess" name="PDF I18N postprocess import"/>
+  <extension-point id="org.dita.pdf2.xsl.topicmerge" name="PDF2 topic merge XSLT import"/>
+  <extension-point id="depend.org.dita.pdf2.init.pre" name="Initialization pre-target"/>
+  <extension-point id="depend.org.dita.pdf2.format.pre" name="Formatting pre-target"/>
+  <extension-point id="depend.org.dita.pdf2.format" name="Formatting target"/>
+  <extension-point id="depend.org.dita.pdf2.format.post" name="Formatting post-target"/>
+  <extension-point id="org.dita.pdf2.catalog.relative" name="Configuration XML catalog"/>
+  <extension-point id="dita.conductor.pdf2.param" name="PDF XSLT parameters"/>
+  <extension-point id="dita.conductor.pdf2.formatter.check" name="Formatter check"/>
+  <!-- extensions -->
+  <feature extension="dita.conductor.lib.import" file="lib/fo.jar"/>
+  <transtype desc="PDF" name="pdf">
+    <param desc="Specifies whether to generate a label for each image; the label will contain the image file name." name="args.artlbl" type="enum">
+      <val>yes</val>
+      <val default="true">no</val>
+    </param>
+    <param desc="Specifies if the frontmatter and backmatter content order is retained in bookmap." name="args.bookmap-order" type="enum">
+      <val>retain</val>
+      <val default="true">discard</val>
+    </param>
+    <param desc="Specifies whether PDF bookmarks are by default expanded or collapsed." name="args.bookmark.style" type="enum">
+      <val>EXPANDED</val>
+      <val>COLLAPSE</val>
+    </param>
+    <param desc="Specifies whether chapter level TOCs are generated." name="args.chapter.layout" type="enum">
+      <val default="true">MINITOC</val>
+      <val>BASIC</val>
+    </param>
+    <param desc="Specifies an XSL file that is used to override the default XSL transformation." name="args.xsl.pdf" type="file"/>
+    <param desc="Specifies the customization directory." name="customization.dir" type="dir"/>
+    <param desc="Specifies the XSL processor." name="pdf.formatter" type="enum"/>
+    <param desc="Specifies whether draft-comment and required-cleanup elements are included in the output." name="publish.required.cleanup" type="enum">
+      <val>yes</val>
+      <val>no</val>
+    </param>
+    <param deprecated="true" desc="Specifies whether to retain the generated FO file." name="retain.topic.fo" type="enum">
+      <val>yes</val>
+      <val default="true">no</val>
+    </param>
+    <param desc="Enables I18N font processing." name="org.dita.pdf2.i18n.enabled" type="enum">
+      <val default="true" desc="Enables I18N processing">true</val>
+      <val desc="Disables I18N processing">false</val>
+    </param>
+  </transtype>
+  <transtype desc="PDF2" extends="pdf" name="pdf2"/>
+  <feature extension="dita.transtype.print" value="pdf"/>
+  <feature extension="dita.transtype.print" value="pdf2"/>
+  <feature extension="dita.conductor.target.relative" file="integrator.xml"/>
+  <feature extension="dita.xsl.messages" file="resource/messages.xml"/>
+  <feature extension="dita.conductor.pdf2.formatter.check" value="ah"/>
+  <feature extension="dita.xsl.strings" file="cfg/common/vars/strings.xml"/>
+  <template file="build_template.xml"/>
+  <template file="cfg/catalog_template.xml"/>
+  <template file="xsl/fo/flagging-preprocess_template.xsl"/>
+  <template file="xsl/fo/i18n-postprocess_template.xsl"/>
+  <template file="xsl/fo/topic2fo_shell_template.xsl"/>
+  <template file="xsl/common/topicmerge_template.xsl"/>
+</plugin><plugin id="org.dita.javahelp" xml:base="../plugins/org.dita.javahelp/plugin.xml">
+  <transtype desc="JavaHelp" extends="base-html" name="javahelp">
+    <param desc="Specifies the name of the ditamap file for a JavaHelp project." name="args.javahelp.map" type="file"/>
+    <param desc="Specifies the name of the file containing the TOC in your JavaHelp output." name="args.javahelp.toc" type="file"/>
+  </transtype>
+  <require plugin="org.dita.xhtml"/>
   <feature extension="dita.conductor.target.relative" file="conductor.xml"/>
-  <template file="xsl/dita2troff-ast-shell_template.xsl"/>
-  <template file="xsl/dita2troff-step2-shell_template.xsl"/>
-  <require plugin="org.dita.base"/>
+</plugin><plugin id="org.dita.htmlhelp" xml:base="../plugins/org.dita.htmlhelp/plugin.xml">
+  <!-- extension points -->
+  <extension-point id="dita.xsl.htmlhelp.map2hhp" name="HTML Help project XSLT import"/>
+  <extension-point id="dita.xsl.htmlhelp.map2hhc" name="HTML Help content XSLT import"/>
+  <!-- extensions -->
+  <transtype desc="HTMLHelp" extends="base-html" name="htmlhelp">
+    <param desc="Specifies the name of a file that you want included in the HTML Help." name="args.htmlhelp.includefile" type="file"/>
+  </transtype>
+  <require plugin="org.dita.xhtml"/>
+  <feature extension="dita.conductor.target.relative" file="conductor.xml"/>
+  <feature extension="dita.xsl.messages" file="resource/messages.xml"/>
+  <template file="xsl/map2hhc_template.xsl"/>
+  <template file="xsl/map2hhp_template.xsl"/>
+</plugin><plugin id="org.dita.wordrtf" xml:base="../plugins/org.dita.wordrtf/plugin.xml">
+  <!-- extension points -->
+  <extension-point id="dita.xsl.rtf" name="RTF XSLT import"/>
+  <!-- extensions -->
+  <transtype desc="Word RTF" name="wordrtf"/>
+  <feature extension="dita.conductor.target.relative" file="conductor.xml"/>
+  <template file="xsl/dita2rtf_template.xsl"/>
 </plugin><plugin id="org.dita.pdf2.fop" xml:base="../plugins/org.dita.pdf2.fop/plugin.xml">
   <require plugin="org.dita.pdf2"/>
   <!-- extensions -->
@@ -470,21 +346,150 @@
   <feature extension="dita.conductor.pdf2.formatter.check" value="fop"/>
   <feature extension="dita.conductor.target.relative" file="integrator.xml"/>
   <template file="xsl/fo/topic2fo_shell_fop_template.xsl"/>
-</plugin><plugin id="org.dita.odt" xml:base="../plugins/org.dita.odt/plugin.xml">
-  <!-- extension points -->
-  <extension-point id="dita.xsl.odt" name="ODT XSLT import"/>
+</plugin><plugin id="org.dita.pdf2.axf" xml:base="../plugins/org.dita.pdf2.axf/plugin.xml">
+  <require plugin="org.dita.pdf2"/>
   <!-- extensions -->
-  <transtype desc="Open Document Format" name="odt">
-    <param desc="Determines whether images are embedded as binary objects within the ODT file." name="args.odt.img.embed" type="enum">
+  <feature extension="depend.org.dita.pdf2.init.pre" value="transform.fo2pdf.ah.init"/>
+  <feature extension="depend.org.dita.pdf2.format" value="transform.fo2pdf.ah"/>
+  <feature extension="dita.conductor.lib.import" file="lib/axf.jar"/>
+  <transtype desc="PDF" name="pdf">
+    <param desc="Specifies the XSL processor." name="pdf.formatter" type="enum">
+      <val desc="Antenna House Formatter">ah</val>
+    </param>
+    <param desc="Specifies whether draft-comment and required-cleanup elements are included in the output." name="publish.required.cleanup" type="enum">
+      <val>yes</val>
+      <val>no</val>
+    </param>
+    <param desc="Specifies the user configuration file for Antenna House Formatter." name="axf.opt" type="file"/>
+  </transtype>
+  <feature extension="dita.conductor.target.relative" file="integrator.xml"/>
+  <feature extension="dita.conductor.pdf2.formatter.check" value="ah"/>
+  <template file="xsl/fo/topic2fo_shell_axf_template.xsl"/>
+</plugin><plugin id="org.oasis-open.dita.v1_3" xml:base="../plugins/org.oasis-open.dita.v1_3/plugin.xml">
+  <feature extension="dita.specialization.catalog.relative" file="catalog.xml"/>
+</plugin><plugin id="org.dita.xhtml" xml:base="../plugins/org.dita.xhtml/plugin.xml">
+  <!-- extension points -->
+  <extension-point id="dita.xsl.xhtml" name="HTML/XHTML XSLT import"/>
+  <extension-point id="dita.conductor.html.param" name="HTML XSLT parameters"/>
+  <extension-point id="dita.conductor.xhtml.param" name="XHTML XSLT parameters"/>
+  <extension-point id="dita.conductor.xhtml.toc.param" name="HTML/XSLT XSLT parameter"/>
+  <extension-point id="dita.xsl.htmltoc" name="HTML/XHTML TOC XSLT import"/>
+  <extension-point id="dita.xsl.html.cover" name="HTML/XHTML Cover XSLT import"/>
+  <!-- extensions -->
+  <transtype abstract="true" desc="HTML-based output" name="base-html">
+    <param desc="Specifies whether to generate a label for each image; the label will contain the image file name." name="args.artlbl" type="enum">
+      <val>yes</val>
+      <val default="true">no</val>
+    </param>
+    <param desc="Specifies whether to generate breadcrumb links." name="args.breadcrumbs" type="enum">
+      <val>yes</val>
+      <val default="true">no</val>
+    </param>
+    <param desc="Specifies whether to copy the custom .css file to the output directory." name="args.copycss" type="enum">
       <val default="true">yes</val>
       <val>no</val>
     </param>
+    <param desc="Specifies the name of a custom .css file." name="args.css" type="file"/>
+    <param desc="Specifies the location of a copied .css file relative to the output directory." name="args.csspath" type="file"/>
+    <param desc="Specifies the directory that contains the custom .css file." name="args.cssroot" type="file"/>
+    <param desc="Specifies the language locale file to use for sorting index entries." name="args.dita.locale" type="string"/>
+    <param desc="Specifies an XML file that contains content for a running footer." name="args.ftr" type="file"/>
+    <param desc="Specifies whether to generate extra metadata that targets parental control scanners, meta elements with name=&#34;security&#34; and name=&#34;Robots&#34;." name="args.gen.default.meta" type="enum">
+      <val>yes</val>
+      <val default="true">no</val>
+    </param>
+    <param desc="Specifies an XML file that contains content to be placed in the document head." name="args.hdf" type="file"/>
+    <param desc="Specifies an XML file that contains content for a running header." name="args.hdr" type="file"/>
+    <param desc="Specifies whether to hide links to parent topics in the HTML or XHTML output." name="args.hide.parent.link" type="enum">
+      <val>yes</val>
+      <val default="true">no</val>
+    </param>
+    <param desc="Specifies whether the content of &lt;indexterm&gt; elements are rendered in the output." name="args.indexshow" type="enum">
+      <val>yes</val>
+      <val default="true">no</val>
+    </param>
+    <param desc="Specifies the file extension for HTML or XHTML output." name="args.outext" type="string">
+      <val default="true">html</val>
+    </param>
+    <param desc="Specifies whether to include the DITA class ancestry inside the XHTML elements." name="args.xhtml.classattr" type="enum">
+      <val default="true">yes</val>
+      <val>no</val>
+    </param>
+    <param desc="Specifies a custom XSL file to be used instead of the default XSL transformation." name="args.xsl" type="file"/>
   </transtype>
-  <feature extension="dita.transtype.print" value="odt"/>
+  <transtype desc="HTML5 and XHTML" extends="base-html" name="common-html">
+    <param desc="Specifies the value of the @target attribute on the &lt;base&gt; element in the TOC file." name="args.xhtml.contenttarget" type="string">
+      <val default="true">contentwin</val>
+    </param>
+    <param desc="Specifies the base name of the TOC file." name="args.xhtml.toc" type="string">
+      <val default="true">index</val>
+    </param>
+    <param desc="Specifies the value of the @class attribute on the &lt;body&gt; element in the TOC file." name="args.xhtml.toc.class" type="string"/>
+    <param desc="Specifies a custom XSL file to be used for TOC generation." name="args.xhtml.toc.xsl" type="file"/>
+  </transtype>
+  <transtype desc="XHTML" extends="common-html" name="xhtml"/>
   <feature extension="dita.conductor.target.relative" file="conductor.xml"/>
-  <feature extension="dita.xsl.strings" file="xsl/xslodt/common/strings.xml"/>
-  <template file="xsl/dita2odt_template.xsl"/>
-</plugin><plugin id="com.sophos.tocjs" xml:base="../plugins/com.sophos.tocjs/plugin.xml">
-  <transtype desc="TocJS" extends="html5" name="tocjs"/>
-  <feature extension="dita.conductor.target" file="integrator.xml"/>
+  <feature extension="dita.xsl.messages" file="resource/messages.xml"/>
+  <template file="build_general_template.xml"/>
+  <template file="build_dita2xhtml_template.xml"/>
+  <template file="xsl/dita2html-base_template.xsl"/>
+  <template file="xsl/map2htmltoc_template.xsl"/>
+  <template file="xsl/map2html-coverImpl_template.xsl"/>
+</plugin><plugin id="org.dita.specialization.eclipsemap" xml:base="../plugins/org.dita.specialization.eclipsemap/plugin.xml">
+    <feature extension="dita.specialization.catalog.relative" file="catalog.xml"/>
+    <feature extension="dita.xsl.maplink" file="xsl/maplink-plugin.xsl"/>
+    <feature extension="dita.xsl.mapref" file="xsl/mapref-plugin.xsl"/>
+    <feature extension="dita.xsl.mappull" file="xsl/mappull-plugin.xsl"/>
+    <feature extension="dita.preprocess.mappull.param" file="params.xml"/>
+    <feature extension="dita.preprocess.mapref.param" file="params.xml"/>
+    <feature extension="dita.xsl.eclipse.plugin" file="xsl/map2plugin.xsl"/>
+    <feature extension="dita.conductor.target" file="script.xml"/>
+    <feature extension="dita.map.eclipse.index.pre" type="text" value="dita.index.eclipsehelp.init"/> 
+  </plugin><plugin id="org.dita.pdf2.xep" xml:base="../plugins/org.dita.pdf2.xep/plugin.xml">
+  <require plugin="org.dita.pdf2"/>
+  <!-- extensions -->
+  <feature extension="depend.org.dita.pdf2.init.pre" value="transform.fo2pdf.xep.init"/>
+  <feature extension="depend.org.dita.pdf2.format" value="transform.fo2pdf.xep"/>
+  <feature extension="dita.conductor.lib.import" file="lib/xep.jar"/>
+  <transtype desc="PDF" name="pdf">
+    <param desc="Specifies the XSL processor." name="pdf.formatter" type="enum">
+      <val desc="RenderX XEP Engine">xep</val>
+    </param>
+    <param desc="Specifies the user configuration file for RenderX." name="custom.xep.config" type="file"/>
+  </transtype>
+  <feature extension="dita.conductor.target.relative" file="integrator.xml"/>
+  <feature extension="dita.conductor.pdf2.formatter.check" value="xep"/>
+  <template file="xsl/fo/topic2fo_shell_xep_template.xsl"/>
+</plugin><plugin id="org.dita.troff" xml:base="../plugins/org.dita.troff/plugin.xml">
+  <extension-point id="dita.xsl.troff-ast" name="Troff AST XSLT import"/>
+  <extension-point id="dita.xsl.troff" name="Troff XSLT import"/>
+  <feature extension="dita.conductor.transtype.check" value="troff"/>
+  <feature extension="dita.conductor.target.relative" file="conductor.xml"/>
+  <template file="xsl/dita2troff-ast-shell_template.xsl"/>
+  <template file="xsl/dita2troff-step2-shell_template.xsl"/>
+  <require plugin="org.dita.base"/>
+</plugin><plugin id="org.dita.eclipsecontent" xml:base="../plugins/org.dita.eclipsecontent/plugin.xml">
+  <!-- extension points -->
+  <extension-point id="dita.xsl.dynamicdita" name="Dynamic DITA XSLT import"/>
+  <!-- extensions -->
+  <transtype desc="Eclipse content" name="eclipsecontent">
+    <param desc="The provider name of the eclipse help output." name="args.eclipse.provider" type="string">
+      <val default="true">DITA</val>
+    </param>
+    <param desc="The version number of the eclipse help output.        Tip: The toolkit ignores the value of this property when processing an Eclipse Collection Map, eclipse.dtd." name="args.eclipse.version" type="string">
+      <val default="true">1.0</val>
+    </param>
+    <param desc="Specifies the name of the TOC file." name="args.eclipsecontent.toc" type="file"/>
+  </transtype>
+  <feature extension="dita.conductor.target.relative" file="conductor.xml"/>
+  <template file="xsl/dita2dynamicdita_template.xsl"/>
+</plugin><plugin id="org.dita.specialization.dita11" xml:base="../plugins/org.dita.specialization.dita11/plugin.xml">
+        <feature extension="dita.specialization.catalog.relative" file="catalog.xml"/>
+    </plugin><plugin id="org.dita.docbook" xml:base="../plugins/org.dita.docbook/plugin.xml">
+  <!-- extension points -->
+  <extension-point id="dita.xsl.docbook" name="Docbook XSLT import"/>
+  <!-- extensions -->
+  <transtype desc="DocBook" name="docbook"/>
+  <feature extension="dita.conductor.target.relative" file="conductor.xml"/>
+  <template file="xsl/dita2docbook_template.xsl"/>
 </plugin></plugins>
