@@ -6,7 +6,7 @@ Note: Now supporting multiple output formats - PDF, HTMLHelp, TocJS, XHTML.
 
 This program runs inside [Eclipse](https://www.eclipse.org/), an [integrated development environment](https://en.wikipedia.org/wiki/Integrated_development_environment) (IDE) and is mainly a Java based project in that all the code libraries use Java ([Apache FOP](https://xmlgraphics.apache.org/fop/), [Saxon](https://sourceforge.net/projects/saxon/files/Saxon-HE/), [DITA Open Toolkit](http://www.dita-ot.org/), [Apache ANT](http://ant.apache.org/), Eclipse) and it also uses [XSL](https://www.w3.org/Style/XSL/) and [XML](https://www.w3.org/XML/) heavily. Using Eclipse allows us to create a publishing pipeline creating all the working output formats one after the other, in one click by building the project.   Development was originally done in [oXygen XML Editor](https://www.oxygenxml.com) then ported to Eclipse. 
 
-The roadmap for this project is make the "info.debrief" custom DITA-OT plugin compatible with DITA-OT 2.2.1 and in depth instructions on how to get up and running inside Eclipse and more.... 
+The roadmap for this project is to keep the "info.debrief" custom DITA-OT plugin up to date with the latest current version of DITA-OT, in depth instructions on how to get up and running inside Eclipse and more in a tutorial style format. 
 
 When built and run this project takes a set of [Eclipse cheat sheets](http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-cheatsheets.htm) and transforms them to PDF.  Eclipse cheat sheets are obviously best viewed inside Eclipse.  Using PDF allows us to print nicely formatted cheat sheets on paper which allows the user to work through the cheat sheets with a pen and check off each item as they go.  Using cheat sheets physically on paper was seen as a new way to learn and was the original concept of the Debrief cheat sheets publishing project I worked on.
 
@@ -17,14 +17,14 @@ It's a two-step process first the DITA XML is created from the Eclipse cheat she
 The two parts of the transformation and rendering comprise of:
 
 1.	- This is the transformation step and it uses cheatsheet-to-dita.xsl which requires an XSLT 2.0 compliant processor.
-	- I used the open source product Saxon from [Saxonica](http://www.saxonica.com/welcome/welcome.xml) which came included with the DITA-OT library.
+	- I used the open source product Saxon from [Saxonica](http://www.saxonica.com/welcome/welcome.xml) which came included with the DITA-OT 2.2.1 library.
 	- This file takes as input a collection on XML files (Eclipse cheat sheets) and creates multiple output files - a parent DITA Map and some associated tasks.
 	- The "output/debrief" and sub "dita" folder contains the dynamically created (transformed) DITA files from this step. 
 	
 	
 2.	- This is the rendering (printing) step and the 'info.debrief' custom DITA-OT plugin produces the PDF via the DITA-OT base libraries and a XSL - Formatting Objects Processor (FO Processor)
 	- The "output/debrief/pdf" folder contains the resulting PDF output from this step
-	- I used Apache FOP 2.1 for the FO Processor and DITA-OT 1.8.5
+	- I used Apache FOP 2.1 for the FO Processor
 
 If you are not already Gung-Ho on Java and all things tech, then try a few short online courses:
 
