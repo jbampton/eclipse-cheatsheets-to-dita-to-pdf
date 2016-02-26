@@ -8,8 +8,12 @@
 	xmlns:opentopic="http://www.idiominc.com/opentopic" 
 	xmlns:opentopic-func="http://www.idiominc.com/opentopic/exsl/function" 
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
-	xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:ot-placeholder="http://suite-sol.com/namespaces/ot-placeholder">
+   
+    <xsl:variable name="map-based-page-sequence-generation" select="false()" as="xs:boolean"/>
+   
+   
 	<xsl:attribute-set name="topic.title" use-attribute-sets="common.title">
 		<xsl:attribute name="border-bottom">3pt solid #1d3768</xsl:attribute>
         <xsl:attribute name="space-before">0pt</xsl:attribute>
@@ -186,8 +190,8 @@
                         <fo:block xsl:use-attribute-sets="cmd listItemstyle">
                             <xsl:call-template name="commonattributes"/>
                             <xsl:if test="../@importance='optional'">
-                                <xsl:call-template name="insertVariable">
-                                    <xsl:with-param name="theVariableID" select="'Optional Step'"/>
+                                <xsl:call-template name="getVariable">
+                                    <xsl:with-param name="id" select="'Optional Step'"/>
                                 </xsl:call-template>
                                 <xsl:text> </xsl:text>
                             </xsl:if>
@@ -232,9 +236,9 @@
                         <xsl:call-template name="commonattributes"/>
                     </fo:inline>
                     <xsl:if test="preceding-sibling::*[contains(@class, ' task/step ')] | following-sibling::*[contains(@class, ' task/step ')]">
-                        <xsl:call-template name="insertVariable">
-                            <xsl:with-param name="theVariableID" select="'Ordered List Number'"/>
-                            <xsl:with-param name="theParameters">
+                        <xsl:call-template name="getVariable">
+                            <xsl:with-param name="id" select="'Ordered List Number'"/>
+                            <xsl:with-param name="params">
                                 <number>
                                     <xsl:value-of select="$actual-step-count"/>
                                 </number>
@@ -281,21 +285,21 @@
 						</fo:table-cell>
 						<fo:table-cell xsl:use-attribute-sets="namespace-custom-tc-0">
 							<fo:block xsl:use-attribute-sets="__body__first__footer">
-								<xsl:call-template name="insertVariable">
-									<xsl:with-param name="theVariableID" select="'Body first footer'"/>
-									<xsl:with-param name="theParameters">
-										<heading>
-											<fo:inline xsl:use-attribute-sets="__body__first__footer__heading">
-												<fo:retrieve-marker retrieve-class-name="current-header"/>
-											</fo:inline>
-										</heading>
-										<pagenum>
-											<fo:inline xsl:use-attribute-sets="__body__first__footer__pagenum">
-												<fo:page-number/> of <fo:page-number-citation ref-id="{generate-id(.)}"/> 
-											</fo:inline>
-										</pagenum>
-									</xsl:with-param>
-								</xsl:call-template>
+				                <xsl:call-template name="getVariable">
+			                    <xsl:with-param name="id" select="'Body first footer'"/>
+			                    <xsl:with-param name="params">
+			                        <heading>
+			                            <fo:inline xsl:use-attribute-sets="__body__first__footer__heading">
+			                                <fo:retrieve-marker retrieve-class-name="current-header"/>
+			                            </fo:inline>
+			                        </heading>
+			                        <pagenum>
+			                            <fo:inline xsl:use-attribute-sets="__body__first__footer__pagenum">
+			                                <fo:page-number/> of <fo:page-number-citation ref-id="{generate-id(.)}"/> 
+			                            </fo:inline>
+			                        </pagenum>
+			                    </xsl:with-param>
+			                </xsl:call-template>
 							</fo:block>
 						</fo:table-cell>
 					</fo:table-row>
@@ -306,8 +310,6 @@
 	
 	<xsl:template name="insertBodyOddFooter">
 		<fo:static-content flow-name="odd-body-footer">
-            
-            
             <fo:table xsl:use-attribute-sets="namespace-custom-table-nb">
 				<fo:table-column column-width="proportional-column-width(1)" column-number="1"/>
 				<fo:table-column column-width="proportional-column-width(1)" column-number="2"/>
@@ -333,48 +335,27 @@
 				                        </heading>
 				                        <pagenum>
 				                            <fo:inline xsl:use-attribute-sets="__body__odd__footer__pagenum">
-				                                <fo:page-number/> of <fo:page-number-citation ref-id="{generate-id(.)}"/>
+				                                 <fo:page-number/> of <fo:page-number-citation ref-id="{generate-id(.)}"/>
 				                            </fo:inline>
 				                        </pagenum>
 				                    </xsl:with-param>
 				                </xsl:call-template>
-								
-								<!-- 
-								
-								<xsl:call-template name="insertVariable">
-									<xsl:with-param name="theVariableID" select="'Body first footer'"/>
-									<xsl:with-param name="theParameters">
-										<heading>
-											<fo:inline xsl:use-attribute-sets="__body__first__footer__heading">
-												<fo:retrieve-marker retrieve-class-name="current-header"/>
-											</fo:inline>
-										</heading>
-										<pagenum>
-											<fo:inline xsl:use-attribute-sets="__body__first__footer__pagenum">
-												<fo:page-number/> of <fo:page-number-citation ref-id="{generate-id(.)}"/>
-											</fo:inline>
-										</pagenum>
-									</xsl:with-param>
-								</xsl:call-template>
-								-->
 							</fo:block>
 						</fo:table-cell>
 					</fo:table-row>
 				</fo:table-body>
 			</fo:table>	
-			
-			
         </fo:static-content>
     </xsl:template>
 
     <xsl:template name="insertBodyLastHeader">
         <fo:static-content flow-name="last-body-header">
             <fo:block xsl:use-attribute-sets="namespace-custom-last-body-header">
-                <xsl:call-template name="insertVariable">
-                    <xsl:with-param name="theVariableID" select="'Body odd header'"/>
-                    <xsl:with-param name="theParameters">
+            <xsl:call-template name="getVariable">
+                    <xsl:with-param name="id" select="'Body odd header'"/>
+                    <xsl:with-param name="params">
                         <prodname>
-                            <xsl:value-of select="$productName"/>
+                          <xsl:value-of select="$productName"/>
                         </prodname>
                         <heading>
                             <fo:inline xsl:use-attribute-sets="__body__odd__header__heading">
@@ -397,7 +378,7 @@
 			<fo:block  text-align="end" xsl:use-attribute-sets="namespace-custom-school-style" end-indent="20mm" margin-bottom="10pt">
 				Signed: <fo:leader leader-length="3cm" leader-pattern-width="1mm" leader-pattern="rule"></fo:leader>
 				Date: <fo:leader leader-length="3cm" leader-pattern-width="1mm" leader-pattern="rule"></fo:leader>
-				</fo:block>
+			</fo:block>
             <fo:table xsl:use-attribute-sets="namespace-custom-table-nb">
 				<fo:table-column column-width="proportional-column-width(1)" column-number="1"/>
 				<fo:table-column column-width="proportional-column-width(1)" column-number="2"/>
@@ -413,21 +394,21 @@
 						</fo:table-cell>
 						<fo:table-cell xsl:use-attribute-sets="namespace-custom-tc-0">
 							<fo:block xsl:use-attribute-sets="__body__first__footer">
-								<xsl:call-template name="insertVariable">
-									<xsl:with-param name="theVariableID" select="'Body first footer'"/>
-									<xsl:with-param name="theParameters">
-										<heading>
-											<fo:inline xsl:use-attribute-sets="__body__first__footer__heading">
-												<fo:retrieve-marker retrieve-class-name="current-header"/>
-											</fo:inline>
-										</heading>
-										<pagenum>
-											<fo:inline xsl:use-attribute-sets="__body__first__footer__pagenum">
-												<fo:page-number/> of <fo:page-number-citation ref-id="{generate-id(.)}"/> 
-											</fo:inline>
-										</pagenum>
-									</xsl:with-param>
-								</xsl:call-template>
+								<xsl:call-template name="getVariable">
+				                    <xsl:with-param name="id" select="'Body first footer'"/>
+				                    <xsl:with-param name="params">
+				                        <heading>
+				                            <fo:inline xsl:use-attribute-sets="__body__first__footer__heading">
+				                                <fo:retrieve-marker retrieve-class-name="current-header"/>
+				                            </fo:inline>
+				                        </heading>
+				                        <pagenum>
+				                            <fo:inline xsl:use-attribute-sets="__body__first__footer__pagenum">
+				                                 <fo:page-number/> of <fo:page-number-citation ref-id="{generate-id(.)}"/>
+				                            </fo:inline>
+				                        </pagenum>
+				                    </xsl:with-param>
+				                </xsl:call-template>
 							</fo:block>
 						</fo:table-cell>
 					</fo:table-row>
@@ -439,9 +420,9 @@
 	<xsl:template name="insertBodyOddHeader">
         <fo:static-content flow-name="odd-body-header">
             <fo:block xsl:use-attribute-sets="namespace-custom-last-body-header">
-                <xsl:call-template name="insertVariable">
-                    <xsl:with-param name="theVariableID" select="'Body odd header'"/>
-                    <xsl:with-param name="theParameters">
+                <xsl:call-template name="getVariable">
+                    <xsl:with-param name="id" select="'Body odd header'"/>
+                    <xsl:with-param name="params">
                         <prodname>
                             <xsl:value-of select="$productName"/>
                         </prodname>
@@ -465,24 +446,24 @@
 		<fo:static-content flow-name="first-body-header">
             <fo:block xsl:use-attribute-sets="odd__header-first">
 				<fo:block>
-					<xsl:call-template name="insertVariable">
-						<xsl:with-param name="theVariableID" select="'Body first header'"/>
-						<xsl:with-param name="theParameters">
-							<prodname>
-							  <xsl:value-of select="$productName"/>
-							</prodname>
-							<heading>
-								<fo:inline xsl:use-attribute-sets="__body__first__header__heading">
-									<fo:retrieve-marker retrieve-class-name="current-header"/>
-								</fo:inline>
-							</heading>
-							<pagenum>
-								<fo:inline xsl:use-attribute-sets="__body__first__header__pagenum">
-									<fo:page-number/>
-								</fo:inline>
-							</pagenum>
-						</xsl:with-param>
-					</xsl:call-template>
+					<xsl:call-template name="getVariable">
+	                    <xsl:with-param name="id" select="'Body first header'"/>
+	                    <xsl:with-param name="params">
+	                        <prodname>
+	                          <xsl:value-of select="$productName"/>
+	                        </prodname>
+	                        <heading>
+	                            <fo:inline xsl:use-attribute-sets="__body__first__header__heading">
+	                                <fo:retrieve-marker retrieve-class-name="current-header"/>
+	                            </fo:inline>
+	                        </heading>
+	                        <pagenum>
+	                            <fo:inline xsl:use-attribute-sets="__body__first__header__pagenum">
+	                                <fo:page-number/>
+	                            </fo:inline>
+	                        </pagenum>
+	                    </xsl:with-param>
+	                </xsl:call-template>
 				</fo:block>
 				<fo:block  xsl:use-attribute-sets="namespace-custom-school-style" text-align="left" start-indent="20mm">
 					Name: <fo:leader leader-length="3cm" leader-pattern-width="1mm" leader-pattern="rule"></fo:leader> Date: <fo:leader leader-length="3cm" leader-pattern-width="1mm" leader-pattern="rule"></fo:leader>
@@ -495,8 +476,29 @@
         </fo:static-content>
     </xsl:template>
 	
-	<xsl:template name="createDefaultLayoutMasters">
-        <fo:layout-master-set>
+	
+	
+	
+	
+	
+   
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<xsl:template match="/" mode="create-page-masters">
+       
             <!-- Frontmatter simple masters -->
             <fo:simple-page-master master-name="front-matter-first" xsl:use-attribute-sets="simple-page-master">
                 <fo:region-body xsl:use-attribute-sets="region-body__frontmatter.odd"/>
@@ -617,44 +619,14 @@
                 <fo:region-before region-name="odd-glossary-header" xsl:use-attribute-sets="region-before"/>
                 <fo:region-after region-name="odd-glossary-footer" xsl:use-attribute-sets="region-after"/>
             </fo:simple-page-master>
-
-
-            <!--Sequences-->
-          <xsl:call-template name="generate-page-sequence-master">
-            <xsl:with-param name="master-name" select="'toc-sequence'"/>
-            <xsl:with-param name="master-reference" select="'toc'"/>
-          </xsl:call-template>
-          <xsl:call-template name="generate-page-sequence-master">
-            <xsl:with-param name="master-name" select="'body-sequence'"/>
-            <xsl:with-param name="master-reference" select="'body'"/>			
-          </xsl:call-template>
-          <xsl:call-template name="generate-page-sequence-master">
-            <xsl:with-param name="master-name" select="'ditamap-body-sequence'"/>
-            <xsl:with-param name="master-reference" select="'body'"/>
-            <xsl:with-param name="first" select="true()"/>
-            <xsl:with-param name="last" select="true()"/>
-          </xsl:call-template>
-          <xsl:call-template name="generate-page-sequence-master">
-            <xsl:with-param name="master-name" select="'index-sequence'"/>
-            <xsl:with-param name="master-reference" select="'index'"/>
-            <xsl:with-param name="last" select="false()"/>
-          </xsl:call-template>
-          <xsl:call-template name="generate-page-sequence-master">
-            <xsl:with-param name="master-name" select="'front-matter'"/>
-            <xsl:with-param name="master-reference" select="'front-matter'"/>
-          </xsl:call-template>
-          <xsl:call-template name="generate-page-sequence-master">
-            <xsl:with-param name="master-name" select="'glossary-sequence'"/>
-            <xsl:with-param name="master-reference" select="'glossary'"/>
-            <xsl:with-param name="last" select="false()"/>
-          </xsl:call-template>
-        </fo:layout-master-set>
     </xsl:template>
 	
-	<xsl:template match="*[contains(@class, ' topic/topic ')]">
-        <xsl:variable name="topicType">
+	
+    <xsl:template match="*[contains(@class, ' topic/topic ')]">
+        <xsl:variable name="topicType" as="xs:string">
             <xsl:call-template name="determineTopicType"/>
         </xsl:variable>
+        
         <xsl:choose>
             <xsl:when test="$topicType = 'topicChapter'">
                 <xsl:call-template name="processTopicChapter"/>
@@ -673,81 +645,36 @@
             </xsl:when>
             <xsl:when test="$topicType = 'topicNotices'">
                 <xsl:if test="$retain-bookmap-order">
-                  <xsl:call-template name="processTopicNotices"/>
+                    <xsl:call-template name="processTopicNotices"/>
                 </xsl:if>
             </xsl:when>
+            <xsl:when test="$topicType = 'topicTocList'">
+                <xsl:call-template name="processTocList"/>
+            </xsl:when>
+            <xsl:when test="$topicType = 'topicIndexList'">
+                <xsl:call-template name="processIndexList"/>
+            </xsl:when>
             <xsl:when test="$topicType = 'topicSimple'">
-            
-            
-            
-            
-            
-             
-                <xsl:variable name="page-sequence-reference">
-                    <xsl:choose>
-                        <xsl:when test="$mapType = 'bookmap'">
-                            <xsl:value-of select="'body-sequence'"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:value-of select="'ditamap-body-sequence'"/>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:variable>
                 
-                
-                <!-- 
-                 <fo:page-sequence master-reference="{$page-sequence-reference}" 
-						force-page-count="no-force" initial-page-number="10">
-                            <xsl:call-template name="startPageNumbering"/>
-                            <xsl:call-template name="insertBodyStaticContents"/>
-                            <fo:flow flow-name="xsl-region-body">
-                                <xsl:choose>
-                                    <xsl:when test="contains(@class,' concept/concept ')"><xsl:apply-templates select="." mode="processConcept"/></xsl:when>
-                                    <xsl:when test="contains(@class,' task/task ')"><xsl:apply-templates select="." mode="processTask"/></xsl:when>
-                                    <xsl:when test="contains(@class,' reference/reference ')"><xsl:apply-templates select="." mode="processReference"/></xsl:when>
-                                    <xsl:otherwise><xsl:apply-templates select="." mode="processTopic"/></xsl:otherwise>
-                                </xsl:choose>
-								<fo:block id="{generate-id(.)}"></fo:block>
-                            </fo:flow>
-                        </fo:page-sequence>
-                 -->
-                 
+                <xsl:variable name="page-sequence-reference" select="if ($mapType = 'bookmap') then 'body-sequence' else 'ditamap-body-sequence'"/>
                 <xsl:choose>
-                  
-                    <xsl:when test="not(ancestor::*[2][contains(@class,' topic/topic ')])">
+                    <xsl:when test="empty(ancestor::*[contains(@class,' topic/topic ')]) and empty(ancestor::ot-placeholder:glossarylist)">
                         <fo:page-sequence master-reference="{$page-sequence-reference}" 
-						force-page-count="no-force" initial-page-number="10">
+                            force-page-count="no-force" initial-page-number="1">
                             <xsl:call-template name="startPageNumbering"/>
                             <xsl:call-template name="insertBodyStaticContents"/>
                             <fo:flow flow-name="xsl-region-body">
-                                <xsl:choose>
-                                    <xsl:when test="contains(@class,' concept/concept ')"><xsl:apply-templates select="." mode="processConcept"/></xsl:when>
-                                    <xsl:when test="contains(@class,' task/task ')"><xsl:apply-templates select="." mode="processTask"/></xsl:when>
-                                    <xsl:when test="contains(@class,' reference/reference ')"><xsl:apply-templates select="." mode="processReference"/></xsl:when>
-                                    <xsl:otherwise><xsl:apply-templates select="." mode="processTopic"/></xsl:otherwise>
-                                </xsl:choose>
-								<fo:block id="{generate-id(.)}"></fo:block>
+                                <xsl:apply-templates select="." mode="processTopic"/>
+                                <fo:block id="{generate-id(.)}"></fo:block>
                             </fo:flow>
                         </fo:page-sequence>
                     </xsl:when>
-                     
                     <xsl:otherwise>
-                        <xsl:choose>
-                            <xsl:when test="contains(@class,' concept/concept ')"><xsl:apply-templates select="." mode="processConcept"/></xsl:when>
-                            <xsl:when test="contains(@class,' task/task ')"><xsl:apply-templates select="." mode="processTask"/></xsl:when>
-                            <xsl:when test="contains(@class,' reference/reference ')"><xsl:apply-templates select="." mode="processReference"/></xsl:when>
-                            <xsl:otherwise><xsl:apply-templates select="." mode="processTopic"/></xsl:otherwise>
-                        </xsl:choose>
+                        <xsl:apply-templates select="." mode="processTopic"/>
                     </xsl:otherwise>
-                    
                 </xsl:choose>
-                -->
-                
-                
             </xsl:when>
-            
-            
-      		<xsl:otherwise>
+            <xsl:otherwise>
                 <xsl:apply-templates select="." mode="processUnknowTopic">
                     <xsl:with-param name="topicType" select="$topicType"/>
                 </xsl:apply-templates>
@@ -755,24 +682,53 @@
         </xsl:choose>
     </xsl:template>
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	<xsl:template match="ph">
 		<fo:block><xsl:text>&#10;</xsl:text></fo:block>
 	</xsl:template>
+	
+	
+	
+    <xsl:template match="/" mode="create-page-sequences">
+        <xsl:call-template name="generate-page-sequence-master">
+            <xsl:with-param name="master-name" select="'toc-sequence'"/>
+            <xsl:with-param name="master-reference" select="'toc'"/>
+        </xsl:call-template>
+        <xsl:call-template name="generate-page-sequence-master">
+            <xsl:with-param name="master-name" select="'body-sequence'"/>
+            <xsl:with-param name="master-reference" select="'body'"/>
+        </xsl:call-template>
+        <xsl:call-template name="generate-page-sequence-master">
+            <xsl:with-param name="master-name" select="'ditamap-body-sequence'"/>
+            <xsl:with-param name="master-reference" select="'body'"/>
+            <xsl:with-param name="first" select="true()"/>
+            <xsl:with-param name="last" select="true()"/>
+        </xsl:call-template>
+        <xsl:call-template name="generate-page-sequence-master">
+            <xsl:with-param name="master-name" select="'index-sequence'"/>
+            <xsl:with-param name="master-reference" select="'index'"/>
+            <xsl:with-param name="last" select="false()"/>
+        </xsl:call-template>
+        <xsl:call-template name="generate-page-sequence-master">
+            <xsl:with-param name="master-name" select="'front-matter'"/>
+            <xsl:with-param name="master-reference" select="'front-matter'"/>
+        </xsl:call-template>
+        <xsl:if test="$generate-back-cover">
+            <xsl:call-template name="generate-page-sequence-master">
+                <xsl:with-param name="master-name" select="'back-cover'"/>
+                <xsl:with-param name="master-reference" select="'back-cover'"/>
+                <xsl:with-param name="first" select="false()"/>
+            </xsl:call-template>
+        </xsl:if>
+        <xsl:call-template name="generate-page-sequence-master">
+            <xsl:with-param name="master-name" select="'glossary-sequence'"/>
+            <xsl:with-param name="master-reference" select="'glossary'"/>
+            <xsl:with-param name="last" select="false()"/>
+        </xsl:call-template>
+    </xsl:template>
+	
+	
+	
+	
 	
 	<xsl:template name="generate-page-sequence-master">
 		<xsl:param name="master-name"/>
