@@ -24,7 +24,7 @@ The two parts of the transformation and rendering comprise of:
 	
 2.	- This is the rendering (printing) step and the 'info.debrief' custom DITA-OT plugin produces the PDF via the DITA-OT base libraries and a XSL - Formatting Objects Processor (FO Processor)
 	- The "output/debrief/pdf" folder contains the resulting PDF output from this step
-	- I used Apache FOP 2.0 for the FO Processor and DITA-OT 1.8.5
+	- I used Apache FOP 2.1 for the FO Processor and DITA-OT 1.8.5
 
 If you are not already Gung-Ho on Java and all things tech, then try a few short online courses:
 

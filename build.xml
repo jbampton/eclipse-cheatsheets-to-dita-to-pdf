@@ -6,11 +6,8 @@
 	<property name="debrief.output.dir" value="output${file.separator}debrief${file.separator}"/>
 	<property name="infosvg.output.dir" value="output${file.separator}infosvg${file.separator}"/>
 	
-	<property name="lib.dir" value="src${file.separator}libs${file.separator}"/>
-	
+	<property name="lib.dir" value="src${file.separator}libs${file.separator}"/>	
 	<property name="dita-ot.dir" value="${lib.dir}DITA-OT1.8.5"/>
-	<property name="saxon.dir" value="${dita-ot.dir}/lib/saxon"/>		
-	<property name="saxon.jar" value="${saxon.dir}${file.separator}saxon9he.jar"/>
 	
 	<property name="debrief.output.dir.sep" value="${debrief.output.dir}${file.separator}"/>
 	<property name="debrief.output.ditamap" value="${debrief.output.dir.sep}map.ditamap"/>
