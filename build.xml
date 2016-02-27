@@ -8,7 +8,7 @@
 	
 	<property name="lib.dir" value="src${file.separator}libs${file.separator}"/>	
 	
-	<property name="dita-ot.dir" value="${lib.dir}dita-ot-2.2.1"/>
+	<property name="dita-ot.dir" value="${lib.dir}dita-ot-2.2.2"/>
 	
 	<property name="debrief.output.dir.sep" value="${debrief.output.dir}${file.separator}"/>
 	<property name="debrief.output.ditamap" value="${debrief.output.dir.sep}map.ditamap"/>
