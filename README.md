@@ -74,9 +74,13 @@ Use the up and down arrows to navigate through the man page and press 'q' to qui
 
 First you should check if Java is already installed on your system. 
 
-In the terminal type:
+In a terminal type the following commands:
 
 ####java -h
+
+####java -version
+
+![java -version](documentation/images/java/java-version.png)
 
 If it's installed you can read up about Java more by typing:
 
