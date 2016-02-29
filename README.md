@@ -70,6 +70,12 @@ After the Command Line Tools are installed go back to the terminal and type:
 
 Use the up and down arrows to navigate through the man page and press 'q' to quit.
 
+Another essential git command is:
+
+####git status
+
+![git status](documentation/images/git/git-status.png)
+
 ###Install Java
 
 First you should check if Java is already installed on your system. 
