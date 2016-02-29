@@ -42,13 +42,22 @@
         <h1>
 <a id="eclipse-cheat-sheets-to-dita-to-pdf" class="anchor" href="#eclipse-cheat-sheets-to-dita-to-pdf" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Eclipse cheat sheets to DITA to PDF</h1>
 
-<p>I worked on the <a href="https://en.wikipedia.org/wiki/Open_source">open source</a> <a href="https://www.oracle.com/java/index.html">Java</a> based project <a href="http://debrief.info/">Debrief</a> the leading maritime analysis tool which is also on GitHub at <a href="https://github.com/debrief/debrief">https://github.com/debrief/debrief</a>. This project aims to be a easy to follow tutorial on Java and is based on some parts of the document publishing that I did in the Debrief project.  The glossary of links at the bottom of this README describe the technologies being used.</p>
+<p>I worked on the <a href="https://en.wikipedia.org/wiki/Open_source">open source</a> <a href="https://www.oracle.com/java/index.html">Java</a> based project <a href="http://debrief.info/">Debrief</a> the leading maritime analysis tool which is also on GitHub at <a href="https://github.com/debrief/debrief">https://github.com/debrief/debrief</a>. This project aims to be a easy to follow tutorial on all the technologies listed and the code is based on some parts of the document publishing that I did in the Debrief project.  The glossary of links at the bottom of this README describe the technologies being used.</p>
 
-<p>Note: Now supporting multiple output formats - PDF, HTMLHelp, TocJS, XHTML.</p>
+<p>Jump ahead to the various sections in this README.md by using the links below:</p>
+
+<ul>
+<li><a href="#build-instructions">Build instructions</a></li>
+<li><a href="#build-instructions-mac-os-x">Build instructions - OS X</a></li>
+<li><a href="#homebrew-usage">Homebrew usage</a></li>
+<li><a href="#list-of-resources-and-technologies-used-on-this-github-project">List of resources</a></li>
+</ul>
+
+<p>The original project just created one highly customized <a href="https://acrobat.adobe.com/au/en/products/about-adobe-pdf.html">PDF</a> and there are a couple of example PDFs that can be seen in the root of this repository.  Recently I added support for other output formats that are not customized including HTMLHelp, TocJS and XHTML.</p>
 
 <p>This program runs inside <a href="https://www.eclipse.org/">Eclipse</a>, an <a href="https://en.wikipedia.org/wiki/Integrated_development_environment">integrated development environment</a> (IDE) and is mainly a Java based project in that all the code libraries use Java (<a href="https://xmlgraphics.apache.org/fop/">Apache FOP</a>, <a href="https://sourceforge.net/projects/saxon/files/Saxon-HE/">Saxon</a>, <a href="http://www.dita-ot.org/">DITA Open Toolkit</a>, <a href="http://ant.apache.org/">Apache ANT</a>, Eclipse) and it also uses <a href="https://www.w3.org/Style/XSL/">XSL</a> and <a href="https://www.w3.org/XML/">XML</a> heavily. Using Eclipse allows us to create a publishing pipeline creating all the working output formats one after the other, in one click by building the project.   Development was originally done in <a href="https://www.oxygenxml.com">oXygen XML Editor</a> then ported to Eclipse. </p>
 
-<p>The roadmap for this project is to keep the "info.debrief" custom DITA-OT plugin up to date with the latest current version of DITA-OT, in depth instructions on how to get up and running inside Eclipse and more in a tutorial style format. </p>
+<p>The roadmap for this project is to keep the "info.debrief" custom DITA-OT plugin up to date with the latest current version of DITA-OT, in depth instructions on how to get up and running inside Eclipse and lots more.</p>
 
 <p>When built and run this project takes a set of <a href="http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-cheatsheets.htm">Eclipse cheat sheets</a> and transforms them to PDF.  Eclipse cheat sheets are obviously best viewed inside Eclipse.  Using PDF allows us to print nicely formatted cheat sheets on paper which allows the user to work through the cheat sheets with a pen and check off each item as they go.  Using cheat sheets physically on paper was seen as a new way to learn and was the original concept of the Debrief cheat sheets publishing project I worked on.</p>
 
@@ -106,7 +115,7 @@
 <p>The <a href="https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf/wiki/Windows-Build-Instructions">Windows build instructions</a> for this project will be soon on this repositories wiki. </p>
 
 <h2>
-<a id="build-instructions---mac-os-x" class="anchor" href="#build-instructions---mac-os-x" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Build Instructions - Mac OS X</h2>
+<a id="build-instructions-mac-os-x" class="anchor" href="#build-instructions-mac-os-x" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Build Instructions Mac OS X</h2>
 
 <h3>
 <a id="install-git" class="anchor" href="#install-git" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install Git</h3>
@@ -131,28 +140,40 @@
 
 <p>Use the up and down arrows to navigate through the man page and press 'q' to quit.</p>
 
+<p>Another essential git command is:</p>
+
+<h4>
+<a id="git-status" class="anchor" href="#git-status" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git status</h4>
+
+<p><img src="documentation/images/git/git-status.png" alt="git status"></p>
+
 <h3>
 <a id="install-java" class="anchor" href="#install-java" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install Java</h3>
 
 <p>First you should check if Java is already installed on your system. </p>
 
-<p>In the terminal type:</p>
+<p>In a terminal type the following commands:</p>
 
 <h4>
 <a id="java--h" class="anchor" href="#java--h" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>java -h</h4>
-
-<p>If it's installed you can read up about Java more by typing:</p>
-
-<h4>
-<a id="man-java" class="anchor" href="#man-java" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>man java</h4>
-
-<p><img src="documentation/images/man/man-java.png" alt="man java"></p>
 
 <p>If Java is not installed you need to install the Java Development Kit (JDK) as Eclipse needs Java to run so you should first read the <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html">Java Platform, Standard Edition Installation Guide</a></p>
 
 <p>So then go to: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a></p>
 
 <p>Choose the JDK version for your <a href="https://en.wikipedia.org/wiki/Operating_system">Operating System</a>.</p>
+
+<p>If it's installed you can read up about Java more by typing:</p>
+
+<h4>
+<a id="java--version" class="anchor" href="#java--version" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>java -version</h4>
+
+<p><img src="documentation/images/java/java-version.png" alt="java -version"></p>
+
+<h4>
+<a id="man-java" class="anchor" href="#man-java" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>man java</h4>
+
+<p><img src="documentation/images/man/man-java.png" alt="man java"></p>
 
 <h3>
 <a id="install-eclipse" class="anchor" href="#install-eclipse" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install Eclipse</h3>
@@ -241,7 +262,7 @@
 <h3>
 <a id="install-github-desktop" class="anchor" href="#install-github-desktop" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install GitHub Desktop</h3>
 
-<p>The build's repository is found within GitHub, and the "GitHub Desktop for Mac" application will allow you to clone and work on the build more easily, while retaining a link to the primary source, and thus obtaining updates and having the option to submit modifications which could be candidates for inclusion.</p>
+<p>The build's repository is found within GitHub, and the "GitHub Desktop for Mac" application will allow you to clone and work on the build more easily, while retaining a link to the primary source, and thus obtaining updates and having the option to submit modifications which could be candidates for inclusion.  GitHub Desktop is currently available for both OS X and Windows.</p>
 
 <p>Go to: <a href="https://desktop.github.com/">GitHub Desktop</a></p>
 
@@ -395,7 +416,7 @@ DITA-OT provides that base XSL code that you 'override' with your custom work.</
 <h2>
 <a id="homebrew-usage" class="anchor" href="#homebrew-usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Homebrew usage</h2>
 
-<p><a href="http://brew.sh">Homebrew</a> is an amazing package management system that installs the stuff you need that Apple didn't.</p>
+<p><a href="http://brew.sh">Homebrew</a> is an amazing package management system for OS X that installs the stuff you need that Apple didn't.</p>
 
 <p><a href="http://brewformulas.org">Homebrew Formula</a> are written in Ruby.</p>
 
@@ -406,6 +427,11 @@ DITA-OT provides that base XSL code that you 'override' with your custom work.</
 <p>Once you have installed Homebrew you can run through the basic commands below.</p>
 
 <p>Open a terminal and type:</p>
+
+<h3>
+<a id="brew--v" class="anchor" href="#brew--v" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>brew -v</h3>
+
+<p><img src="documentation/images/homebrew/brew-v.png" alt="brew -v"></p>
 
 <h3>
 <a id="man-brew" class="anchor" href="#man-brew" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>man brew</h3>
@@ -535,6 +561,8 @@ DITA-OT provides that base XSL code that you 'override' with your custom work.</
 <a id="contributions" class="anchor" href="#contributions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributions</h2>
 
 <p>Fork and pull request. Simple.</p>
+
+<p><a href="#eclipse-cheat-sheets-to-dita-to-pdf">Back to top</a></p>
       </section>
       <footer>
         <p>Project maintained by <a href="https://github.com/jbampton">jbampton</a></p>
