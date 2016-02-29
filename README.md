@@ -55,7 +55,7 @@ The project was originally developed on OS X and the documentation below lists t
 The [Windows build instructions](https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf/wiki/Windows-Build-Instructions) for this project will be soon on this repositories wiki. 
 
 
-##Build Instructions - Mac OS X
+##Build Instructions Mac OS X
 
 ###Install Git
 
