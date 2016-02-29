@@ -347,6 +347,10 @@ Once you have installed Homebrew you can run through the basic commands below.
 
 Open a terminal and type:
 
+###brew -v
+
+![brew -v](documentation/images/homebrew/brew-v.png)
+
 ###man brew
 ![man brew](documentation/images/man/man_brew.png)
 
