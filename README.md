@@ -329,7 +329,7 @@ Placing the custom code only in these two files follows best practice techniques
 
 ##Homebrew usage
 
-[Homebrew](http://brew.sh) is an amazing package management system that installs the stuff you need that Apple didn't.
+[Homebrew](http://brew.sh) is an amazing package management system for OS X that installs the stuff you need that Apple didn't.
 
 [Homebrew Formula](http://brewformulas.org) are written in Ruby.
 
