@@ -17,7 +17,7 @@ The roadmap for this project is to keep the "info.debrief" custom DITA-OT plugin
 
 When built and run this project takes a set of [Eclipse cheat sheets](http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-cheatsheets.htm) and transforms them to PDF.  Eclipse cheat sheets are obviously best viewed inside Eclipse.  Using PDF allows us to print nicely formatted cheat sheets on paper which allows the user to work through the cheat sheets with a pen and check off each item as they go.  Using cheat sheets physically on paper was seen as a new way to learn and was the original concept of the Debrief cheat sheets publishing project I worked on.
 
-[Darwin Information Typing Architecture](https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture) (DITA) is an XML data model for authoring and using DITA-OT you can publish those ideas. The DITA standard is maintained by the [OASIS](https://www.oasis-open.org/) [DITA Technical Committee](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita).  Some of the largest and most successful companies in the world use DITA. The next link is an informal list of [companies using DITA](http://www.ditawriter.com/companies-using-dita/)
+[Darwin Information Typing Architecture](https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture) (DITA) is an XML data model for authoring and using DITA-OT you can publish those ideas. The DITA standard is maintained by the [OASIS](https://www.oasis-open.org/) [DITA Technical Committee](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita).  Some of the largest and most successful companies in the world use DITA. The next link is an informal list of [companies using DITA](http://www.ditawriter.com/companies-using-dita/).
 
 It's a two-step process first the DITA XML is created from the Eclipse cheat sheets (XML files) and then you use the DITA-Open Toolkit to create the PDF from the auto created DITA files.
 
@@ -40,7 +40,7 @@ If you are not already Gung-Ho on Java and all things tech, then try a few short
 - https://www.codeschool.com/courses/try-git
 - https://www.codecademy.com/learn/learn-git
 
-And then come train in the [REAL DOJO](http://www.codewars.com) and reach your highest potential, become faster, stronger and more powerful......JEDI MASTER LEVEL.....!??!?!!  
+And then come train in the [REAL DOJO](http://www.codewars.com) and reach your highest potential, become **faster**, **stronger** and **more powerful**......**JEDI MASTER LEVEL**.....**!??!?!!**  
 
 
 ##Yo let's build...watch the Star Wars build run on Youtube....BrisVegas Jedi Master Style...
