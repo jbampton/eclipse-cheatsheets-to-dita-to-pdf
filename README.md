@@ -77,6 +77,12 @@ After the Command Line Tools are installed go back to the terminal and type:
 
 Use the up and down arrows to navigate through the man page and press 'q' to quit.
 
+You can then type:
+
+####which git
+
+![which git](documentation/images/git/which-git.png)
+
 Another essential git command is:
 
 ####git status
