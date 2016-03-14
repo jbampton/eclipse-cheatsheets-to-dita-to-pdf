@@ -1,6 +1,10 @@
 #Eclipse cheat sheets to DITA to PDF
 
-I worked on the [open source](https://en.wikipedia.org/wiki/Open_source) [Java](https://www.oracle.com/java/index.html) based project [Debrief](http://debrief.info/) the leading maritime analysis tool which is also on GitHub at [https://github.com/debrief/debrief](https://github.com/debrief/debrief). This project aims to be a easy to follow tutorial on all the technologies listed and the code is based on some parts of the document publishing that I did in the Debrief project.  The glossary of links at the bottom of this README describe the technologies being used.
+I worked on the [open source](https://en.wikipedia.org/wiki/Open_source) [Java](https://www.oracle.com/java/index.html) based project [Debrief](http://debrief.info/) the leading maritime analysis tool which is also on GitHub at [https://github.com/debrief/debrief](https://github.com/debrief/debrief).  Java is now ranked number one on the [TIOBE Index](http://www.tiobe.com/tiobe_index) and this project aims to be a easy to follow tutorial on all the technologies listed. The code is based on some parts of the document publishing that I did in the Debrief project.  The list of resources at the bottom of this README describe the technologies being used.
+
+The original project just created one highly customized [PDF](https://acrobat.adobe.com/au/en/products/about-adobe-pdf.html) and there are a couple of example PDFs that can be seen in the root of this repository.  Recently I added support for other output formats that are not customized including HTMLHelp, TocJS and XHTML.
+
+This program runs inside [Eclipse](https://www.eclipse.org/), an [integrated development environment](https://en.wikipedia.org/wiki/Integrated_development_environment) (IDE) and is mainly a Java based project in that all the code libraries use Java ([Apache FOP](https://xmlgraphics.apache.org/fop/), [Saxon](https://sourceforge.net/projects/saxon/files/Saxon-HE/), [DITA Open Toolkit](http://www.dita-ot.org/), [Apache ANT](http://ant.apache.org/), Eclipse) and it also uses [XSL](https://www.w3.org/Style/XSL/) and [XML](https://www.w3.org/XML/) heavily. Using Eclipse allows us to create a publishing pipeline creating all the working output formats one after the other, in one click by building the project.   Development was originally done in [oXygen XML Editor](https://www.oxygenxml.com) then ported to Eclipse. 
 
 Jump ahead to the various sections in this README.md by using the links below:
 
@@ -8,10 +12,6 @@ Jump ahead to the various sections in this README.md by using the links below:
  - [Build instructions - OS X](#build-instructions-mac-os-x)
  - [Homebrew usage](#homebrew-usage)
  - [List of resources](#list-of-resources-and-technologies-used-on-this-github-project)
-
-The original project just created one highly customized [PDF](https://acrobat.adobe.com/au/en/products/about-adobe-pdf.html) and there are a couple of example PDFs that can be seen in the root of this repository.  Recently I added support for other output formats that are not customized including HTMLHelp, TocJS and XHTML.
-
-This program runs inside [Eclipse](https://www.eclipse.org/), an [integrated development environment](https://en.wikipedia.org/wiki/Integrated_development_environment) (IDE) and is mainly a Java based project in that all the code libraries use Java ([Apache FOP](https://xmlgraphics.apache.org/fop/), [Saxon](https://sourceforge.net/projects/saxon/files/Saxon-HE/), [DITA Open Toolkit](http://www.dita-ot.org/), [Apache ANT](http://ant.apache.org/), Eclipse) and it also uses [XSL](https://www.w3.org/Style/XSL/) and [XML](https://www.w3.org/XML/) heavily. Using Eclipse allows us to create a publishing pipeline creating all the working output formats one after the other, in one click by building the project.   Development was originally done in [oXygen XML Editor](https://www.oxygenxml.com) then ported to Eclipse. 
 
 The roadmap for this project is to keep the "info.debrief" custom DITA-OT plugin up to date with the latest current version of DITA-OT, in depth instructions on how to get up and running inside Eclipse and lots more.
 
