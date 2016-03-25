@@ -479,6 +479,13 @@ man page - https://en.wikipedia.org/wiki/Man_page
 Terminal (OS X) - https://en.wikipedia.org/wiki/Terminal_(OS_X)
 
 
+##License
+
+The DITA Open Toolkit and Apache FOP are licensed for use under the the Apache Software Foundation License v2.0.
+
+Saxon uses the Mozilla Public License Version 2.0.
+
+
 ##Contributions
 Fork and pull request. Simple.
 
