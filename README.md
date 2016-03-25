@@ -12,6 +12,7 @@ Jump ahead to the various sections in this README.md by using the links below:
  - [Build instructions - OS X](#build-instructions-mac-os-x)
  - [Homebrew usage](#homebrew-usage)
  - [List of resources](#list-of-resources-and-technologies-used-on-this-github-project)
+ - [Licenses](#license)
 
 The roadmap for this project is to keep the "info.debrief" custom DITA-OT plugin up to date with the latest current version of DITA-OT, in depth instructions on how to get up and running inside Eclipse and lots more.
 
