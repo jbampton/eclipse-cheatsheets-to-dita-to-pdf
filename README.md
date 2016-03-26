@@ -98,7 +98,9 @@ In a terminal type the following commands:
 
 ####java
 
-If Java is installed you will see the Java help message
+If Java is installed you will see the Java help message like the image below. 
+
+![java](documentation/images/java/java.png)
 
 If Java is not installed you need to install the Java Development Kit (JDK) as Eclipse needs Java to run so you should first read the [Java Platform, Standard Edition Installation Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html)
 
