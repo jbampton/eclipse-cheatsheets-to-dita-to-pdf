@@ -357,9 +357,11 @@ Placing the custom code only in these two files follows best practice techniques
 
 [Homebrew Formula](http://brewformulas.org) are written in Ruby.
 
-A made a [video on Homebrew](https://www.youtube.com/watch?v=IonWEFStPio) which runs for under minute that shows the typical brew update command.
+You install Homebrew via the command line as shown in my short [Homebrew install video](https://www.youtube.com/watch?v=Ird_MGf3m0Q).
 
 If you install Homebrew you should try to run brew update daily.
+
+I made another [video on Homebrew](https://www.youtube.com/watch?v=IonWEFStPio) which runs for under minute that shows the typical brew update command.
 
 Once you have installed Homebrew you can run through the basic commands below.
 
