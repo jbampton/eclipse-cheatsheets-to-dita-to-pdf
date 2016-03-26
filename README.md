@@ -84,7 +84,7 @@ You can then type:
 
 ![which git](documentation/images/git/which-git.png)
 
-Another essential git command is:
+You can run the next command after you have cloned this project:
 
 ####git status
 
@@ -96,7 +96,9 @@ First you should check if Java is already installed on your system.
 
 In a terminal type the following commands:
 
-####java -h
+####java
+
+If Java is installed you will see the Java help message
 
 If Java is not installed you need to install the Java Development Kit (JDK) as Eclipse needs Java to run so you should first read the [Java Platform, Standard Edition Installation Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html)
 
