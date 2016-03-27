@@ -281,7 +281,7 @@ This will bring the project into Eclipse.
 
 If you have not already done so, click on the "Workspace" button so that you can view the project.
 
-You must add the JAR files from SaxonHE and DITA-OT to Ant inside Eclipse. 
+You must add the JAR files from DITA-OT to Ant inside Eclipse. 
 
 Go to Eclipse -> Preferences
 
