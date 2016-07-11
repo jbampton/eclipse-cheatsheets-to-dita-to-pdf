@@ -17,9 +17,7 @@
 		
 	<target name="xslt2">
 	   <!-- create the root Ditamap file an the four child task files  -->
-   		<xslt in="test.xml" out="${debrief.output.ditamap}" style="${cheatsheets.to.dita}" force="true">
-   			<classpath location="${saxon.jar}"/>
-   		</xslt>
+   		<xslt in="test.xml" out="${debrief.output.ditamap}" style="${cheatsheets.to.dita}" force="true"/>
 	</target>
 	
 	<!--
