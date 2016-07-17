@@ -42,7 +42,13 @@
         <h1>
 <a id="eclipse-cheat-sheets-to-dita-to-pdf" class="anchor" href="#eclipse-cheat-sheets-to-dita-to-pdf" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Eclipse cheat sheets to DITA to PDF</h1>
 
-<p>I worked on the <a href="https://en.wikipedia.org/wiki/Open_source">open source</a> <a href="https://www.oracle.com/java/index.html">Java</a> based project <a href="http://debrief.info/">Debrief</a> the leading maritime analysis tool which is also on GitHub at <a href="https://github.com/debrief/debrief">https://github.com/debrief/debrief</a>. This project aims to be a easy to follow tutorial on all the technologies listed and the code is based on some parts of the document publishing that I did in the Debrief project.  The glossary of links at the bottom of this README describe the technologies being used.</p>
+<p>I worked on the <a href="https://en.wikipedia.org/wiki/Open_source">open source</a> <a href="https://www.oracle.com/java/index.html">Java</a> based project <a href="http://debrief.info/">Debrief</a> the leading maritime analysis tool.  This project is based on some parts of the document publishing that I did in the Debrief project.  The list of resources at the bottom of this README describe the technologies being used.</p>
+
+<p>The original project created a set of DITA XML files and one highly customized <a href="https://acrobat.adobe.com/au/en/products/about-adobe-pdf.html">PDF</a> and there are a couple of example PDFs that can be seen in the root of this repository.  Recently I added support for other output formats that are not customized including HTMLHelp, TocJS and XHTML.</p>
+
+<p>This program runs inside <a href="https://www.eclipse.org/">Eclipse</a>, an <a href="https://en.wikipedia.org/wiki/Integrated_development_environment">integrated development environment</a> (IDE) and is mainly a Java based project in that all the code libraries use Java (<a href="https://xmlgraphics.apache.org/fop/">Apache FOP</a>, <a href="https://sourceforge.net/projects/saxon/files/Saxon-HE/">Saxon</a>, <a href="http://www.dita-ot.org/">DITA Open Toolkit</a>, <a href="http://ant.apache.org/">Apache ANT</a>, Eclipse) and it also uses <a href="https://www.w3.org/Style/XSL/">XSL</a> and <a href="https://www.w3.org/XML/">XML</a> heavily. Using Eclipse allows us to create a publishing pipeline creating all the working output formats one after the other, in one click by building the project.   Development was originally done in <a href="https://www.oxygenxml.com">oXygen XML Editor</a> then ported to Eclipse. </p>
+
+<p>Since Java is now ranked number one on the <a href="http://www.tiobe.com/tiobe_index">TIOBE Index</a>, this project aims to be a easy to follow tutorial on all the technologies listed.</p>
 
 <p>Jump ahead to the various sections in this README.md by using the links below:</p>
 
@@ -51,17 +57,14 @@
 <li><a href="#build-instructions-mac-os-x">Build instructions - OS X</a></li>
 <li><a href="#homebrew-usage">Homebrew usage</a></li>
 <li><a href="#list-of-resources-and-technologies-used-on-this-github-project">List of resources</a></li>
+<li><a href="#license">Licenses</a></li>
 </ul>
-
-<p>The original project just created one highly customized <a href="https://acrobat.adobe.com/au/en/products/about-adobe-pdf.html">PDF</a> and there are a couple of example PDFs that can be seen in the root of this repository.  Recently I added support for other output formats that are not customized including HTMLHelp, TocJS and XHTML.</p>
-
-<p>This program runs inside <a href="https://www.eclipse.org/">Eclipse</a>, an <a href="https://en.wikipedia.org/wiki/Integrated_development_environment">integrated development environment</a> (IDE) and is mainly a Java based project in that all the code libraries use Java (<a href="https://xmlgraphics.apache.org/fop/">Apache FOP</a>, <a href="https://sourceforge.net/projects/saxon/files/Saxon-HE/">Saxon</a>, <a href="http://www.dita-ot.org/">DITA Open Toolkit</a>, <a href="http://ant.apache.org/">Apache ANT</a>, Eclipse) and it also uses <a href="https://www.w3.org/Style/XSL/">XSL</a> and <a href="https://www.w3.org/XML/">XML</a> heavily. Using Eclipse allows us to create a publishing pipeline creating all the working output formats one after the other, in one click by building the project.   Development was originally done in <a href="https://www.oxygenxml.com">oXygen XML Editor</a> then ported to Eclipse. </p>
 
 <p>The roadmap for this project is to keep the "info.debrief" custom DITA-OT plugin up to date with the latest current version of DITA-OT, in depth instructions on how to get up and running inside Eclipse and lots more.</p>
 
 <p>When built and run this project takes a set of <a href="http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-cheatsheets.htm">Eclipse cheat sheets</a> and transforms them to PDF.  Eclipse cheat sheets are obviously best viewed inside Eclipse.  Using PDF allows us to print nicely formatted cheat sheets on paper which allows the user to work through the cheat sheets with a pen and check off each item as they go.  Using cheat sheets physically on paper was seen as a new way to learn and was the original concept of the Debrief cheat sheets publishing project I worked on.</p>
 
-<p><a href="https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture">Darwin Information Typing Architecture</a> (DITA) is an XML data model for authoring and using DITA-OT you can publish those ideas. The DITA standard is maintained by the <a href="https://www.oasis-open.org/">OASIS</a> <a href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita">DITA Technical Committee</a>.  Some of the largest and most successful companies in the world use DITA. The next link is an informal list of <a href="http://www.ditawriter.com/companies-using-dita/">companies using DITA</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture">Darwin Information Typing Architecture</a> (DITA) is an XML data model for authoring and using DITA-OT you can publish those ideas. The DITA standard is maintained by the <a href="https://www.oasis-open.org/">OASIS</a> <a href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita">DITA Technical Committee</a>.  Some of the largest and most successful companies in the world use DITA. The next link is an informal list of <a href="http://www.ditawriter.com/companies-using-dita/">companies using DITA</a>.</p>
 
 <p>It's a two-step process first the DITA XML is created from the Eclipse cheat sheets (XML files) and then you use the DITA-Open Toolkit to create the PDF from the auto created DITA files.</p>
 
@@ -100,7 +103,7 @@
 <li><a href="https://www.codecademy.com/learn/learn-git">https://www.codecademy.com/learn/learn-git</a></li>
 </ul>
 
-<p>And then come train in the <a href="http://www.codewars.com">REAL DOJO</a> and reach your highest potential, become faster, stronger and more powerful......JEDI MASTER LEVEL.....!??!?!!  </p>
+<p>And then come train in the <a href="http://www.codewars.com">REAL DOJO</a> and reach your highest potential, become <strong>faster</strong>, <strong>stronger</strong> and <strong>more powerful</strong>......<strong>JEDI MASTER LEVEL</strong>.....<strong>!??!?!!</strong>  </p>
 
 <h2>
 <a id="yo-lets-buildwatch-the-star-wars-build-run-on-youtubebrisvegas-jedi-master-style" class="anchor" href="#yo-lets-buildwatch-the-star-wars-build-run-on-youtubebrisvegas-jedi-master-style" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Yo let's build...watch the Star Wars build run on Youtube....BrisVegas Jedi Master Style...</h2>
@@ -140,7 +143,14 @@
 
 <p>Use the up and down arrows to navigate through the man page and press 'q' to quit.</p>
 
-<p>Another essential git command is:</p>
+<p>You can then type:</p>
+
+<h4>
+<a id="which-git" class="anchor" href="#which-git" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>which git</h4>
+
+<p><img src="documentation/images/git/which-git.png" alt="which git"></p>
+
+<p>You can run the next command after you have cloned this project:</p>
 
 <h4>
 <a id="git-status" class="anchor" href="#git-status" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git status</h4>
@@ -155,7 +165,11 @@
 <p>In a terminal type the following commands:</p>
 
 <h4>
-<a id="java--h" class="anchor" href="#java--h" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>java -h</h4>
+<a id="java" class="anchor" href="#java" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>java</h4>
+
+<p>If Java is installed you will see the Java help message like the image below. </p>
+
+<p><img src="documentation/images/java/java.png" alt="java"></p>
 
 <p>If Java is not installed you need to install the Java Development Kit (JDK) as Eclipse needs Java to run so you should first read the <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html">Java Platform, Standard Edition Installation Guide</a></p>
 
@@ -343,7 +357,7 @@
 
 <p>If you have not already done so, click on the "Workspace" button so that you can view the project.</p>
 
-<p>You must add the JAR files from SaxonHE and DITA-OT to Ant inside Eclipse. </p>
+<p>You must add the JAR files from DITA-OT to Ant inside Eclipse. </p>
 
 <p>Go to Eclipse -&gt; Preferences</p>
 
@@ -420,9 +434,11 @@ DITA-OT provides that base XSL code that you 'override' with your custom work.</
 
 <p><a href="http://brewformulas.org">Homebrew Formula</a> are written in Ruby.</p>
 
-<p>A made a <a href="https://www.youtube.com/watch?v=IonWEFStPio">video on Homebrew</a> which runs for under minute that shows the typical brew update command.</p>
+<p>You install Homebrew via the command line as shown in my short <a href="https://www.youtube.com/watch?v=Ird_MGf3m0Q">Homebrew install video</a>.</p>
 
 <p>If you install Homebrew you should try to run brew update daily.</p>
+
+<p>I made another <a href="https://www.youtube.com/watch?v=IonWEFStPio">video on Homebrew</a> which runs for under minute that shows the typical brew update command.</p>
 
 <p>Once you have installed Homebrew you can run through the basic commands below.</p>
 
@@ -556,6 +572,13 @@ DITA-OT provides that base XSL code that you 'override' with your custom work.</
 <p>man page - <a href="https://en.wikipedia.org/wiki/Man_page">https://en.wikipedia.org/wiki/Man_page</a></p>
 
 <p>Terminal (OS X) - <a href="https://en.wikipedia.org/wiki/Terminal_(OS_X)">https://en.wikipedia.org/wiki/Terminal_(OS_X)</a></p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>The DITA Open Toolkit and Apache FOP are licensed for use under the the Apache Software Foundation License v2.0.</p>
+
+<p>Saxon uses the Mozilla Public License Version 2.0.</p>
 
 <h2>
 <a id="contributions" class="anchor" href="#contributions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributions</h2>
