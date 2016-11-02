@@ -1,4 +1,5 @@
 #Eclipse cheat sheets to DITA to PDF
+[&#8595;](#license)
 
 I worked on the [open source](https://en.wikipedia.org/wiki/Open_source) [Java](https://www.oracle.com/java/index.html) based project [Debrief](http://debrief.info/) the leading maritime analysis tool.  This project is based on some parts of the document publishing that I did in the Debrief project.  The list of resources at the bottom of this README describe the technologies being used.
 
