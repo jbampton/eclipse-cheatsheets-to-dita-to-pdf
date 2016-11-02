@@ -50,7 +50,7 @@ And then come train in the [REAL DOJO](http://www.codewars.com) and reach your h
 
 [See the build run full screen in 1080p](https://youtu.be/LJ5DsFP_THo)
 
-[&#8595;](#license)
+[&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
 
 ##Build Instructions
 
