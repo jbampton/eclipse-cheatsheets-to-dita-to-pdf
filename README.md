@@ -8,7 +8,7 @@ This program runs inside [Eclipse](https://www.eclipse.org/), an [integrated dev
 
 Since Java is now ranked number one on the [TIOBE Index](http://www.tiobe.com/tiobe_index), this project aims to be a easy to follow tutorial on all the technologies listed.
 
-Jump ahead to the various sections in this README.md by using the links below:
+Wait until this webpage fully loads and then jump ahead to the various sections in this README.md by using the links below:
 
  - [Build instructions](#build-instructions)
  - [Build instructions - OS X](#build-instructions-mac-os-x)
@@ -58,6 +58,7 @@ The project was originally developed on OS X and the documentation below lists t
 
 The [Windows build instructions](https://github.com/jbampton/eclipse-cheatsheets-to-dita-to-pdf/wiki/Windows-Build-Instructions) for this project will be soon on this repositories wiki. 
 
+[&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
 
 ##Build Instructions Mac OS X
 
@@ -93,6 +94,8 @@ You can run the next command after you have cloned this project:
 
 ![git status](documentation/images/git/git-status.png)
 
+[&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
+
 ###Install Java
 
 First you should check if Java is already installed on your system. 
@@ -121,7 +124,7 @@ If it's installed you can read up about Java more by typing:
 
 ![man java](documentation/images/man/man-java.png)
 
-
+[&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
 
 ###Install Eclipse
 
@@ -200,6 +203,7 @@ Launch Eclipse for the first time. Doing so will ask you to Select a "workspace.
 
 Quit Eclipse for now.
 
+[&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
 
 ###Install GitHub Desktop
 
@@ -219,7 +223,7 @@ Move this to your system's Applications directory.
 
 ![Applications directory](documentation/images/osx/applications_folder.png)
 
-
+[&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
 
 ###Clone the project to your desktop computer
 
@@ -253,10 +257,13 @@ You will see a progress bar indicating the progress of files being downloaded fr
 
 Quit GitHub Desktop.
 
+[&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
+
 ###Install Homebrew and Apache Ant
 
 The project uses [Homebrew](http://brew.sh/) and I installed Apache Ant inside Homebrew with the [Ant](http://brewformulas.org/Ant) Homebrew formula.  Towards the bottom of this README.md there is some information on Homebrew usage.
 
+[&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
 
 ###Import project into Eclipse
 
@@ -323,6 +330,9 @@ The base target is "xslt2", this creates the DITA-XML files from the input Eclip
 Finally click "Run".
 
 ![Ant Edit Config](documentation/images/ant/ant_edit_config.png)
+
+[&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
+
 	
 ##How DITA-OT PDF Plugins work
 
@@ -352,6 +362,8 @@ Custom XSL can be placed in two XSL files both named "custom.xsl".  I placed all
 ![custom.xsl](documentation/images/dita/custom.xsl.png) 
  
 Placing the custom code only in these two files follows best practice techniques on how to build a DITA-OT PDF plugin.
+
+[&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
 
 
 ##Homebrew usage
@@ -390,6 +402,8 @@ Open a terminal and type:
 
 ###brew list
 ![brew list](documentation/images/homebrew/brew_list.png)
+
+[&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
 
 
 ##List of resources and technologies used on this GitHub project	
@@ -488,6 +502,7 @@ man page - https://en.wikipedia.org/wiki/Man_page
 
 Terminal (OS X) - https://en.wikipedia.org/wiki/Terminal_(OS_X)
 
+[&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
 
 ##License
 
@@ -495,8 +510,9 @@ The DITA Open Toolkit and Apache FOP are licensed for use under the the Apache S
 
 Saxon uses the Mozilla Public License Version 2.0.
 
+[&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
 
 ##Contributions
 Fork and pull request. Simple.
 
-[Back to top](#eclipse-cheat-sheets-to-dita-to-pdf)
+[&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf)
