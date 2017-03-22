@@ -1,4 +1,4 @@
-#Eclipse cheat sheets to DITA to PDF
+# Eclipse cheat sheets to DITA to PDF
 
 I worked on the [open source](https://en.wikipedia.org/wiki/Open_source) [Java](https://www.oracle.com/java/index.html) based project [Debrief](http://debrief.info/) the leading maritime analysis tool.  This project is based on some parts of the document publishing that I did in the Debrief project.  The list of resources at the bottom of this README describe the technologies being used.
 
@@ -46,13 +46,13 @@ If you are not already Gung-Ho on Java and all things tech, then try a few short
 And then come train in the [REAL DOJO](http://www.codewars.com) and reach your highest potential, become **faster**, **stronger** and **more powerful**......**JEDI MASTER LEVEL**.....**!??!?!!**  
 
 
-##Yo let's build...watch the Star Wars build run on Youtube....BrisVegas Jedi Master Style...
+## Yo let's build...watch the Star Wars build run on Youtube....BrisVegas Jedi Master Style...
 
 [See the build run full screen in 1080p](https://youtu.be/LJ5DsFP_THo)
 
 [&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
 
-##Build Instructions
+## Build Instructions
 
 The project was originally developed on OS X and the documentation below lists the instructions on how to set up and build the project for OS X.
 
@@ -60,9 +60,9 @@ The [Windows build instructions](https://github.com/jbampton/eclipse-cheatsheets
 
 [&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
 
-##Build Instructions Mac OS X
+## Build Instructions Mac OS X
 
-###Install Git
+### Install Git
 
 On OS X, open your Applications folder, then open the Utilities folder. Open the Terminal application.
 
@@ -70,13 +70,13 @@ On OS X, open your Applications folder, then open the Utilities folder. Open the
 
 In the terminal type:
 
-####git --help
+#### git --help
 
 This will either print the usage of the git command if git is already installed, or trigger the Command Line Tools (OS X) for Xcode to install.
 
 After the Command Line Tools are installed go back to the terminal and type:
 
-####man git
+#### man git
 
 ![man git](documentation/images/man/man-git.png)
 
@@ -84,25 +84,25 @@ Use the up and down arrows to navigate through the man page and press 'q' to qui
 
 You can then type:
 
-####which git
+#### which git
 
 ![which git](documentation/images/git/which-git.png)
 
 You can run the next command after you have cloned this project:
 
-####git status
+#### git status
 
 ![git status](documentation/images/git/git-status.png)
 
 [&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
 
-###Install Java
+### Install Java
 
 First you should check if Java is already installed on your system. 
 
 In a terminal type the following commands:
 
-####java
+#### java
 
 If Java is installed you will see the Java help message like the image below. 
 
@@ -116,17 +116,17 @@ Choose the JDK version for your [Operating System](https://en.wikipedia.org/wiki
 
 If it's installed you can read up about Java more by typing:
 
-####java -version
+#### java -version
 
 ![java -version](documentation/images/java/java-version.png)
 
-####man java
+#### man java
 
 ![man java](documentation/images/man/man-java.png)
 
 [&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
 
-###Install Eclipse
+### Install Eclipse
 
 Go to: [Eclipse Downloads](https://www.eclipse.org/downloads/?osType=macosx)
 
@@ -146,17 +146,17 @@ First you should click on the checksum type in the image below:
 
 I used SHA-512 so in a terminal in the directory or folder where you downloaded the Eclipse package to, the command to type would be:
 
-####shasum -a 512 eclipse-inst-mac64.tar.gz
+#### shasum -a 512 eclipse-inst-mac64.tar.gz
 ![eclipse shasum](documentation/images/terminal/example_shasum.png)
 
 You should check the output of the shasum command matches what's displayed on the Eclipse website for the type of checksum you choose.  You can select the text in the terminal, copy it and then find it on the Eclipse website.
 
 For more information on the shasum or md5 command open a terminal and type:
 
-####man shasum  
+#### man shasum  
 ![man shasum](documentation/images/man/man_shasum.png)
 
-####man md5
+#### man md5
 ![man md5](documentation/images/man/man_md5.png)
 
 Use the up and down arrows on the keyboard to navigate through the man page documentation.
@@ -205,7 +205,7 @@ Quit Eclipse for now.
 
 [&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
 
-###Install GitHub Desktop
+### Install GitHub Desktop
 
 The build's repository is found within GitHub, and the "GitHub Desktop for Mac" application will allow you to clone and work on the build more easily, while retaining a link to the primary source, and thus obtaining updates and having the option to submit modifications which could be candidates for inclusion.  GitHub Desktop is currently available for both OS X and Windows.
 
@@ -225,7 +225,7 @@ Move this to your system's Applications directory.
 
 [&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
 
-###Clone the project to your desktop computer
+### Clone the project to your desktop computer
 
 Go to the GitHub repository for this project:
 
@@ -259,13 +259,13 @@ Quit GitHub Desktop.
 
 [&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
 
-###Install Homebrew and Apache Ant
+### Install Homebrew and Apache Ant
 
 The project uses [Homebrew](http://brew.sh/) and I installed Apache Ant inside Homebrew with the [Ant](http://brewformulas.org/Ant) Homebrew formula.  Towards the bottom of this README.md there is some information on Homebrew usage.
 
 [&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
 
-###Import project into Eclipse
+### Import project into Eclipse
 
 Launch Eclipse.
 
@@ -334,7 +334,7 @@ Finally click "Run".
 [&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
 
 	
-##How DITA-OT PDF Plugins work
+## How DITA-OT PDF Plugins work
 
 Plugins are placed in the DITA-OT plugins directory.  You can see the plugin I built in this directory named "info.debrief".
 
@@ -366,7 +366,7 @@ Placing the custom code only in these two files follows best practice techniques
 [&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
 
 
-##Homebrew usage
+## Homebrew usage
 
 [Homebrew](http://brew.sh) is an amazing package management system for OS X that installs the stuff you need that Apple didn't.
 
@@ -382,31 +382,31 @@ Once you have installed Homebrew you can run through the basic commands below.
 
 Open a terminal and type:
 
-###brew -v
+### brew -v
 
 ![brew -v](documentation/images/homebrew/brew-v.png)
 
-###man brew
+### man brew
 ![man brew](documentation/images/man/man_brew.png)
 
 **Before using Homebrew you should ensure it's up to date. Run the next command:**
 
-###brew doctor
+### brew doctor
 ![brew doctor](documentation/images/homebrew/brew_doctor.png)
 
-###brew update
+### brew update
 ![brew update](documentation/images/homebrew/brew_update.png)
 
-###Example output of running a brew install command.  The image shows pouring brews from their bottles
+### Example output of running a brew install command.  The image shows pouring brews from their bottles
 ![pouring brews](documentation/images/homebrew/pouring_brews.png)
 
-###brew list
+### brew list
 ![brew list](documentation/images/homebrew/brew_list.png)
 
 [&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
 
 
-##List of resources and technologies used on this GitHub project	
+## List of resources and technologies used on this GitHub project	
 
 Eclipse - https://eclipse.org/ 
 
@@ -504,7 +504,7 @@ Terminal (OS X) - https://en.wikipedia.org/wiki/Terminal_(OS_X)
 
 [&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
 
-##License
+## License
 
 The DITA Open Toolkit and Apache FOP are licensed for use under the the Apache Software Foundation License v2.0.
 
@@ -512,7 +512,7 @@ Saxon uses the Mozilla Public License Version 2.0.
 
 [&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf) [&#8595;](#license)
 
-##Contributions
+## Contributions
 Fork and pull request. Simple.
 
 [&#8593;](#eclipse-cheat-sheets-to-dita-to-pdf)
