@@ -22,7 +22,7 @@ When built and run this project takes a set of [Eclipse cheat sheets](http://hel
 
 [Darwin Information Typing Architecture](https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture) (DITA) is an XML data model for authoring and using DITA-OT you can publish those ideas. The DITA standard is maintained by the [OASIS](https://www.oasis-open.org/) [DITA Technical Committee](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=dita).  Some of the largest and most successful companies in the world use DITA. The next link is an informal list of [companies using DITA](http://www.ditawriter.com/companies-using-dita/).
 
-It's a two-step process first the DITA XML is created from the Eclipse cheat sheets (XML files) and then you use the DITA-Open Toolkit to create the PDF from the auto created DITA files.
+The running Ant Build is a two-step process, first the DITA XML is created from the Eclipse cheat sheets (XML files) and then you use the DITA-Open Toolkit to create the PDF from the auto created DITA files.
 
 The two parts of the transformation and rendering comprise of:
 
